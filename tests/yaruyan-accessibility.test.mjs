@@ -1,28 +1,9 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import test from 'node:test';
+import { loadAppSource } from './helpers/app-source.mjs';
 import vm from 'node:vm';
 
-const html = readFileSync(new URL('../YaruyanTodo.html', import.meta.url), 'utf8');
-
-function extractFunctionSource(name) {
-  const start = html.indexOf(`function ${name}(`);
-  assert.notEqual(start, -1, `function ${name} not found`);
-  let parameterDepth = 0;
-  let parameterEnd = html.indexOf('(', start);
-  for (; parameterEnd < html.length; parameterEnd += 1) {
-    if (html[parameterEnd] === '(') parameterDepth += 1;
-    if (html[parameterEnd] === ')') parameterDepth -= 1;
-    if (parameterDepth === 0) break;
-  }
-  let depth = 0;
-  for (let index = html.indexOf('{', parameterEnd); index < html.length; index += 1) {
-    if (html[index] === '{') depth += 1;
-    if (html[index] === '}') depth -= 1;
-    if (depth === 0) return html.slice(start, index + 1);
-  }
-  throw new Error(`function ${name} end not found`);
-}
+const { source: extractFunctionSource } = loadAppSource();
 
 class TestElement {
   constructor({ id = '', tagName = 'BUTTON', className = '', dataset = {}, parent = null } = {}) {
@@ -263,7 +244,7 @@ test('nested child editors restore rebuilt actions inside the remaining parent m
   const api = createModalFocusApi();
   const task = api.addRow('parent-a');
   const parentOverlay = api.open(task.children[2]);
-  // Move the persistent modal list inside the parent dialog for containment checks.
+  // 包含関係を検証するため、常設のモーダルリストを親ダイアログ内へ移動する。
   api.root.children = api.root.children.filter((element) => element !== api.modalSubtaskList);
   api.modalSubtaskList.parent = parentOverlay;
   parentOverlay.children.push(api.modalSubtaskList);

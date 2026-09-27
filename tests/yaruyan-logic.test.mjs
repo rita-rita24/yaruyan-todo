@@ -1,44 +1,9 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import test from 'node:test';
+import { loadAppSource } from './helpers/app-source.mjs';
 import vm from 'node:vm';
 
-const html = readFileSync(new URL('../YaruyanTodo.html', import.meta.url), 'utf8');
-
-function extractFunctionSource(name) {
-  const marker = `function ${name}`;
-  let start = html.indexOf(marker);
-  assert.notEqual(start, -1, `function ${name} not found`);
-  if (html.slice(Math.max(0, start - 6), start) === 'async ') {
-    start -= 6;
-  }
-  const paramsStart = html.indexOf('(', start);
-  assert.notEqual(paramsStart, -1, `function ${name} params not found`);
-  let parenDepth = 0;
-  let paramsEnd = -1;
-  for (let index = paramsStart; index < html.length; index += 1) {
-    const char = html[index];
-    if (char === '(') parenDepth += 1;
-    if (char === ')') parenDepth -= 1;
-    if (parenDepth === 0) {
-      paramsEnd = index;
-      break;
-    }
-  }
-  assert.notEqual(paramsEnd, -1, `function ${name} params end not found`);
-  const bodyStart = html.indexOf('{', paramsEnd);
-  assert.notEqual(bodyStart, -1, `function ${name} body not found`);
-
-  let depth = 0;
-  for (let index = bodyStart; index < html.length; index += 1) {
-    const char = html[index];
-    if (char === '{') depth += 1;
-    if (char === '}') depth -= 1;
-    if (depth === 0) return html.slice(start, index + 1);
-  }
-
-  throw new Error(`function ${name} end not found`);
-}
+const { html, source: extractFunctionSource } = loadAppSource();
 
 function createLogicApi() {
   const names = [
@@ -55,11 +20,7 @@ function createLogicApi() {
     '_markAppStateChanged',
     '_commitStateSave',
     '_getDataEntries',
-    '_hasDataChangesFromMap',
-    '_rememberDataEntries',
     '_hasPersistedDataChanges',
-    '_hasLocalCheckpointDataChanges',
-    '_rememberLocalCheckpointDataEntries',
     '_rememberPersistedDataEntries',
     '_isObjectRecord',
     'normalizeOrganizeMemo',
@@ -110,8 +71,6 @@ function createLogicApi() {
     const TASK_FILTER_IDS = new Set(['all', 'pending', 'completed']);
     let _persistedDataValuesReady = false;
     const _persistedDataValues = new Map();
-    let _localCheckpointDataValuesReady = false;
-    const _localCheckpointDataValues = new Map();
     let _appStateVersion = 0;
     let uidCounter = 0;
     let saveResult = true;
@@ -145,8 +104,6 @@ function createLogicApi() {
       _writeManyToStorage,
       _commitStateSave,
       _hasPersistedDataChanges,
-      _hasLocalCheckpointDataChanges,
-      _rememberLocalCheckpointDataEntries,
       _rememberPersistedDataEntries,
       normalizePomodoroSettings,
       normalizeSettings,
@@ -191,25 +148,20 @@ function createStorageSaveApi(options = {}) {
     '_isEmptyStorageMeta',
     '_isSameStorageMeta',
     '_hasStorageMetaConflictSince',
+    '_isVerifiedCheckpointAncestor',
     '_getCurrentStorageMeta',
     '_getStorageMetaFromEntries',
     '_hasCurrentStorageMetaChangedSince',
     '_createStorageMetaRecord',
     '_setCurrentStorageMeta',
     '_getDataEntries',
-    '_hasDataChangesFromMap',
-    '_rememberDataEntries',
     '_hasPersistedDataChanges',
-    '_hasLocalCheckpointDataChanges',
     '_rememberPersistedDataEntries',
-    '_rememberLocalCheckpointDataEntries',
     '_createNextStorageMeta',
     '_restoreStorageMeta',
     '_readLocalStorageMeta',
     '_isNewerThanPersistedMeta',
-    '_hasNewerLocalStorageState',
     '_readIndexedDbStorageMeta',
-    '_readLatestPersistedStorageMeta',
     '_hasNewerPersistedStorageState',
     '_saveLocalStorageCheckpoint',
     '_saveStoredState',
@@ -221,7 +173,14 @@ function createStorageSaveApi(options = {}) {
     'persistOrganizeMemoCheckpoint',
     'flushOrganizeMemoSave',
     'persistRuntimeStateForUnload',
-    '_mirrorPersistentStorageState'
+    '_mirrorPersistentStorageState',
+    '_hasAnySnapshotData',
+    '_validatePersistentStateSnapshot',
+    '_readLocalStateSnapshot',
+    '_createIndexedStateSnapshot',
+    '_shouldUseIndexedState',
+    '_adoptStorageMeta',
+    '_initializePersistentStorageState'
   ];
   const extracted = names.map(extractFunctionSource).join('\n\n');
   const harness = `
@@ -232,14 +191,15 @@ function createStorageSaveApi(options = {}) {
     const TASK_VIEW_KEY = 'task-view';
     const STATE_META_KEY = 'meta';
     const PERSISTED_DATA_KEYS = [TASKS_KEY, SETTINGS_KEY, SIDEBAR_KEY, ORGANIZE_MEMO_KEY, TASK_VIEW_KEY];
+    const PERSISTED_STATE_KEYS = [...PERSISTED_DATA_KEYS, STATE_META_KEY];
     const STORAGE_TAB_ID = 'test-tab';
     let _persistedStateRevision = 0;
     let _persistedStateUpdatedAt = 0;
     let _persistedStateWriteId = '';
+    let _persistedStateWriterId = '';
+    let _persistedStateUnloadBase = null;
     let _persistedDataValuesReady = false;
     const _persistedDataValues = new Map();
-    let _localCheckpointDataValuesReady = false;
-    const _localCheckpointDataValues = new Map();
     let _storedStateSaveQueue = Promise.resolve();
     let _lastIndexedDbWriteError = null;
     function isStateSaveOperationPending() {
@@ -252,6 +212,7 @@ function createStorageSaveApi(options = {}) {
     let organizeMemo = 'new-memo';
     let taskViewState = { filter: 'all' };
     let _persistentStorageInitialized = true;
+    let organizeMemoComposing = false;
     let organizeMemoSaveTimerId = null;
     let warningVisible = false;
     const localValues = new Map([
@@ -262,6 +223,7 @@ function createStorageSaveApi(options = {}) {
     const indexedResults = [...globalThis.__config.indexedResults];
     const indexedValues = new Map(Object.entries(globalThis.__config.indexedValues));
     const indexedReadDelays = [...globalThis.__config.indexedReadDelays];
+    const indexedReadFailures = [...globalThis.__config.indexedReadFailures];
     const indexedReadResolvers = [];
     const indexedWriteDelays = [...globalThis.__config.indexedWriteDelays];
     const indexedWriteResolvers = [];
@@ -305,6 +267,7 @@ function createStorageSaveApi(options = {}) {
     }
     function _readManyFromIndexedDb(keys) {
       indexedReads.push([...keys]);
+      if (indexedReadFailures.shift()) return Promise.reject(new Error('indexedDB read failed'));
       const values = {};
       keys.forEach((key) => {
         values[key] = indexedValues.has(key) ? indexedValues.get(key) : null;
@@ -325,13 +288,15 @@ function createStorageSaveApi(options = {}) {
         const hasBaselineConflict = options?.preventBaselineOverwrite !== false
           && writeMeta?.base
           && _hasStorageMetaConflictSince(currentMeta, writeMeta.base);
-        if (options?.preventNewerOverwrite !== false && writeMeta && (hasTargetConflict || hasBaselineConflict)) {
+        if (options?.preventNewerOverwrite !== false && writeMeta && (hasTargetConflict || (hasBaselineConflict
+          && !_isVerifiedCheckpointAncestor(currentMeta, options?.checkpointMeta)))) {
           indexedWriteSkips.push(writeEntries);
           if (options?.allowNewerMetaSkip === true) {
             _lastIndexedDbWriteError = null;
             return true;
           }
           _lastIndexedDbWriteError = new Error('indexedDB has newer state; skipped stale write');
+          _lastIndexedDbWriteError.code = 'storage-conflict';
           return false;
         }
 
@@ -360,6 +325,13 @@ function createStorageSaveApi(options = {}) {
     }
     function syncRunningFocusElapsedForPersist() {
       return false;
+    }
+    function _applyPersistentStateRawValues(values) {
+      tasks = JSON.parse(values[TASKS_KEY]);
+      settings = JSON.parse(values[SETTINGS_KEY]);
+      isSidebarCollapsed = values[SIDEBAR_KEY] === 'true';
+      organizeMemo = values[ORGANIZE_MEMO_KEY];
+      taskViewState = JSON.parse(values[TASK_VIEW_KEY]);
     }
     ${extracted}
     globalThis.__api = {
@@ -434,6 +406,12 @@ function createStorageSaveApi(options = {}) {
         };
       },
       _mirrorPersistentStorageState,
+      async initialize() {
+        _setCurrentStorageMeta(_readLocalStorageMeta());
+        await _initializePersistentStorageState();
+        _rememberPersistedDataEntries(_getPersistedStateEntries());
+      },
+      getRuntimeEntries() { return _getPersistedStateEntries(); },
       async flushAsyncStorage() {
         for (let index = 0; index < 8; index += 1) {
           await Promise.resolve();
@@ -459,6 +437,7 @@ function createStorageSaveApi(options = {}) {
       indexedResults,
       indexedValues,
       indexedReadDelays: options.indexedReadDelays || [],
+      indexedReadFailures: options.indexedReadFailures || [],
       indexedWriteDelays: options.indexedWriteDelays || []
     }
   };
@@ -511,6 +490,25 @@ function createPomodoroApi() {
   vm.runInNewContext(harness, context);
   return context.__api;
 }
+
+test('same-generation IndexedDB conflicts cannot hide behind a later local timestamp', async () => {
+  for (const localCheckpoint of [false, true]) {
+    const api = createStorageSaveApi();
+    assert.equal(await api.save(), true);
+    const originalLocalTasks = api.getLocalValue(api.TASKS_KEY);
+    const originalMeta = api.getMeta();
+    api.setIndexedValue(api.TASKS_KEY, 'concurrent indexed-only tasks');
+    api.setIndexedValue(api.STATE_META_KEY, JSON.stringify({
+      ...originalMeta, updatedAt: originalMeta.updatedAt - 1000, writeId: 'other-writer'
+    }));
+    api.setRuntimeState({ tasks: [{ id: 'stale-followup' }], organizeMemo: 'stale followup' });
+    const saved = localCheckpoint ? await api.persistOrganizeMemoLocalCheckpoint() : await api.save();
+    assert.equal(saved, false);
+    assert.equal(api.getLocalValue(api.TASKS_KEY), originalLocalTasks);
+    assert.equal(api.getIndexedValue(api.TASKS_KEY), 'concurrent indexed-only tasks');
+    assert.equal(api.getMeta().revision, originalMeta.revision);
+  }
+});
 
 function createFocusRollbackApi() {
   const names = [
@@ -587,6 +585,7 @@ function createFocusRollbackApi() {
     }
     function applySidebarState() {}
     function setMemoSaveStatus() {}
+    function syncPomodoroSettingsControls() {}
     function syncFocusPauseButton() {}
     function updateFocusTimer() {}
     function render() {}
@@ -717,6 +716,8 @@ function createDeleteUndoApi(initialTasks) {
     '_isValidDeleteUndoPayload',
     '_createDeleteUndoRestorePlan',
     '_applyDeleteUndoPayload',
+    'createFocusMeta',
+    'normalizeNonNegativeNumber',
     'syncParentStatus'
   ];
   const extracted = names.map(extractFunctionSource).join('\n\n');
@@ -725,6 +726,7 @@ function createDeleteUndoApi(initialTasks) {
     const MAX_SUBTASK_COUNT_PER_PARENT = 50;
     let tasks = globalThis.__initialTasks;
     const errors = [];
+    function getActiveFocusTarget() { return null; }
     function getTask(parentId) {
       return tasks.find(task => task.id === parentId) || null;
     }
@@ -776,6 +778,7 @@ function createCommitRollbackApi() {
     let tasks = [{ id: 'base' }, { id: 'first-change' }];
     let organizeMemo = '';
     let _persistentStorageInitialized = true;
+    let organizeMemoComposing = false;
     let _organizeMemoEditedBeforeStorageInit = false;
     const organizeMemoInput = { value: '' };
     let pendingSaveResolve = null;
@@ -871,6 +874,7 @@ function createMemoInitApi() {
     let _appStateVersion = 0;
     let organizeMemo = 'local memo';
     let _persistentStorageInitialized = false;
+    let organizeMemoComposing = false;
     let _organizeMemoEditedBeforeStorageInit = false;
     const organizeMemoInput = {
       value: 'local memo',
@@ -964,7 +968,6 @@ function createAddOperationApi() {
   const extracted = names.map(extractFunctionSource).join('\n\n');
   const harness = `
     const taskViewState = { filter: 'all' };
-    function resetTaskSearch() {}
     const MAX_TASK_TEXT_LENGTH = 120;
     const MAX_SUBTASK_TEXT_LENGTH = 120;
     const MAX_PARENT_TASK_COUNT = 200;
@@ -973,6 +976,7 @@ function createAddOperationApi() {
     const MAX_MESSAGE_COUNT = 30;
     const defaultMessages = ['default'];
     const messageOperationState = { pending: false };
+    const document = { activeElement: null, body: null };
     const addOperationState = {
       task: false,
       subtask: false,
@@ -1165,6 +1169,7 @@ function createMessageOperationApi(initialMessages = ['A', 'B', 'C']) {
     const MAX_MESSAGE_COUNT = 30;
     const defaultMessages = ['default'];
     const messageOperationState = { pending: false };
+    const document = { activeElement: null, body: null };
     const addOperationState = {
       task: false,
       subtask: false,
@@ -1347,6 +1352,7 @@ function createEditOperationApi() {
   ];
   const extracted = names.map(extractFunctionSource).join('\n\n');
   const harness = `
+    const document = { activeElement: null, body: null };
     const MAX_TASK_TEXT_LENGTH = 120;
     const MAX_SUBTASK_TEXT_LENGTH = 120;
     const addOperationState = {
@@ -1842,7 +1848,6 @@ function createFocusOperationApi() {
 function createKeyboardReorderApi(initialTasks, filter, activeRow) {
   const names = [
     'matchesTaskFilter',
-    'matchesTaskSearch',
     'isTaskVisible',
     'getFilteredSubtasks',
     'getVisibleParentTaskIds',
@@ -1855,7 +1860,6 @@ function createKeyboardReorderApi(initialTasks, filter, activeRow) {
   ];
   const extracted = names.map(extractFunctionSource).join('\n\n');
   const harness = `
-    const taskSearchQuery = '';
     let tasks = structuredClone(globalThis.__initialTasks);
     const taskViewState = { filter: globalThis.__filter };
     const taskList = {
@@ -2057,10 +2061,14 @@ function createImportUndoApi() {
     let _appStateVersion = 0;
     let tasks = [{ id: 'before' }];
     const _importUndoState = { snapshot: null, version: 0, appStateVersion: null };
+    const messageEditorState = { editIndex: null, draft: null };
     const _deleteUndoState = { payload: { removedParents: [{ id: 'old' }] }, version: 1 };
     let _deleteUndoToastSessionId = 1;
     let _deleteUndoToastHideTimerId = 1;
-    const deleteUndoToastLayer = { innerHTML: '<div>undo</div>' };
+    const deleteUndoToastLayer = {
+      innerHTML: '<div>undo</div>',
+      replaceChildren() { this.innerHTML = ''; }
+    };
     let importUndoAction = null;
     let commits = 0;
     const errors = [];
@@ -2440,7 +2448,7 @@ test('settings normalization treats null pomodoro settings as defaults', () => {
   assert.equal(normalizedSettings.themeColor, 'theme-1');
   assert.equal(normalizedSettings.sound, false);
   assert.equal(normalizedSettings.celebration, false);
-  assert.deepEqual(normalizedSettings.messages, ['保存済み']);
+  assert.deepEqual(Array.from(normalizedSettings.messages), ['保存済み']);
   assert.equal(normalizedSettings.pomodoro.enabled, false);
   assert.equal(normalizedSettings.pomodoro.focusMinutes, 25);
   assert.equal(normalizedSettings.pomodoro.breakMinutes, 5);
@@ -2761,7 +2769,7 @@ test('readJsonFromStorage backs corrupt values up once with a fixed size cap', (
   }), 'existing-backup');
   assert.equal(values.get(`tasks${api.CORRUPT_STORAGE_BACKUP_SUFFIX}`), '{broken json');
   assert.equal(writes.length, 1);
-  assert.equal(values.has('tasks'), false);
+  assert.equal(values.get('tasks'), '{new broken json');
 
   const longRaw = 'x'.repeat(api.MAX_CORRUPT_STORAGE_BACKUP_CHARS + 100);
   const longFallback = {};
@@ -2774,7 +2782,7 @@ test('readJsonFromStorage backs corrupt values up once with a fixed size cap', (
   const truncated = values.get(`settings${api.CORRUPT_STORAGE_BACKUP_SUFFIX}`);
   assert.equal(truncated.length, api.MAX_CORRUPT_STORAGE_BACKUP_CHARS);
   assert.match(truncated, /\[truncated corrupt storage value/);
-  assert.equal(values.has('settings'), false);
+  assert.equal(values.get('settings'), longRaw);
 });
 
 test('writeManyToStorage rolls back previous values after a partial write failure', () => {
@@ -2825,21 +2833,16 @@ test('writeManyToStorage rolls back previous values after a partial write failur
   }]);
 });
 
-test('storage diff tracking keeps full persistence separate from local checkpoints', () => {
+test('storage diff tracking compares data against the last committed values', () => {
   const api = createLogicApi();
-  api._rememberPersistedDataEntries([
-    ['tasks', '[]'],
-    ['memo', 'A']
-  ]);
-
+  assert.equal(api._hasPersistedDataChanges([['memo', 'A']]), true);
+  api._rememberPersistedDataEntries([['tasks', '[]'], ['memo', 'A']]);
   assert.equal(api._hasPersistedDataChanges([['memo', 'A']]), false);
-  assert.equal(api._hasLocalCheckpointDataChanges([['memo', 'AB']]), true);
-
-  api._rememberLocalCheckpointDataEntries([['memo', 'AB']]);
-
-  assert.equal(api._hasLocalCheckpointDataChanges([['memo', 'AB']]), false);
   assert.equal(api._hasPersistedDataChanges([['memo', 'AB']]), true);
-  assert.equal(api._hasLocalCheckpointDataChanges([['memo', 'A']]), true);
+  assert.equal(api._hasPersistedDataChanges([['metadata', 'ignored']]), false);
+  api._rememberPersistedDataEntries([['memo', 'AB']]);
+  assert.equal(api._hasPersistedDataChanges([['memo', 'AB']]), false);
+  assert.equal(api._hasPersistedDataChanges([['tasks', '[]']]), false);
 });
 
 test('saveStoredState falls back to indexedDB when localStorage write fails', async () => {
@@ -3053,11 +3056,11 @@ test('unload persistence does not let an already running stale save overwrite th
     api.getLocalWrites()
       .filter(([key]) => key === api.TASKS_KEY)
       .map(([, value]) => value)
-  )), [unloadTasks, unloadTasks]);
+  )), [unloadTasks]);
   assert.ok(!api.getLocalWrites().some(([key, value]) => key === api.TASKS_KEY && value === firstTasks));
 });
 
-test('indexedDB mirror skips delayed writes when indexedDB already has newer metadata', async () => {
+test('a delayed authoritative commit rejects a competing write and preserves local data', async () => {
   const api = createStorageSaveApi({
     indexedDbAvailable: true,
     indexedWriteDelays: [true],
@@ -3068,14 +3071,17 @@ test('indexedDB mirror skips delayed writes when indexedDB already has newer met
   });
   api._rememberPersistedDataEntries([[api.TASKS_KEY, 'old-tasks']]);
 
-  assert.equal(await api._saveStoredState([[api.TASKS_KEY, 'new-local-tasks']]), true);
-  assert.equal(api.getLocalValue(api.TASKS_KEY), 'new-local-tasks');
+  const saving = api._saveStoredState([[api.TASKS_KEY, 'new-local-tasks']]);
+  await api.flushAsyncStorage();
+  assert.equal(api.getLocalValue(api.TASKS_KEY), 'old-tasks');
 
   api.setIndexedValue(api.STATE_META_KEY, JSON.stringify({ version: 1, revision: 99, updatedAt: 99 }));
   api.setIndexedValue(api.TASKS_KEY, 'newer-indexed-tasks');
   api.releaseIndexedWrite();
   await api.flushAsyncStorage();
 
+  assert.equal(await saving, false);
+  assert.equal(api.getLocalValue(api.TASKS_KEY), 'old-tasks');
   assert.equal(api.getIndexedValue(api.TASKS_KEY), 'newer-indexed-tasks');
   assert.equal(api.getIndexedWrites().length, 0);
   assert.equal(api.getIndexedWriteSkips().length, 1);
@@ -3163,7 +3169,7 @@ test('organize memo local checkpoints do not let a delayed stale value overwrite
       .filter(([key]) => key === api.ORGANIZE_MEMO_KEY)
       .map(([, value]) => value)
   )), ['AB']);
-  assert.deepEqual([...api.getMemoStatuses()], ['saving', 'saving']);
+  assert.deepEqual([...api.getMemoStatuses()], ['saving']);
 });
 
 test('persistRuntimeStateForUnload writes localStorage before asynchronous indexedDB checks finish', async () => {
@@ -3603,4 +3609,453 @@ test('pomodoro persistence sync excludes break time from focus elapsed', () => {
   assert.equal(target.focus.startedAt, 2500);
   assert.equal(api.focusState.pomodoroPhase, 'focus');
   assert.equal(api.focusState.pomodoroPhaseRemainingMs, 500);
+});
+
+test('pomodoro catches up across phase boundaries and a 30-day background interval without counting breaks', () => {
+  for (const [focusMinutes, breakMinutes] of [[1, 1], [25, 5], [180, 120]]) {
+    const api = createPomodoroApi();
+    const focusMs = focusMinutes * 60000;
+    const breakMs = breakMinutes * 60000;
+    const cycleMs = focusMs + breakMs;
+    Object.assign(api.focusState, {
+      pomodoroFocusMs: focusMs,
+      pomodoroBreakMs: breakMs,
+      pomodoroPhaseEndsAt: focusMs,
+      pomodoroPhaseRemainingMs: focusMs
+    });
+    const target = { focus: { focusState: 'running', elapsedMs: 0, startedAt: 0 }, subtasks: [] };
+    api.setActiveTask(target);
+    const times = [0, focusMs - 1, focusMs, cycleMs - 1, cycleMs, cycleMs + 1000, 30 * 86400000];
+    for (const now of times) {
+      api.syncRunningFocusElapsedForPersist(now);
+      const remainder = now % cycleMs;
+      const expected = Math.floor(now / cycleMs) * focusMs + Math.min(remainder, focusMs);
+      assert.equal(target.focus.elapsedMs, expected);
+      assert.equal(api.focusState.pomodoroPhase, remainder < focusMs ? 'focus' : 'break');
+      const phaseEnd = remainder < focusMs ? focusMs : cycleMs;
+      assert.equal(api.focusState.pomodoroPhaseRemainingMs, phaseEnd - remainder);
+    }
+  }
+});
+
+function storageFixture(taskIds, meta, memo = 'memo') {
+  return {
+    tasks: JSON.stringify(taskIds.map(id => ({ id, text: id, done: false, subtasks: [] }))),
+    settings: '{}',
+    sidebar: 'false',
+    memo,
+    'task-view': '{"filter":"all"}',
+    meta: JSON.stringify(meta)
+  };
+}
+
+function copyLocalStorage(api, values) {
+  Object.entries(values).forEach(([key, value]) => api.setLocalValue(key, value));
+}
+
+function readStorageFixture(api, method = 'getLocalValue') {
+  return Object.fromEntries(['tasks', 'settings', 'sidebar', 'memo', 'task-view', 'meta']
+    .map(key => [key, api[method](key)]));
+}
+
+for (const operation of ['save', 'persistOrganizeMemoLocalCheckpoint']) {
+  for (const failedRead of [true, false]) {
+    test(`${operation} protects other-tab data through restart when conflict read ${failedRead ? 'fails' : 'succeeds'}`, async () => {
+      const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+      const other = storageFixture(['original', 'other-tab-task'], {
+        version: 1, revision: 4, updatedAt: 20, writeId: 'other', writerId: 'other-tab'
+      });
+      const api = createStorageSaveApi({ indexedValues: base, indexedReadFailures: [false, failedRead] });
+      copyLocalStorage(api, base);
+      await api.initialize();
+      Object.entries(other).forEach(([key, value]) => api.setIndexedValue(key, value));
+      const localWrites = api.getLocalWrites().length;
+      const indexedWrites = api.getIndexedWrites().length;
+      api.setRuntimeState({
+        tasks: JSON.parse(storageFixture(['original', 'this-tab-task'], {}).tasks),
+        organizeMemo: 'draft'
+      });
+
+      assert.equal(await api[operation](), false);
+      await api.flushAsyncStorage();
+      assert.equal(api.getLocalWrites().length, localWrites);
+      assert.equal(api.getIndexedWrites().length, indexedWrites);
+      assert.deepEqual(readStorageFixture(api), base);
+      assert.deepEqual(readStorageFixture(api, 'getIndexedValue'), other);
+      assert.equal(api.isWarningVisible(), true);
+      assert.ok(api.getWarnings().some(warning => warning.mode === (failedRead ? 'indexeddb-read' : 'storage-conflict')));
+      if (failedRead) {
+        assert.equal(api.getWarnings().some(warning => warning.mode === 'storage-conflict'), false);
+        // 読み込み復旧時は競合する書き込みを検出し、下書きを無条件で再保存しない。
+        assert.equal(await api[operation](), false);
+        assert.deepEqual(readStorageFixture(api), base);
+      }
+
+      const restarted = createStorageSaveApi({ indexedValues: readStorageFixture(api, 'getIndexedValue') });
+      copyLocalStorage(restarted, readStorageFixture(api));
+      await restarted.initialize();
+      await restarted.flushAsyncStorage();
+      assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).tasks, other.tasks);
+      assert.deepEqual(readStorageFixture(restarted), other);
+      assert.deepEqual(readStorageFixture(restarted, 'getIndexedValue'), other);
+    });
+  }
+
+  test(`${operation} retries the retained draft after a transient read failure without a competing write`, async () => {
+    const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+    const api = createStorageSaveApi({ indexedValues: base, indexedReadFailures: [false, true] });
+    copyLocalStorage(api, base);
+    await api.initialize();
+    api.setRuntimeState({ organizeMemo: 'retained draft' });
+    assert.equal(await api[operation](), false);
+    assert.deepEqual(readStorageFixture(api), base);
+    assert.equal(Object.fromEntries(api.getRuntimeEntries()).memo, 'retained draft');
+    assert.equal(api.isWarningVisible(), true);
+
+    assert.equal(await api[operation](), true);
+    // メモのチェックポイント後に通常の全体保存を行い、IndexedDBへ反映する。
+    assert.equal(await api.save(), true);
+    await api.flushAsyncStorage();
+    assert.equal(api.getLocalValue('memo'), 'retained draft');
+    assert.equal(api.getIndexedValue('memo'), 'retained draft');
+    assert.deepEqual(readStorageFixture(api), readStorageFixture(api, 'getIndexedValue'));
+    assert.equal(api.isWarningVisible(), false);
+  });
+}
+
+for (const indexedDbAvailable of [false, true]) {
+  test(`missing IndexedDB metadata permits saving when IndexedDB is ${indexedDbAvailable ? 'empty' : 'unsupported'}`, async () => {
+    const api = createStorageSaveApi({ indexedDbAvailable });
+    assert.equal(await api.save(), true);
+    api.setRuntimeState({ organizeMemo: 'memo checkpoint' });
+    assert.equal(await api.persistOrganizeMemoLocalCheckpoint(), true);
+    assert.equal(await api.save(), true);
+    await api.flushAsyncStorage();
+    assert.equal(api.getLocalValue('memo'), 'memo checkpoint');
+    if (indexedDbAvailable) assert.equal(api.getIndexedValue('memo'), 'memo checkpoint');
+    assert.equal(api.isWarningVisible(), false);
+  });
+}
+
+test('failed unload verification retains its provisional checkpoint and read warning until a safe retry', async () => {
+  const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+  const api = createStorageSaveApi({ indexedValues: base, indexedReadFailures: [false, true] });
+  copyLocalStorage(api, base);
+  await api.initialize();
+  api.setRuntimeState({ organizeMemo: 'last draft' });
+  api.persistRuntimeStateForUnload();
+  const provisional = readStorageFixture(api);
+  await api.flushAsyncStorage();
+  assert.deepEqual(readStorageFixture(api), provisional);
+  assert.ok(JSON.parse(provisional.meta).unloadBase);
+  assert.equal(api.isWarningVisible(), true);
+  assert.equal(api.getWarnings().some(warning => warning.mode === 'storage-conflict'), false);
+  assert.equal(await api.save(), true);
+  await api.flushAsyncStorage();
+  assert.equal(api.getIndexedValue('memo'), 'last draft');
+  assert.equal(JSON.parse(api.getLocalValue('meta')).unloadBase, undefined);
+});
+
+test('restart after an interrupted unload keeps an IndexedDB-only concurrent task', async () => {
+  const base = { revision: 0, updatedAt: 0, writeId: '' };
+  const confirmed = storageFixture(['old', 'other-tab-task'], {
+    revision: 1, updatedAt: 10, writeId: 'other-tab-write', writerId: 'other-tab', base
+  });
+  const original = storageFixture(['old'], base);
+  const leaving = createStorageSaveApi({ indexedValues: confirmed, indexedReadDelays: [true] });
+  copyLocalStorage(leaving, original);
+  leaving._rememberPersistedDataEntries(Object.entries(original).filter(([key]) => key !== 'meta'));
+  leaving.setRuntimeState({ tasks: JSON.parse(original.tasks), organizeMemo: 'unsaved memo' });
+  leaving.persistRuntimeStateForUnload();
+  await leaving.flushAsyncStorage();
+  const interrupted = readStorageFixture(leaving);
+  assert.deepEqual(JSON.parse(interrupted.meta).unloadBase, base);
+  assert.ok(JSON.parse(interrupted.meta).updatedAt > 10);
+
+  // 新しい実行環境には保存済みデータだけを渡し、旧ページのPromiseは引き継がない。
+  const restarted = createStorageSaveApi({ indexedValues: confirmed });
+  copyLocalStorage(restarted, interrupted);
+  await restarted.initialize();
+  assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).tasks, confirmed.tasks);
+  assert.equal(restarted.getLocalValue('tasks'), confirmed.tasks);
+  assert.equal(restarted.getIndexedValue('tasks'), confirmed.tasks);
+  assert.equal(JSON.parse(restarted.getLocalValue('meta')).unloadBase, undefined);
+  assert.ok(restarted.getWarnings().some(warning => warning.mode === 'storage-unload-conflict'));
+
+  restarted.setRuntimeState({ organizeMemo: 'after recovery' });
+  assert.equal(await restarted.save(), true);
+  await restarted.flushAsyncStorage();
+  assert.equal(restarted.getIndexedValue('tasks'), confirmed.tasks);
+  assert.equal(restarted.getIndexedValue('memo'), 'after recovery');
+});
+
+test('repeated unload checkpoints preserve the original conflict baseline', async () => {
+  const base = { revision: 0, updatedAt: 0, writeId: '' };
+  const confirmed = storageFixture(['other-tab-task'], { revision: 1, updatedAt: 10, writeId: 'other' });
+  const leaving = createStorageSaveApi({ indexedValues: confirmed, indexedReadDelays: [true] });
+  leaving.persistRuntimeStateForUnload();
+  await leaving.flushAsyncStorage();
+  leaving.setRuntimeState({ organizeMemo: 'second checkpoint' });
+  leaving.persistRuntimeStateForUnload();
+  const interrupted = readStorageFixture(leaving);
+  assert.equal(JSON.parse(interrupted.meta).revision, 2);
+  assert.deepEqual(JSON.parse(interrupted.meta).unloadBase, base);
+  const restarted = createStorageSaveApi({ indexedValues: confirmed });
+  copyLocalStorage(restarted, interrupted);
+  await restarted.initialize();
+  assert.equal(restarted.getLocalValue('tasks'), confirmed.tasks);
+  assert.equal(restarted.getIndexedValue('tasks'), confirmed.tasks);
+});
+
+test('restart confirms a nonconflicting unload and retains the latest memo', async () => {
+  const base = { revision: 3, updatedAt: 10, writeId: 'baseline' };
+  const confirmed = storageFixture(['old'], base);
+  const checkpoint = storageFixture(['old', 'new-task'], {
+    revision: 4, updatedAt: 20, writeId: 'checkpoint', base, unloadBase: base
+  }, 'latest memo');
+  const restarted = createStorageSaveApi({ indexedValues: confirmed });
+  copyLocalStorage(restarted, checkpoint);
+  await restarted.initialize();
+  await restarted.flushAsyncStorage();
+  assert.equal(restarted.getLocalValue('tasks'), checkpoint.tasks);
+  assert.equal(restarted.getIndexedValue('tasks'), checkpoint.tasks);
+  assert.equal(restarted.getIndexedValue('memo'), 'latest memo');
+  assert.equal(JSON.parse(restarted.getLocalValue('meta')).unloadBase, undefined);
+  const writesBeforeNoOp = restarted.getLocalWrites().length;
+  assert.equal(await restarted.save(), true);
+  assert.equal(restarted.getLocalWrites().length, writesBeforeNoOp);
+});
+
+test('failed IndexedDB verification never upgrades an unverified unload to a confirmed save', async () => {
+  const base = { revision: 3, updatedAt: 10, writeId: 'baseline' };
+  const checkpoint = storageFixture(['old'], {
+    revision: 4, updatedAt: 20, writeId: 'checkpoint', base, unloadBase: base
+  });
+  const restarted = createStorageSaveApi({ indexedReadFailures: [true, true] });
+  copyLocalStorage(restarted, checkpoint);
+  await restarted.initialize();
+  restarted.setRuntimeState({ tasks: [{ id: 'old' }], organizeMemo: 'later draft' });
+  const writes = restarted.getLocalWrites().length;
+  assert.equal(await restarted.save(), false);
+  assert.equal(restarted.getLocalWrites().length, writes);
+  assert.equal(restarted.getLocalValue('meta'), checkpoint.meta);
+  assert.equal(restarted.getIndexedWrites().length, 0);
+});
+
+test('startup recovery never replaces a local write made while IndexedDB was loading', async () => {
+  const base = { revision: 0, updatedAt: 0, writeId: '' };
+  const checkpoint = storageFixture(['old'], {
+    revision: 1, updatedAt: 20, writeId: 'checkpoint', base, unloadBase: base
+  });
+  const confirmed = storageFixture(['other'], { revision: 1, updatedAt: 10, writeId: 'other' });
+  const restarted = createStorageSaveApi({ indexedValues: confirmed, indexedReadDelays: [true] });
+  copyLocalStorage(restarted, checkpoint);
+  const init = restarted.initialize();
+  const latest = storageFixture(['latest-local'], { revision: 2, updatedAt: 30, writeId: 'latest' });
+  copyLocalStorage(restarted, latest);
+  restarted.releaseIndexedRead();
+  await init;
+  assert.equal(restarted.getLocalValue('tasks'), latest.tasks);
+  assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).tasks, latest.tasks);
+});
+
+test('local recovery failure preserves the IndexedDB winner', async () => {
+  const base = { revision: 0, updatedAt: 0, writeId: '' };
+  const checkpoint = storageFixture(['old'], {
+    revision: 2, updatedAt: 20, writeId: 'checkpoint', base, unloadBase: base
+  });
+  const confirmed = storageFixture(['other'], { revision: 1, updatedAt: 10, writeId: 'other' });
+  const restarted = createStorageSaveApi({ indexedValues: confirmed, failLocalKeys: ['tasks'] });
+  copyLocalStorage(restarted, checkpoint);
+  await restarted.initialize();
+  assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).tasks, confirmed.tasks);
+  assert.equal(restarted.getIndexedValue('tasks'), confirmed.tasks);
+  assert.equal(restarted.getLocalValue('tasks'), checkpoint.tasks);
+  assert.equal(restarted.getIndexedWrites().length, 0);
+  assert.ok(restarted.getWarnings().some(warning => warning.mode === 'storage-unload-conflict'));
+});
+
+test('a completed unload verification clears the marker and mirrors the confirmed data', async () => {
+  const api = createStorageSaveApi();
+  api.persistRuntimeStateForUnload();
+  assert.ok(JSON.parse(api.getLocalValue('meta')).unloadBase);
+  await api.flushAsyncStorage();
+  assert.equal(JSON.parse(api.getLocalValue('meta')).unloadBase, undefined);
+  assert.equal(api.getIndexedValue('tasks'), api.getLocalValue('tasks'));
+  assert.equal(api.getIndexedValue('meta'), api.getLocalValue('meta'));
+});
+
+test('successive unload saves never publish an older memo after the latest synchronous checkpoint', async () => {
+  const api = createStorageSaveApi({ indexedDbAvailable: true });
+  api.setRuntimeState({ organizeMemo: 'first departure' });
+  api.persistRuntimeStateForUnload();
+  api.setRuntimeState({ organizeMemo: 'latest departure' });
+  api.persistRuntimeStateForUnload();
+  await api.flushAsyncStorage();
+  const values = api.getLocalWrites()
+    .filter(([key]) => key === api.ORGANIZE_MEMO_KEY).map(([, value]) => value);
+  const latestIndex = values.indexOf('latest departure');
+  assert.ok(latestIndex >= 0);
+  assert.ok(values.slice(latestIndex).every(value => value === 'latest departure'), JSON.stringify(values));
+  assert.equal(api.getIndexedValue(api.ORGANIZE_MEMO_KEY), 'latest departure');
+});
+
+test('local-only environments keep synchronous unload persistence without a verification marker', () => {
+  const api = createStorageSaveApi({ indexedDbAvailable: false });
+  api.setRuntimeState({ tasks: [{ id: 'local-task' }], organizeMemo: 'last draft' });
+  api.persistRuntimeStateForUnload();
+  assert.equal(api.getLocalValue('tasks'), JSON.stringify([{ id: 'local-task' }]));
+  assert.equal(api.getLocalValue('memo'), 'last draft');
+  assert.equal(JSON.parse(api.getLocalValue('meta')).unloadBase, undefined);
+});
+
+test('a valid unload checkpoint still repairs a malformed IndexedDB snapshot', async () => {
+  const base = { revision: 3, updatedAt: 10, writeId: 'baseline' };
+  const checkpoint = storageFixture(['recoverable-task'], {
+    revision: 5, updatedAt: 30, writeId: 'checkpoint', base, unloadBase: base
+  }, 'recoverable memo');
+  const invalid = storageFixture([], { revision: 4, updatedAt: 20, writeId: 'corrupt' });
+  invalid.tasks = '{"not":"an array"}';
+  const restarted = createStorageSaveApi({ indexedValues: invalid });
+  copyLocalStorage(restarted, checkpoint);
+  await restarted.initialize();
+  await restarted.flushAsyncStorage();
+  assert.equal(restarted.getIndexedValue('tasks'), checkpoint.tasks);
+  assert.equal(restarted.getIndexedValue('memo'), checkpoint.memo);
+  assert.equal(JSON.parse(restarted.getLocalValue('meta')).unloadBase, undefined);
+});
+
+// 課題42：事前のメタデータ読み込みに加え、コミット時点の境界も検証する。
+for (const operation of ['save', 'persistOrganizeMemoLocalCheckpoint']) {
+  for (const phase of ['after-read', 'at-commit']) {
+    test(`${operation} rejects a competing IndexedDB write ${phase} and restores it on restart`, async () => {
+      const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+      const other = storageFixture(['original', 'other-task'], {
+        revision: 4, updatedAt: 20, writeId: 'other', writerId: 'other-tab'
+      });
+      const api = createStorageSaveApi({ indexedValues: base,
+        indexedReadDelays: [false, phase === 'after-read'],
+        indexedWriteDelays: [false, phase === 'at-commit'] });
+      copyLocalStorage(api, base);
+      await api.initialize();
+      await api.flushAsyncStorage();
+      api.setRuntimeState({ organizeMemo: 'my draft' });
+      const saving = api[operation]();
+      await api.flushAsyncStorage();
+      Object.entries(other).forEach(([key, value]) => api.setIndexedValue(key, value));
+      if (phase === 'after-read') api.releaseIndexedRead();
+      else api.releaseIndexedWrite();
+      assert.equal(await saving, false);
+      assert.equal(api.isWarningVisible(), true);
+      assert.deepEqual(readStorageFixture(api), base);
+      assert.deepEqual(readStorageFixture(api, 'getIndexedValue'), other);
+      assert.equal(api.getMeta().revision, 3);
+      const restarted = createStorageSaveApi({ indexedValues: other });
+      copyLocalStorage(restarted, readStorageFixture(api));
+      await restarted.initialize();
+      assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).tasks, other.tasks);
+    });
+  }
+
+  test(`${operation} never acknowledges or publishes a write before its transaction commits`, async () => {
+    const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+    const api = createStorageSaveApi({ indexedValues: base, indexedWriteDelays: [false, true] });
+    copyLocalStorage(api, base);
+    await api.initialize();
+    await api.flushAsyncStorage();
+    api.setRuntimeState({ organizeMemo: 'my draft' });
+    let settled = false;
+    const saving = api[operation]().then(ok => { settled = true; return ok; });
+    await api.flushAsyncStorage();
+    assert.equal(settled, false);
+    assert.deepEqual(readStorageFixture(api), base);
+    api.releaseIndexedWrite();
+    assert.equal(await saving, true);
+    assert.equal(api.getIndexedValue('memo'), 'my draft');
+    assert.equal(api.getLocalValue('memo'), 'my draft');
+    assert.deepEqual(readStorageFixture(api), readStorageFixture(api, 'getIndexedValue'));
+  });
+}
+
+for (const committed of [false, true]) {
+  test(`restart during an in-flight save and repeated unload preserves ${committed ? 'the latest own draft' : 'the competing task'}`, async () => {
+    const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+    const other = storageFixture(['original', 'other-task'], {
+      revision: 3, updatedAt: 20, writeId: 'same-generation-competitor', writerId: 'other-tab'
+    });
+    const api = createStorageSaveApi({ indexedValues: base, indexedWriteDelays: [false, true] });
+    copyLocalStorage(api, base);
+    await api.initialize();
+    await api.flushAsyncStorage();
+    api.setRuntimeState({ organizeMemo: 'first draft' });
+    const saving = api.save();
+    await api.flushAsyncStorage();
+    api.setRuntimeState({ organizeMemo: 'second draft' });
+    api.persistRuntimeStateForUnload();
+    api.setRuntimeState({ organizeMemo: 'last draft' });
+    api.persistRuntimeStateForUnload();
+    const interrupted = readStorageFixture(api);
+    assert.equal(interrupted.memo, 'last draft');
+    if (!committed) Object.entries(other).forEach(([key, value]) => api.setIndexedValue(key, value));
+    api.releaseIndexedWrite();
+    assert.equal(await saving, committed);
+    // ページ終了時の保存内容を固定し、最初のトランザクション結果だけを残す。
+    const indexed = committed ? storageFixture(['original'], {
+      ...JSON.parse(api.getIndexedValue('meta'))
+    }, api.getIndexedValue('memo')) : other;
+    const restarted = createStorageSaveApi({ indexedValues: indexed });
+    copyLocalStorage(restarted, interrupted);
+    await restarted.initialize();
+    await restarted.flushAsyncStorage();
+    assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).tasks, committed ? base.tasks : other.tasks);
+    assert.equal(Object.fromEntries(restarted.getRuntimeEntries()).memo, committed ? 'last draft' : other.memo);
+    assert.equal(JSON.parse(restarted.getLocalValue('meta')).unloadBase, undefined);
+  });
+}
+
+test('startup recovers a previously split same-generation save from the transactional backend', async () => {
+  const local = storageFixture(['original'], { revision: 4, updatedAt: 30, writeId: 'old-bug', writerId: 'local-tab' });
+  const indexed = storageFixture(['original', 'other-task'], { revision: 4, updatedAt: 20, writeId: 'committed', writerId: 'other-tab' });
+  const api = createStorageSaveApi({ indexedValues: indexed });
+  copyLocalStorage(api, local);
+  await api.initialize();
+  assert.equal(Object.fromEntries(api.getRuntimeEntries()).tasks, indexed.tasks);
+  assert.equal(api.getLocalValue('tasks'), indexed.tasks);
+  assert.equal(api.isWarningVisible(), true);
+});
+
+test('a preflight superseded by unload does not acknowledge an unverified competing draft', async () => {
+  const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+  const other = storageFixture(['original', 'other-task'], { revision: 4, updatedAt: 20, writeId: 'other' });
+  const api = createStorageSaveApi({ indexedValues: base, indexedReadDelays: [false, true] });
+  copyLocalStorage(api, base);
+  await api.initialize();
+  api.setRuntimeState({ organizeMemo: 'draft' });
+  const saving = api.save();
+  await api.flushAsyncStorage();
+  api.persistRuntimeStateForUnload();
+  Object.entries(other).forEach(([key, value]) => api.setIndexedValue(key, value));
+  api.releaseIndexedRead();
+  assert.equal(await saving, false);
+  await api.flushAsyncStorage();
+  assert.equal(api.isWarningVisible(), true);
+  assert.deepEqual(readStorageFixture(api, 'getIndexedValue'), other);
+});
+
+test('an IndexedDB commit failure cannot be masked by writable localStorage', async () => {
+  const base = storageFixture(['original'], { revision: 3, updatedAt: 10, writeId: 'base' });
+  const api = createStorageSaveApi({ indexedValues: base, indexedResults: [true, false, true] });
+  copyLocalStorage(api, base);
+  await api.initialize();
+  await api.flushAsyncStorage();
+  const indexedBefore = readStorageFixture(api, 'getIndexedValue');
+  api.setRuntimeState({ organizeMemo: 'retry draft' });
+  assert.equal(await api.save(), false);
+  assert.deepEqual(readStorageFixture(api), base);
+  assert.deepEqual(readStorageFixture(api, 'getIndexedValue'), indexedBefore);
+  assert.equal(api.getMeta().revision, 3);
+  assert.equal(api.isWarningVisible(), true);
+  assert.equal(await api.save(), true);
+  assert.equal(api.getIndexedValue('memo'), 'retry draft');
+  assert.equal(api.getLocalValue('memo'), 'retry draft');
 });
