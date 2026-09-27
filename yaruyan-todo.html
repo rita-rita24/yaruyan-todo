@@ -44,7 +44,6 @@
         --sidebar-w: 13.714286rem;
         --sidebar-collapsed-w: 4rem;
         --ease-smooth: cubic-bezier(0.2, 0, 0, 1);
-        --ease-spring: cubic-bezier(0.2, 0, 0, 1);
         --focus-halo-1: light-dark(oklch(64% 0.08 205 / 0.12), oklch(72% 0.07 205 / 0.12));
         --task-tree-indent: 2.65rem;
         --task-tree-node-indent: 0.86rem;
@@ -130,6 +129,46 @@
         &.focus-open {
           overflow: hidden;
         }
+
+        &.sidebar-collapsed {
+          & .brand {
+            display: none;
+          }
+
+          & .nav-label {
+            opacity: 0;
+            pointer-events: none;
+            max-width: 0;
+            transform: translate(-0.285714rem);
+          }
+
+          & .brand-title {
+            opacity: 0;
+            pointer-events: none;
+            width: 0;
+            max-width: 0;
+            transform: translate(-0.428571rem);
+          }
+
+          & .nav-btn {
+            margin-inline: auto;
+          }
+
+          & .nav {
+            justify-items: center;
+          }
+
+          & .sidebar-top {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+          }
+
+          & .sidebar-collapse-btn {
+            margin: 0 auto;
+          }
+        }
       }
 
       .icon-sprite-defs {
@@ -176,6 +215,12 @@
         display: grid;
         position: sticky;
         top: 0;
+
+        @media (width <= 56.25em) {
+          border-block-end: none;
+          height: auto;
+          position: static;
+        }
       }
 
       .sidebar-top {
@@ -206,6 +251,10 @@
 
       .nav {
         display: grid;
+
+        @media (width <= 56.25em) {
+          grid-template-columns: repeat(3, 1fr);
+        }
       }
 
       .nav-btn {
@@ -231,48 +280,6 @@
         white-space: nowrap;
         display: inline-block;
         overflow: hidden;
-      }
-
-      body {
-        &.sidebar-collapsed {
-          & .brand {
-            display: none;
-          }
-
-          & .nav-label {
-            opacity: 0;
-            pointer-events: none;
-            max-width: 0;
-            transform: translate(-0.285714rem);
-          }
-
-          & .brand-title {
-            opacity: 0;
-            pointer-events: none;
-            width: 0;
-            max-width: 0;
-            transform: translate(-0.428571rem);
-          }
-
-          & .nav-btn {
-            margin-inline: auto;
-          }
-
-          & .nav {
-            justify-items: center;
-          }
-
-          & .sidebar-top {
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-          }
-
-          & .sidebar-collapse-btn {
-            margin: 0 auto;
-          }
-        }
       }
 
       .main {
@@ -305,8 +312,10 @@
         }
       }
 
-      .card h2 {
-        font-weight: 800;
+      .card {
+        & h2 {
+          font-weight: 800;
+        }
       }
 
       .row {
@@ -329,7 +338,7 @@
       .focus-btn {
         appearance: none;
         transition:
-          transform 0.16s var(--ease-spring),
+          transform 0.16s var(--ease-smooth),
           filter 0.16s var(--ease-smooth),
           background 0.16s var(--ease-smooth),
           color 0.16s var(--ease-smooth),
@@ -405,6 +414,11 @@
         flex-wrap: wrap;
         justify-content: flex-end;
         display: flex;
+
+        @media (width <= 42.5em) {
+          grid-column: 3;
+          justify-self: end;
+        }
       }
 
       .subtask-wrap {
@@ -433,6 +447,11 @@
           word-break: break-word;
           min-width: 0;
         }
+
+        &.done .text {
+          color: var(--completed-text);
+          text-decoration: line-through 0.142857rem;
+        }
       }
 
       .subtask-text-wrap {
@@ -444,11 +463,6 @@
 
       .subtask-achievement {
         flex-shrink: 0;
-      }
-
-      .subtask-item.done .text {
-        color: var(--completed-text);
-        text-decoration: line-through 0.142857rem;
       }
 
       .subtask-actions {
@@ -492,6 +506,10 @@
       .pomodoro-rhythm-card {
         gap: 0.72rem;
         display: grid;
+
+        &.is-disabled {
+          opacity: 0.72;
+        }
       }
 
       .pomodoro-rhythm-grid {
@@ -516,10 +534,6 @@
         line-height: 1.5;
       }
 
-      .pomodoro-rhythm-card.is-disabled {
-        opacity: 0.72;
-      }
-
       .theme-grid {
         flex-wrap: wrap;
         gap: 0.55rem;
@@ -532,7 +546,7 @@
         transition:
           border-color 0.16s var(--ease-smooth),
           box-shadow 0.16s var(--ease-smooth),
-          transform 0.16s var(--ease-spring),
+          transform 0.16s var(--ease-smooth),
           background 0.16s var(--ease-smooth);
         flex: none;
         place-items: center;
@@ -561,7 +575,7 @@
           background: var(--toggle-knob);
           width: 1.45rem;
           height: 1.45rem;
-          transition: transform 0.16s var(--ease-spring);
+          transition: transform 0.16s var(--ease-smooth);
           border-radius: 50%;
           position: absolute;
           top: 0.2rem;
@@ -571,10 +585,10 @@
 
         &:checked {
           background: var(--primary);
-        }
 
-        &:checked::after {
-          transform: translate(1.35rem);
+          &::after {
+            transform: translate(1.35rem);
+          }
         }
       }
 
@@ -591,6 +605,27 @@
           opacity: 0;
           width: 0;
           height: 0;
+
+          &:checked + .slider {
+            background-color: var(--mode-switch-track-active);
+
+            &::before {
+              box-shadow: inset 1.071429rem -0.285714rem 0 1.071429rem var(--mode-switch-sun);
+              transform: translate(1.8em);
+            }
+
+            & .star {
+              opacity: 0;
+            }
+
+            & .cloud {
+              opacity: 1;
+            }
+          }
+
+          &:focus-visible + .slider {
+            outline: 1px solid var(--primary);
+          }
         }
       }
 
@@ -598,7 +633,7 @@
         cursor: pointer;
         background-color: var(--mode-switch-track);
         border-radius: 2.142857rem;
-        transition: all 0.4s;
+        transition: background-color 0.4s;
         position: absolute;
         inset: 0;
         overflow: hidden;
@@ -609,21 +644,12 @@
           height: 1.2em;
           box-shadow: inset 0.571429rem -0.285714rem 0 0 var(--mode-switch-moon);
           border-radius: 1.428571rem;
-          transition: all 0.4s cubic-bezier(0.81, -0.04, 0.38, 1.5);
+          transition:
+            box-shadow 0.4s cubic-bezier(0.81, -0.04, 0.38, 1.5),
+            transform 0.4s cubic-bezier(0.81, -0.04, 0.38, 1.5);
           position: absolute;
           bottom: 0.5em;
           left: 0.5em;
-        }
-      }
-
-      .switch {
-        & input:checked + .slider {
-          background-color: var(--mode-switch-track-active);
-        }
-
-        & input:checked + .slider::before {
-          box-shadow: inset 1.071429rem -0.285714rem 0 1.071429rem var(--mode-switch-sun);
-          transform: translate(1.8em);
         }
       }
 
@@ -632,7 +658,7 @@
         border-radius: 50%;
         width: 0.357143rem;
         height: 0.357143rem;
-        transition: all 0.4s;
+        transition: opacity 0.4s;
         position: absolute;
       }
 
@@ -651,30 +677,16 @@
         left: 3em;
       }
 
-      .switch input:checked ~ .slider .star {
-        opacity: 0;
-      }
-
       .cloud {
         opacity: 0;
         width: 3.5em;
-        transition: all 0.4s;
+        transition: opacity 0.4s;
         position: absolute;
         bottom: -1.4em;
         left: -1.1em;
 
         & path {
           fill: var(--mode-switch-cloud);
-        }
-      }
-
-      .switch {
-        & input:checked ~ .slider .cloud {
-          opacity: 1;
-        }
-
-        & input:focus-visible + .slider {
-          outline: 1px solid var(--primary);
         }
       }
 
@@ -1000,6 +1012,49 @@
         &.show {
           display: flex;
         }
+
+        &.focus-paused {
+          & .focus-timer {
+            opacity: 0.92;
+            color: var(--pause);
+            text-shadow:
+              0 0 1.285714rem var(--pause-glow),
+              0 0 3.285714rem var(--pause-glow);
+          }
+
+          & .focus-timer-caption {
+            color: var(--pause);
+            letter-spacing: 0.06em;
+            font-size: 0.9rem;
+          }
+        }
+
+        &.focus-break {
+          &:not(.focus-paused) .focus-timer {
+            color: var(--success);
+            text-shadow:
+              0 0 1.285714rem var(--success-glow),
+              0 0 3.285714rem var(--success-glow);
+          }
+
+          &:not(.focus-paused) .focus-timer-caption {
+            color: var(--success);
+          }
+
+          &:not(.focus-paused) .focus-status-chip {
+            border-color: var(--success-border);
+            background: var(--success-bg-soft);
+            color: var(--success);
+          }
+        }
+
+        @media (width <= 56.25em) {
+          padding: 1rem;
+        }
+
+        @media (width <= 42.5em) {
+          padding: 0.85rem;
+        }
       }
 
       .focus-modal {
@@ -1009,6 +1064,11 @@
         display: grid;
         position: relative;
         overflow: auto;
+
+        @media (width <= 42.5em) {
+          width: min(100%, 25rem);
+          max-height: calc(100vh - 1.7rem);
+        }
       }
 
       .focus-header {
@@ -1035,6 +1095,10 @@
         font-size: clamp(1.45rem, 4.8vw, 2.05rem);
         font-weight: 800;
         line-height: 1.25;
+
+        @media (width <= 42.5em) {
+          font-size: clamp(1.3rem, 8vw, 1.85rem);
+        }
       }
 
       .focus-status-chip {
@@ -1088,42 +1152,9 @@
         font-size: clamp(1.05rem, 3.6vw, 1.45rem);
         font-weight: 800;
         line-height: 1.15;
-      }
 
-      .focus-overlay {
-        &.focus-paused {
-          & .focus-timer {
-            opacity: 0.92;
-            color: var(--pause);
-            text-shadow:
-              0 0 1.285714rem var(--pause-glow),
-              0 0 3.285714rem var(--pause-glow);
-          }
-
-          & .focus-timer-caption {
-            color: var(--pause);
-            letter-spacing: 0.06em;
-            font-size: 0.9rem;
-          }
-        }
-
-        &.focus-break {
-          &:not(.focus-paused) .focus-timer {
-            color: var(--success);
-            text-shadow:
-              0 0 1.285714rem var(--success-glow),
-              0 0 3.285714rem var(--success-glow);
-          }
-
-          &:not(.focus-paused) .focus-timer-caption {
-            color: var(--success);
-          }
-
-          &:not(.focus-paused) .focus-status-chip {
-            border-color: var(--success-border);
-            background: var(--success-bg-soft);
-            color: var(--success);
-          }
+        @media (width <= 42.5em) {
+          font-size: clamp(1rem, 5vw, 1.25rem);
         }
       }
 
@@ -1176,7 +1207,11 @@
         transform: translate(-50%, -50%) scale(0.42) rotate(-10deg);
 
         &.show {
-          animation: celebrationPop 1.05s var(--ease-spring) forwards;
+          animation: celebrationPop 1.05s var(--ease-smooth) forwards;
+        }
+
+        @media (width <= 42.5em) {
+          font-size: clamp(2.8rem, 14vw, 5.8rem);
         }
       }
 
@@ -1223,25 +1258,6 @@
           grid-template-columns: 1fr;
         }
 
-        .sidebar {
-          border-block-end: none;
-          height: auto;
-          position: static;
-        }
-
-        .nav {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .focus-overlay {
-          padding: 1rem;
-        }
-
-        .focus-modal {
-          width: min(100%, 28rem);
-          max-height: min(90vh, 34rem);
-        }
-
         body {
           &.sidebar-collapsed {
             & .nav-label {
@@ -1277,38 +1293,6 @@
         }
       }
 
-      @media (width <= 42.5em) {
-        .task-main {
-          grid-template-columns: auto 1fr auto;
-        }
-
-        .task-tools {
-          grid-column: 3;
-          justify-self: end;
-        }
-
-        .celebration-text {
-          font-size: clamp(2.8rem, 14vw, 5.8rem);
-        }
-
-        .focus-title {
-          font-size: clamp(1.3rem, 8vw, 1.85rem);
-        }
-
-        .focus-timer {
-          font-size: clamp(1rem, 5vw, 1.25rem);
-        }
-
-        .focus-overlay {
-          padding: 0.85rem;
-        }
-
-        .focus-modal {
-          width: min(100%, 25rem);
-          max-height: calc(100vh - 1.7rem);
-        }
-      }
-
       @media (prefers-reduced-motion: reduce) {
         .celebration-text.show,
         .page,
@@ -1327,7 +1311,7 @@
       }
 
       body {
-        font-feature-settings: "tnum" 1;
+        font-variant-numeric: tabular-nums;
         font-weight: 450;
         line-height: 1.5;
       }
@@ -1342,9 +1326,16 @@
 
       .sidebar {
         border-inline-end: 1px solid var(--line);
-        backdrop-filter: none;
         gap: 1rem;
         padding: 1.2rem 0.7rem;
+
+        @media (width <= 56.25em) {
+          grid-template-rows: auto auto;
+          align-content: start;
+          align-items: start;
+          gap: 0.55rem;
+          padding: 0.82rem 0.85rem 0.55rem;
+        }
       }
 
       .brand-title,
@@ -1369,6 +1360,10 @@
 
       .main {
         padding: 1.5rem clamp(0.75rem, 1.6vw, 1.7rem) 1.8rem;
+
+        @media (width <= 56.25em) {
+          padding: 1rem 0.85rem 1.5rem;
+        }
       }
 
       .page-wrap {
@@ -1379,11 +1374,24 @@
       .task-hero-actions {
         flex-wrap: wrap;
         display: flex;
+        justify-content: flex-start;
+        margin-inline-start: 0;
+
+        @media (width <= 42.5em) {
+          justify-content: flex-end;
+          width: 100%;
+        }
       }
 
       .task-filter-group {
         align-items: center;
         display: inline-flex;
+        margin-inline-end: auto;
+
+        @media (width <= 42.5em) {
+          justify-content: space-between;
+          width: 100%;
+        }
       }
 
       .task-filter-btn {
@@ -1392,22 +1400,22 @@
           background 0.16s var(--ease-smooth),
           color 0.16s var(--ease-smooth),
           border-color 0.16s var(--ease-smooth);
-      }
 
-      .hero-copy {
-        gap: 0.3rem;
-        max-width: 30rem;
-        display: grid;
+        @media (width <= 42.5em) {
+          flex: 1;
+        }
       }
 
       #page-tasks {
         gap: 1.25rem;
       }
 
-      #page-memo .card {
-        grid-template-rows: minmax(0, 1fr) auto;
-        min-height: clamp(24rem, 100vh - 13.5rem, 62rem);
-        display: grid;
+      #page-memo {
+        & .card {
+          grid-template-rows: minmax(0, 1fr) auto;
+          min-height: clamp(24rem, 100vh - 13.5rem, 62rem);
+          display: grid;
+        }
       }
 
       #organizeMemoInput {
@@ -1446,24 +1454,15 @@
         align-items: center;
         gap: 0.55rem;
         display: flex;
-      }
 
-      .backup-file-input {
-        opacity: 0;
-        pointer-events: none;
-        clip-path: inset(50%);
-        white-space: nowrap;
-        block-size: 1px;
-        inline-size: 1px;
-        position: absolute;
-        overflow: hidden;
-      }
+        @media (width <= 42.5em) {
+          flex-direction: column;
+          align-items: stretch;
 
-      .tasks-layout {
-        grid-template-columns: minmax(0, 1fr);
-        align-items: start;
-        gap: 1.3rem;
-        display: grid;
+          & .action-btn {
+            width: 100%;
+          }
+        }
       }
 
       .tasks-primary {
@@ -1483,6 +1482,12 @@
       .task-composer {
         grid-template-columns: minmax(0, 1fr);
         display: grid;
+
+        @media (width <= 42.5em) {
+          & .row {
+            flex-wrap: nowrap;
+          }
+        }
       }
 
       .field-label {
@@ -1526,6 +1531,10 @@
       .task-tools,
       .subtask-actions {
         gap: 0.28rem;
+
+        @media (width <= 42.5em) {
+          width: 100%;
+        }
       }
 
       .task-leading-controls {
@@ -1561,6 +1570,10 @@
         gap: 0.32rem;
         margin-inline-start: var(--task-tree-indent);
         position: relative;
+
+        @media (width <= 42.5em) {
+          margin-inline-start: 1.9rem;
+        }
       }
 
       .subtask-list {
@@ -1573,20 +1586,19 @@
         border: none;
         border-radius: 0;
         grid-template-columns: auto 1fr auto;
+
+        & .text {
+          line-height: 1.45;
+        }
       }
 
-      .focus-btn.disabled,
-      .focus-btn.playable.disabled {
+      .focus-btn.disabled {
         opacity: 1;
         pointer-events: none;
       }
 
       .modal-subtask-row {
         grid-template-columns: minmax(0, 1fr) auto;
-      }
-
-      .subtask-item .text {
-        line-height: 1.45;
       }
 
       .achievement-time {
@@ -1641,6 +1653,10 @@
         justify-content: center;
         align-items: center;
         gap: 0.85rem;
+
+        @media (width <= 42.5em) {
+          gap: 0.45rem;
+        }
       }
 
       [hidden] {
@@ -1690,15 +1706,6 @@
         }
       }
 
-      .task-hero-actions {
-        justify-content: flex-start;
-        margin-inline-start: 0;
-      }
-
-      .task-filter-group {
-        margin-inline-end: auto;
-      }
-
       .focus-action-btn {
         width: auto;
 
@@ -1715,21 +1722,9 @@
           min-height: 0;
         }
 
-        .sidebar {
-          grid-template-rows: auto auto;
-          align-content: start;
-          align-items: start;
-          gap: 0.55rem;
-          padding: 0.82rem 0.85rem 0.55rem;
-        }
-
         body.sidebar-collapsed .sidebar {
           gap: 0.55rem;
           padding-inline: 0.85rem;
-        }
-
-        .main {
-          padding: 1rem 0.85rem 1.5rem;
         }
 
         .sidebar-top {
@@ -1738,34 +1733,6 @@
       }
 
       @media (width <= 42.5em) {
-        .task-tools,
-        .subtask-actions {
-          width: 100%;
-        }
-
-        .subtask-wrap {
-          --task-tree-node-indent: 0.86rem;
-          margin-inline-start: 1.9rem;
-        }
-
-        .subtask-list {
-          padding-inline-start: 0.86rem;
-        }
-
-        .task-composer {
-          & .row {
-            flex-wrap: nowrap;
-
-            & .text-input {
-              flex: 1;
-            }
-
-            & .add-btn {
-              width: auto;
-            }
-          }
-        }
-
         .setting-item {
           flex-direction: column;
           align-items: stretch;
@@ -1774,15 +1741,6 @@
           & .toggle,
           & .switch {
             align-self: flex-end;
-          }
-        }
-
-        .backup-actions {
-          flex-direction: column;
-          align-items: stretch;
-
-          & .action-btn {
-            width: 100%;
           }
         }
 
@@ -1804,24 +1762,6 @@
           flex-wrap: nowrap;
           justify-content: flex-end;
           width: auto;
-        }
-
-        .task-hero-actions {
-          justify-content: flex-end;
-          width: 100%;
-        }
-
-        .task-filter-group {
-          justify-content: space-between;
-          width: 100%;
-        }
-
-        .task-filter-btn {
-          flex: 1;
-        }
-
-        .focus-footer {
-          gap: 0.45rem;
         }
 
         .task-meta,
@@ -1856,12 +1796,54 @@
         --gm-brand-soft: var(--primary-bg-faint);
         --gm-focus: light-dark(var(--primary-text-ink), var(--primary));
 
+        --gm-text-size: 1rem;
+        --gm-label-size: 0.928571rem;
+        --gm-meta-size: 0.857143rem;
+        --gm-title-size: 1.14286rem;
+        --gm-title-line-height: 1.71429rem;
+        --gm-section-title-size: 1rem;
+        --gm-section-title-line-height: 1.42857rem;
+        --gm-control-height: 2rem;
+        --gm-button-height: 2.14286rem;
+        --gm-button-padding-block: 0.142857rem;
+        --gm-control-padding-block: 0.142857rem;
+        --gm-control-padding-inline: 0.571429rem;
+        --gm-space-1: 0.285714rem;
+        --gm-space-2: 0.571429rem;
+        --gm-space-3: 0.857143rem;
+        --gm-radius: 0.285714rem;
+        --surface: var(--gm-surface);
+        --surface-2: var(--gm-background);
+        --surface-3: var(--gm-background);
+        --text: var(--gm-text);
+        --muted: var(--gm-muted);
+        --line: var(--gm-border);
+        --line-strong: var(--gm-input-border);
+        --completed-text: var(--gm-success);
+        --danger: var(--gm-error);
+        --danger-bg-faint: var(--gm-error-bg);
+        --danger-bg-soft: var(--gm-error-bg);
+        --success: var(--gm-success);
+        --success-bg-soft: var(--gm-success-bg);
+        --pause: var(--gm-warning);
+        --pause-bg-soft: var(--gm-warning-bg);
+        --radius-md: var(--gm-radius);
+        /* 14px at the browser’s default 16px font size. */
+        font-size: 87.5%;
+
         &[data-mode="dark"] {
           color-scheme: dark;
         }
 
         @media print {
           color-scheme: light !important;
+        }
+
+        @media (any-pointer: coarse) {
+          --gm-control-height: 3.14286rem;
+          --gm-button-height: 3.14286rem;
+          --gm-button-padding-block: 0.5rem;
+          --gm-control-padding-block: 0.5rem;
         }
       }
 
@@ -1993,15 +1975,13 @@
         & .gm-help {
           color: var(--gm-muted);
         }
-      }
 
-      @media print {
-        .gm .gm-btn {
-          display: none !important;
+        @media print {
+          & .gm-btn {
+            display: none !important;
+          }
         }
-      }
 
-      .gm {
         & h1 {
           font-size: var(--gm-title-size);
           line-height: var(--gm-title-line-height);
@@ -2042,10 +2022,8 @@
             outline-offset: -0.214286rem;
           }
         }
-      }
 
-      @media (forced-colors: active) {
-        .gm {
+        @media (forced-colors: active) {
           & :focus-visible {
             outline-color: highlight !important;
           }
@@ -2066,59 +2044,20 @@
             border-color: graytext;
           }
         }
-      }
 
-      @media (prefers-reduced-motion: reduce) {
-        .gm,
-        .gm *,
-        .gm ::before,
-        .gm ::after {
-          scroll-behavior: auto !important;
-          transition-duration: 0.01ms !important;
-          transition-delay: 0s !important;
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
+        @media (prefers-reduced-motion: reduce) {
+          &,
+          & *,
+          & ::before,
+          & ::after {
+            scroll-behavior: auto !important;
+            transition-duration: 0.01ms !important;
+            transition-delay: 0s !important;
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+          }
         }
-      }
 
-      html.gm {
-        --gm-text-size: 1rem;
-        --gm-label-size: 0.928571rem;
-        --gm-meta-size: 0.857143rem;
-        --gm-title-size: 1.14286rem;
-        --gm-title-line-height: 1.71429rem;
-        --gm-section-title-size: 1rem;
-        --gm-section-title-line-height: 1.42857rem;
-        --gm-control-height: 2rem;
-        --gm-button-height: 2.14286rem;
-        --gm-button-padding-block: 0.142857rem;
-        --gm-control-padding-block: 0.142857rem;
-        --gm-control-padding-inline: 0.571429rem;
-        --gm-space-1: 0.285714rem;
-        --gm-space-2: 0.571429rem;
-        --gm-space-3: 0.857143rem;
-        --gm-radius: 0.285714rem;
-        --surface: var(--gm-surface);
-        --surface-2: var(--gm-background);
-        --surface-3: var(--gm-background);
-        --text: var(--gm-text);
-        --muted: var(--gm-muted);
-        --line: var(--gm-border);
-        --line-strong: var(--gm-input-border);
-        --completed-text: var(--gm-success);
-        --danger: var(--gm-error);
-        --danger-bg-faint: var(--gm-error-bg);
-        --danger-bg-soft: var(--gm-error-bg);
-        --success: var(--gm-success);
-        --success-bg-soft: var(--gm-success-bg);
-        --pause: var(--gm-warning);
-        --pause-bg-soft: var(--gm-warning-bg);
-        --radius-md: var(--gm-radius);
-        /* 14px at the browser’s default 16px font size. */
-        font-size: 87.5%;
-      }
-
-      .gm {
         & body {
           font-family: var(--gm-font);
           font-size: var(--gm-text-size);
@@ -2313,16 +2252,14 @@
             display: none;
           }
         }
-      }
 
-      @media (width <= 56.25em) {
-        .gm .sidebar-collapse-btn {
-          display: none;
+        @media (width <= 56.25em) {
+          & .sidebar-collapse-btn {
+            display: none;
+          }
         }
-      }
 
-      @media (width <= 25.6em) {
-        .gm {
+        @media (width <= 25.6em) {
           & .nav {
             grid-template-columns: repeat(3, minmax(0, 1fr));
           }
@@ -2339,17 +2276,8 @@
             text-wrap: balance;
           }
         }
-      }
 
-      @media (any-pointer: coarse) {
-        html.gm {
-          --gm-control-height: 3.14286rem;
-          --gm-button-height: 3.14286rem;
-          --gm-button-padding-block: 0.5rem;
-          --gm-control-padding-block: 0.5rem;
-        }
-
-        .gm {
+        @media (any-pointer: coarse) {
           & :is(.gm-input, .gm-textarea) {
             min-block-size: 2.75rem;
             font-size: 1.14286rem;
@@ -2360,6 +2288,7 @@
           }
         }
       }
+
       /* Static presentation belongs here; JavaScript only updates state. */
       #storageWarning {
         position: fixed;
@@ -2579,31 +2508,28 @@
       <div class="page-wrap">
         <!-- タスク -->
         <section class="page" id="page-tasks">
-          <div class="hero task-hero gm-page-head">
-            <div class="hero-copy">
-              <h1>タスクリスト</h1>
-            </div>
+          <div class="hero gm-page-head">
+            <h1>タスクリスト</h1>
           </div>
 
-          <div class="tasks-layout">
-            <div class="tasks-primary">
-              <div class="task-overview" id="taskOverview" hidden>
-                <div class="overview-heading"><span>タスク全体の進み具合</span><strong id="taskProgressText"></strong></div>
-                <progress id="taskProgressBar" max="100" value="0" aria-label="タスク全体の完了率"></progress>
+          <div class="tasks-primary">
+            <div class="task-overview" id="taskOverview" hidden>
+              <div class="overview-heading"><span>タスク全体の進み具合</span><strong id="taskProgressText"></strong></div>
+              <progress id="taskProgressBar" max="100" value="0" aria-label="タスク全体の完了率"></progress>
+            </div>
+            <div class="card task-composer">
+              <label class="field-label gm-label" for="taskInput">タスクを追加</label>
+              <div class="row">
+                <input id="taskInput" class="text-input gm-input" type="text" autocomplete="off" aria-describedby="taskInputHint">
+                <button type="button" id="addBtn" class="icon-btn add-btn show-label gm-btn gm-btn-primary" aria-label="親タスク追加">
+                  <span aria-hidden="true" class="material-symbols-outlined">add_task</span>
+                  <span>追加</span>
+                </button>
               </div>
-              <div class="card task-composer">
-                <label class="field-label gm-label" for="taskInput">タスクを追加</label>
-                <div class="row">
-                  <input id="taskInput" class="text-input gm-input" type="text" autocomplete="off" aria-describedby="taskInputHint">
-                  <button type="button" id="addBtn" class="icon-btn add-btn show-label gm-btn gm-btn-primary" aria-label="親タスク追加">
-                    <span aria-hidden="true" class="material-symbols-outlined">add_task</span>
-                    <span>追加</span>
-                  </button>
-                </div>
-                <p class="field-helper gm-help" id="taskInputHint">1件120文字、最大200件まで追加できます。Enterキーでも追加できます。</p>
-              </div>
+              <p class="field-helper gm-help" id="taskInputHint">1件120文字、最大200件まで追加できます。Enterキーでも追加できます。</p>
+            </div>
 
-              <p id="taskViewStatus" class="field-helper gm-help" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+            <p id="taskViewStatus" class="field-helper gm-help" role="status" aria-live="polite" aria-atomic="true" hidden></p>
 
             <div class="row task-hero-actions" id="taskHeaderActions" role="group" aria-label="表示と一括操作" hidden>
               <div class="task-filter-group" id="taskFilterGroup" role="group" aria-label="表示フィルタ">
@@ -2621,12 +2547,11 @@
               </button>
             </div>
 
-              <ul class="task-list" id="taskList"></ul>
+            <ul class="task-list" id="taskList"></ul>
 
-              <div class="card empty" id="emptyState">
-                <div class="empty-title">まだタスクがありません</div>
-                <p class="empty-description">上の入力欄から、最初のタスクを追加してください。</p>
-              </div>
+            <div class="card empty" id="emptyState">
+              <div class="empty-title">まだタスクがありません</div>
+              <p class="empty-description">上の入力欄から、最初のタスクを追加してください。</p>
             </div>
           </div>
         </section>
@@ -2671,10 +2596,9 @@
                   <span class="star star_1" aria-hidden="true"></span>
                   <span class="star star_2" aria-hidden="true"></span>
                   <span class="star star_3" aria-hidden="true"></span>
-                  <svg viewBox="0 0 16 16" class="cloud_1 cloud" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" class="cloud" aria-hidden="true">
                     <path
                       transform="matrix(.77976 0 0 .78395-299.99-418.63)"
-                      fill="#fff"
                       d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
                     ></path>
                   </svg>
@@ -2697,7 +2621,7 @@
                   <span aria-hidden="true" class="material-symbols-outlined">playlist_add</span>
                   <span>読み込み</span>
                 </button>
-                <input id="backupFileInput" class="backup-file-input" type="file" accept="application/json,.json" tabindex="-1" aria-hidden="true">
+                <input id="backupFileInput" type="file" accept="application/json,.json" hidden>
               </div>
               <p class="field-helper gm-help">タスク、設定、整理メモ、表示フィルタをJSONで保存/復元します。読み込みは<span id="backupImportLimitText">上限サイズ</span>までです。</p>
             </div>
@@ -4122,6 +4046,30 @@
       ============================================ */
       const qs = (sel, root = document) => root.querySelector(sel);
       const qsa = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+      function bindInputEnter(input, action, { allowShift = true, allowCommand = true } = {}) {
+        input.addEventListener('keydown', event => {
+          if (event.defaultPrevented || event.key !== 'Enter' || event.isComposing || event.keyCode === 229) return;
+          if (!allowShift && event.shiftKey) return;
+          if (!allowCommand && (event.ctrlKey || event.metaKey)) return;
+          event.preventDefault();
+          if (!event.repeat) void action();
+        });
+      }
+
+      // Keep unchanged nodes in place so selection, focus, and drag state survive a render.
+      function reconcileChildren(container, rows) {
+        const retained = new Set(rows);
+        for (const row of [...container.children]) {
+          if (!retained.has(row)) row.remove();
+        }
+        let next = container.firstElementChild;
+        for (const row of rows) {
+          if (row === next) next = next.nextElementSibling;
+          else container.insertBefore(row, next);
+        }
+      }
+
       const MATERIAL_ICON_FALLBACK = 'task_alt';
       const MATERIAL_ICON_TOKENS = new Set(
         qsa('.icon-sprite-defs symbol[id^="icon-"]').map(({ id }) => id.slice(5))
@@ -4142,7 +4090,7 @@
         const $use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
         const ref = `#icon-${resolved}`;
         $use.setAttribute('href', ref);
-        $svg.appendChild($use);
+        $svg.append($use);
         return $svg;
       }
 
@@ -4214,6 +4162,7 @@
 
       const sidebarCollapseBtn = qs('#sidebarCollapseBtn');
       const sidebarCollapseIcon = qs('#sidebarCollapseIcon');
+      const compactSidebarQuery = window.matchMedia('(width <= 56.25em)');
 
       // 親タスクのモーダル
       const parentModalOverlay = qs('#parentModalOverlay');
@@ -5976,7 +5925,7 @@
         const stamp = new Date().toISOString().slice(0, 10);
         link.href = url;
         link.download = `yaruyan-todo-backup-${stamp}.json`;
-        document.body.appendChild(link);
+        document.body.append(link);
         link.click();
         link.remove();
         window.setTimeout(() => URL.revokeObjectURL(url), 0);
@@ -6320,7 +6269,7 @@
       }
 
       function isCompactSidebarViewport() {
-        return window.matchMedia('(width <= 56.25em)').matches;
+        return compactSidebarQuery.matches;
       }
 
       function applySidebarState() {
@@ -7098,13 +7047,7 @@
           rows.push(item);
         });
 
-        const retained = new Set(rows);
-        previousRows.forEach(row => { if (!retained.has(row)) row.remove(); });
-        let next = messageList.firstElementChild;
-        rows.forEach(row => {
-          if (row === next) next = next.nextElementSibling;
-          else messageList.insertBefore(row, next);
-        });
+        reconcileChildren(messageList, rows);
         hydrateMaterialIcons(messageList);
         updateMessageListPendingState();
         if (restoreEditorFocus) {
@@ -8294,18 +8237,10 @@
       }
 
       function reconcileTaskRows(rows) {
-        const retained = new Set(rows);
         const activeElement = document.activeElement;
         const focusEntry = taskList.contains(activeElement)
           ? { returnFocusEl: activeElement, returnFocusTarget: _captureModalReturnFocus(activeElement) } : null;
-        for (const row of [...taskList.children]) {
-          if (!retained.has(row)) row.remove();
-        }
-        let next = taskList.firstElementChild;
-        for (const row of rows) {
-          if (row === next) next = next.nextElementSibling;
-          else taskList.insertBefore(row, next);
-        }
+        reconcileChildren(taskList, rows);
         if (focusEntry && document.activeElement === document.body) {
           _restoreFocusAfterPending(focusEntry);
           if (document.activeElement === document.body && !isStateSaveOperationPending()
@@ -9235,25 +9170,13 @@
         inputEl.maxLength = maxLength;
       });
 
-      taskInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) {
-          e.preventDefault();
-          if (e.repeat) return;
-          void addTask();
-        }
-      });
+      bindInputEnter(taskInput, addTask);
 
       sidebarCollapseBtn.addEventListener('click', toggleSidebar);
 
       // 完了メッセージ管理
       messageSaveBtn.addEventListener('click', saveMessage);
-      messageInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) {
-          e.preventDefault();
-          if (e.repeat) return;
-          void saveMessage();
-        }
-      });
+      bindInputEnter(messageInput, saveMessage);
 
       messageList.addEventListener('input', (event) => {
         const input = event.target.closest('.message-edit-input');
@@ -9284,7 +9207,7 @@
         if (e.isComposing || e.keyCode === 229) return;
         const $input = e.target.closest('.message-edit-input');
         if (!$input) return;
-        if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) {
+        if (e.key === 'Enter') {
           e.preventDefault();
           if (e.repeat) return;
           void saveEditedMessage(Number($input.dataset.index));
@@ -9303,23 +9226,10 @@
       saveParentEditBtn.addEventListener('click', saveParentEdit);
       modalAddSubtaskBtn.addEventListener('click', addSubtaskFromModal);
 
-      parentEditInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.shiftKey && !e.isComposing && e.keyCode !== 229) {
-          e.preventDefault();
-          if (e.repeat) return;
-          void saveParentEdit();
-        }
-      });
+      bindInputEnter(parentEditInput, saveParentEdit, { allowShift: false });
 
-      modalSubtaskInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) {
-          // 親タスクの保存は、ダイアログのCtrl/Meta+Enterショートカットに任せる。
-          if (e.ctrlKey || e.metaKey) return;
-          e.preventDefault();
-          if (e.repeat) return;
-          void addSubtaskFromModal();
-        }
-      });
+      // 親タスクの保存は、ダイアログのCtrl/Meta+Enterショートカットに任せる。
+      bindInputEnter(modalSubtaskInput, addSubtaskFromModal, { allowCommand: false });
 
       parentModalOverlay.addEventListener('click', (e) => {
         if (e.target === parentModalOverlay) closeParentModal();
@@ -9435,13 +9345,7 @@
       closeSubtaskModalBtn.addEventListener('click', closeSubtaskModal);
       saveSubtaskEditBtn.addEventListener('click', saveSubtaskEdit);
 
-      subtaskEditInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) {
-          e.preventDefault();
-          if (e.repeat) return;
-          void saveSubtaskEdit();
-        }
-      });
+      bindInputEnter(subtaskEditInput, saveSubtaskEdit);
 
       subtaskModalOverlay.addEventListener('click', (e) => {
         if (e.target === subtaskModalOverlay) closeSubtaskModal();
@@ -9786,13 +9690,11 @@
       });
 
       function bindPomodoroMinutesInput(input, phase) {
-        input?.addEventListener('change', () => {
+        if (!input) return;
+        input.addEventListener('change', () => {
           void commitPomodoroMinutesFromInput(phase);
         });
-        input?.addEventListener('keydown', (event) => {
-          if (event.key !== 'Enter' || event.isComposing || event.keyCode === 229) return;
-          event.preventDefault();
-          if (event.repeat) return;
+        bindInputEnter(input, () => {
           void commitPomodoroMinutesFromInput(phase);
           input.blur();
         });
@@ -9817,7 +9719,7 @@
       window.addEventListener('resize', handleTooltipViewportChange);
 
       document.addEventListener('keydown', handleDocumentShortcuts);
-      window.addEventListener('resize', applySidebarState);
+      compactSidebarQuery.addEventListener('change', applySidebarState);
 
       /* ============================================
          初期化

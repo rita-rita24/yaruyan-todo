@@ -36,5 +36,17 @@ export function loadAppSource(path = process.env.YARUYAN_TEST_SOURCE || APP) {
     );
   }
 
-  return { html, scripts, source, run };
+  function inputKeydownSource(input) {
+    assert.match(input, /^[A-Za-z_$][\w$]*$/, 'Expected an input name');
+    const binding = script.match(new RegExp(`^ +bindInputEnter\\(${input},[^\\n]+`, 'm'));
+    if (binding) return `${source('bindInputEnter')}\n${binding[0]}`;
+    // Delegated editors and comparison runs still use inline listeners.
+    const start = script.indexOf(`${input}.addEventListener('keydown'`);
+    assert.ok(start >= 0, `Keydown binding for ${input} missing`);
+    const end = script.indexOf('\n      });', start);
+    assert.ok(end >= 0, `Keydown binding for ${input} is incomplete`);
+    return script.slice(start, end + '\n      });'.length);
+  }
+
+  return { html, scripts, source, run, inputKeydownSource };
 }

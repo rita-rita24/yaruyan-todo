@@ -3,7 +3,7 @@ import test from 'node:test';
 import { loadAppSource } from './helpers/app-source.mjs';
 import vm from 'node:vm';
 
-const { html, source, run } = loadAppSource();
+const { html, source, run, inputKeydownSource } = loadAppSource();
 
 test('leaving a memo recovers composition even when compositionend never arrives', () => {
   let inputs = 0, saves = 0;
@@ -100,8 +100,7 @@ for (const [fn, route, field] of [
 }
 
 test('Ctrl/Meta+Enter in the child input reaches the parent save shortcut without adding a child', () => {
-  const start = html.indexOf("modalSubtaskInput.addEventListener('keydown'");
-  const handlerSource = html.slice(start, html.indexOf('\n      });', start) + 10);
+  const handlerSource = inputKeydownSource('modalSubtaskInput');
   let handler, adds = 0, prevented = 0;
   vm.runInNewContext(handlerSource, { modalSubtaskInput: { addEventListener: (_, fn) => { handler = fn; } },
     addSubtaskFromModal: () => adds++ });

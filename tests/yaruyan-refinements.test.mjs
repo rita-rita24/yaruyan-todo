@@ -3,7 +3,7 @@ import test from 'node:test';
 import { loadAppSource } from './helpers/app-source.mjs';
 import vm from 'node:vm';
 
-const { html, source, run } = loadAppSource();
+const { html, source, run, inputKeydownSource } = loadAppSource();
 
 test('a truncated corrupt backup never authorizes deleting the full recovery source', () => {
   const raw = '{' + 'recoverable task data '.repeat(5000);
@@ -28,9 +28,7 @@ for (const [input, action, extra = {}] of [
   ['messageList', 'saveEditedMessage', { target: { closest: () => ({ dataset: { index: '0' } }) } }]
 ]) {
   test(`holding Enter does not submit ${input} repeatedly`, () => {
-    const start = html.indexOf(`${input}.addEventListener('keydown'`);
-    assert.ok(start >= 0);
-    const handlerSource = html.slice(start, html.indexOf('\n      });', start) + 10);
+    const handlerSource = inputKeydownSource(input);
     let handler, actions = 0, prevented = 0;
     vm.runInNewContext(handlerSource, {
       [input]: { addEventListener: (_, callback) => { handler = callback; }, blur() {} },
@@ -55,7 +53,7 @@ for (const phase of ['focus', 'break']) {
       addEventListener: (event, handler) => { handlers[event] = handler; },
       blur: () => blurs++
     };
-    const { bindPomodoroMinutesInput } = run(['bindPomodoroMinutesInput'], {
+    const { bindPomodoroMinutesInput } = run(['bindInputEnter', 'bindPomodoroMinutesInput'], {
       commitPomodoroMinutesFromInput: value => commits.push(value)
     });
     bindPomodoroMinutesInput(input, phase);
