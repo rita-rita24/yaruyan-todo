@@ -1,0 +1,26 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>比較計測の追加条件</title></head><body><h1>比較計測の追加条件</h1><button id="start" type="button">追加条件を計測</button><p id="status">待機</p><iframe id="runner" title="比較計測"></iframe><pre id="results"></pre><script>
+const jobs=[
+ ['child-v3-large-repeat',200,50,'tasks','main'],
+ ['child-v3-small',20,5,'tasks,memo,settings','main'],
+ ['child-v3-extended',20,5,'tasks','extended'],
+ ['child-v3-backup',20,5,'settings','backup'],
+ ['child-v3-coverage',20,5,'tasks','coverage'],
+ ['child-v3-empty',0,0,'tasks,memo,settings','main']
+];
+const start=document.getElementById('start'),status=document.getElementById('status'),runner=document.getElementById('runner'),results=document.getElementById('results');
+runner.style.cssText='width:1400px;height:1000px';
+start.addEventListener('click',async()=>{
+ start.disabled=true;const completed=[];
+ for(const [compare,parents,children,route,suite] of jobs){
+  status.textContent=compare;
+  const result=await new Promise(resolve=>{
+   const done=event=>{if(event.source!==runner.contentWindow||!event.data.suiteDone)return;window.removeEventListener('message',done);resolve(event.data);};
+   window.addEventListener('message',done);
+   runner.src='/?'+new URLSearchParams({compare,parents,children,route,suite,trials:5,autostart:'1'});
+  });
+  completed.push({compare,...result});results.textContent=JSON.stringify(completed,null,2);
+  if(result.errors.length){status.textContent='エラーで停止';return;}
+ }
+ status.textContent='全条件完了';
+});
+</script></body></html>

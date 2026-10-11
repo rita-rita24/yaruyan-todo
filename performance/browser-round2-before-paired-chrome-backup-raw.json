@@ -1,0 +1,992 @@
+[
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-0-1791507523668",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:43.949Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 101.5,
+        "displayMs": 119.19999998807907,
+        "seedMs": 1.100000023841858
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 4,
+        "displayMs": 31.30000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6.800000011920929,
+        "displayMs": 123.20000004768372
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-0-1791507523668",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:44.362Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 92,
+        "displayMs": 199.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 7.600000023841858,
+        "displayMs": 34.89999997615814
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6,
+        "displayMs": 147.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-1-1791507525695",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:46.002Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 82.80000001192093,
+        "displayMs": 110.30000001192093,
+        "seedMs": 0.800000011920929
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 7.5,
+        "displayMs": 39.09999996423721
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 13.700000047683716,
+        "displayMs": 142.10000002384186
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-1-1791507525695",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:46.272Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 67.89999997615814,
+        "displayMs": 89.10000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 6.199999988079071,
+        "displayMs": 32.30000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 13.5,
+        "displayMs": 128.29999995231628
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-2-1791507526285",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:46.560Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 80.5,
+        "displayMs": 98.89999997615814,
+        "seedMs": 0.800000011920929
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 3.400000035762787,
+        "displayMs": 38.10000002384186
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 11.599999964237213,
+        "displayMs": 126.5
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-2-1791507526285",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:47.040Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 63.90000003576279,
+        "displayMs": 76.60000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 2.400000035762787,
+        "displayMs": 34.10000002384186
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 9.900000035762787,
+        "displayMs": 343.5
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-3-1791507528377",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:48.648Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 66.90000003576279,
+        "displayMs": 85,
+        "seedMs": 0.9000000357627869
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 3.300000011920929,
+        "displayMs": 34.30000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 17.600000023841858,
+        "displayMs": 137.4000000357628
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-3-1791507528377",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:48.933Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 81,
+        "displayMs": 95.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 6.600000023841858,
+        "displayMs": 27.80000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 9.5,
+        "displayMs": 121.5
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-4-1791507528947",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:49.237Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 81.09999996423721,
+        "displayMs": 103.29999995231628,
+        "seedMs": 0.699999988079071
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 3.699999988079071,
+        "displayMs": 42.299999952316284
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6.700000047683716,
+        "displayMs": 134.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-0-settings-4-1791507528947",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-09T00:58:49.587Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 126.80000001192093,
+        "displayMs": 157.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 10.599999964237213,
+        "displayMs": 44.59999996423721
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 5.200000047683716,
+        "displayMs": 108.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-0-1791507530201",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:50.490Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 96.19999998807907,
+        "displayMs": 113.60000002384186,
+        "seedMs": 0.699999988079071
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 12.100000023841858,
+        "displayMs": 32.30000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 8.5,
+        "displayMs": 131.4000000357628
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-0-1791507530201",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:50.956Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 91.19999998807907,
+        "displayMs": 121.10000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 4,
+        "displayMs": 44
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 8.900000035762787,
+        "displayMs": 261.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-1-1791507532538",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:52.952Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 142,
+        "displayMs": 159.5,
+        "seedMs": 1.199999988079071
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 4.199999988079071,
+        "displayMs": 42.19999998807907
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 18,
+        "displayMs": 181.5
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-1-1791507532538",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:53.272Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 83.19999998807907,
+        "displayMs": 95.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 4,
+        "displayMs": 26.900000035762787
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 11.599999964237213,
+        "displayMs": 126.29999995231628
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-2-1791507533285",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:53.577Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 86.10000002384186,
+        "displayMs": 107.40000003576279,
+        "seedMs": 1.100000023841858
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 7.099999964237213,
+        "displayMs": 38.69999998807907
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 26.80000001192093,
+        "displayMs": 135.60000002384186
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-2-1791507533285",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:53.854Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 66.09999996423721,
+        "displayMs": 90.09999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 3.900000035762787,
+        "displayMs": 41.69999998807907
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6.900000035762787,
+        "displayMs": 114
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-3-1791507535068",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:55.285Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 57,
+        "displayMs": 68.89999997615814,
+        "seedMs": 0.6000000238418579
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 2.899999976158142,
+        "displayMs": 32.299999952316284
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6.100000023841858,
+        "displayMs": 110.10000002384186
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-3-1791507535068",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:55.514Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 58.5,
+        "displayMs": 71.30000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 3.400000035762787,
+        "displayMs": 31.80000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6.300000011920929,
+        "displayMs": 103.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-4-1791507535526",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:55.771Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 57.90000003576279,
+        "displayMs": 73.30000001192093,
+        "seedMs": 0.5
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 2.5,
+        "displayMs": 32.80000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 6.300000011920929,
+        "displayMs": 129.9000000357628
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-20-settings-4-1791507535526",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T00:58:56.058Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 68.80000001192093,
+        "displayMs": 88.59999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 4.600000023841858,
+        "displayMs": 26.400000035762787
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 10.800000011920929,
+        "displayMs": 144.0999999642372
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-0-1791507536928",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:58:57.546Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 189.4000000357628,
+        "displayMs": 205.69999998807907,
+        "seedMs": 2.700000047683716
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 46.59999996423721,
+        "displayMs": 74.59999996423721
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 76,
+        "displayMs": 295.5
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-0-1791507536928",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:58:58.597Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 401.5,
+        "displayMs": 428.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 119.89999997615814,
+        "displayMs": 135.5
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 67.89999997615814,
+        "displayMs": 129
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-1-1791507540106",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:00.419Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 116.19999998807907,
+        "displayMs": 124,
+        "seedMs": 2.800000011920929
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 32.90000003576279,
+        "displayMs": 42.700000047683716
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 50.5,
+        "displayMs": 120.29999995231628
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-1-1791507540106",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:00.738Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 102.19999998807907,
+        "displayMs": 110.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 34.60000002384186,
+        "displayMs": 43.39999997615814
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 53.80000001192093,
+        "displayMs": 115.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-2-1791507540750",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:01.206Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 131,
+        "displayMs": 141.30000001192093,
+        "seedMs": 2.300000011920929
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 43.10000002384186,
+        "displayMs": 51.90000003576279
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 48.19999998807907,
+        "displayMs": 233.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-2-1791507540750",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:01.522Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 86.80000001192093,
+        "displayMs": 92.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 31.30000001192093,
+        "displayMs": 40.10000002384186
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 92.19999998807907,
+        "displayMs": 145.89999997615814
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-3-1791507542891",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:03.335Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 126.80000001192093,
+        "displayMs": 135.19999998807907,
+        "seedMs": 2.800000011920929
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 35.60000002384186,
+        "displayMs": 45.89999997615814
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 48.80000001192093,
+        "displayMs": 235.60000002384186
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-3-1791507542891",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:03.806Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 113.30000001192093,
+        "displayMs": 123.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 44.80000001192093,
+        "displayMs": 63.30000001192093
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 47.69999998807907,
+        "displayMs": 236.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-4-1791507543820",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:04.142Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 121.20000004768372,
+        "displayMs": 136.20000004768372,
+        "seedMs": 2.699999988079071
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 33.60000002384186,
+        "displayMs": 42.60000002384186
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 44.10000002384186,
+        "displayMs": 116
+      }
+    ]
+  },
+  {
+    "version": "round2-before-paired-chrome-backup",
+    "group": "round2-before-paired-chrome-backup-200-settings-4-1791507543820",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:59:04.652Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 107.69999998807907,
+        "displayMs": 120.30000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "backup-read-confirm",
+        "readyMs": 61.40000003576279,
+        "displayMs": 95.19999998807907
+      },
+      {
+        "operation": "backup-confirm-import",
+        "readyMs": 66.40000003576279,
+        "displayMs": 245.9000000357628
+      }
+    ]
+  }
+]

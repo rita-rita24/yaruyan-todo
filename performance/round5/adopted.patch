@@ -1,0 +1,88 @@
+--- performance/round5/baseline.html
++++ yaruyan-todo.html
+@@ -8560,6 +8560,56 @@
+         `;
+       }
+ 
++      function pruneCachedChildRows(cached, subtasks) {
++        if (cached.childStructure?.length === subtasks.length
++          && cached.childStructure.every((id, index) => id === subtasks[index].id)) return;
++        const liveIds = new Set(subtasks.map(sub => sub.id));
++        for (const id of cached.childRows.keys()) {
++          if (!liveIds.has(id)) {
++            // Connected rows remain until reconciliation so document focus can be restored.
++            if (!cached.element.isConnected) cached.childRows.get(id).element.remove();
++            cached.childRows.delete(id);
++          }
++        }
++        cached.childStructure = [...liveIds];
++      }
++
++      function hasTaskRowDragState(element) {
++        return element.classList.contains('dragging')
++          || !!element.querySelector('.dragging, .drag-insertion-slot');
++      }
++
++      // One node per cached child; filtered children are detached, never duplicated.
++      function reconcileCachedTaskRow(cached, task, visibleSubtasks, key) {
++        if (!cached || cached.element.contains(document.activeElement)
++          || hasTaskRowDragState(cached.element)) return false;
++        const previous = JSON.parse(cached.key);
++        const next = JSON.parse(key);
++        if (previous[1] !== next[1] || previous[0].some((value, index) => value !== next[0][index])) return false;
++        const list = cached.element.querySelector('.subtask-list');
++        if (!list) return false;
++        if (!cached.childRows) {
++          cached.childRows = new Map([...list.children].map((element, index) =>
++            [previous[2][index][0], { key: JSON.stringify(previous[2][index]), element }]));
++          pruneCachedChildRows(cached, task.subtasks);
++        }
++        const rows = visibleSubtasks.map((sub, index) => {
++          const childKey = JSON.stringify(next[2][index]);
++          const child = cached.childRows.get(sub.id);
++          if (child?.key === childKey) return child.element;
++          const template = document.createElement('template');
++          template.innerHTML = createSubtaskRowMarkup(task.id, sub);
++          const element = template.content.firstElementChild;
++          hydrateMaterialIcons(element);
++          cached.childRows.set(sub.id, { key: childKey, element });
++          return element;
++        });
++        reconcileChildren(list, rows);
++        cached.element.style.setProperty('--task-estimated-size', `${4 + visibleSubtasks.length * 3.25}rem`);
++        cached.key = key;
++        return true;
++      }
++
+       function reconcileTaskRows(rows) {
+         const activeElement = document.activeElement;
+         const focusEntry = taskList.contains(activeElement)
+@@ -8610,13 +8660,26 @@
+           const visibleSubtasks = getFilteredSubtasks(task, activeFilter);
+           const shouldRenderTask = hasSubtasks(task) ? visibleSubtasks.length > 0
+             : matchesTaskFilter(task.done, activeFilter) && matchesTaskSearch(task.text);
+-          if (!shouldRenderTask) return;
++          const retained = taskRowCache.get(task.id);
++          // Cleanup only visits connected rows; hidden cards must not retain drag previews.
++          if (!shouldRenderTask && retained && hasTaskRowDragState(retained.element)) return;
++          if (retained && !shouldRenderTask && !retained.childRows) {
++            const fields = JSON.parse(retained.key)[2];
++            const list = retained.element.querySelector('.subtask-list');
++            retained.childRows = new Map([...(list?.children || [])].map((element, index) =>
++              [fields[index][0], { key: JSON.stringify(fields[index]), element }]));
++          }
++          if (retained?.childRows) pruneCachedChildRows(retained, task.subtasks);
++          if (!shouldRenderTask) {
++            if (retained) nextRowCache.set(task.id, retained);
++            return;
++          }
+ 
+           visibleTaskCount += 1;
+           visibleWorkCount += hasSubtasks(task) ? visibleSubtasks.length : 1;
+           const key = getTaskRowRenderKey(task, visibleSubtasks);
+           const cached = taskRowCache.get(task.id);
+-          if (cached?.key === key) {
++          if (cached?.key === key || reconcileCachedTaskRow(cached, task, visibleSubtasks, key)) {
+             rows.push(cached.element);
+             nextRowCache.set(task.id, cached);
+             return;

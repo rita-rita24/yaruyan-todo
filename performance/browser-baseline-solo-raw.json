@@ -1,0 +1,582 @@
+[
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-0-1791480964277",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:04.576Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 33.39999997615814,
+        "displayMs": 57.69999998807907,
+        "seedMs": 0.20000004768371582
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 3.199999988079071,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.5,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.699999988079071,
+        "displayMs": 33.09999996423721
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.9000000357627869,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.5,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 12.599999964237213,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-0-1791480964277",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:04.859Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 18.099999964237213,
+        "displayMs": 38.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.699999988079071,
+        "displayMs": 34.39999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.900000035762787,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.199999988079071,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.800000011920929,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.9000000357627869,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 33
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 8.100000023841858,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-1-1791480964861",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:05.144Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 23.900000035762787,
+        "displayMs": 40.69999998807907,
+        "seedMs": 0.10000002384185791
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.600000023841858,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 3,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.600000023841858,
+        "displayMs": 32.200000047683716
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.5999999642372131,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.7000000476837158,
+        "displayMs": 36.5
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 30.400000035762787
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 9,
+        "displayMs": 34.200000047683716
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-1-1791480964861",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:05.426Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 20.5,
+        "displayMs": 38,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4,
+        "displayMs": 33.200000047683716
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 3.5,
+        "displayMs": 32.299999952316284
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.700000047683716,
+        "displayMs": 34.30000001192093
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 1,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.5,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.5,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-2-1791480965428",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:05.710Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 21.799999952316284,
+        "displayMs": 39.19999998807907,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.800000011920929,
+        "displayMs": 34.39999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.800000011920929,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.300000011920929,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 33.200000047683716
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.8999999761581421,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.5,
+        "displayMs": 32.60000002384186
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.699999988079071,
+        "displayMs": 34
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-2-1791480965428",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:05.996Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 17.899999976158142,
+        "displayMs": 39.39999997615814,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.699999988079071,
+        "displayMs": 32.19999998807907
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.900000035762787,
+        "displayMs": 34.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.199999988079071,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.9000000357627869,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.5,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.599999964237213,
+        "displayMs": 32.5
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-3-1791480966002",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:06.292Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 20.399999976158142,
+        "displayMs": 48.19999998807907,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.699999988079071,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 3,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.300000011920929,
+        "displayMs": 32.5
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.699999988079071,
+        "displayMs": 34.10000002384186
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.8999999761581421,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.699999988079071,
+        "displayMs": 33.09999996423721
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-3-1791480966002",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:06.576Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 18,
+        "displayMs": 40.60000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.799999952316284,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.900000035762787,
+        "displayMs": 31.900000035762787
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.300000011920929,
+        "displayMs": 34.69999998807907
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.699999988079071,
+        "displayMs": 32.19999998807907
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.800000011920929,
+        "displayMs": 34.40000003576279
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.5,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.100000023841858,
+        "displayMs": 32.90000003576279
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-4-1791480966578",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:06.858Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 21.80000001192093,
+        "displayMs": 39.60000002384186,
+        "seedMs": 0.10000002384185791
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.600000023841858,
+        "displayMs": 31.19999998807907
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.900000035762787,
+        "displayMs": 35.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.100000023841858,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 32
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.800000011920929,
+        "displayMs": 35
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 32
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.400000035762787,
+        "displayMs": 33.5
+      }
+    ]
+  },
+  {
+    "version": "baseline-solo",
+    "group": "baseline-solo-20-tasks-4-1791480966578",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 0,
+    "date": "2026-10-08T17:36:07.143Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 17.80000001192093,
+        "displayMs": 41,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.700000047683716,
+        "displayMs": 32
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.800000011920929,
+        "displayMs": 34.40000003576279
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.399999976158142,
+        "displayMs": 32.30000001192093
+      },
+      {
+        "operation": "search",
+        "readyMs": 0.5999999642372131,
+        "displayMs": 34.39999997615814
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 0.800000011920929,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 0.6000000238418579,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "focus-start-parent",
+        "readyMs": 7.600000023841858,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  }
+]

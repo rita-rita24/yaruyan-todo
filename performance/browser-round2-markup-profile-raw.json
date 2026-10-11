@@ -1,0 +1,302 @@
+[
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-0-1791505376047",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:22:56.966Z",
+    "profile": {
+      "renderTasks": [
+        408.69999998807907
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 540.0999999642372,
+        "displayMs": 774.6999999880791,
+        "seedMs": 1.800000011920929
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-0-1791505376047",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:22:58.562Z",
+    "profile": {
+      "renderTasks": [
+        476
+      ],
+      "hydrateMaterialIcons": [
+        0.5
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 596.5999999642372,
+        "displayMs": 1402.5999999642372,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-1-1791505378571",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:22:59.758Z",
+    "profile": {
+      "renderTasks": [
+        641.0999999642372
+      ],
+      "hydrateMaterialIcons": [
+        0.5
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 820.9000000357628,
+        "displayMs": 995.8000000119209,
+        "seedMs": 3
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-1-1791505378571",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:00.591Z",
+    "profile": {
+      "renderTasks": [
+        327
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 437.4000000357628,
+        "displayMs": 706.5,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-2-1791505384035",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:05.016Z",
+    "profile": {
+      "renderTasks": [
+        429.39999997615814
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 575.8000000119209,
+        "displayMs": 836.1999999880791,
+        "seedMs": 2.199999988079071
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-2-1791505384035",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:05.847Z",
+    "profile": {
+      "renderTasks": [
+        393.19999998807907
+      ],
+      "hydrateMaterialIcons": [
+        0.3999999761581421
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 495.69999998807907,
+        "displayMs": 701.6999999880791,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-3-1791505385855",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:06.696Z",
+    "profile": {
+      "renderTasks": [
+        392.39999997615814
+      ],
+      "hydrateMaterialIcons": [
+        0.6000000238418579
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 514.8999999761581,
+        "displayMs": 714.2999999523163,
+        "seedMs": 2.300000011920929
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-3-1791505385855",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:07.983Z",
+    "profile": {
+      "renderTasks": [
+        763.1999999880791
+      ],
+      "hydrateMaterialIcons": [
+        0.3999999761581421
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 917.1999999880791,
+        "displayMs": 1144.6000000238419,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-4-1791505391067",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:11.878Z",
+    "profile": {
+      "renderTasks": [
+        360.80000001192093
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 483.60000002384186,
+        "displayMs": 683,
+        "seedMs": 1.600000023841858
+      }
+    ]
+  },
+  {
+    "version": "round2-markup-profile",
+    "group": "round2-markup-profile-200-tasks-4-1791505391067",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T00:23:13.053Z",
+    "profile": {
+      "renderTasks": [
+        324.60000002384186
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 426.5,
+        "displayMs": 1039.8999999761581,
+        "seedMs": 0
+      }
+    ]
+  }
+]

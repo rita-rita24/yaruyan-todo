@@ -1,0 +1,95 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const hash = (p) =>
+  crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const qa = JSON.parse(
+  fs.readFileSync('performance/browser-round2-adopted-functional-raw.json'),
+).slice(-2);
+const timing = JSON.parse(
+  fs.readFileSync('performance/round2/confirmation-results.json'),
+);
+const baseline = hash('performance/round2/baseline.html'),
+  adopted = hash('yaruyan-todo.html'),
+  rejected = hash('performance/round2/rejected-reuse.html');
+const versions = {
+  date: new Date().toISOString(),
+  baseline,
+  adopted,
+  rejected,
+  qa,
+  production: { url: null, deployed: false, verified: false },
+  adoptedPerformance: '未計測・追加高速化未確認',
+  candidateReport: 'candidate-comparison.txt',
+  candidateVersions: 'candidate-versions.json',
+};
+fs.writeFileSync(
+  'performance/round2/versions.json',
+  JSON.stringify(versions, null, 2) + '\n',
+);
+const rows = timing.rows.filter(
+  (r) =>
+    r.condition === '200x50|tasks|repeat' &&
+    ['search-clear', 'child-edit', 'focus-start'].includes(r.operation),
+);
+const lines = [
+  '読み込み高速化・追加調査（第2回） 最終報告',
+  '',
+  '① 実施結果',
+  '追加高速化は未確認。検索・フィルタで子DOMを再利用する候補を実装して比較したが、大量データの再読み込み後に検索解除などが悪化したため採用を取り消し、前回の高速化版へ戻した。現行版には、画面外の長い行をフォーカスした際にボタンが表示範囲外に残る問題の修正だけを追加した。速度向上として扱わない。',
+  '本番未反映・本番未検証・本番の全対象画面未計測。本番URL・配置先・通常のリリース手順をリポジトリと会話から特定できず、情報確認は回答待ち。再開には本番URL、配置先、通常のリリース方法（またはその記載場所）が必要。通常リリースの実施は依頼で承認されているため、改めて実行許可を求めている状態ではない。',
+  `現行版 SHA256: ${adopted}。基準（前回高速化版）: ${baseline}。不採用候補: ${rejected}。Git HEADには復元前の古い状態があるため、HEADへresetしていない。`,
+  '計測日: 2026-10-09 JST。候補の日時・版・生値はcandidate-versions.jsonと各browser-round2-*-raw.jsonに保存。現行版の機能確認日時はversions.json。',
+  '',
+  '② 本番での画面別結果',
+  '画面・URL | 計測条件 | 指標 | 前中央値ms | 後中央値ms | 短縮率 | 回数 前/後 | 判定・備考',
+  ...['タスクリスト #/tasks', '整理メモ #/memo', '設定 #/settings'].flatMap(
+    (route) =>
+      ['0親×0子', '20親×5子', '200親×50子'].flatMap((data) =>
+        ['初回', '再読み込み'].flatMap((cache) =>
+          ['主要内容の表示', '操作可能'].map(
+            (metric) =>
+              `${route}（本番URL未特定） | ${data}・${cache}・PC | ${metric} | 未計測 | 未計測 | 算出不可 | 0/0 | 本番アクセス先未特定`,
+          ),
+        ),
+      ),
+  ),
+  '関連する遷移、検索、検索解除、完了フィルタ、編集、集中開始/一時停止/再開、スクロール、バックアップ確認/取込も本番未計測。子なし20親の集中開始は別のローカル条件に残した。動的URLはなく、モーダルは先頭IDを性能計測、末尾IDを機能確認で代表化した。',
+  '',
+  '不採用候補のローカル実測（現行版・本番の改善率ではない）',
+  '操作 | 条件 | 指標 | 前中央値ms | 候補中央値ms | 短縮率 | 回数 前/候補 | 判定',
+  ...rows.map(
+    (r) =>
+      `${r.operation} | ${r.condition} | ${r.metric} | ${r.before.medianMs.toFixed(1)} | ${r.after.medianMs.toFixed(1)} | ${r.reductionPercent.toFixed(1)}% | ${r.before.n}/${r.after.n} | ${r.judgement}・採用取消`,
+  ),
+  '短縮率=(前−後)÷前×100。現行版の変更後性能は未計測・算出不可。候補で一部のフィルタが37.8%短縮しても、重大な負の差があるためその値を現行版の効果として報告しない。全画面の前後値・負の値・未確認値はresults.txt、extended-results.txt、backup-results.txt、solo-results.txt、confirmation-results.txtに残した。',
+  '',
+  '③ 計測と動作確認の根拠',
+  '不採用候補の本比較は前200試行/候補200試行（各条件5回）。フォーカス修正前140/140、修正後60/60は別系列。IABの候補測定・プロファイルは別に保存し、Chromeの最終比較と混ぜていない。',
+  '同じMac・Chrome154、localhost HTTP、通常計測iframe1280×900。HTTPはCache-Control:no-storeで、初回/再読み込みは保存領域（新規localStorage fixture・空IndexedDB/保存後IndexedDB）の状態を分けた。サーバー/CDNキャッシュや本番負荷は未計測。検証用名前空間だけを使用し、個人の保存領域は使用しない。端末のメモリ負荷・GC・外部CPU負荷は完全制御できず、変動が大きい。中央値、min/max、Q1/Q3、生値、探索的bootstrap95%区間を結果JSONに保存。',
+  '開始はnavigation timeOriginまたは操作直前、終了は正しいモデル/件数/モーダル/設定値を確認した後の二重requestAnimationFrame。主要内容と操作可能は別指標として同じ安全な完了点を採用。検索・フィルタ・取込の結果も別指標で保存。loadや通信終了だけを完了としていない。',
+  `現行版: Nodeテスト253件通過。ブラウザQA ${qa.map((q) => `${q.viewport.join('×')}: ${q.checks.length}項目、失敗${q.failed}`).join(' / ')}。保存成功/失敗、集中、検索/フィルタの件数、文字列エスケープ、バックアップ取込、空データ、非表示中の更新反映、10,000子DOM、末尾編集、フォーカス、キーボード/ドラッグ並べ替えを確認。`,
+  '再現: node performance/serve-benchmark.mjs。候補比較は?compare=chrome-shell-main、?compare=chrome-extended&suite=extended&parents=200&children=50&route=tasks、?compare=chrome-backup&suite=backup、?compare=chrome-solo&parents=20&children=0&route=tasks。最終候補の追加確認は?compare=chrome-final-confirm&parents=200&children=50&route=tasks等。版別の固定スナップショットを使用する。生結果を上書きしないようversion/compare名を変更して再計測する。現行機能QAはnode performance/round2/create-adopted-qa.mjsの後 /functional-qa と /functional-narrow。',
+  '',
+  '④ 変更内容と残る課題',
+  '現行変更: フォーカスを含む行は通常描画し、2フレーム後も選択中のボタンが画面外の場合だけscrollIntoView(nearest)で位置を補正する。対象が切り替わった/削除された場合は補正しない。データ・件数・順序・保存処理・更新反映・検索条件は変更しない。',
+  '候補の採用取消: 全件子DOM保持＋必要時の親外枠再生成は、フィルタ解除等で速い条件があった一方、再読み込み後の検索解除が2,009.5ms→4,201.3ms（−109.1%）、子編集・集中開始も悪化した。原因を一つに断定できないが、利用者の待ち時間に明確な負の差があるため戻した。単なるJS時間の削減を採用根拠にしない。SVGを直接HTML化する候補、全行だけ保持する候補、初回から子Mapを作る候補も検証して見送った。詳しくはcandidate-comparison.txt。',
+  '残る遅延: 1万件のHTML/SVG生成、保存復元、初期レイアウト、大量行を戻す際のレイアウト。さらに個々の行だけ更新する方式や仮想化は有望候補だが未検証で、アクセシビリティ/末尾操作/スクロール/検索結果を維持する設計と検証が必要。追加効果は未実測。最大限の高速化を達成したとは扱わない。',
+  '未完了: 本番反映・公開版確認・本番機能確認・全画面本番再計測。現行版の性能再計測も未実施で、追加速度改善は未確認。',
+  '復旧: performance/round2/baseline.htmlをyaruyan-todo.htmlに戻せば今回のフォーカス修正も外せる。保存スキーマ変更なし。loading-changes.patchが実際に残した差分。候補の差分とソースは別ファイルに保存。',
+];
+fs.writeFileSync(
+  'performance/round2/investigation.txt',
+  lines.join('\n') + '\n',
+);
+console.log(
+  JSON.stringify({
+    baseline,
+    adopted,
+    rejected,
+    qa: qa.map((q) => ({
+      viewport: q.viewport,
+      n: q.checks.length,
+      failed: q.failed,
+    })),
+  }),
+);

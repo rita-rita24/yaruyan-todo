@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09T17:27:27.947Z",
+  "url": "http://127.0.0.1:49190/yaruyan-todo.html#/tasks",
+  "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+  "scope": "manual native browser actions on an initially empty dedicated localhost origin, not a timed comparison",
+  "checks": {
+    "addVisible": true,
+    "editorOpensWithExpectedText": true,
+    "closedParentInert": true,
+    "focusReturnsToEdit": true,
+    "reloadRestoresCommittedText": true,
+    "deleteConfirmationVisible": true,
+    "cleanupLeavesZeroRows": true
+  },
+  "screenshots": [
+    "final-desktop.jpg",
+    "final-dialog.jpg",
+    "final-empty.jpg"
+  ],
+  "limits": [
+    "no actual OS IME composition",
+    "no touch or native continuous drag measurement",
+    "viewport override attempt did not resize Chrome; narrow QA uses 390px iframe"
+  ]
+}

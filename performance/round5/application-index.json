@@ -1,0 +1,6791 @@
+{
+  "date": "2026-10-09T18:07:04.160Z",
+  "source": "performance/round5/child-v4-candidate.html",
+  "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+  "topLevelNamedDeclarations": 336,
+  "allFunctionNodes": 594,
+  "functions": [
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 2944,
+      "endLine": 10151,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3006,
+      "endLine": 3013,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_safeStorageGet",
+      "type": "FunctionDeclaration",
+      "startLine": 3017,
+      "endLine": 3024,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_safeStorageSet",
+      "type": "FunctionDeclaration",
+      "startLine": 3026,
+      "endLine": 3034,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_safeStorageRemove",
+      "type": "FunctionDeclaration",
+      "startLine": 3036,
+      "endLine": 3044,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createCorruptStorageBackupValue",
+      "type": "FunctionDeclaration",
+      "startLine": 3046,
+      "endLine": 3051,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_backupCorruptStorageValue",
+      "type": "FunctionDeclaration",
+      "startLine": 3053,
+      "endLine": 3068,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_snapshotStorageEntry",
+      "type": "FunctionDeclaration",
+      "startLine": 3070,
+      "endLine": 3083,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_restoreStorageEntry",
+      "type": "FunctionDeclaration",
+      "startLine": 3085,
+      "endLine": 3097,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_rollbackStorageWrites",
+      "type": "FunctionDeclaration",
+      "startLine": 3099,
+      "endLine": 3111,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readJsonFromStorage",
+      "type": "FunctionDeclaration",
+      "startLine": 3113,
+      "endLine": 3135,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readBooleanFromStorage",
+      "type": "FunctionDeclaration",
+      "startLine": 3137,
+      "endLine": 3148,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_writeManyToStorage",
+      "type": "FunctionDeclaration",
+      "startLine": 3150,
+      "endLine": 3179,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createStorageWriteId",
+      "type": "FunctionDeclaration",
+      "startLine": 3181,
+      "endLine": 3184,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_requestIndexedDbOpen",
+      "type": "FunctionDeclaration",
+      "startLine": 3186,
+      "endLine": 3237,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3194,
+      "endLine": 3230,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3197,
+      "endLine": 3199,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "finish",
+      "type": "FunctionDeclaration",
+      "startLine": 3200,
+      "endLine": 3220,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3210,
+      "endLine": 3212,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3213,
+      "endLine": 3216,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3221,
+      "endLine": 3226,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3227,
+      "endLine": 3227,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3228,
+      "endLine": 3228,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3229,
+      "endLine": 3229,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3232,
+      "endLine": 3234,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_waitForIndexedDbRequest",
+      "type": "FunctionDeclaration",
+      "startLine": 3239,
+      "endLine": 3244,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3240,
+      "endLine": 3243,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3241,
+      "endLine": 3241,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3242,
+      "endLine": 3242,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_waitForIndexedDbTransaction",
+      "type": "FunctionDeclaration",
+      "startLine": 3246,
+      "endLine": 3264,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3247,
+      "endLine": 3263,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3249,
+      "endLine": 3252,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "finish",
+      "type": "FunctionDeclaration",
+      "startLine": 3253,
+      "endLine": 3259,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3260,
+      "endLine": 3260,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3261,
+      "endLine": 3261,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3262,
+      "endLine": 3262,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readManyFromIndexedDb",
+      "type": "FunctionDeclaration",
+      "startLine": 3266,
+      "endLine": 3287,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3276,
+      "endLine": 3279,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3284,
+      "endLine": 3284,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_writeManyToIndexedDb",
+      "type": "FunctionDeclaration",
+      "startLine": 3289,
+      "endLine": 3332,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3329,
+      "endLine": 3329,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_reportStorageError",
+      "type": "FunctionDeclaration",
+      "startLine": 3335,
+      "endLine": 3338,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getStorageWarningEl",
+      "type": "FunctionDeclaration",
+      "startLine": 3340,
+      "endLine": 3343,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_setStorageWarning",
+      "type": "FunctionDeclaration",
+      "startLine": 3345,
+      "endLine": 3358,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_handlePersistentStorageError",
+      "type": "FunctionDeclaration",
+      "startLine": 3360,
+      "endLine": 3363,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readStoredJson",
+      "type": "FunctionDeclaration",
+      "startLine": 3365,
+      "endLine": 3375,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3371,
+      "endLine": 3373,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readStoredBoolean",
+      "type": "FunctionDeclaration",
+      "startLine": 3377,
+      "endLine": 3386,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3382,
+      "endLine": 3384,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readStoredText",
+      "type": "FunctionDeclaration",
+      "startLine": 3388,
+      "endLine": 3394,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3389,
+      "endLine": 3391,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_normalizeStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3396,
+      "endLine": 3405,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_normalizeStorageMetaRecord",
+      "type": "FunctionDeclaration",
+      "startLine": 3407,
+      "endLine": 3436,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "readIdentity",
+      "type": "FunctionDeclaration",
+      "startLine": 3409,
+      "endLine": 3425,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3411,
+      "endLine": 3415,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createStorageMetaIdentity",
+      "type": "FunctionDeclaration",
+      "startLine": 3438,
+      "endLine": 3445,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_compareStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3447,
+      "endLine": 3454,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isEmptyStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3456,
+      "endLine": 3464,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isSameStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3466,
+      "endLine": 3474,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hasStorageMetaConflictSince",
+      "type": "FunctionDeclaration",
+      "startLine": 3476,
+      "endLine": 3484,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isVerifiedCheckpointAncestor",
+      "type": "FunctionDeclaration",
+      "startLine": 3486,
+      "endLine": 3495,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getCurrentStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3497,
+      "endLine": 3505,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getStorageMetaFromEntries",
+      "type": "FunctionDeclaration",
+      "startLine": 3507,
+      "endLine": 3511,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3509,
+      "endLine": 3509,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hasCurrentStorageMetaChangedSince",
+      "type": "FunctionDeclaration",
+      "startLine": 3513,
+      "endLine": 3515,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hasAnySnapshotData",
+      "type": "FunctionDeclaration",
+      "startLine": 3517,
+      "endLine": 3522,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3518,
+      "endLine": 3521,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readLocalStateSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 3524,
+      "endLine": 3537,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3525,
+      "endLine": 3530,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3527,
+      "endLine": 3529,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createIndexedStateSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 3539,
+      "endLine": 3546,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_validatePersistentStateSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 3548,
+      "endLine": 3586,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3557,
+      "endLine": 3559,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3564,
+      "endLine": 3564,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3565,
+      "endLine": 3565,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3567,
+      "endLine": 3575,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_shouldUseIndexedState",
+      "type": "FunctionDeclaration",
+      "startLine": 3588,
+      "endLine": 3610,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_adoptStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3612,
+      "endLine": 3618,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createStorageMetaRecord",
+      "type": "FunctionDeclaration",
+      "startLine": 3620,
+      "endLine": 3634,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_setCurrentStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3636,
+      "endLine": 3643,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createNextStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3645,
+      "endLine": 3663,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_restoreStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3665,
+      "endLine": 3667,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getDataEntries",
+      "type": "FunctionDeclaration",
+      "startLine": 3669,
+      "endLine": 3672,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3671,
+      "endLine": 3671,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hasPersistedDataChanges",
+      "type": "FunctionDeclaration",
+      "startLine": 3674,
+      "endLine": 3679,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3678,
+      "endLine": 3678,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_rememberPersistedDataEntries",
+      "type": "FunctionDeclaration",
+      "startLine": 3681,
+      "endLine": 3686,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readLocalStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3688,
+      "endLine": 3693,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3690,
+      "endLine": 3692,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isNewerThanPersistedMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3695,
+      "endLine": 3698,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readIndexedDbStorageMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 3700,
+      "endLine": 3709,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_hasNewerPersistedStorageState",
+      "type": "FunctionDeclaration",
+      "startLine": 3711,
+      "endLine": 3732,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_saveLocalStorageCheckpoint",
+      "type": "FunctionDeclaration",
+      "startLine": 3734,
+      "endLine": 3738,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_saveStoredState",
+      "type": "FunctionDeclaration",
+      "startLine": 3740,
+      "endLine": 3819,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3741,
+      "endLine": 3741,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3744,
+      "endLine": 3748,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3761,
+      "endLine": 3761,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3809,
+      "endLine": 3809,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_enqueueStoredStateSave",
+      "type": "FunctionDeclaration",
+      "startLine": 3821,
+      "endLine": 3840,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3822,
+      "endLine": 3822,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3824,
+      "endLine": 3835,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3837,
+      "endLine": 3837,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_saveLocalStorageForUnload",
+      "type": "FunctionDeclaration",
+      "startLine": 3842,
+      "endLine": 3937,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3879,
+      "endLine": 3881,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3895,
+      "endLine": 3897,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "FunctionExpression",
+      "startLine": 3914,
+      "endLine": 3935,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3926,
+      "endLine": 3926,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3927,
+      "endLine": 3929,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_mirrorPersistentStorageState",
+      "type": "FunctionDeclaration",
+      "startLine": 3939,
+      "endLine": 3981,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3942,
+      "endLine": 3942,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3954,
+      "endLine": 3956,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3969,
+      "endLine": 3974,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3975,
+      "endLine": 3979,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 3997,
+      "endLine": 3997,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4122,
+      "endLine": 4122,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4123,
+      "endLine": 4123,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "bindInputEnter",
+      "type": "FunctionDeclaration",
+      "startLine": 4125,
+      "endLine": 4133,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4126,
+      "endLine": 4132,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "reconcileChildren",
+      "type": "FunctionDeclaration",
+      "startLine": 4136,
+      "endLine": 4148,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4152,
+      "endLine": 4152,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeMaterialIconToken",
+      "type": "FunctionDeclaration",
+      "startLine": 4155,
+      "endLine": 4159,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createMaterialIconSvg",
+      "type": "FunctionDeclaration",
+      "startLine": 4163,
+      "endLine": 4177,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setMaterialIcon",
+      "type": "FunctionDeclaration",
+      "startLine": 4179,
+      "endLine": 4186,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "hydrateMaterialIcons",
+      "type": "FunctionDeclaration",
+      "startLine": 4188,
+      "endLine": 4193,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4189,
+      "endLine": 4192,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "uid",
+      "type": "FunctionDeclaration",
+      "startLine": 4302,
+      "endLine": 4304,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "escapeHtml",
+      "type": "FunctionDeclaration",
+      "startLine": 4306,
+      "endLine": 4310,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4307,
+      "endLine": 4309,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_copyTaskSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 4312,
+      "endLine": 4314,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeOrganizeMemo",
+      "type": "FunctionDeclaration",
+      "startLine": 4316,
+      "endLine": 4318,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "formatFileSize",
+      "type": "FunctionDeclaration",
+      "startLine": 4320,
+      "endLine": 4331,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "updateBackupImportLimitText",
+      "type": "FunctionDeclaration",
+      "startLine": 4333,
+      "endLine": 4336,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getMemoLimitStatusText",
+      "type": "FunctionDeclaration",
+      "startLine": 4338,
+      "endLine": 4342,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_markAppStateChanged",
+      "type": "FunctionDeclaration",
+      "startLine": 4344,
+      "endLine": 4347,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_canRestoreFailedSaveSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 4349,
+      "endLine": 4352,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_showSkippedRollbackToast",
+      "type": "FunctionDeclaration",
+      "startLine": 4354,
+      "endLine": 4356,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setInputActionPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4358,
+      "endLine": 4367,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setActionControlPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4369,
+      "endLine": 4374,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isStateSaveOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4376,
+      "endLine": 4378,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setStateSaveOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4380,
+      "endLine": 4403,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4394,
+      "endLine": 4396,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setAddOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4405,
+      "endLine": 4427,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isAddOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4429,
+      "endLine": 4431,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isMessageOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4433,
+      "endLine": 4435,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "updateMessageListPendingState",
+      "type": "FunctionDeclaration",
+      "startLine": 4437,
+      "endLine": 4450,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4440,
+      "endLine": 4442,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4443,
+      "endLine": 4445,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4446,
+      "endLine": 4449,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setMessageOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4452,
+      "endLine": 4467,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isEditOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4469,
+      "endLine": 4471,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "updateParentModalPendingState",
+      "type": "FunctionDeclaration",
+      "startLine": 4473,
+      "endLine": 4485,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4479,
+      "endLine": 4484,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "updateSubtaskModalPendingState",
+      "type": "FunctionDeclaration",
+      "startLine": 4487,
+      "endLine": 4491,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setEditOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4493,
+      "endLine": 4512,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isFocusOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4514,
+      "endLine": 4516,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setFocusStartControlPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4518,
+      "endLine": 4534,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setFocusOperationPending",
+      "type": "FunctionDeclaration",
+      "startLine": 4536,
+      "endLine": 4556,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4545,
+      "endLine": 4547,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4548,
+      "endLine": 4550,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createAppStateSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 4558,
+      "endLine": 4568,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_applyAppStateSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 4570,
+      "endLine": 4587,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_restoreStateAfterFailedSave",
+      "type": "FunctionDeclaration",
+      "startLine": 4589,
+      "endLine": 4602,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_commitStateSave",
+      "type": "FunctionDeclaration",
+      "startLine": 4604,
+      "endLine": 4614,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_createFocusRuntimeSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 4616,
+      "endLine": 4629,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_applyFocusRuntimeSnapshot",
+      "type": "FunctionDeclaration",
+      "startLine": 4631,
+      "endLine": 4645,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_restoreFocusStateAfterFailedSave",
+      "type": "FunctionDeclaration",
+      "startLine": 4647,
+      "endLine": 4664,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_commitFocusStateSave",
+      "type": "FunctionDeclaration",
+      "startLine": 4666,
+      "endLine": 4682,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_isValidDeleteUndoPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 4684,
+      "endLine": 4689,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createDeleteUndoRestorePlan",
+      "type": "FunctionDeclaration",
+      "startLine": 4691,
+      "endLine": 4768,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4694,
+      "endLine": 4694,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4699,
+      "endLine": 4699,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4722,
+      "endLine": 4727,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4726,
+      "endLine": 4726,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4729,
+      "endLine": 4729,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4730,
+      "endLine": 4730,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4734,
+      "endLine": 4734,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_applyDeleteUndoPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 4770,
+      "endLine": 4812,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4785,
+      "endLine": 4791,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4793,
+      "endLine": 4804,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4806,
+      "endLine": 4809,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_runToastDismissHandler",
+      "type": "FunctionDeclaration",
+      "startLine": 4814,
+      "endLine": 4826,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hideToastBySession",
+      "type": "FunctionDeclaration",
+      "startLine": 4828,
+      "endLine": 4842,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4837,
+      "endLine": 4841,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "showToast",
+      "type": "FunctionDeclaration",
+      "startLine": 4844,
+      "endLine": 4914,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4885,
+      "endLine": 4901,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4904,
+      "endLine": 4907,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4909,
+      "endLine": 4913,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "showErrorToast",
+      "type": "FunctionDeclaration",
+      "startLine": 4916,
+      "endLine": 4918,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hideDeleteUndoToastBySession",
+      "type": "FunctionDeclaration",
+      "startLine": 4920,
+      "endLine": 4932,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4928,
+      "endLine": 4931,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_showDeleteUndoToast",
+      "type": "FunctionDeclaration",
+      "startLine": 4934,
+      "endLine": 4983,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4953,
+      "endLine": 4969,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4970,
+      "endLine": 4973,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4974,
+      "endLine": 4981,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_registerDeleteUndoToast",
+      "type": "FunctionDeclaration",
+      "startLine": 4985,
+      "endLine": 5011,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 4996,
+      "endLine": 5005,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5006,
+      "endLine": 5009,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_invalidateDeleteUndo",
+      "type": "FunctionDeclaration",
+      "startLine": 5013,
+      "endLine": 5022,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isFocusableElement",
+      "type": "FunctionDeclaration",
+      "startLine": 5024,
+      "endLine": 5030,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getModalFocusableElements",
+      "type": "FunctionDeclaration",
+      "startLine": 5032,
+      "endLine": 5035,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getActiveModalOverlay",
+      "type": "FunctionDeclaration",
+      "startLine": 5037,
+      "endLine": 5043,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_focusWithinOverlay",
+      "type": "FunctionDeclaration",
+      "startLine": 5045,
+      "endLine": 5062,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_captureModalReturnFocus",
+      "type": "FunctionDeclaration",
+      "startLine": 5064,
+      "endLine": 5082,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5067,
+      "endLine": 5067,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_resolveModalReturnFocus",
+      "type": "FunctionDeclaration",
+      "startLine": 5084,
+      "endLine": 5108,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5085,
+      "endLine": 5087,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5098,
+      "endLine": 5101,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_restoreFocusAfterPending",
+      "type": "FunctionDeclaration",
+      "startLine": 5110,
+      "endLine": 5117,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncModalInteractivity",
+      "type": "FunctionDeclaration",
+      "startLine": 5119,
+      "endLine": 5127,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5123,
+      "endLine": 5126,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_openModalOverlay",
+      "type": "FunctionDeclaration",
+      "startLine": 5129,
+      "endLine": 5142,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5141,
+      "endLine": 5141,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_closeModalOverlay",
+      "type": "FunctionDeclaration",
+      "startLine": 5144,
+      "endLine": 5174,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5159,
+      "endLine": 5173,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_trapFocusInOverlay",
+      "type": "FunctionDeclaration",
+      "startLine": 5176,
+      "endLine": 5201,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_resolveTooltipTarget",
+      "type": "FunctionDeclaration",
+      "startLine": 5203,
+      "endLine": 5206,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isIconOnlyButton",
+      "type": "FunctionDeclaration",
+      "startLine": 5208,
+      "endLine": 5221,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_extractTooltipText",
+      "type": "FunctionDeclaration",
+      "startLine": 5223,
+      "endLine": 5225,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_hideQuickTooltip",
+      "type": "FunctionDeclaration",
+      "startLine": 5227,
+      "endLine": 5239,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_isTooltipAnchorActive",
+      "type": "FunctionDeclaration",
+      "startLine": 5241,
+      "endLine": 5246,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_positionQuickTooltip",
+      "type": "FunctionDeclaration",
+      "startLine": 5248,
+      "endLine": 5298,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5271,
+      "endLine": 5275,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_queueQuickTooltipPosition",
+      "type": "FunctionDeclaration",
+      "startLine": 5300,
+      "endLine": 5308,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5304,
+      "endLine": 5307,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_showQuickTooltip",
+      "type": "FunctionDeclaration",
+      "startLine": 5310,
+      "endLine": 5335,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5331,
+      "endLine": 5334,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTooltipPointerOver",
+      "type": "FunctionDeclaration",
+      "startLine": 5337,
+      "endLine": 5342,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTooltipPointerOut",
+      "type": "FunctionDeclaration",
+      "startLine": 5344,
+      "endLine": 5351,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTooltipFocusIn",
+      "type": "FunctionDeclaration",
+      "startLine": 5353,
+      "endLine": 5358,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTooltipFocusOut",
+      "type": "FunctionDeclaration",
+      "startLine": 5360,
+      "endLine": 5366,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTooltipKeyDown",
+      "type": "FunctionDeclaration",
+      "startLine": 5368,
+      "endLine": 5373,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTooltipViewportChange",
+      "type": "FunctionDeclaration",
+      "startLine": 5375,
+      "endLine": 5378,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "renderTaskCountFavicon",
+      "type": "FunctionDeclaration",
+      "startLine": 5380,
+      "endLine": 5405,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeInputText",
+      "type": "FunctionDeclaration",
+      "startLine": 5407,
+      "endLine": 5413,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeNonNegativeNumber",
+      "type": "FunctionDeclaration",
+      "startLine": 5415,
+      "endLine": 5421,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeEntityId",
+      "type": "FunctionDeclaration",
+      "startLine": 5423,
+      "endLine": 5437,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeMessageList",
+      "type": "FunctionDeclaration",
+      "startLine": 5439,
+      "endLine": 5448,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizePomodoroMinutes",
+      "type": "FunctionDeclaration",
+      "startLine": 5450,
+      "endLine": 5458,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizePomodoroSettings",
+      "type": "FunctionDeclaration",
+      "startLine": 5460,
+      "endLine": 5479,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "createFocusMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 5481,
+      "endLine": 5496,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeFocusMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 5498,
+      "endLine": 5506,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeSettings",
+      "type": "FunctionDeclaration",
+      "startLine": 5508,
+      "endLine": 5527,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeTaskViewState",
+      "type": "FunctionDeclaration",
+      "startLine": 5529,
+      "endLine": 5532,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "loadSettings",
+      "type": "FunctionDeclaration",
+      "startLine": 5534,
+      "endLine": 5537,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5535,
+      "endLine": 5535,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "loadTaskViewState",
+      "type": "FunctionDeclaration",
+      "startLine": 5539,
+      "endLine": 5542,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5540,
+      "endLine": 5540,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readJsonFromRaw",
+      "type": "FunctionDeclaration",
+      "startLine": 5544,
+      "endLine": 5562,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_readBooleanFromRaw",
+      "type": "FunctionDeclaration",
+      "startLine": 5564,
+      "endLine": 5569,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_applyPersistentStateRawValues",
+      "type": "FunctionDeclaration",
+      "startLine": 5571,
+      "endLine": 5611,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5588,
+      "endLine": 5588,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5605,
+      "endLine": 5605,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getPersistedStateEntries",
+      "type": "FunctionDeclaration",
+      "startLine": 5613,
+      "endLine": 5621,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_enqueueIndexedDbWrite",
+      "type": "FunctionDeclaration",
+      "startLine": 5623,
+      "endLine": 5651,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5633,
+      "endLine": 5633,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5634,
+      "endLine": 5648,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_initializePersistentStorageState",
+      "type": "FunctionDeclaration",
+      "startLine": 5653,
+      "endLine": 5740,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5669,
+      "endLine": 5669,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5670,
+      "endLine": 5676,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5696,
+      "endLine": 5696,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5697,
+      "endLine": 5697,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5718,
+      "endLine": 5718,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "save",
+      "type": "FunctionDeclaration",
+      "startLine": 5742,
+      "endLine": 5744,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5743,
+      "endLine": 5743,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setMemoSaveStatus",
+      "type": "FunctionDeclaration",
+      "startLine": 5746,
+      "endLine": 5754,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "persistOrganizeMemoLocalCheckpoint",
+      "type": "FunctionDeclaration",
+      "startLine": 5756,
+      "endLine": 5770,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5760,
+      "endLine": 5760,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5762,
+      "endLine": 5765,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5765,
+      "endLine": 5767,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "persistOrganizeMemoCheckpoint",
+      "type": "FunctionDeclaration",
+      "startLine": 5772,
+      "endLine": 5787,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5781,
+      "endLine": 5781,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "flushOrganizeMemoSave",
+      "type": "FunctionDeclaration",
+      "startLine": 5789,
+      "endLine": 5795,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "syncRunningFocusElapsedForPersist",
+      "type": "FunctionDeclaration",
+      "startLine": 5797,
+      "endLine": 5817,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5800,
+      "endLine": 5815,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5807,
+      "endLine": 5814,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "persistRuntimeStateForUnload",
+      "type": "FunctionDeclaration",
+      "startLine": 5819,
+      "endLine": 5870,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5837,
+      "endLine": 5837,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5839,
+      "endLine": 5841,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5843,
+      "endLine": 5855,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5856,
+      "endLine": 5869,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "checkpointActiveFocusElapsed",
+      "type": "FunctionDeclaration",
+      "startLine": 5872,
+      "endLine": 5887,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "_isObjectRecord",
+      "type": "FunctionDeclaration",
+      "startLine": 5889,
+      "endLine": 5891,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "createBackupPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 5893,
+      "endLine": 5906,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeBackupPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 5908,
+      "endLine": 5943,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_applyNormalizedBackupPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 5945,
+      "endLine": 5955,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "buildImportBackupConfirmMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 5957,
+      "endLine": 5965,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_registerImportUndoToast",
+      "type": "FunctionDeclaration",
+      "startLine": 5967,
+      "endLine": 6003,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5978,
+      "endLine": 5996,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 5997,
+      "endLine": 6001,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "performImportBackup",
+      "type": "FunctionDeclaration",
+      "startLine": 6005,
+      "endLine": 6016,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "exportBackup",
+      "type": "FunctionDeclaration",
+      "startLine": 6018,
+      "endLine": 6033,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6031,
+      "endLine": 6031,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "importBackupFile",
+      "type": "FunctionDeclaration",
+      "startLine": 6035,
+      "endLine": 6054,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "scheduleOrganizeMemoSave",
+      "type": "FunctionDeclaration",
+      "startLine": 6056,
+      "endLine": 6065,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6061,
+      "endLine": 6064,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleOrganizeMemoInput",
+      "type": "FunctionDeclaration",
+      "startLine": 6067,
+      "endLine": 6082,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleOrganizeMemoBlur",
+      "type": "FunctionDeclaration",
+      "startLine": 6084,
+      "endLine": 6093,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "initializeOrganizeMemoInput",
+      "type": "FunctionDeclaration",
+      "startLine": 6095,
+      "endLine": 6108,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6101,
+      "endLine": 6101,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6102,
+      "endLine": 6105,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "finishPersistentStorageInitialization",
+      "type": "FunctionDeclaration",
+      "startLine": 6110,
+      "endLine": 6117,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeTasks",
+      "type": "FunctionDeclaration",
+      "startLine": 6119,
+      "endLine": 6159,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6152,
+      "endLine": 6152,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "hasSubtasks",
+      "type": "FunctionDeclaration",
+      "startLine": 6161,
+      "endLine": 6163,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isLeafParent",
+      "type": "FunctionDeclaration",
+      "startLine": 6165,
+      "endLine": 6167,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isRunnableParent",
+      "type": "FunctionDeclaration",
+      "startLine": 6169,
+      "endLine": 6171,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncParentStatus",
+      "type": "FunctionDeclaration",
+      "startLine": 6173,
+      "endLine": 6177,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6175,
+      "endLine": 6175,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncAllParents",
+      "type": "FunctionDeclaration",
+      "startLine": 6179,
+      "endLine": 6181,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getTask",
+      "type": "FunctionDeclaration",
+      "startLine": 6183,
+      "endLine": 6185,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6184,
+      "endLine": 6184,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getSubtask",
+      "type": "FunctionDeclaration",
+      "startLine": 6187,
+      "endLine": 6189,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6188,
+      "endLine": 6188,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getTarget",
+      "type": "FunctionDeclaration",
+      "startLine": 6191,
+      "endLine": 6195,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getMessages",
+      "type": "FunctionDeclaration",
+      "startLine": 6197,
+      "endLine": 6199,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getElapsedMs",
+      "type": "FunctionDeclaration",
+      "startLine": 6201,
+      "endLine": 6207,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "formatElapsed",
+      "type": "FunctionDeclaration",
+      "startLine": 6209,
+      "endLine": 6215,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "formatAchievementElapsed",
+      "type": "FunctionDeclaration",
+      "startLine": 6217,
+      "endLine": 6223,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getProgressStats",
+      "type": "FunctionDeclaration",
+      "startLine": 6225,
+      "endLine": 6242,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getTaskStructureCounts",
+      "type": "FunctionDeclaration",
+      "startLine": 6244,
+      "endLine": 6252,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6248,
+      "endLine": 6248,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "shouldClearCompletedItem",
+      "type": "FunctionDeclaration",
+      "startLine": 6254,
+      "endLine": 6256,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getClearCompletedDeleteCounts",
+      "type": "FunctionDeclaration",
+      "startLine": 6258,
+      "endLine": 6274,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "formatBulkDeleteCountText",
+      "type": "FunctionDeclaration",
+      "startLine": 6276,
+      "endLine": 6286,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "matchesTaskFilter",
+      "type": "FunctionDeclaration",
+      "startLine": 6288,
+      "endLine": 6292,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "normalizeTaskSearchText",
+      "type": "FunctionDeclaration",
+      "startLine": 6294,
+      "endLine": 6296,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "matchesTaskSearch",
+      "type": "FunctionDeclaration",
+      "startLine": 6298,
+      "endLine": 6301,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isTaskSearchActive",
+      "type": "FunctionDeclaration",
+      "startLine": 6303,
+      "endLine": 6305,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "resetTaskSearch",
+      "type": "FunctionDeclaration",
+      "startLine": 6307,
+      "endLine": 6310,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTaskSearchInput",
+      "type": "FunctionDeclaration",
+      "startLine": 6312,
+      "endLine": 6318,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getFilteredSubtasks",
+      "type": "FunctionDeclaration",
+      "startLine": 6320,
+      "endLine": 6327,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6325,
+      "endLine": 6326,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isTaskVisible",
+      "type": "FunctionDeclaration",
+      "startLine": 6329,
+      "endLine": 6333,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getVisibleParentTaskIds",
+      "type": "FunctionDeclaration",
+      "startLine": 6335,
+      "endLine": 6339,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6337,
+      "endLine": 6337,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6338,
+      "endLine": 6338,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getVisibleSubtaskIds",
+      "type": "FunctionDeclaration",
+      "startLine": 6341,
+      "endLine": 6343,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6342,
+      "endLine": 6342,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getVisibleMoveTargetId",
+      "type": "FunctionDeclaration",
+      "startLine": 6345,
+      "endLine": 6352,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncTaskFilterButtons",
+      "type": "FunctionDeclaration",
+      "startLine": 6354,
+      "endLine": 6361,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6356,
+      "endLine": 6360,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setTaskFilter",
+      "type": "FunctionDeclaration",
+      "startLine": 6363,
+      "endLine": 6371,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "getPendingTaskCount",
+      "type": "FunctionDeclaration",
+      "startLine": 6373,
+      "endLine": 6376,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "updateDocumentTaskIndicators",
+      "type": "FunctionDeclaration",
+      "startLine": 6378,
+      "endLine": 6382,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isAllDone",
+      "type": "FunctionDeclaration",
+      "startLine": 6384,
+      "endLine": 6387,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "applyColorMode",
+      "type": "FunctionDeclaration",
+      "startLine": 6389,
+      "endLine": 6395,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "applyThemeColor",
+      "type": "FunctionDeclaration",
+      "startLine": 6397,
+      "endLine": 6403,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isCompactSidebarViewport",
+      "type": "FunctionDeclaration",
+      "startLine": 6405,
+      "endLine": 6407,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "applySidebarState",
+      "type": "FunctionDeclaration",
+      "startLine": 6409,
+      "endLine": 6416,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getRouteFromHash",
+      "type": "FunctionDeclaration",
+      "startLine": 6423,
+      "endLine": 6426,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "navigate",
+      "type": "FunctionDeclaration",
+      "startLine": 6428,
+      "endLine": 6435,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "renderRoute",
+      "type": "FunctionDeclaration",
+      "startLine": 6437,
+      "endLine": 6466,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6448,
+      "endLine": 6452,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6468,
+      "endLine": 6470,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6472,
+      "endLine": 6477,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6473,
+      "endLine": 6476,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getAudioCtx",
+      "type": "FunctionDeclaration",
+      "startLine": 6482,
+      "endLine": 6489,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_getAudioOutputNode",
+      "type": "FunctionDeclaration",
+      "startLine": 6491,
+      "endLine": 6500,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_withRunningAudio",
+      "type": "FunctionDeclaration",
+      "startLine": 6502,
+      "endLine": 6520,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6506,
+      "endLine": 6511,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6518,
+      "endLine": 6518,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_primeAudioContext",
+      "type": "FunctionDeclaration",
+      "startLine": 6522,
+      "endLine": 6538,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6523,
+      "endLine": 6537,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_clampAudioPan",
+      "type": "FunctionDeclaration",
+      "startLine": 6540,
+      "endLine": 6543,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_connectToOutputWithPan",
+      "type": "FunctionDeclaration",
+      "startLine": 6545,
+      "endLine": 6560,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playTone",
+      "type": "FunctionDeclaration",
+      "startLine": 6562,
+      "endLine": 6613,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playSubtaskCompleteSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6615,
+      "endLine": 6617,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playParentCompleteSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6619,
+      "endLine": 6698,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6621,
+      "endLine": 6697,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6647,
+      "endLine": 6676,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6683,
+      "endLine": 6696,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playAllClearSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6700,
+      "endLine": 6702,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playFocusStartSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6704,
+      "endLine": 6729,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6706,
+      "endLine": 6728,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playFocusShiftSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6731,
+      "endLine": 6777,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6733,
+      "endLine": 6776,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playFocusAbortSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6779,
+      "endLine": 6803,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6781,
+      "endLine": 6802,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playAddSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6805,
+      "endLine": 6830,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6807,
+      "endLine": 6829,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "playDeleteSound",
+      "type": "FunctionDeclaration",
+      "startLine": 6832,
+      "endLine": 6857,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6834,
+      "endLine": 6856,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "resizeCanvas",
+      "type": "FunctionDeclaration",
+      "startLine": 6867,
+      "endLine": 6871,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "launchConfetti",
+      "type": "FunctionDeclaration",
+      "startLine": 6879,
+      "endLine": 6907,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "animateConfetti",
+      "type": "FunctionDeclaration",
+      "startLine": 6909,
+      "endLine": 6953,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6919,
+      "endLine": 6943,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6945,
+      "endLine": 6945,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "showCelebration",
+      "type": "FunctionDeclaration",
+      "startLine": 6955,
+      "endLine": 6972,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6963,
+      "endLine": 6966,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6967,
+      "endLine": 6971,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "celebrateElement",
+      "type": "FunctionDeclaration",
+      "startLine": 6974,
+      "endLine": 7008,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6984,
+      "endLine": 6984,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 6994,
+      "endLine": 7006,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "buildDeleteParentConfirmMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7010,
+      "endLine": 7017,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "buildDeleteSubtaskConfirmMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7019,
+      "endLine": 7023,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getClearCompletedScopeText",
+      "type": "FunctionDeclaration",
+      "startLine": 7025,
+      "endLine": 7027,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "buildClearCompletedConfirmMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7029,
+      "endLine": 7032,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "buildClearAllConfirmMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7034,
+      "endLine": 7037,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "buildAbortFocusConfirmMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7039,
+      "endLine": 7042,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "openConfirmModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7047,
+      "endLine": 7079,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "closeConfirmModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7081,
+      "endLine": 7087,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "executeConfirmedAction",
+      "type": "FunctionDeclaration",
+      "startLine": 7089,
+      "endLine": 7132,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "renderMessages",
+      "type": "FunctionDeclaration",
+      "startLine": 7137,
+      "endLine": 7218,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 7159,
+      "endLine": 7204,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "saveMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7220,
+      "endLine": 7256,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "editMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7258,
+      "endLine": 7270,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "saveEditedMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7272,
+      "endLine": 7317,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "deleteMessage",
+      "type": "FunctionDeclaration",
+      "startLine": 7319,
+      "endLine": 7354,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "openParentModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7359,
+      "endLine": 7375,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "closeParentModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7377,
+      "endLine": 7389,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "renderParentModalSubtasks",
+      "type": "FunctionDeclaration",
+      "startLine": 7391,
+      "endLine": 7457,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 7392,
+      "endLine": 7392,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 7410,
+      "endLine": 7452,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "saveParentEdit",
+      "type": "FunctionDeclaration",
+      "startLine": 7459,
+      "endLine": 7492,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "addSubtaskFromModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7494,
+      "endLine": 7545,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "openSubtaskModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7547,
+      "endLine": 7560,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "closeSubtaskModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7562,
+      "endLine": 7574,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "saveSubtaskEdit",
+      "type": "FunctionDeclaration",
+      "startLine": 7576,
+      "endLine": 7609,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "clearRunningAcrossAllTargets",
+      "type": "FunctionDeclaration",
+      "startLine": 7614,
+      "endLine": 7629,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 7615,
+      "endLine": 7628,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 7621,
+      "endLine": 7627,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "resetFocusPomodoroState",
+      "type": "FunctionDeclaration",
+      "startLine": 7631,
+      "endLine": 7638,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isPomodoroEnabledForSession",
+      "type": "FunctionDeclaration",
+      "startLine": 7640,
+      "endLine": 7642,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getPomodoroPhaseDurationMs",
+      "type": "FunctionDeclaration",
+      "startLine": 7644,
+      "endLine": 7647,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getPomodoroPhaseRemainingMs",
+      "type": "FunctionDeclaration",
+      "startLine": 7649,
+      "endLine": 7655,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "startFocusPomodoroSession",
+      "type": "FunctionDeclaration",
+      "startLine": 7657,
+      "endLine": 7678,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncPomodoroPhaseProgress",
+      "type": "FunctionDeclaration",
+      "startLine": 7680,
+      "endLine": 7723,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncActivePomodoroPhaseProgress",
+      "type": "FunctionDeclaration",
+      "startLine": 7725,
+      "endLine": 7727,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "notifyPomodoroPhaseTransition",
+      "type": "FunctionDeclaration",
+      "startLine": 7729,
+      "endLine": 7748,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncFocusPhaseVisualState",
+      "type": "FunctionDeclaration",
+      "startLine": 7750,
+      "endLine": 7756,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "canOpenFocusForParent",
+      "type": "FunctionDeclaration",
+      "startLine": 7758,
+      "endLine": 7760,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "canOpenFocusForSubtask",
+      "type": "FunctionDeclaration",
+      "startLine": 7762,
+      "endLine": 7764,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "openFocusModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7766,
+      "endLine": 7832,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "closeFocusModal",
+      "type": "FunctionDeclaration",
+      "startLine": 7834,
+      "endLine": 7851,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getActiveFocusTarget",
+      "type": "FunctionDeclaration",
+      "startLine": 7853,
+      "endLine": 7856,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "updateFocusTimer",
+      "type": "FunctionDeclaration",
+      "startLine": 7858,
+      "endLine": 7883,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncFocusStatusChip",
+      "type": "FunctionDeclaration",
+      "startLine": 7885,
+      "endLine": 7896,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncFocusPauseButton",
+      "type": "FunctionDeclaration",
+      "startLine": 7898,
+      "endLine": 7915,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "pauseOrResumeFocus",
+      "type": "FunctionDeclaration",
+      "startLine": 7917,
+      "endLine": 7964,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "performAbortFocus",
+      "type": "FunctionDeclaration",
+      "startLine": 7966,
+      "endLine": 8001,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "abortFocus",
+      "type": "FunctionDeclaration",
+      "startLine": 8003,
+      "endLine": 8012,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "completeFocus",
+      "type": "FunctionDeclaration",
+      "startLine": 8014,
+      "endLine": 8070,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "undoCompleted",
+      "type": "FunctionDeclaration",
+      "startLine": 8072,
+      "endLine": 8099,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "showDragInsertionPreview",
+      "type": "FunctionDeclaration",
+      "startLine": 8101,
+      "endLine": 8115,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8106,
+      "endLine": 8106,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "clearDragDropIndicators",
+      "type": "FunctionDeclaration",
+      "startLine": 8117,
+      "endLine": 8119,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8118,
+      "endLine": 8118,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "resetDragState",
+      "type": "FunctionDeclaration",
+      "startLine": 8121,
+      "endLine": 8131,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8128,
+      "endLine": 8130,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "moveArrayItem",
+      "type": "FunctionDeclaration",
+      "startLine": 8133,
+      "endLine": 8143,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "reorderParentTasks",
+      "type": "FunctionDeclaration",
+      "startLine": 8145,
+      "endLine": 8163,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8147,
+      "endLine": 8147,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8152,
+      "endLine": 8152,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "reorderSubtasks",
+      "type": "FunctionDeclaration",
+      "startLine": 8165,
+      "endLine": 8186,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8170,
+      "endLine": 8170,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8175,
+      "endLine": 8175,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getEditorReorderContext",
+      "type": "FunctionDeclaration",
+      "startLine": 8188,
+      "endLine": 8193,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8192,
+      "endLine": 8192,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncEditorReorderControls",
+      "type": "FunctionDeclaration",
+      "startLine": 8195,
+      "endLine": 8204,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8198,
+      "endLine": 8201,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "moveEditorTask",
+      "type": "FunctionDeclaration",
+      "startLine": 8206,
+      "endLine": 8224,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8219,
+      "endLine": 8219,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8220,
+      "endLine": 8220,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_restoreFocusToTaskRow",
+      "type": "FunctionDeclaration",
+      "startLine": 8226,
+      "endLine": 8242,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8227,
+      "endLine": 8241,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_moveFocusedTaskRowByOffset",
+      "type": "FunctionDeclaration",
+      "startLine": 8244,
+      "endLine": 8283,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8255,
+      "endLine": 8255,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "isPointNearRect",
+      "type": "FunctionDeclaration",
+      "startLine": 8285,
+      "endLine": 8293,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "resolveDropIntentByClientY",
+      "type": "FunctionDeclaration",
+      "startLine": 8295,
+      "endLine": 8333,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8296,
+      "endLine": 8296,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "startDragFromHandle",
+      "type": "FunctionDeclaration",
+      "startLine": 8335,
+      "endLine": 8389,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "clearModalSubtaskDragIndicators",
+      "type": "FunctionDeclaration",
+      "startLine": 8391,
+      "endLine": 8393,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8392,
+      "endLine": 8392,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "resetModalSubtaskDragState",
+      "type": "FunctionDeclaration",
+      "startLine": 8395,
+      "endLine": 8404,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8401,
+      "endLine": 8403,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "startModalSubtaskDrag",
+      "type": "FunctionDeclaration",
+      "startLine": 8406,
+      "endLine": 8426,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "render",
+      "type": "FunctionDeclaration",
+      "startLine": 8431,
+      "endLine": 8478,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8467,
+      "endLine": 8474,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getFocusIconForMeta",
+      "type": "FunctionDeclaration",
+      "startLine": 8480,
+      "endLine": 8484,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "getTaskRowRenderKey",
+      "type": "FunctionDeclaration",
+      "startLine": 8486,
+      "endLine": 8490,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8487,
+      "endLine": 8488,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "createSubtaskRowMarkup",
+      "type": "FunctionDeclaration",
+      "startLine": 8492,
+      "endLine": 8561,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "pruneCachedChildRows",
+      "type": "FunctionDeclaration",
+      "startLine": 8563,
+      "endLine": 8575,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8565,
+      "endLine": 8565,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8566,
+      "endLine": 8566,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "hasTaskRowDragState",
+      "type": "FunctionDeclaration",
+      "startLine": 8577,
+      "endLine": 8580,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "reconcileCachedTaskRow",
+      "type": "FunctionDeclaration",
+      "startLine": 8583,
+      "endLine": 8611,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8588,
+      "endLine": 8588,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8592,
+      "endLine": 8593,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8596,
+      "endLine": 8606,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "reconcileTaskRows",
+      "type": "FunctionDeclaration",
+      "startLine": 8613,
+      "endLine": 8625,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "renderTasks",
+      "type": "FunctionDeclaration",
+      "startLine": 8627,
+      "endLine": 8813,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8659,
+      "endLine": 8782,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8669,
+      "endLine": 8670,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8772,
+      "endLine": 8772,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "setThemeColor",
+      "type": "FunctionDeclaration",
+      "startLine": 8815,
+      "endLine": 8825,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "renderThemeOptions",
+      "type": "FunctionDeclaration",
+      "startLine": 8827,
+      "endLine": 8854,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8830,
+      "endLine": 8835,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8838,
+      "endLine": 8853,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "renderPomodoroSettings",
+      "type": "FunctionDeclaration",
+      "startLine": 8856,
+      "endLine": 8861,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "syncPomodoroSettingsControls",
+      "type": "FunctionDeclaration",
+      "startLine": 8863,
+      "endLine": 8877,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "commitPomodoroSettingsFromControls",
+      "type": "FunctionDeclaration",
+      "startLine": 8879,
+      "endLine": 8922,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "commitPomodoroMinutesFromInput",
+      "type": "FunctionDeclaration",
+      "startLine": 8924,
+      "endLine": 8927,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "renderSettings",
+      "type": "FunctionDeclaration",
+      "startLine": 8929,
+      "endLine": 8936,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createParentDeleteUndoPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 8941,
+      "endLine": 8951,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8942,
+      "endLine": 8942,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createSubtaskDeleteUndoPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 8953,
+      "endLine": 8966,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8956,
+      "endLine": 8956,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createClearCompletedUndoPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 8968,
+      "endLine": 9005,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8974,
+      "endLine": 9002,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 8977,
+      "endLine": 8984,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "_createClearAllUndoPayload",
+      "type": "FunctionDeclaration",
+      "startLine": 9007,
+      "endLine": 9016,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9010,
+      "endLine": 9013,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "performDeleteParent",
+      "type": "FunctionDeclaration",
+      "startLine": 9018,
+      "endLine": 9030,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9024,
+      "endLine": 9024,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "performDeleteSubtask",
+      "type": "FunctionDeclaration",
+      "startLine": 9032,
+      "endLine": 9056,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9040,
+      "endLine": 9040,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "performClearCompleted",
+      "type": "FunctionDeclaration",
+      "startLine": 9058,
+      "endLine": 9091,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9071,
+      "endLine": 9084,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9073,
+      "endLine": 9073,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "performClearAll",
+      "type": "FunctionDeclaration",
+      "startLine": 9093,
+      "endLine": 9108,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "addTask",
+      "type": "FunctionDeclaration",
+      "startLine": 9113,
+      "endLine": 9156,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "isTypingTarget",
+      "type": "FunctionDeclaration",
+      "startLine": 9163,
+      "endLine": 9176,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "toggleSidebar",
+      "type": "FunctionDeclaration",
+      "startLine": 9178,
+      "endLine": 9186,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "openClearCompletedConfirm",
+      "type": "FunctionDeclaration",
+      "startLine": 9188,
+      "endLine": 9200,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "openClearAllConfirm",
+      "type": "FunctionDeclaration",
+      "startLine": 9202,
+      "endLine": 9213,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleTaskFilterClick",
+      "type": "FunctionDeclaration",
+      "startLine": 9215,
+      "endLine": 9220,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "focusTaskInputWithRoute",
+      "type": "FunctionDeclaration",
+      "startLine": 9222,
+      "endLine": 9230,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9224,
+      "endLine": 9229,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "focusMemoInputWithRoute",
+      "type": "FunctionDeclaration",
+      "startLine": 9232,
+      "endLine": 9239,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9234,
+      "endLine": 9238,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "focusMessageInputWithRoute",
+      "type": "FunctionDeclaration",
+      "startLine": 9241,
+      "endLine": 9249,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9243,
+      "endLine": 9248,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "toggleColorModeWithShortcut",
+      "type": "FunctionDeclaration",
+      "startLine": 9251,
+      "endLine": 9257,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "applyAriaKeyShortcuts",
+      "type": "FunctionDeclaration",
+      "startLine": 9259,
+      "endLine": 9285,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9266,
+      "endLine": 9269,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "handleDocumentShortcuts",
+      "type": "FunctionDeclaration",
+      "startLine": 9287,
+      "endLine": 9449,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9457,
+      "endLine": 9457,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9458,
+      "endLine": 9458,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9459,
+      "endLine": 9459,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9460,
+      "endLine": 9460,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9462,
+      "endLine": 9462,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9463,
+      "endLine": 9465,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9466,
+      "endLine": 9468,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9470,
+      "endLine": 9475,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9486,
+      "endLine": 9486,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9487,
+      "endLine": 9489,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "closeBulkActions",
+      "type": "FunctionDeclaration",
+      "startLine": 9491,
+      "endLine": 9496,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9498,
+      "endLine": 9502,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9503,
+      "endLine": 9505,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9506,
+      "endLine": 9508,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9509,
+      "endLine": 9511,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9512,
+      "endLine": 9517,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9519,
+      "endLine": 9522,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9531,
+      "endLine": 9537,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9538,
+      "endLine": 9543,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9547,
+      "endLine": 9550,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9560,
+      "endLine": 9565,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9566,
+      "endLine": 9583,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9585,
+      "endLine": 9601,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9613,
+      "endLine": 9615,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9617,
+      "endLine": 9632,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9634,
+      "endLine": 9642,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9644,
+      "endLine": 9672,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9660,
+      "endLine": 9660,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9674,
+      "endLine": 9679,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9681,
+      "endLine": 9719,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9698,
+      "endLine": 9698,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9729,
+      "endLine": 9731,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9736,
+      "endLine": 9738,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9740,
+      "endLine": 9742,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9750,
+      "endLine": 9811,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9813,
+      "endLine": 9817,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9819,
+      "endLine": 9878,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9836,
+      "endLine": 9836,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9866,
+      "endLine": 9866,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9880,
+      "endLine": 9885,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9887,
+      "endLine": 9965,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9905,
+      "endLine": 9905,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9944,
+      "endLine": 9944,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9972,
+      "endLine": 9981,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9983,
+      "endLine": 9990,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 9992,
+      "endLine": 10043,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10036,
+      "endLine": 10039,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10049,
+      "endLine": 10057,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10060,
+      "endLine": 10070,
+      "async": true,
+      "generator": false
+    },
+    {
+      "name": "bindPomodoroMinutesInput",
+      "type": "FunctionDeclaration",
+      "startLine": 10072,
+      "endLine": 10081,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10074,
+      "endLine": 10076,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10077,
+      "endLine": 10080,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10089,
+      "endLine": 10099,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10092,
+      "endLine": 10098,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10092,
+      "endLine": 10098,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": "bindTextLengthHint",
+      "type": "FunctionDeclaration",
+      "startLine": 10116,
+      "endLine": 10134,
+      "async": false,
+      "generator": false
+    },
+    {
+      "name": null,
+      "type": "ArrowFunctionExpression",
+      "startLine": 10123,
+      "endLine": 10130,
+      "async": false,
+      "generator": false
+    }
+  ],
+  "declarations": [
+    {
+      "name": "_safeStorageGet",
+      "startLine": 3017,
+      "endLine": 3024,
+      "sha256": "300183b2ed5c1a86b603016f99ac7f1db4b1472b491f30fc90de5a04c15a4dad"
+    },
+    {
+      "name": "_safeStorageSet",
+      "startLine": 3026,
+      "endLine": 3034,
+      "sha256": "9190a1de24ace08a48164b1caaa4e5af957636e2151b02b42670879af9fb1567"
+    },
+    {
+      "name": "_safeStorageRemove",
+      "startLine": 3036,
+      "endLine": 3044,
+      "sha256": "a66ac838d03c34a648e05433224b6c0399b47d7abfb55c8bb142369d3f53bd68"
+    },
+    {
+      "name": "_createCorruptStorageBackupValue",
+      "startLine": 3046,
+      "endLine": 3051,
+      "sha256": "37b0f8ab7a64f87d869b6f3848180d5e9f23ffc1c3cfe06d75d879a493005948"
+    },
+    {
+      "name": "_backupCorruptStorageValue",
+      "startLine": 3053,
+      "endLine": 3068,
+      "sha256": "bd51e2a13eb8dbf55c5a7211e981fc1d52e9605cc96a3c3f5d4e008c3af62315"
+    },
+    {
+      "name": "_snapshotStorageEntry",
+      "startLine": 3070,
+      "endLine": 3083,
+      "sha256": "e183f7ecb4fac801663f98d46ba64ec7759611c5ba46606fb091765637edf494"
+    },
+    {
+      "name": "_restoreStorageEntry",
+      "startLine": 3085,
+      "endLine": 3097,
+      "sha256": "220ec14f4cf840b7d7f74985ba03c74680a0d4e23e3dcc11eecedb9bb7bfbcbc"
+    },
+    {
+      "name": "_rollbackStorageWrites",
+      "startLine": 3099,
+      "endLine": 3111,
+      "sha256": "4162b1b8bb7c39c40056cd7ff1e3f679ffe8823ee83449ded8dcffc5258c126b"
+    },
+    {
+      "name": "_readJsonFromStorage",
+      "startLine": 3113,
+      "endLine": 3135,
+      "sha256": "691d7dae313869bc3fb5d3c39faa20716dfb497ee003f8bb0568afbc687519fc"
+    },
+    {
+      "name": "_readBooleanFromStorage",
+      "startLine": 3137,
+      "endLine": 3148,
+      "sha256": "a4c5874cae3d17e408e05c4e4031ce57cf735bac8dd18cd7ef6bf6d15186e1a7"
+    },
+    {
+      "name": "_writeManyToStorage",
+      "startLine": 3150,
+      "endLine": 3179,
+      "sha256": "e66cf452df6b2af9b0574a0546ddef1a0aa37ce2277e7e8cf4547d415216222b"
+    },
+    {
+      "name": "_createStorageWriteId",
+      "startLine": 3181,
+      "endLine": 3184,
+      "sha256": "aedc0b1321a9edcff919f8f3c62f5ee62bc29ab44020e7aecfac4fe6fdc119c5"
+    },
+    {
+      "name": "_requestIndexedDbOpen",
+      "startLine": 3186,
+      "endLine": 3237,
+      "sha256": "c54518a8d5c411b52d4eaeda9386451b3c654d19d14a3352711ad4fb59df979f"
+    },
+    {
+      "name": "_waitForIndexedDbRequest",
+      "startLine": 3239,
+      "endLine": 3244,
+      "sha256": "df1fcf4e7296e0744768d7f05fef68a704efef66e93d616c4ef2558b87caaa0c"
+    },
+    {
+      "name": "_waitForIndexedDbTransaction",
+      "startLine": 3246,
+      "endLine": 3264,
+      "sha256": "e685ca84e6eff1e8f9a291d64df95ba86ff377af103a134e679cea1bfab5248f"
+    },
+    {
+      "name": "_readManyFromIndexedDb",
+      "startLine": 3266,
+      "endLine": 3287,
+      "sha256": "6289cc4fd045e656765afb01ee5b7a96b77297a7bc5a6b8fa5811ce9be42ba8c"
+    },
+    {
+      "name": "_writeManyToIndexedDb",
+      "startLine": 3289,
+      "endLine": 3332,
+      "sha256": "b3346abeea3b60b72a05bdb32839c534076c1f06470db6419506e7c445b1426c"
+    },
+    {
+      "name": "_reportStorageError",
+      "startLine": 3335,
+      "endLine": 3338,
+      "sha256": "6c8f70ffa91ad1d56a37010448f09ef231a633fe5014a0701997c0473a333da0"
+    },
+    {
+      "name": "_getStorageWarningEl",
+      "startLine": 3340,
+      "endLine": 3343,
+      "sha256": "39009ece12b7bcfb1205f46540a403c66d315fc535aaf4010a4984b411184bcc"
+    },
+    {
+      "name": "_setStorageWarning",
+      "startLine": 3345,
+      "endLine": 3358,
+      "sha256": "48954e9d67e9fafa31b91c18af9e2993853d618ed72bb905d0e0d56b7ea69856"
+    },
+    {
+      "name": "_handlePersistentStorageError",
+      "startLine": 3360,
+      "endLine": 3363,
+      "sha256": "1a1803646d82433de08faec78db347680ed41391f77b92f87600915054b337a3"
+    },
+    {
+      "name": "_readStoredJson",
+      "startLine": 3365,
+      "endLine": 3375,
+      "sha256": "a09a8fe275ade981dc94bd828590d166d0fe6474a566bfe04d683db5010db08a"
+    },
+    {
+      "name": "_readStoredBoolean",
+      "startLine": 3377,
+      "endLine": 3386,
+      "sha256": "22997d9450fd313d8752b43c2ffaa6b4f1f209bb8fa0d5a61462f0059685e291"
+    },
+    {
+      "name": "_readStoredText",
+      "startLine": 3388,
+      "endLine": 3394,
+      "sha256": "249e6c2bbc629f52bc28c99cd3b334ebd01dfe4e8992d0873a719f7bac376209"
+    },
+    {
+      "name": "_normalizeStorageMeta",
+      "startLine": 3396,
+      "endLine": 3405,
+      "sha256": "542957b977e069227b895ef5b7debc5f94a6f0bc0da193e022e4442af37e36d9"
+    },
+    {
+      "name": "_normalizeStorageMetaRecord",
+      "startLine": 3407,
+      "endLine": 3436,
+      "sha256": "43013b607ce517e79e0fcd463456be08b5684e8be2e4b355a06ec784487a7a39"
+    },
+    {
+      "name": "_createStorageMetaIdentity",
+      "startLine": 3438,
+      "endLine": 3445,
+      "sha256": "52f680bb7e3ed1b7dbbec7babe6e0be6a30c5150e8ba6d4b26eee2b5344a61a4"
+    },
+    {
+      "name": "_compareStorageMeta",
+      "startLine": 3447,
+      "endLine": 3454,
+      "sha256": "78cf47f7164ba5669ac56d578af4f7c3a7a5de1eac1664b580775a8aa63d10a7"
+    },
+    {
+      "name": "_isEmptyStorageMeta",
+      "startLine": 3456,
+      "endLine": 3464,
+      "sha256": "ca18d6372e2c9a185a181ca62ba74152db420b16cc483b7ccbee4bf5ab62d076"
+    },
+    {
+      "name": "_isSameStorageMeta",
+      "startLine": 3466,
+      "endLine": 3474,
+      "sha256": "b56fb312e96c535de48f1f74e77932b48e46301a784c4d18684ee9975092e053"
+    },
+    {
+      "name": "_hasStorageMetaConflictSince",
+      "startLine": 3476,
+      "endLine": 3484,
+      "sha256": "4483b95121791c03c7b1e25be4e6ee62bca5555d2d8c174310efe2fdfaa9ed13"
+    },
+    {
+      "name": "_isVerifiedCheckpointAncestor",
+      "startLine": 3486,
+      "endLine": 3495,
+      "sha256": "f2d172c2da10d7927b3e9f3f2546b6b6ec0f6a3fd6f6b7b447439670ccbbfb79"
+    },
+    {
+      "name": "_getCurrentStorageMeta",
+      "startLine": 3497,
+      "endLine": 3505,
+      "sha256": "e151641f1640b91db4adb54e275c9a10995624547ae878840cb81ceeb0eccf86"
+    },
+    {
+      "name": "_getStorageMetaFromEntries",
+      "startLine": 3507,
+      "endLine": 3511,
+      "sha256": "34f7378405c0b909536b3d4ffb299821bdac3c4c501093009cd4a5df540b6b4e"
+    },
+    {
+      "name": "_hasCurrentStorageMetaChangedSince",
+      "startLine": 3513,
+      "endLine": 3515,
+      "sha256": "c9a63c3906cb7e5458b78104212ea1cccf630cdc4e6e30566f150fb9668b9f73"
+    },
+    {
+      "name": "_hasAnySnapshotData",
+      "startLine": 3517,
+      "endLine": 3522,
+      "sha256": "c7c15ad1fe975f9d5b14f60c8baf20bd98b7974dcaf174f8fac838921b6b1c00"
+    },
+    {
+      "name": "_readLocalStateSnapshot",
+      "startLine": 3524,
+      "endLine": 3537,
+      "sha256": "8376a1e78a3c719e6a1a8fa40a0c4eaeed66ce071ccad3ae0e11118dd9fa1e02"
+    },
+    {
+      "name": "_createIndexedStateSnapshot",
+      "startLine": 3539,
+      "endLine": 3546,
+      "sha256": "446f1d2100c17298491406245eeb26e7ec737042ed6d3bc2b071b803601e0049"
+    },
+    {
+      "name": "_validatePersistentStateSnapshot",
+      "startLine": 3548,
+      "endLine": 3586,
+      "sha256": "459fc0af0657d387e98b0942b8b11a569c00f805d3db3671cb6f31c55368585e"
+    },
+    {
+      "name": "_shouldUseIndexedState",
+      "startLine": 3588,
+      "endLine": 3610,
+      "sha256": "c24b0a82721bd00d4cb4705fe188b84e5529b45f0a953c5cc5b10d51a84de774"
+    },
+    {
+      "name": "_adoptStorageMeta",
+      "startLine": 3612,
+      "endLine": 3618,
+      "sha256": "4e425405f3a6df332481b46aa44088a95a0eaf4075b9bcd2c3fe6fec4f6e6f62"
+    },
+    {
+      "name": "_createStorageMetaRecord",
+      "startLine": 3620,
+      "endLine": 3634,
+      "sha256": "2c94ef5ad6e2e33b8ef429b774c560b4f9f50bb8650a828172ce8ab9496cdfdf"
+    },
+    {
+      "name": "_setCurrentStorageMeta",
+      "startLine": 3636,
+      "endLine": 3643,
+      "sha256": "c4304d0ddd0c2de4da8b05174b5bc744c5a868979d61bab3cbf9a3a95b3053d3"
+    },
+    {
+      "name": "_createNextStorageMeta",
+      "startLine": 3645,
+      "endLine": 3663,
+      "sha256": "086034101da5a1947fc66fc4c405ae936614a051379fe55dab26720908589434"
+    },
+    {
+      "name": "_restoreStorageMeta",
+      "startLine": 3665,
+      "endLine": 3667,
+      "sha256": "311cb499f967df5bf8d8018d5c9c98ef691ff00528917ff49abb3a5e57feacda"
+    },
+    {
+      "name": "_getDataEntries",
+      "startLine": 3669,
+      "endLine": 3672,
+      "sha256": "cc552ed4b498a3727de1fbd28284e2b0794dbb35b50766e44fee2bc5bede3292"
+    },
+    {
+      "name": "_hasPersistedDataChanges",
+      "startLine": 3674,
+      "endLine": 3679,
+      "sha256": "580d5fca7918231226673106afdb0fc5f3eebb7a80b51540428396a11baae403"
+    },
+    {
+      "name": "_rememberPersistedDataEntries",
+      "startLine": 3681,
+      "endLine": 3686,
+      "sha256": "31b8c614060838f744ba35040c2dcc25980f0555265b72073f89077df72458bb"
+    },
+    {
+      "name": "_readLocalStorageMeta",
+      "startLine": 3688,
+      "endLine": 3693,
+      "sha256": "e7a64c37d41f9714a189b96c433d73252f29623d93ca6ecd831e11b9b29bf8bb"
+    },
+    {
+      "name": "_isNewerThanPersistedMeta",
+      "startLine": 3695,
+      "endLine": 3698,
+      "sha256": "7399f24b5013339f749d39755b9038631a02fc7b460fb98e3722186f644d538e"
+    },
+    {
+      "name": "_readIndexedDbStorageMeta",
+      "startLine": 3700,
+      "endLine": 3709,
+      "sha256": "3a4afa1e6ee5b68ad81857b82c498a48811e6781f38d84ae20017a498e9007db"
+    },
+    {
+      "name": "_hasNewerPersistedStorageState",
+      "startLine": 3711,
+      "endLine": 3732,
+      "sha256": "43d49d37b5383ce9cd9c6017ca1ebf4ffd87882ed9c3954fabe0ade228d783bd"
+    },
+    {
+      "name": "_saveLocalStorageCheckpoint",
+      "startLine": 3734,
+      "endLine": 3738,
+      "sha256": "ee4912821c6b968a33bd3d96ee9a1dae73ac61a8e63b164eece7d91c7ba77bb6"
+    },
+    {
+      "name": "_saveStoredState",
+      "startLine": 3740,
+      "endLine": 3819,
+      "sha256": "2f9dd612eb9a84760667340295d33b6c57a975004c909a253159c256768ed91d"
+    },
+    {
+      "name": "_enqueueStoredStateSave",
+      "startLine": 3821,
+      "endLine": 3840,
+      "sha256": "47d4db725d9088add4dfbad16739d388612d394345372ab23aead942b309bec7"
+    },
+    {
+      "name": "_saveLocalStorageForUnload",
+      "startLine": 3842,
+      "endLine": 3937,
+      "sha256": "3cd4ae84d262a417944611715219abec24ee9bd3e3c0ec5d0b749da5a8dbfe62"
+    },
+    {
+      "name": "_mirrorPersistentStorageState",
+      "startLine": 3939,
+      "endLine": 3981,
+      "sha256": "05d54e34417903f9eac1f24cacbd995af68e1703935388d6e806353087a25201"
+    },
+    {
+      "name": "bindInputEnter",
+      "startLine": 4125,
+      "endLine": 4133,
+      "sha256": "0c26d4e2747db8f227556117c5d4366aafe9483e3758452d34a6318afcbdb0a7"
+    },
+    {
+      "name": "reconcileChildren",
+      "startLine": 4136,
+      "endLine": 4148,
+      "sha256": "66264ff06d897a256fbaa80bfce088081cfc8f957c6a1dda7650b784ca6bdde8"
+    },
+    {
+      "name": "normalizeMaterialIconToken",
+      "startLine": 4155,
+      "endLine": 4159,
+      "sha256": "77234e01ff31d462968e055f9dc45e3f6da0ccd94f045275a6a28d2db0570cea"
+    },
+    {
+      "name": "_createMaterialIconSvg",
+      "startLine": 4163,
+      "endLine": 4177,
+      "sha256": "f340ca314639d0379a0cf258c5876beade33d86148c43263de883f5b370292af"
+    },
+    {
+      "name": "setMaterialIcon",
+      "startLine": 4179,
+      "endLine": 4186,
+      "sha256": "6f21f9ba27c5791d5b248ebd234cf026631f5a1af99eee15301a87b35fe24453"
+    },
+    {
+      "name": "hydrateMaterialIcons",
+      "startLine": 4188,
+      "endLine": 4193,
+      "sha256": "765d6b21434a59c7a762db4ae80ef09da5f0fbd3e872335148c1a463fff00a37"
+    },
+    {
+      "name": "uid",
+      "startLine": 4302,
+      "endLine": 4304,
+      "sha256": "81d60a94fce84ec03e794f520347f3f26a0592b5db66ef37927d33e32446472c"
+    },
+    {
+      "name": "escapeHtml",
+      "startLine": 4306,
+      "endLine": 4310,
+      "sha256": "8800eee61339291af028f03c8bf1c0e8ea77dd975c6e972d03a344c8fdef72a0"
+    },
+    {
+      "name": "_copyTaskSnapshot",
+      "startLine": 4312,
+      "endLine": 4314,
+      "sha256": "57757673642fc8a520e2fc7ee615c2178b9079a3e386f99510b9707200e36ec9"
+    },
+    {
+      "name": "normalizeOrganizeMemo",
+      "startLine": 4316,
+      "endLine": 4318,
+      "sha256": "a66d0a84a6f5fbbef91a6d5157505a9e9d8de7d49c61396f2f6afb08a54dee71"
+    },
+    {
+      "name": "formatFileSize",
+      "startLine": 4320,
+      "endLine": 4331,
+      "sha256": "e5e99f5bf4ad0a87c4723326067aeae82e7bb78446cd402f44cc21b74f8bbf96"
+    },
+    {
+      "name": "updateBackupImportLimitText",
+      "startLine": 4333,
+      "endLine": 4336,
+      "sha256": "614294872cdca7892d472eec7e09dd8e79ed1d96ec44d0c4a77366aa3f97e8cf"
+    },
+    {
+      "name": "getMemoLimitStatusText",
+      "startLine": 4338,
+      "endLine": 4342,
+      "sha256": "94099325ec25a99fb1e2e8ccfd225f798307030dbe90a9c81630caa9a9e24391"
+    },
+    {
+      "name": "_markAppStateChanged",
+      "startLine": 4344,
+      "endLine": 4347,
+      "sha256": "8bec4f98264d685e61e6c580d00d9f71de15138abe9eb9e0da5363cffdfc217b"
+    },
+    {
+      "name": "_canRestoreFailedSaveSnapshot",
+      "startLine": 4349,
+      "endLine": 4352,
+      "sha256": "068fa67aa2280be1e0907908a09356145f3a774634072ec8d029b43c9f8474f2"
+    },
+    {
+      "name": "_showSkippedRollbackToast",
+      "startLine": 4354,
+      "endLine": 4356,
+      "sha256": "7f7e09bbea7e018b6788e6f10364131c470ec4cf7181dca013068436238b0ba1"
+    },
+    {
+      "name": "setInputActionPending",
+      "startLine": 4358,
+      "endLine": 4367,
+      "sha256": "e989f14bd484fc771c4a8d2a070374dc9cc810dc7b9386bbfacb1637f37cfa07"
+    },
+    {
+      "name": "setActionControlPending",
+      "startLine": 4369,
+      "endLine": 4374,
+      "sha256": "101be3e93357dd55ec5f76803c0179b23172540c146b4f56acda2fedc9fbb140"
+    },
+    {
+      "name": "isStateSaveOperationPending",
+      "startLine": 4376,
+      "endLine": 4378,
+      "sha256": "9463c38492484876f91ddf987928092f2e9b1f3d78ae6b89a78c8dbf7f02c0c7"
+    },
+    {
+      "name": "setStateSaveOperationPending",
+      "startLine": 4380,
+      "endLine": 4403,
+      "sha256": "dd24a0c3abd7b390a41384cd064c3d7e946cca745ac3da98f05fb8efad1db0bf"
+    },
+    {
+      "name": "setAddOperationPending",
+      "startLine": 4405,
+      "endLine": 4427,
+      "sha256": "04ddb56c7fc20360a1e8f83789dc3d0c609b5bb0a5c927decb0e3f13cab07439"
+    },
+    {
+      "name": "isAddOperationPending",
+      "startLine": 4429,
+      "endLine": 4431,
+      "sha256": "1c37a8f45fb0699c4b80df63279357f72f9166e50f4b1c2990d7feb81d1694d4"
+    },
+    {
+      "name": "isMessageOperationPending",
+      "startLine": 4433,
+      "endLine": 4435,
+      "sha256": "6620016dc81215ffcd9c67d63e373594d8b8b6a27bb7c666518bcf2d30187187"
+    },
+    {
+      "name": "updateMessageListPendingState",
+      "startLine": 4437,
+      "endLine": 4450,
+      "sha256": "7f646ec02d2ab473e88a8ca96175c758a4eed802da517612881091ed81964ba8"
+    },
+    {
+      "name": "setMessageOperationPending",
+      "startLine": 4452,
+      "endLine": 4467,
+      "sha256": "165d399c7f17efb2767d6f64de1c5acc233062ab0830593e85fbc16484658e00"
+    },
+    {
+      "name": "isEditOperationPending",
+      "startLine": 4469,
+      "endLine": 4471,
+      "sha256": "dd90041c2667cf5ce5836bffc1336c0ac61a93a33f6b61e7b2b004a78cf4166c"
+    },
+    {
+      "name": "updateParentModalPendingState",
+      "startLine": 4473,
+      "endLine": 4485,
+      "sha256": "51c4a3be4198d8de3d05c4e3b5b5b22167b90f88ef9498f0b8cf0d8cc7455d77"
+    },
+    {
+      "name": "updateSubtaskModalPendingState",
+      "startLine": 4487,
+      "endLine": 4491,
+      "sha256": "accf9f687a61a4c00fa737cc21f68412719b59384a31529aedf18a1b7176efa8"
+    },
+    {
+      "name": "setEditOperationPending",
+      "startLine": 4493,
+      "endLine": 4512,
+      "sha256": "e3775cf6fbc58b010b8f5b086244df0e178985796a8464b8ff93337461622105"
+    },
+    {
+      "name": "isFocusOperationPending",
+      "startLine": 4514,
+      "endLine": 4516,
+      "sha256": "09a3bc44427fd0c4f950587aa366f9f09ae08e480c66f265194f2a65d48e2f22"
+    },
+    {
+      "name": "setFocusStartControlPending",
+      "startLine": 4518,
+      "endLine": 4534,
+      "sha256": "5d937b382ab22bcae1e751979ccc3448842dc0ea1a50e9e5fd175e8619d62ee8"
+    },
+    {
+      "name": "setFocusOperationPending",
+      "startLine": 4536,
+      "endLine": 4556,
+      "sha256": "33b6b7e9abb942d1d1ea490cc52880a5ba27e5da5bad498bbbc6d1df8ef42f57"
+    },
+    {
+      "name": "_createAppStateSnapshot",
+      "startLine": 4558,
+      "endLine": 4568,
+      "sha256": "1a0e53cd2e26f7db6ceeb81f0f29c6ae66561793005eb247bcda5e7e1ff8538b"
+    },
+    {
+      "name": "_applyAppStateSnapshot",
+      "startLine": 4570,
+      "endLine": 4587,
+      "sha256": "73f844d8e173c78598075842d9ee5645f6e2508c452fd0e68247818e351d0fdb"
+    },
+    {
+      "name": "_restoreStateAfterFailedSave",
+      "startLine": 4589,
+      "endLine": 4602,
+      "sha256": "7e4a978553484a3e1e22ad131e0327ac3327db59828e7887d72024eb13671d11"
+    },
+    {
+      "name": "_commitStateSave",
+      "startLine": 4604,
+      "endLine": 4614,
+      "sha256": "420e4d262a964dab079fff5dadc159b305650c683c117336e0c82501d084de51"
+    },
+    {
+      "name": "_createFocusRuntimeSnapshot",
+      "startLine": 4616,
+      "endLine": 4629,
+      "sha256": "b7ebea6a717dffadbe58e66079eede9538ac796a622f4dc36dbf88ae2de085d9"
+    },
+    {
+      "name": "_applyFocusRuntimeSnapshot",
+      "startLine": 4631,
+      "endLine": 4645,
+      "sha256": "db3e8ee01f565d0d93b395e2c0b321857a461bd383c64358dd53e1617fc4e4e6"
+    },
+    {
+      "name": "_restoreFocusStateAfterFailedSave",
+      "startLine": 4647,
+      "endLine": 4664,
+      "sha256": "5945d0767a7b434a7d512d6267fa1ad2b95bb6811103d2c05ebc6ccc2a922e4c"
+    },
+    {
+      "name": "_commitFocusStateSave",
+      "startLine": 4666,
+      "endLine": 4682,
+      "sha256": "ca0f30dba4d88186a0c0f8c2f4fd53ccee39a7fe6931ffb9d915da5ab99f6324"
+    },
+    {
+      "name": "_isValidDeleteUndoPayload",
+      "startLine": 4684,
+      "endLine": 4689,
+      "sha256": "91c071bdcb5b7d63a6db3faf8291d30a3c93a5a7f53785bdd65b982d8f772847"
+    },
+    {
+      "name": "_createDeleteUndoRestorePlan",
+      "startLine": 4691,
+      "endLine": 4768,
+      "sha256": "e3b2cb7e90b54a0eb44e5dacb1fd25c2a587f5a77a1582e9d7ad4070ce5035cf"
+    },
+    {
+      "name": "_applyDeleteUndoPayload",
+      "startLine": 4770,
+      "endLine": 4812,
+      "sha256": "d55f89be7a41b71778705d312f6b1863bedd387b1f9cfcf9dc5d6993d37bc9fb"
+    },
+    {
+      "name": "_runToastDismissHandler",
+      "startLine": 4814,
+      "endLine": 4826,
+      "sha256": "07c3eceb2950945982a9e456b43d83c3450a1353dc4bfe516f54507a34c5e935"
+    },
+    {
+      "name": "_hideToastBySession",
+      "startLine": 4828,
+      "endLine": 4842,
+      "sha256": "fd18968a0841f187c76570490254bd477ce65b5daf2df5f70ffe8df03dc6dc7d"
+    },
+    {
+      "name": "showToast",
+      "startLine": 4844,
+      "endLine": 4914,
+      "sha256": "bdc17a1168f8243e9dee58a4a6ae6a3402e57dc8f2370eaa06d81b5f3d349b9e"
+    },
+    {
+      "name": "showErrorToast",
+      "startLine": 4916,
+      "endLine": 4918,
+      "sha256": "b5cd52e21f0b02bf52d2a2c196a185bbfbf984ca0ad53e0957711881bbfe2113"
+    },
+    {
+      "name": "_hideDeleteUndoToastBySession",
+      "startLine": 4920,
+      "endLine": 4932,
+      "sha256": "c3bbade183ea33c4c88c6101863831564871a97122dd36b6ab925ec2b9276cd6"
+    },
+    {
+      "name": "_showDeleteUndoToast",
+      "startLine": 4934,
+      "endLine": 4983,
+      "sha256": "21000dc59c222c68d026c1624fd95f6f8e8720af09048b18eddaa13c1533f4f5"
+    },
+    {
+      "name": "_registerDeleteUndoToast",
+      "startLine": 4985,
+      "endLine": 5011,
+      "sha256": "b665c403d2a74990d043d0a19926a01983cb5a87160cf895b3d0d1cf78fae431"
+    },
+    {
+      "name": "_invalidateDeleteUndo",
+      "startLine": 5013,
+      "endLine": 5022,
+      "sha256": "6876ec616b83dc01bd5eced9d6b663681776ec12236f2acd1ce4b5a6790d5184"
+    },
+    {
+      "name": "_isFocusableElement",
+      "startLine": 5024,
+      "endLine": 5030,
+      "sha256": "6314637faedc46e5d46551be42f70c792c092236a3320ea91328f111a60c0e03"
+    },
+    {
+      "name": "_getModalFocusableElements",
+      "startLine": 5032,
+      "endLine": 5035,
+      "sha256": "1f281c5537a0d2ddcf733d65077fae051b80178cf6502e246008d68eb45d5399"
+    },
+    {
+      "name": "_getActiveModalOverlay",
+      "startLine": 5037,
+      "endLine": 5043,
+      "sha256": "2fdfa3d2e986314ce7acf66bae3fed10b07b0db49b8c6b0a231bc7f2c567cfc5"
+    },
+    {
+      "name": "_focusWithinOverlay",
+      "startLine": 5045,
+      "endLine": 5062,
+      "sha256": "03b8ee8001f73a4e36f7225cce4732a9fd290a33b0280ca49f8757ea0b6eaece"
+    },
+    {
+      "name": "_captureModalReturnFocus",
+      "startLine": 5064,
+      "endLine": 5082,
+      "sha256": "a63ed4abf0155b943d19f0c0e26d22b869fe6eb9893ef2cfa2ed33865b87ed37"
+    },
+    {
+      "name": "_resolveModalReturnFocus",
+      "startLine": 5084,
+      "endLine": 5108,
+      "sha256": "1a73508cb395466ee7e552c3565809e360c10285449b7fce6315204fb63cd2a8"
+    },
+    {
+      "name": "_restoreFocusAfterPending",
+      "startLine": 5110,
+      "endLine": 5117,
+      "sha256": "1ca38226838fc8a82e9ceb903a3e074ac8a81b1ffc85378b59c10c4dff259727"
+    },
+    {
+      "name": "syncModalInteractivity",
+      "startLine": 5119,
+      "endLine": 5127,
+      "sha256": "fd7d1d0215c1533fcbbb7fb31502e1c27a60e187aae31afe969465440beed368"
+    },
+    {
+      "name": "_openModalOverlay",
+      "startLine": 5129,
+      "endLine": 5142,
+      "sha256": "d44cea01bd3e7b161706a48b9cd2f6f63128c3f7f973c8478293287f1905456c"
+    },
+    {
+      "name": "_closeModalOverlay",
+      "startLine": 5144,
+      "endLine": 5174,
+      "sha256": "27f4af263f3066d6b9422aac20c1f013e6257deae11e41bbeca027bf27c87ea4"
+    },
+    {
+      "name": "_trapFocusInOverlay",
+      "startLine": 5176,
+      "endLine": 5201,
+      "sha256": "3895ff20fb567f77aa57287f1860d1a81f56365e60616538b23a10fde30fa45c"
+    },
+    {
+      "name": "_resolveTooltipTarget",
+      "startLine": 5203,
+      "endLine": 5206,
+      "sha256": "5f6a45b97297ac35468a2daacfcee6e77d60b89df5ec3f73170c0a457b7004e8"
+    },
+    {
+      "name": "_isIconOnlyButton",
+      "startLine": 5208,
+      "endLine": 5221,
+      "sha256": "cabc86b0b2757d02bd7183eee12af98c1fba18112ddc626df3ddcd8ebbd3b3e8"
+    },
+    {
+      "name": "_extractTooltipText",
+      "startLine": 5223,
+      "endLine": 5225,
+      "sha256": "57063db5cdcd34b454b05fc5c4b044746e14b6b337cddc33a9206032be74cf04"
+    },
+    {
+      "name": "_hideQuickTooltip",
+      "startLine": 5227,
+      "endLine": 5239,
+      "sha256": "f1a55366ef0477129fd762d4931f2b326a40845469bdbfb3498e8a28ed47165c"
+    },
+    {
+      "name": "_isTooltipAnchorActive",
+      "startLine": 5241,
+      "endLine": 5246,
+      "sha256": "ee4f8bd5ed95c1e86b75a2ec5c5dce3a938996d300fbfb0ebe664c6a315bcbdb"
+    },
+    {
+      "name": "_positionQuickTooltip",
+      "startLine": 5248,
+      "endLine": 5298,
+      "sha256": "345a71554752c9bdffeefb00dac5467f05fc9e4f23195a49b010a944d63e39fc"
+    },
+    {
+      "name": "_queueQuickTooltipPosition",
+      "startLine": 5300,
+      "endLine": 5308,
+      "sha256": "258be6242bcf960a55216d7ef94657940b03edf9a1964b3e1c06efe6e23d67b9"
+    },
+    {
+      "name": "_showQuickTooltip",
+      "startLine": 5310,
+      "endLine": 5335,
+      "sha256": "166fef6e1e7b317da315e33b605a6188d10dbc1a5920f52266c11e2fd2db5100"
+    },
+    {
+      "name": "handleTooltipPointerOver",
+      "startLine": 5337,
+      "endLine": 5342,
+      "sha256": "2460ad78c1e167d3d477268bde7aaa3bad27616835c1253d05db5ce442954e8f"
+    },
+    {
+      "name": "handleTooltipPointerOut",
+      "startLine": 5344,
+      "endLine": 5351,
+      "sha256": "385583e7ff2bd9413296b2f20aa9e9e91dccc6c3a460ae7ea978a28fbcf95bbd"
+    },
+    {
+      "name": "handleTooltipFocusIn",
+      "startLine": 5353,
+      "endLine": 5358,
+      "sha256": "a3db0b4a6dc5a725b185976ae19e23f52af208fd41b5c31cc998cac90548a3c3"
+    },
+    {
+      "name": "handleTooltipFocusOut",
+      "startLine": 5360,
+      "endLine": 5366,
+      "sha256": "9370eeb6df4630b4b8da4f4730efb065764e14f892991c0802d5170a3e4ede3e"
+    },
+    {
+      "name": "handleTooltipKeyDown",
+      "startLine": 5368,
+      "endLine": 5373,
+      "sha256": "e9dda80f8d3422d2f2a588260412b634a4247812daad26274f2c79d5c896facd"
+    },
+    {
+      "name": "handleTooltipViewportChange",
+      "startLine": 5375,
+      "endLine": 5378,
+      "sha256": "ccf0e5c6d008f28e23a4c08115b9acaefeaaeb0bdaab0839de7ba8f109fc2637"
+    },
+    {
+      "name": "renderTaskCountFavicon",
+      "startLine": 5380,
+      "endLine": 5405,
+      "sha256": "75495f1482a146fdcac22a75953f0aff343e2e2d845ddc59c3e3e07cd9fe5b81"
+    },
+    {
+      "name": "normalizeInputText",
+      "startLine": 5407,
+      "endLine": 5413,
+      "sha256": "ba7356cbcb26c2da63c96aa736072138da16ab0438ce197ab477decbd7d83abd"
+    },
+    {
+      "name": "normalizeNonNegativeNumber",
+      "startLine": 5415,
+      "endLine": 5421,
+      "sha256": "000bec38fb8a65e7a64308a5c56de34d6fac7e4ef530b257930b67326f127546"
+    },
+    {
+      "name": "normalizeEntityId",
+      "startLine": 5423,
+      "endLine": 5437,
+      "sha256": "2d73df7033729a20759a61cc143384df03fd367b267017857d278cc7df6484a4"
+    },
+    {
+      "name": "normalizeMessageList",
+      "startLine": 5439,
+      "endLine": 5448,
+      "sha256": "fb3542a4b46ac5b738c65199e6ae29318094ba00e0b2cdbb61675b50db9565d4"
+    },
+    {
+      "name": "normalizePomodoroMinutes",
+      "startLine": 5450,
+      "endLine": 5458,
+      "sha256": "9dfb994395baba72dcfe5594cd695c4ef5d835e96773b84f06ee980e7b02cec4"
+    },
+    {
+      "name": "normalizePomodoroSettings",
+      "startLine": 5460,
+      "endLine": 5479,
+      "sha256": "ba1a7594701a4bd2e5f227fa74ff8ef393a2fd071d43ad789a5a7ba2f91f3330"
+    },
+    {
+      "name": "createFocusMeta",
+      "startLine": 5481,
+      "endLine": 5496,
+      "sha256": "dbc63e455c6d07185cf997bc700d5414b05f9cff7e608f8cad9f05a843dc6642"
+    },
+    {
+      "name": "normalizeFocusMeta",
+      "startLine": 5498,
+      "endLine": 5506,
+      "sha256": "5ac36a05a23e6d1e3bafa75e5b6b48cac6243108de8a0049af0cb66bfbfc6c52"
+    },
+    {
+      "name": "normalizeSettings",
+      "startLine": 5508,
+      "endLine": 5527,
+      "sha256": "0e74e4cf7904c67f9b2decf775e3753ed9c2fdf1c9ecd16afcd99324e995334b"
+    },
+    {
+      "name": "normalizeTaskViewState",
+      "startLine": 5529,
+      "endLine": 5532,
+      "sha256": "bcb15d74b4e5fc3a9cb656406b144606b1cefd18359778efe869214706f3c5dd"
+    },
+    {
+      "name": "loadSettings",
+      "startLine": 5534,
+      "endLine": 5537,
+      "sha256": "a763eb8965d48e082458abae4f5101ebc6b4fd620361c930dea101bf66ebf1b3"
+    },
+    {
+      "name": "loadTaskViewState",
+      "startLine": 5539,
+      "endLine": 5542,
+      "sha256": "bdf3a5e5cb9a08a965227e2bfb1aa185bd17df454dd07133ccb47b8793cbab57"
+    },
+    {
+      "name": "_readJsonFromRaw",
+      "startLine": 5544,
+      "endLine": 5562,
+      "sha256": "740f029f7904340e85bacbfeeee864568b25df145351e6a0a1f2a7f30cea4c09"
+    },
+    {
+      "name": "_readBooleanFromRaw",
+      "startLine": 5564,
+      "endLine": 5569,
+      "sha256": "a9f8ea521d3fe9eb442a19dc7946b92a42ffd94f9473436b8e43286de913762e"
+    },
+    {
+      "name": "_applyPersistentStateRawValues",
+      "startLine": 5571,
+      "endLine": 5611,
+      "sha256": "076162ca517f8d876599f4554b2ea2f200df87af60d5f2f68d71cccf4801df23"
+    },
+    {
+      "name": "_getPersistedStateEntries",
+      "startLine": 5613,
+      "endLine": 5621,
+      "sha256": "fb6dd4bbde6a8f8a946a666db3723e8251afdd727818fd7f57c19c75b6e979ae"
+    },
+    {
+      "name": "_enqueueIndexedDbWrite",
+      "startLine": 5623,
+      "endLine": 5651,
+      "sha256": "4181b6b1a8a7a9d7b38b0f776590817b84ea08a8097e0a72586cf82dc8208adb"
+    },
+    {
+      "name": "_initializePersistentStorageState",
+      "startLine": 5653,
+      "endLine": 5740,
+      "sha256": "52811abd22e9a55d92291b3bc11e2165d6ab0eb5c609ba5fd9e064817d3e8fcd"
+    },
+    {
+      "name": "save",
+      "startLine": 5742,
+      "endLine": 5744,
+      "sha256": "dd90f2b223cb74fe8450270a262dc0b83a69e556b7f1c6e77ea835aa973968ad"
+    },
+    {
+      "name": "setMemoSaveStatus",
+      "startLine": 5746,
+      "endLine": 5754,
+      "sha256": "f49b3a52cc454a52b8b9c9c26644af3853aef76a4f0902651cd1f5dae0abc36d"
+    },
+    {
+      "name": "persistOrganizeMemoLocalCheckpoint",
+      "startLine": 5756,
+      "endLine": 5770,
+      "sha256": "f238ea7ffb5b357d91ae130d15471d3d383a17326086d4a1c88e3a31635cb403"
+    },
+    {
+      "name": "persistOrganizeMemoCheckpoint",
+      "startLine": 5772,
+      "endLine": 5787,
+      "sha256": "176ac79b04ed6331d5e479d73ee75dac9c41ba0c921e39205190740243414a3f"
+    },
+    {
+      "name": "flushOrganizeMemoSave",
+      "startLine": 5789,
+      "endLine": 5795,
+      "sha256": "806d28fdd71cab417fbf6ba363ffcad0cc55f8af5acd7eb4652a93a0b9327cf8"
+    },
+    {
+      "name": "syncRunningFocusElapsedForPersist",
+      "startLine": 5797,
+      "endLine": 5817,
+      "sha256": "d38e3853143484b7e06b87b76807ccd46d921f7f0b558cc44e37d2a3fbdc96e3"
+    },
+    {
+      "name": "persistRuntimeStateForUnload",
+      "startLine": 5819,
+      "endLine": 5870,
+      "sha256": "e3f6ee436a6b49ba59ff378556358235547a0d66eb0d3808e93635704755ead0"
+    },
+    {
+      "name": "checkpointActiveFocusElapsed",
+      "startLine": 5872,
+      "endLine": 5887,
+      "sha256": "d8c816efdb92bf26fffbb8273e6a87816055f556b91ac9adbd975f62591cdff7"
+    },
+    {
+      "name": "_isObjectRecord",
+      "startLine": 5889,
+      "endLine": 5891,
+      "sha256": "8dd22491355f8a03053dba079c65bb14e86308f921da31c6949e53b5c5d1b175"
+    },
+    {
+      "name": "createBackupPayload",
+      "startLine": 5893,
+      "endLine": 5906,
+      "sha256": "2e2ef9e839f840c202f151af13988e3a6f8bcf288bbed6357bc42cc45e5c37e9"
+    },
+    {
+      "name": "normalizeBackupPayload",
+      "startLine": 5908,
+      "endLine": 5943,
+      "sha256": "9b64c86fc5254993561410dd45fc12e82051347a3db535b26d5117b6800be829"
+    },
+    {
+      "name": "_applyNormalizedBackupPayload",
+      "startLine": 5945,
+      "endLine": 5955,
+      "sha256": "6e94deadb9dadd38bf4e13118ac3714a551484131bed286055c6916c84ff3fd1"
+    },
+    {
+      "name": "buildImportBackupConfirmMessage",
+      "startLine": 5957,
+      "endLine": 5965,
+      "sha256": "f62beed1074c688e9d4071268a16713da795dcf0e4f4b4f06bf88a4faf1d1428"
+    },
+    {
+      "name": "_registerImportUndoToast",
+      "startLine": 5967,
+      "endLine": 6003,
+      "sha256": "a80e1e65a779608d3fd2fa1920fd7b14fe7c63489729e18eefffc3b4edb7c95c"
+    },
+    {
+      "name": "performImportBackup",
+      "startLine": 6005,
+      "endLine": 6016,
+      "sha256": "aa41a428972ed0263c50e4c9ba10b3c8e381478049b4dc0aca9219e50a1d54a8"
+    },
+    {
+      "name": "exportBackup",
+      "startLine": 6018,
+      "endLine": 6033,
+      "sha256": "0ee27dc7559bffded4b10ba72bc102a5ae7d7f096f4636c32b897d8e4c6ba9b6"
+    },
+    {
+      "name": "importBackupFile",
+      "startLine": 6035,
+      "endLine": 6054,
+      "sha256": "55a5333901624baaa489cab0dd28caf9f1989a5c36c52f0155e4322f5d442319"
+    },
+    {
+      "name": "scheduleOrganizeMemoSave",
+      "startLine": 6056,
+      "endLine": 6065,
+      "sha256": "b526265bb90f48a693122db2110971ab07961bf0c779a0d93ca4ad6ec145e454"
+    },
+    {
+      "name": "handleOrganizeMemoInput",
+      "startLine": 6067,
+      "endLine": 6082,
+      "sha256": "6bca66f697d018c30f7fc5f617e938913d1c076fe262edaa2cf46205bd1bda37"
+    },
+    {
+      "name": "handleOrganizeMemoBlur",
+      "startLine": 6084,
+      "endLine": 6093,
+      "sha256": "19743967fd8770a39e1b1bfe77a1d9b8e31d28f264f655ab2fdc1a1b93ad4620"
+    },
+    {
+      "name": "initializeOrganizeMemoInput",
+      "startLine": 6095,
+      "endLine": 6108,
+      "sha256": "7bc89ac45ae64ca4c23dea7cddbf7231430c45494a37778f91614962a8cdb085"
+    },
+    {
+      "name": "finishPersistentStorageInitialization",
+      "startLine": 6110,
+      "endLine": 6117,
+      "sha256": "1a9b5432c61a1fe4c4966ecd411471996a2f2ce035cdedcc1d289a6cccf91a2b"
+    },
+    {
+      "name": "normalizeTasks",
+      "startLine": 6119,
+      "endLine": 6159,
+      "sha256": "205bb8815197f6bd3cacb060d13d000591c155fa361292b234821bafeee43d5d"
+    },
+    {
+      "name": "hasSubtasks",
+      "startLine": 6161,
+      "endLine": 6163,
+      "sha256": "2a08870912598813932e2d812f74e259b10d6964dc7bdadce2af7ab17b7a0c60"
+    },
+    {
+      "name": "isLeafParent",
+      "startLine": 6165,
+      "endLine": 6167,
+      "sha256": "34180a9b8b7d809849af8ae7e85772d1602d7d3d0d0a1493a0dd1086e52f1495"
+    },
+    {
+      "name": "isRunnableParent",
+      "startLine": 6169,
+      "endLine": 6171,
+      "sha256": "f02491a9396de0b4bd816e358434609a46f92c0bc73687f5084dcc5d9aa5b853"
+    },
+    {
+      "name": "syncParentStatus",
+      "startLine": 6173,
+      "endLine": 6177,
+      "sha256": "44f7860481d354d79e7248568f1247d5ccbb95599add82df4f3109d73b9acf6e"
+    },
+    {
+      "name": "syncAllParents",
+      "startLine": 6179,
+      "endLine": 6181,
+      "sha256": "cb12f3ec909550b4305856460ceffe4cd2b82428d11fa50d358a9ad5d7cfa5e9"
+    },
+    {
+      "name": "getTask",
+      "startLine": 6183,
+      "endLine": 6185,
+      "sha256": "f4f5392de3754accdf5e83d4ed021876900d439b6af5eaab54e10af6a1cc9f64"
+    },
+    {
+      "name": "getSubtask",
+      "startLine": 6187,
+      "endLine": 6189,
+      "sha256": "6be0146bd435421d27100ca64275e49bb4525382e4970d1a9b8e0f20a88158e5"
+    },
+    {
+      "name": "getTarget",
+      "startLine": 6191,
+      "endLine": 6195,
+      "sha256": "babe06c4194b181f227d68feafc338f0b79cc4ed9f062ba5bf0c656add1ab9b9"
+    },
+    {
+      "name": "getMessages",
+      "startLine": 6197,
+      "endLine": 6199,
+      "sha256": "9784b0ab3bce412ace2e090bbb097bd7185cd7bc2aac5cd96207c481faedba3c"
+    },
+    {
+      "name": "getElapsedMs",
+      "startLine": 6201,
+      "endLine": 6207,
+      "sha256": "d10810b6f1970beeef65c52e133ab3e92914293e8e4074dab620959ad616d03b"
+    },
+    {
+      "name": "formatElapsed",
+      "startLine": 6209,
+      "endLine": 6215,
+      "sha256": "2d5046f1c656181c33a0f71df7aa3c99e24f741a8792fa2b730b665f4f06be46"
+    },
+    {
+      "name": "formatAchievementElapsed",
+      "startLine": 6217,
+      "endLine": 6223,
+      "sha256": "97dafe43dc8fca5ea9de8cceb8a03577c30303e8b1255e72903d05d5a31838ec"
+    },
+    {
+      "name": "getProgressStats",
+      "startLine": 6225,
+      "endLine": 6242,
+      "sha256": "6127efd6bddb7aeb9aecce1072c0cef8f89f8eec8684d9e5878018c01ea81790"
+    },
+    {
+      "name": "getTaskStructureCounts",
+      "startLine": 6244,
+      "endLine": 6252,
+      "sha256": "e60527d209d0d4ed2f59a6ca10b1ddf8391821a740ed1fb4d173d7208db77a52"
+    },
+    {
+      "name": "shouldClearCompletedItem",
+      "startLine": 6254,
+      "endLine": 6256,
+      "sha256": "55f15e3ef45cdd261a2a41e8bf42e361aecb32c176b2d708aa4b453372dd9da5"
+    },
+    {
+      "name": "getClearCompletedDeleteCounts",
+      "startLine": 6258,
+      "endLine": 6274,
+      "sha256": "9220fc3fbdff229dff41317bcb320f82b1433ce4a837700f85177439c53ed60e"
+    },
+    {
+      "name": "formatBulkDeleteCountText",
+      "startLine": 6276,
+      "endLine": 6286,
+      "sha256": "f7c4555bf05ac0174f5afc32d7f331dcfd57f5e1ae576eda46cf65ed4d820aba"
+    },
+    {
+      "name": "matchesTaskFilter",
+      "startLine": 6288,
+      "endLine": 6292,
+      "sha256": "575640947b4ed0f249a5a8a6d5cb7042996faf083c04f2626fe335008c5bacf5"
+    },
+    {
+      "name": "normalizeTaskSearchText",
+      "startLine": 6294,
+      "endLine": 6296,
+      "sha256": "7c1a0a1586e0d957f80e6ee65fc67a9ddb105e2c261cdf6fef22de6d7e4ad692"
+    },
+    {
+      "name": "matchesTaskSearch",
+      "startLine": 6298,
+      "endLine": 6301,
+      "sha256": "5b2731a9943ad5144524df06743de0d7bb0acc604d5d05a43f45663d19062505"
+    },
+    {
+      "name": "isTaskSearchActive",
+      "startLine": 6303,
+      "endLine": 6305,
+      "sha256": "6f636b8162cb9cc657c44d82b4475394824cff768f3f52acac049a4a04af7c13"
+    },
+    {
+      "name": "resetTaskSearch",
+      "startLine": 6307,
+      "endLine": 6310,
+      "sha256": "3f2cf47fcaa59d844cdf749bf481c0864d0c6d2253cbc3eeaa861aa5dac1ff63"
+    },
+    {
+      "name": "handleTaskSearchInput",
+      "startLine": 6312,
+      "endLine": 6318,
+      "sha256": "d0492ebacfdbcfbcaa5cd5f013c4f0e5d554a15fd1fd3874072d31067ea3d6c8"
+    },
+    {
+      "name": "getFilteredSubtasks",
+      "startLine": 6320,
+      "endLine": 6327,
+      "sha256": "642e25be36db9c9c702f656b9e3a1bf44d5706ed5a8962ba5eef1893e5df30f5"
+    },
+    {
+      "name": "isTaskVisible",
+      "startLine": 6329,
+      "endLine": 6333,
+      "sha256": "6c8cba6269b1d2612ba2b415528c692325f866788b03fc6ae5bfbfbefe8ac4bf"
+    },
+    {
+      "name": "getVisibleParentTaskIds",
+      "startLine": 6335,
+      "endLine": 6339,
+      "sha256": "d3abd29e2a4ad6b5da0be469ac5a824e57a8617bb9ab0f95f5cb113b7ecbc6ef"
+    },
+    {
+      "name": "getVisibleSubtaskIds",
+      "startLine": 6341,
+      "endLine": 6343,
+      "sha256": "0a4f11a3feca048ac15eb6f64573fd862b9a4f8372af886e75a226105b86674c"
+    },
+    {
+      "name": "getVisibleMoveTargetId",
+      "startLine": 6345,
+      "endLine": 6352,
+      "sha256": "bc22d538fea80570746db7e4c35ec61dc607de15c99c402c2cef98c1e4a996d4"
+    },
+    {
+      "name": "syncTaskFilterButtons",
+      "startLine": 6354,
+      "endLine": 6361,
+      "sha256": "9d792094b0081595bad7981670e282c9f86df702be1aa839bc4f486235de025a"
+    },
+    {
+      "name": "setTaskFilter",
+      "startLine": 6363,
+      "endLine": 6371,
+      "sha256": "521976730fbfa92da437328a38ce08563eb771890d7c992bdb10d3ac8da981e4"
+    },
+    {
+      "name": "getPendingTaskCount",
+      "startLine": 6373,
+      "endLine": 6376,
+      "sha256": "206a8f53598327d38c1ba5713e517bf1adadc74792183ebffb774d94eb0b9c97"
+    },
+    {
+      "name": "updateDocumentTaskIndicators",
+      "startLine": 6378,
+      "endLine": 6382,
+      "sha256": "41c45a93caaa3cfc28eae190b9cc31ed9519fe298a4c8b65d09a6ed7d5e60199"
+    },
+    {
+      "name": "isAllDone",
+      "startLine": 6384,
+      "endLine": 6387,
+      "sha256": "80235ba8aa9d883f3f690199d922585878d33e10713abd599f3676a4fb6078b2"
+    },
+    {
+      "name": "applyColorMode",
+      "startLine": 6389,
+      "endLine": 6395,
+      "sha256": "c03070fe090525a854cd9b68d912874dcdd26912be0b11908e2f55637ba6f234"
+    },
+    {
+      "name": "applyThemeColor",
+      "startLine": 6397,
+      "endLine": 6403,
+      "sha256": "9a6e5ce65b334647b9909e8609bbea51fccb6d501ffc6596af127884eb463524"
+    },
+    {
+      "name": "isCompactSidebarViewport",
+      "startLine": 6405,
+      "endLine": 6407,
+      "sha256": "f8ba1646ce55e23913f530fd1c7b49d2a434ec90bd5a9eb8ead958efc0035cf8"
+    },
+    {
+      "name": "applySidebarState",
+      "startLine": 6409,
+      "endLine": 6416,
+      "sha256": "141dd631b262362ffb0b9f819bb9e03b597c1ab4a7f598d927cdc1c9dfce4e39"
+    },
+    {
+      "name": "getRouteFromHash",
+      "startLine": 6423,
+      "endLine": 6426,
+      "sha256": "954bdf98e1210b9046df3946f2f481c15eb13d06423b6ea0ba39f6c591f5c5b3"
+    },
+    {
+      "name": "navigate",
+      "startLine": 6428,
+      "endLine": 6435,
+      "sha256": "417a6d4e96d7fbeb7cb3ab6b59192d881575b17f001af95d62ba307b3764fb58"
+    },
+    {
+      "name": "renderRoute",
+      "startLine": 6437,
+      "endLine": 6466,
+      "sha256": "cdfa8301836d5201ec3eb09eb99b71072bc27feeb694adcf8ed0ed7da5570be4"
+    },
+    {
+      "name": "getAudioCtx",
+      "startLine": 6482,
+      "endLine": 6489,
+      "sha256": "f3877a9025946ec6c801925774203de620aad4ea37a7155ec597f3ce4a59191f"
+    },
+    {
+      "name": "_getAudioOutputNode",
+      "startLine": 6491,
+      "endLine": 6500,
+      "sha256": "0321c591341dba1156285f39e201e12312b8c46721d3a087d80127655d72b28e"
+    },
+    {
+      "name": "_withRunningAudio",
+      "startLine": 6502,
+      "endLine": 6520,
+      "sha256": "e908bdee86d510593a99fb529f08db6a449fb10868bbef7e644e40f1b84df8d3"
+    },
+    {
+      "name": "_primeAudioContext",
+      "startLine": 6522,
+      "endLine": 6538,
+      "sha256": "620d6b5bffd32fc0c68e343ee543b84097bfd13fd28278c9c1b511356edfb93b"
+    },
+    {
+      "name": "_clampAudioPan",
+      "startLine": 6540,
+      "endLine": 6543,
+      "sha256": "4bf72067147e7ecacf899b6539d3907eea82074ec6940d315d71d72b14856a7f"
+    },
+    {
+      "name": "_connectToOutputWithPan",
+      "startLine": 6545,
+      "endLine": 6560,
+      "sha256": "a177ed5f6c41bdde0973ff2d265e6cb79125319393782ebb24b0c16962b733b4"
+    },
+    {
+      "name": "playTone",
+      "startLine": 6562,
+      "endLine": 6613,
+      "sha256": "cffce1d108a39f4b418503bbf737eef91a3b2f17802ad54bba7aca52a19d7182"
+    },
+    {
+      "name": "playSubtaskCompleteSound",
+      "startLine": 6615,
+      "endLine": 6617,
+      "sha256": "50ad4a2f40894b2df81ca5ae9c0e7f50e8cd99fefd3e4c7a177dff3937dc49a7"
+    },
+    {
+      "name": "playParentCompleteSound",
+      "startLine": 6619,
+      "endLine": 6698,
+      "sha256": "9985bd224fd89d7cc9bbe850ace4c9247950e8551890d4d107873b9ece2996aa"
+    },
+    {
+      "name": "playAllClearSound",
+      "startLine": 6700,
+      "endLine": 6702,
+      "sha256": "97baa773e11569ea18c9d87cbefa8ad553631754ead9b0fc0bd04b7104eaf5cb"
+    },
+    {
+      "name": "playFocusStartSound",
+      "startLine": 6704,
+      "endLine": 6729,
+      "sha256": "01593449cbf292c6e335fe08868d91f5a1b8b04a1ff61fba5d9b7cf8e5a31c8f"
+    },
+    {
+      "name": "playFocusShiftSound",
+      "startLine": 6731,
+      "endLine": 6777,
+      "sha256": "80045b1118823aefea8f0244bdd15e4172080332d27052945e906e4894b571e2"
+    },
+    {
+      "name": "playFocusAbortSound",
+      "startLine": 6779,
+      "endLine": 6803,
+      "sha256": "d764b242ac81d9cdb3ef56cab5e756b545672cd056c446d8118a3570b9480945"
+    },
+    {
+      "name": "playAddSound",
+      "startLine": 6805,
+      "endLine": 6830,
+      "sha256": "fe75d86ee8ba0da75078e749bbe74fa54bb3c8646ca7a5b365d67abdab796094"
+    },
+    {
+      "name": "playDeleteSound",
+      "startLine": 6832,
+      "endLine": 6857,
+      "sha256": "5eb278ec4a6730cc9099da0cf7b6b9a0f8222549d9ba4314a5eb9a737ac31e31"
+    },
+    {
+      "name": "resizeCanvas",
+      "startLine": 6867,
+      "endLine": 6871,
+      "sha256": "126b6abcef7ed11c25e5c59eeb1817a43bbb55e8068787099feb503ccd8f1ceb"
+    },
+    {
+      "name": "launchConfetti",
+      "startLine": 6879,
+      "endLine": 6907,
+      "sha256": "a9933c78b430a3f2f9a895cae17215447fd7cdc4cf49eb09a909c1b00d924dc7"
+    },
+    {
+      "name": "animateConfetti",
+      "startLine": 6909,
+      "endLine": 6953,
+      "sha256": "67d22e9c46127dd3212aabb9a2224b56070a768e6ba75370a59335fa05e4294d"
+    },
+    {
+      "name": "showCelebration",
+      "startLine": 6955,
+      "endLine": 6972,
+      "sha256": "cdb739c0c1b381983a158f4e6c8bd2f31b10cf8e2e3ad7821b6f60bfe54398b7"
+    },
+    {
+      "name": "celebrateElement",
+      "startLine": 6974,
+      "endLine": 7008,
+      "sha256": "554f9d1a7d45a1932409734ec21e26421732026e2916f2cb4f4adcf3357633dd"
+    },
+    {
+      "name": "buildDeleteParentConfirmMessage",
+      "startLine": 7010,
+      "endLine": 7017,
+      "sha256": "7d651524dd65eb0312d4fe190f278d7fb37f9aa928e4fa6b8e0b81af5cadcd60"
+    },
+    {
+      "name": "buildDeleteSubtaskConfirmMessage",
+      "startLine": 7019,
+      "endLine": 7023,
+      "sha256": "64b68c7594ad609e2797731d2d083d42681d241cf7b9c303f2866f1d9fa56217"
+    },
+    {
+      "name": "getClearCompletedScopeText",
+      "startLine": 7025,
+      "endLine": 7027,
+      "sha256": "a0b892a988f0616260de934ee15ba100ece9b0880d098db75468af85b4ef2d9c"
+    },
+    {
+      "name": "buildClearCompletedConfirmMessage",
+      "startLine": 7029,
+      "endLine": 7032,
+      "sha256": "194512dcc163e0147767fac7b01a2d373cf533afc699add9b6fcfe273358c20e"
+    },
+    {
+      "name": "buildClearAllConfirmMessage",
+      "startLine": 7034,
+      "endLine": 7037,
+      "sha256": "b680aaf0c9c9db1a57fb36a15eaaba6ff8e224442c03b55360d6c74cb2ac9e6f"
+    },
+    {
+      "name": "buildAbortFocusConfirmMessage",
+      "startLine": 7039,
+      "endLine": 7042,
+      "sha256": "db05644ffc16516a3e7272427070b28720c55093f3646cb86cc4da924e277735"
+    },
+    {
+      "name": "openConfirmModal",
+      "startLine": 7047,
+      "endLine": 7079,
+      "sha256": "bde9efae5dcfedbd3ec9a8e978f11cfa540dbd98dfed540f338269da9c9ef77f"
+    },
+    {
+      "name": "closeConfirmModal",
+      "startLine": 7081,
+      "endLine": 7087,
+      "sha256": "a34de0a93234c10aaf61803ef935d7f364b1449d61f4c5d7da58d13af989bef6"
+    },
+    {
+      "name": "executeConfirmedAction",
+      "startLine": 7089,
+      "endLine": 7132,
+      "sha256": "bb8c442a24a07757348242d9d9fc3a842ff5206ea9d2749a18fa3444a9aa80d2"
+    },
+    {
+      "name": "renderMessages",
+      "startLine": 7137,
+      "endLine": 7218,
+      "sha256": "349b462c44c7ff73c58e596e4d6a76b52e80a1bf3ed8505ce797428b7a19077f"
+    },
+    {
+      "name": "saveMessage",
+      "startLine": 7220,
+      "endLine": 7256,
+      "sha256": "f881a34d0729207ae966f3867673fb3917bc9b01e46bad99c0f3e6acd6e70197"
+    },
+    {
+      "name": "editMessage",
+      "startLine": 7258,
+      "endLine": 7270,
+      "sha256": "550524e743e970ae7421a25fc5cafe4cd1ccd02436a7608913e4e2017c3c54d7"
+    },
+    {
+      "name": "saveEditedMessage",
+      "startLine": 7272,
+      "endLine": 7317,
+      "sha256": "d026be0192e6b9dbd2fd189542393df88aaef71e9d52cbd21217e9d475f991e2"
+    },
+    {
+      "name": "deleteMessage",
+      "startLine": 7319,
+      "endLine": 7354,
+      "sha256": "804e60b4ba2004e65a6843fdaaed5fd19e9087440b4c25d66b502f2987548e54"
+    },
+    {
+      "name": "openParentModal",
+      "startLine": 7359,
+      "endLine": 7375,
+      "sha256": "85d87348b369ee10b0b06fc501765d158f83b063ab350b6d7809ab8568c73826"
+    },
+    {
+      "name": "closeParentModal",
+      "startLine": 7377,
+      "endLine": 7389,
+      "sha256": "8fc1dd8bcbd13b32ecf01b1356a577d0c42eabaa3474c20cf2902ab50749de87"
+    },
+    {
+      "name": "renderParentModalSubtasks",
+      "startLine": 7391,
+      "endLine": 7457,
+      "sha256": "e360f9779141337e27ea2a3b49ea7c16faed592703b8b70636557d9d391fe200"
+    },
+    {
+      "name": "saveParentEdit",
+      "startLine": 7459,
+      "endLine": 7492,
+      "sha256": "c283422b3ed198b4bcdb6950a9b9bc3b1583d2ace2d5d398b245786ea624618f"
+    },
+    {
+      "name": "addSubtaskFromModal",
+      "startLine": 7494,
+      "endLine": 7545,
+      "sha256": "d2f935477d9ca0ded930a4501a780cd766cb89f5851b7fdf92d446ce4aad0ec3"
+    },
+    {
+      "name": "openSubtaskModal",
+      "startLine": 7547,
+      "endLine": 7560,
+      "sha256": "ca5c3904cb5c984b50d3ac11717ae184845707fc82d11d1af6ba140e4b179292"
+    },
+    {
+      "name": "closeSubtaskModal",
+      "startLine": 7562,
+      "endLine": 7574,
+      "sha256": "83c0a35c201f8ae95a920a8f16c1c16fde9670a960c10d5be8371a3806891068"
+    },
+    {
+      "name": "saveSubtaskEdit",
+      "startLine": 7576,
+      "endLine": 7609,
+      "sha256": "520de0758c9b4179e687fea3eeb306a7124d4272898e51181c77f4088ec7a69e"
+    },
+    {
+      "name": "clearRunningAcrossAllTargets",
+      "startLine": 7614,
+      "endLine": 7629,
+      "sha256": "c683afa40edd7639c3c48d11943952156ab7ae2246dac08398794ee5d1a08947"
+    },
+    {
+      "name": "resetFocusPomodoroState",
+      "startLine": 7631,
+      "endLine": 7638,
+      "sha256": "3d237ba5e6f7e9ba15d502e6b626affa9a9f4f2f008c60fb5f21289b866b3d73"
+    },
+    {
+      "name": "isPomodoroEnabledForSession",
+      "startLine": 7640,
+      "endLine": 7642,
+      "sha256": "db7e9648ff2ff2bea413921fc61c0f64fa37121bc4e0270a0f9e05601bb87215"
+    },
+    {
+      "name": "getPomodoroPhaseDurationMs",
+      "startLine": 7644,
+      "endLine": 7647,
+      "sha256": "bd62e022baf1bc5fd65a82f60f5c94584de8ae9dfc84e7dd07cf9effb0f20233"
+    },
+    {
+      "name": "getPomodoroPhaseRemainingMs",
+      "startLine": 7649,
+      "endLine": 7655,
+      "sha256": "dfc704ea418fea68f93c9756003b99cc63207d0fa2cebf1d0de2b266aded9cd1"
+    },
+    {
+      "name": "startFocusPomodoroSession",
+      "startLine": 7657,
+      "endLine": 7678,
+      "sha256": "956dcd8bc3d55ab159ff429f6e37743786a265ea7b81b9c2329f360b93c6b7ef"
+    },
+    {
+      "name": "syncPomodoroPhaseProgress",
+      "startLine": 7680,
+      "endLine": 7723,
+      "sha256": "6bd0ffd29dcf09e02d340070b9347c0a1dfd9c1f9f8a5d28f83664ee21b52b67"
+    },
+    {
+      "name": "syncActivePomodoroPhaseProgress",
+      "startLine": 7725,
+      "endLine": 7727,
+      "sha256": "7fa7d85d69c5bb0aadb7c4ef13060422eb516efff4b299b0e8102ae173c32aa7"
+    },
+    {
+      "name": "notifyPomodoroPhaseTransition",
+      "startLine": 7729,
+      "endLine": 7748,
+      "sha256": "7fcfba51874b70c1d81615f086f79449eb5a94c333d5628fe59b805195292098"
+    },
+    {
+      "name": "syncFocusPhaseVisualState",
+      "startLine": 7750,
+      "endLine": 7756,
+      "sha256": "5f08d3dcb89655e6ee7263c8c17bbfa067c00e91424f1d24f9b26107cd0041e7"
+    },
+    {
+      "name": "canOpenFocusForParent",
+      "startLine": 7758,
+      "endLine": 7760,
+      "sha256": "052829160de0aefd84b58c0d4b851c9bb4c1dbb8a192dfdbe55d3104e5a24d14"
+    },
+    {
+      "name": "canOpenFocusForSubtask",
+      "startLine": 7762,
+      "endLine": 7764,
+      "sha256": "7881649c3d299c96f10b80ba5414ac09b501b5cceb7a6fa26a05f3b46ef03470"
+    },
+    {
+      "name": "openFocusModal",
+      "startLine": 7766,
+      "endLine": 7832,
+      "sha256": "d952f4c15feb954a13ca9b3b7ea5c40e55568664bc23f9a38e339c5eb6bdb03f"
+    },
+    {
+      "name": "closeFocusModal",
+      "startLine": 7834,
+      "endLine": 7851,
+      "sha256": "80c1044375881c925ba9894f139d811975456edca83947835868c7ea040183b0"
+    },
+    {
+      "name": "getActiveFocusTarget",
+      "startLine": 7853,
+      "endLine": 7856,
+      "sha256": "c2c70ffa8554213a7ae1834463dc6b0a7dba0fd20a43084f91bcc2785a7b51ca"
+    },
+    {
+      "name": "updateFocusTimer",
+      "startLine": 7858,
+      "endLine": 7883,
+      "sha256": "4f6e5f0014980872ed373ed03766c880bda07dbde575591a9ad9bfb0b4d8d921"
+    },
+    {
+      "name": "syncFocusStatusChip",
+      "startLine": 7885,
+      "endLine": 7896,
+      "sha256": "9c40d05bca1639d4a678114dbfe405914c853677bf1a0defd952db62bb406442"
+    },
+    {
+      "name": "syncFocusPauseButton",
+      "startLine": 7898,
+      "endLine": 7915,
+      "sha256": "794d6eba60439b8f993591cad3a4929c97215a201c7dc84f2e6d718e53d1b482"
+    },
+    {
+      "name": "pauseOrResumeFocus",
+      "startLine": 7917,
+      "endLine": 7964,
+      "sha256": "ca442ca7450275583af2c242c9beb3c931198efdd19b5e3ed22ca8103d840da5"
+    },
+    {
+      "name": "performAbortFocus",
+      "startLine": 7966,
+      "endLine": 8001,
+      "sha256": "22faa2d88dbb527207d5758a8c22a26d0a0085f4ea18d2327d1333b2f0b0a0a5"
+    },
+    {
+      "name": "abortFocus",
+      "startLine": 8003,
+      "endLine": 8012,
+      "sha256": "101572cf15824f8f1339ea434e972847589da08613deac63e2d03c4fca4ffbda"
+    },
+    {
+      "name": "completeFocus",
+      "startLine": 8014,
+      "endLine": 8070,
+      "sha256": "d709b7612167ba038e69d4b9cf112c4d847b2034eda918a57521c80b67fca2e1"
+    },
+    {
+      "name": "undoCompleted",
+      "startLine": 8072,
+      "endLine": 8099,
+      "sha256": "cd925628532d2270081dc082a34a33cbb03797b7cb79eecbf42fdd536cbaf2ba"
+    },
+    {
+      "name": "showDragInsertionPreview",
+      "startLine": 8101,
+      "endLine": 8115,
+      "sha256": "05c4ed0c2e36526b0c67363319b67e1780d3b17be2ec0cf65c29e5db1910efda"
+    },
+    {
+      "name": "clearDragDropIndicators",
+      "startLine": 8117,
+      "endLine": 8119,
+      "sha256": "c1c9f786a8eaf42563a59a6342a14cb4d018ce17dc710a1513593ea5cc5357e9"
+    },
+    {
+      "name": "resetDragState",
+      "startLine": 8121,
+      "endLine": 8131,
+      "sha256": "258f5c40d3d6c61811e90ec840be1ceb3b7e498f4488fb15c617950035db4d0b"
+    },
+    {
+      "name": "moveArrayItem",
+      "startLine": 8133,
+      "endLine": 8143,
+      "sha256": "741197a745a47135f71c59a0f7a0730f0d772ad688644cfd1ec5d005db8ce902"
+    },
+    {
+      "name": "reorderParentTasks",
+      "startLine": 8145,
+      "endLine": 8163,
+      "sha256": "04b5156d77c751441cd75dd21dc4a8d5f936102f8127f8accdacbf2c501ca6e6"
+    },
+    {
+      "name": "reorderSubtasks",
+      "startLine": 8165,
+      "endLine": 8186,
+      "sha256": "7d60c6609ea0602f712f56a66f44e53294301de50d630c2773c4c76d79664927"
+    },
+    {
+      "name": "getEditorReorderContext",
+      "startLine": 8188,
+      "endLine": 8193,
+      "sha256": "e3703ce869271073c20278defc6eb4c9731758661340ffa080e50d70017d10af"
+    },
+    {
+      "name": "syncEditorReorderControls",
+      "startLine": 8195,
+      "endLine": 8204,
+      "sha256": "f6029f425b685512a35af93d1aae4ea5fefcb94d042681a5c0a69ca82ba7a88e"
+    },
+    {
+      "name": "moveEditorTask",
+      "startLine": 8206,
+      "endLine": 8224,
+      "sha256": "3927c9035eae2dd92b16c702ab4c4a31f58057531f8e7f65851ffa427006bda0"
+    },
+    {
+      "name": "_restoreFocusToTaskRow",
+      "startLine": 8226,
+      "endLine": 8242,
+      "sha256": "5e7256a2486156290c232bb526af998f7ea94200b776dfd25ae6d2825a6e979c"
+    },
+    {
+      "name": "_moveFocusedTaskRowByOffset",
+      "startLine": 8244,
+      "endLine": 8283,
+      "sha256": "fad553e203fa49ea4c94dae0a510e4b411da06f81876a58b28e41360355b298c"
+    },
+    {
+      "name": "isPointNearRect",
+      "startLine": 8285,
+      "endLine": 8293,
+      "sha256": "44502f13c23451b320e3cf7725479655772447dbcf63a19cfaa345d53753b598"
+    },
+    {
+      "name": "resolveDropIntentByClientY",
+      "startLine": 8295,
+      "endLine": 8333,
+      "sha256": "0d75124a530792bbeb7242fdd3c4da3528b481b299f563818374cc23a2b1b4dc"
+    },
+    {
+      "name": "startDragFromHandle",
+      "startLine": 8335,
+      "endLine": 8389,
+      "sha256": "e6cf78767b436276ccc5a0948c550a7d51afdcb677c378f7fb9366eaaa61e321"
+    },
+    {
+      "name": "clearModalSubtaskDragIndicators",
+      "startLine": 8391,
+      "endLine": 8393,
+      "sha256": "3dfe75b37551c80312e147d045552347865ca2faa9e5dd340ac302e6f4024d9c"
+    },
+    {
+      "name": "resetModalSubtaskDragState",
+      "startLine": 8395,
+      "endLine": 8404,
+      "sha256": "c9d83c94225ee02efbaae64fe5c0fd2dcd2cad59cb67f5f8c8b64b08c3545ba1"
+    },
+    {
+      "name": "startModalSubtaskDrag",
+      "startLine": 8406,
+      "endLine": 8426,
+      "sha256": "fa722407883a781c42e65f0723992452c3921c9a4a0bf9350f237913cb418e3f"
+    },
+    {
+      "name": "render",
+      "startLine": 8431,
+      "endLine": 8478,
+      "sha256": "0cb4e7e524c9927982939c92e91d95e6db7d6497865b9db16936a5b642f2046f"
+    },
+    {
+      "name": "getFocusIconForMeta",
+      "startLine": 8480,
+      "endLine": 8484,
+      "sha256": "379e2a989028d3c690490ab3bcb67bdbc238e77109d774da2369825b73e30970"
+    },
+    {
+      "name": "getTaskRowRenderKey",
+      "startLine": 8486,
+      "endLine": 8490,
+      "sha256": "bb1806976e773aee5296963fb5a177d382c6763faad3544aa882a36adac83fb5"
+    },
+    {
+      "name": "createSubtaskRowMarkup",
+      "startLine": 8492,
+      "endLine": 8561,
+      "sha256": "fd1f14c89389151f2f9c02b91c382c3d612c9abf1c564f7558849197e00f2ede"
+    },
+    {
+      "name": "pruneCachedChildRows",
+      "startLine": 8563,
+      "endLine": 8575,
+      "sha256": "d16023e301bfc8294ce9a9a63e1b764bd1bda746accba213b33bab7259000005"
+    },
+    {
+      "name": "hasTaskRowDragState",
+      "startLine": 8577,
+      "endLine": 8580,
+      "sha256": "8764acf3d0ee385d041a52371a865712ee135de852ac12eb5b2b413bc88779ed"
+    },
+    {
+      "name": "reconcileCachedTaskRow",
+      "startLine": 8583,
+      "endLine": 8611,
+      "sha256": "fc265fdadf3fb664c5182a894e34d1eb0acda58393d014b1db0a7b4b26a9d043"
+    },
+    {
+      "name": "reconcileTaskRows",
+      "startLine": 8613,
+      "endLine": 8625,
+      "sha256": "c2d6decce342464438adb37b096a761d0b16df69af58c28434c9da3155a53704"
+    },
+    {
+      "name": "renderTasks",
+      "startLine": 8627,
+      "endLine": 8813,
+      "sha256": "7be9099946b27a3182538e739596d90184e42111613323174e6d95d0e95d5d88"
+    },
+    {
+      "name": "setThemeColor",
+      "startLine": 8815,
+      "endLine": 8825,
+      "sha256": "15a0c00cb0ec0496e04d958ed8d386cca5ab8e7c573185fde31d24ddca658cda"
+    },
+    {
+      "name": "renderThemeOptions",
+      "startLine": 8827,
+      "endLine": 8854,
+      "sha256": "a8ca17883f2cef1f03de1db604c70e5a80bbf5f17911fadad0141f5671438046"
+    },
+    {
+      "name": "renderPomodoroSettings",
+      "startLine": 8856,
+      "endLine": 8861,
+      "sha256": "6e22dfaee793a9bc0cd46b91b66d3f45d643da8ef72bf4287068d6e0a70fa1f2"
+    },
+    {
+      "name": "syncPomodoroSettingsControls",
+      "startLine": 8863,
+      "endLine": 8877,
+      "sha256": "a7d66fe4db79f890759331609011f5c0364f9bfe56cafa20c7cb58e2d151d62d"
+    },
+    {
+      "name": "commitPomodoroSettingsFromControls",
+      "startLine": 8879,
+      "endLine": 8922,
+      "sha256": "0e19226abbce88aa0f1d9a500aaac87364ed4e8f5ce31712782cb51fc5304c1c"
+    },
+    {
+      "name": "commitPomodoroMinutesFromInput",
+      "startLine": 8924,
+      "endLine": 8927,
+      "sha256": "a6cd36854e70805171efc9cd8ec461456796afb7a9a8fa35f4b382cc738e0dba"
+    },
+    {
+      "name": "renderSettings",
+      "startLine": 8929,
+      "endLine": 8936,
+      "sha256": "532d1b887cce1f4c099fb9b95e3b33aeea2fb3b6a7817938d31cad5e10239a70"
+    },
+    {
+      "name": "_createParentDeleteUndoPayload",
+      "startLine": 8941,
+      "endLine": 8951,
+      "sha256": "7dce32113de0f032e5a16f1ec0d90d67b3307c8c7f148ece9df32e5972c6477d"
+    },
+    {
+      "name": "_createSubtaskDeleteUndoPayload",
+      "startLine": 8953,
+      "endLine": 8966,
+      "sha256": "430d7ee3937c1478fbaa67b9f3de18638dbda58a835f1ec7a12fcf0aaef4eb38"
+    },
+    {
+      "name": "_createClearCompletedUndoPayload",
+      "startLine": 8968,
+      "endLine": 9005,
+      "sha256": "2471a46ded518c9d993c0e99a856597d938a49579ddc6a004c9b17b111ecf200"
+    },
+    {
+      "name": "_createClearAllUndoPayload",
+      "startLine": 9007,
+      "endLine": 9016,
+      "sha256": "f7efe0726eb687a7dc2822ae73aa7900aad23345334233aa9cfbf2590af9b8df"
+    },
+    {
+      "name": "performDeleteParent",
+      "startLine": 9018,
+      "endLine": 9030,
+      "sha256": "4a656ec5b5e1d8d487ad0319586d2a1697bdd079a1c680502e5ded903911646a"
+    },
+    {
+      "name": "performDeleteSubtask",
+      "startLine": 9032,
+      "endLine": 9056,
+      "sha256": "fa994363b022d9d6d85882b892bf46942c2e459e7b8edbee93b3ce5fb7ae83e7"
+    },
+    {
+      "name": "performClearCompleted",
+      "startLine": 9058,
+      "endLine": 9091,
+      "sha256": "0aeae087116c27f0525b616a614bd6554ce109167304c37e21f3e3b3b9134302"
+    },
+    {
+      "name": "performClearAll",
+      "startLine": 9093,
+      "endLine": 9108,
+      "sha256": "00acbd76f4c221f942d4a3fe67ed76ccb3848d2b7ab9990b8bbbd2099ec4581f"
+    },
+    {
+      "name": "addTask",
+      "startLine": 9113,
+      "endLine": 9156,
+      "sha256": "8a7fa444e6578746740493be41d4d34fd9920cf060f59c0f0c29e5786a5f65c9"
+    },
+    {
+      "name": "isTypingTarget",
+      "startLine": 9163,
+      "endLine": 9176,
+      "sha256": "bb06945cae8b826a8a87ed24419dd233b490b83c1c51333a09f63d01ed18eb98"
+    },
+    {
+      "name": "toggleSidebar",
+      "startLine": 9178,
+      "endLine": 9186,
+      "sha256": "218e12e17eff49b4572807a4691b3921ac9818442dbff22b52eebb1890eb55f9"
+    },
+    {
+      "name": "openClearCompletedConfirm",
+      "startLine": 9188,
+      "endLine": 9200,
+      "sha256": "67b418b478d33296a4c84a370d71fcd0be3a1d86a8403fcb8db42423c2692dd3"
+    },
+    {
+      "name": "openClearAllConfirm",
+      "startLine": 9202,
+      "endLine": 9213,
+      "sha256": "57345f911f28ce038c3243a1e8415eff550d0fc570eae810ae82fe891181ecab"
+    },
+    {
+      "name": "handleTaskFilterClick",
+      "startLine": 9215,
+      "endLine": 9220,
+      "sha256": "864c744df86467044df174cf9cf135207b5cd0683337783b29b2093edac97cf1"
+    },
+    {
+      "name": "focusTaskInputWithRoute",
+      "startLine": 9222,
+      "endLine": 9230,
+      "sha256": "be2d31d52211c84f6ec8e17188cfd7820b1d8b7fa0eb1f752b5e2e7748d156e3"
+    },
+    {
+      "name": "focusMemoInputWithRoute",
+      "startLine": 9232,
+      "endLine": 9239,
+      "sha256": "f49a097f5efb87aea271f8bc7ab24482277d101e6222b14fd4a3853d131911c1"
+    },
+    {
+      "name": "focusMessageInputWithRoute",
+      "startLine": 9241,
+      "endLine": 9249,
+      "sha256": "a817746f90b8e8f926318e3efab1d988cca31e27c2e4a4410b49e329b580fe66"
+    },
+    {
+      "name": "toggleColorModeWithShortcut",
+      "startLine": 9251,
+      "endLine": 9257,
+      "sha256": "0b325ba089756748120cea1cdaf8b68b44d01d0473b379c0b2bba232cda1b783"
+    },
+    {
+      "name": "applyAriaKeyShortcuts",
+      "startLine": 9259,
+      "endLine": 9285,
+      "sha256": "aa48b31e41be2420b4c0bc453722b89dd8fb8dadec29fe3366901233509d7847"
+    },
+    {
+      "name": "handleDocumentShortcuts",
+      "startLine": 9287,
+      "endLine": 9449,
+      "sha256": "95e2aa07f805f1a655ac4f775d54b70328579cedd0432f7e7a7307d8ed93d3a2"
+    },
+    {
+      "name": "closeBulkActions",
+      "startLine": 9491,
+      "endLine": 9496,
+      "sha256": "df99266062ee55a9e2500c5b42539a1cad476bfe3e92e4a06540bfb7ec25ecdd"
+    },
+    {
+      "name": "bindPomodoroMinutesInput",
+      "startLine": 10072,
+      "endLine": 10081,
+      "sha256": "537e0e9aa0ceb3d856f653ea3f70c088d25ce74f61ce7505ef678e5299ae0d48"
+    },
+    {
+      "name": "bindTextLengthHint",
+      "startLine": 10116,
+      "endLine": 10134,
+      "sha256": "1555da37b4567df9a9f4fbfc36d83e28ca4e8765931316a0ff05d10ef76c6553"
+    }
+  ],
+  "changed": [
+    "renderTasks"
+  ],
+  "added": [
+    "pruneCachedChildRows",
+    "hasTaskRowDragState",
+    "reconcileCachedTaskRow"
+  ],
+  "removed": [],
+  "htmlOutsideScriptUnchanged": true,
+  "otherApplicationStatementsUnchanged": true,
+  "caveat": "Function enumeration and exact source comparison are not a complete semantic/API audit. Anonymous callbacks are included in allFunctionNodes, with null names."
+}

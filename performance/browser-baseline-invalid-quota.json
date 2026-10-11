@@ -1,0 +1,1472 @@
+[
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-0-1791474729348",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:09.521Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 47.39999997615814,
+        "displayMs": 72.79999995231628,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.5,
+        "displayMs": 34.10000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.100000023841858,
+        "displayMs": 31.80000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.300000011920929,
+        "displayMs": 33.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-0-1791474729348",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:09.688Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 35.80000001192093,
+        "displayMs": 59.80000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 8.699999988079071,
+        "displayMs": 33.69999998807907
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5.099999964237213,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.899999976158142,
+        "displayMs": 33.59999996423721
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-1-1791474729695",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:09.888Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 67.60000002384186,
+        "displayMs": 92.90000003576279,
+        "seedMs": 0.5
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 7.099999964237213,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.100000023841858,
+        "displayMs": 32.69999998807907
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-1-1791474729695",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:10.055Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 36.69999998807907,
+        "displayMs": 61.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.699999988079071,
+        "displayMs": 33.80000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.100000023841858,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.099999964237213,
+        "displayMs": 33.5
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-2-1791474730058",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:10.221Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 35.30000001192093,
+        "displayMs": 62.40000003576279,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5.400000035762787,
+        "displayMs": 32.80000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 6.400000035762787,
+        "displayMs": 33.69999998807907
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.899999976158142,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-2-1791474730058",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:10.387Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 35.19999998807907,
+        "displayMs": 62,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 7.600000023841858,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5.599999964237213,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.199999988079071,
+        "displayMs": 32.59999996423721
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-3-1791474730391",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:10.554Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 34.60000002384186,
+        "displayMs": 61.80000001192093,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5.5,
+        "displayMs": 34.09999996423721
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.5,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.199999988079071,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-3-1791474730391",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:10.743Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 57,
+        "displayMs": 71.29999995231628,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5,
+        "displayMs": 36.30000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.799999952316284,
+        "displayMs": 34.39999997615814
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-4-1791474730767",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:10.939Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44.80000001192093,
+        "displayMs": 71.30000001192093,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.800000011920929,
+        "displayMs": 32.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5.899999976158142,
+        "displayMs": 33.59999996423721
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.800000011920929,
+        "displayMs": 33.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-tasks-4-1791474730767",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:11.122Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 47.5,
+        "displayMs": 70.59999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.600000023841858,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.799999952316284,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.800000011920929,
+        "displayMs": 33.40000003576279
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-0-1791474731126",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:11.288Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 38.59999996423721,
+        "displayMs": 62,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 8.899999976158142,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.5,
+        "displayMs": 33.299999952316284
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-0-1791474731126",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:11.471Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 56,
+        "displayMs": 77.40000003576279,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.20000004768371582,
+        "displayMs": 32.60000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 9.599999964237213,
+        "displayMs": 38.799999952316284
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 4.100000023841858,
+        "displayMs": 27
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-1-1791474731476",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:11.655Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 61.69999998807907,
+        "displayMs": 78.80000001192093,
+        "seedMs": 0.3999999761581421
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 12.899999976158142,
+        "displayMs": 33.59999996423721
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.600000023841858,
+        "displayMs": 32.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-1-1791474731476",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:11.822Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44.39999997615814,
+        "displayMs": 60.39999997615814,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.09999996423721313,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 8.299999952316284,
+        "displayMs": 33.69999998807907
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3,
+        "displayMs": 33.200000047683716
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-2-1791474731826",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:11.989Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 39.10000002384186,
+        "displayMs": 62.80000001192093,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 32.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 9.199999988079071,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 4.799999952316284,
+        "displayMs": 34.09999996423721
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-2-1791474731826",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:12.155Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44.39999997615814,
+        "displayMs": 59.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.09999996423721
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 8.900000035762787,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.599999964237213,
+        "displayMs": 33.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-3-1791474732159",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:12.339Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 52.69999998807907,
+        "displayMs": 79.29999995231628,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.10000002384185791,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 8.199999988079071,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.100000023841858,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-3-1791474732159",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:12.522Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 51.39999997615814,
+        "displayMs": 78.30000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 11.699999988079071,
+        "displayMs": 33.89999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.900000035762787,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-4-1791474732526",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:12.699Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 42.80000001192093,
+        "displayMs": 62.89999997615814,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 32.30000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 10.699999988079071,
+        "displayMs": 33.09999996423721
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.199999988079071,
+        "displayMs": 44.5
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-memo-4-1791474732526",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:12.871Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 41.80000001192093,
+        "displayMs": 64.90000003576279,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 8.800000011920929,
+        "displayMs": 32.60000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 4.699999988079071,
+        "displayMs": 34
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-0-1791474732881",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:13.072Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 64.39999997615814,
+        "displayMs": 90.19999998807907,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.200000047683716,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4,
+        "displayMs": 34.39999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 4.399999976158142,
+        "displayMs": 32.89999997615814
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-0-1791474732881",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:13.239Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44.40000003576279,
+        "displayMs": 61.90000003576279,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5.699999988079071,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.899999976158142,
+        "displayMs": 32.89999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.699999988079071,
+        "displayMs": 33.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-1-1791474733244",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:13.404Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 46.30000001192093,
+        "displayMs": 61.60000002384186,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 8.899999976158142,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5.800000011920929,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.5,
+        "displayMs": 32.10000002384186
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-1-1791474733244",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:13.554Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 36,
+        "displayMs": 45.89999997615814,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.199999988079071,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.100000023841858,
+        "displayMs": 32.90000003576279
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 4,
+        "displayMs": 32.5
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-2-1791474733559",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:13.738Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 80.30000001192093,
+        "displayMs": 84.80000001192093,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5.399999976158142,
+        "displayMs": 27.099999964237213
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 2.900000035762787,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.399999976158142,
+        "displayMs": 33.299999952316284
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-2-1791474733559",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:13.905Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44.89999997615814,
+        "displayMs": 61.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.199999988079071,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5.5,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 3.400000035762787,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-3-1791474733910",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:14.071Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44.5,
+        "displayMs": 60.69999998807907,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.300000011920929,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 3.799999952316284,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.700000047683716,
+        "displayMs": 32.60000002384186
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-3-1791474733910",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:14.255Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 51.89999997615814,
+        "displayMs": 79.59999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.199999988079071,
+        "displayMs": 32.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 5.599999964237213,
+        "displayMs": 34
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.800000011920929,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-4-1791474734262",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:14.438Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 52.80000001192093,
+        "displayMs": 75.59999996423721,
+        "seedMs": 0.3999999761581421
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.100000023841858,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 3.5,
+        "displayMs": 32.39999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 2.699999988079071,
+        "displayMs": 34.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-4-1791474734262",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:52:14.606Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 46.80000001192093,
+        "displayMs": 58.80000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 8.5,
+        "displayMs": 34
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 4.5,
+        "displayMs": 33.69999998807907
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 4.099999964237213,
+        "displayMs": 33.39999997615814
+      }
+    ]
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-0-1791474734610:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-0-1791474734610:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-0-1791474734610",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-0-1791474734610:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-0-1791474734610:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-0-1791474734610",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-1-1791474734706:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-1-1791474734706:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-1-1791474734706",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-1-1791474734706:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-1-1791474734706:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-1-1791474734706",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-2-1791474734814:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-2-1791474734814:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-2-1791474734814",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-2-1791474734814:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-2-1791474734814:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-2-1791474734814",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-3-1791474734917:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-3-1791474734917:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-3-1791474734917",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-3-1791474734917:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-3-1791474734917:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-3-1791474734917",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-4-1791474735025:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-4-1791474735025:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-4-1791474735025",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-4-1791474735025:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-4-1791474735025:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-4-1791474735025",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-0-1791474735132:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-0-1791474735132:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-0-1791474735132",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-0-1791474735132:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-0-1791474735132:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-0-1791474735132",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-1-1791474735277:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-1-1791474735277:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-1-1791474735277",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-1-1791474735277:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-1-1791474735277:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-1-1791474735277",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-2-1791474735380:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-2-1791474735380:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-2-1791474735380",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-2-1791474735380:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-2-1791474735380:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-2-1791474735380",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-3-1791474735492:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-3-1791474735492:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-3-1791474735492",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-3-1791474735492:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-3-1791474735492:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-3-1791474735492",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-4-1791474735752:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-4-1791474735752:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-4-1791474735752",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-4-1791474735752:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-4-1791474735752:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-4-1791474735752",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-0-1791474736046:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-0-1791474736046:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-0-1791474736046",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-0-1791474736046:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-0-1791474736046:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-0-1791474736046",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-1-1791474736180:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-1-1791474736180:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-1-1791474736180",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-1-1791474736180:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-1-1791474736180:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-1-1791474736180",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-2-1791474736307:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-2-1791474736307:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-2-1791474736307",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-2-1791474736307:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-2-1791474736307:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-2-1791474736307",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-3-1791474736431:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-3-1791474736431:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-3-1791474736431",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-3-1791474736431:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-3-1791474736431:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-3-1791474736431",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-4-1791474736577:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-4-1791474736577:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-4-1791474736577",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-4-1791474736577:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-4-1791474736577:10051:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-4-1791474736577",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-0-1791474736717:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-0-1791474736717:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-0-1791474736717",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-0-1791474736717:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-0-1791474736717:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-0-1791474736717",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-1-1791474736850:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-1-1791474736850:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-1-1791474736850",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-1-1791474736850:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-1-1791474736850:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-1-1791474736850",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-2-1791474736993:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-2-1791474736993:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-2-1791474736993",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-2-1791474736993:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-2-1791474736993:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-2-1791474736993",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-3-1791474737125:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-3-1791474737125:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-3-1791474737125",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-3-1791474737125:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-3-1791474737125:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-3-1791474737125",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-4-1791474737277:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-4-1791474737277:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-4-1791474737277",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-4-1791474737277:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-4-1791474737277:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-4-1791474737277",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-0-1791474737431:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-0-1791474737431:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-0-1791474737431",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-0-1791474737431:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-0-1791474737431:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-0-1791474737431",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-1-1791474737580:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-1-1791474737580:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-1-1791474737580",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-1-1791474737580:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-1-1791474737580:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-1-1791474737580",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-2-1791474737740:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-2-1791474737740:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-2-1791474737740",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-2-1791474737740:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-2-1791474737740:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-2-1791474737740",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-3-1791474737874:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-3-1791474737874:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-3-1791474737874",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-3-1791474737874:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-3-1791474737874:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-3-1791474737874",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-4-1791474738008:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-4-1791474738008:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-4-1791474738008",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-4-1791474738008:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-4-1791474738008:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-4-1791474738008",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-0-1791474738185:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-0-1791474738185:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-0-1791474738185",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-0-1791474738185:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-0-1791474738185:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-0-1791474738185",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-1-1791474738342:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-1-1791474738342:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-1-1791474738342",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-1-1791474738342:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-1-1791474738342:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-1-1791474738342",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-2-1791474738476:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-2-1791474738476:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-2-1791474738476",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-2-1791474738476:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-2-1791474738476:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-2-1791474738476",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-3-1791474738623:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-3-1791474738623:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-3-1791474738623",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-3-1791474738623:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-3-1791474738623:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-3-1791474738623",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-4-1791474738776:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-4-1791474738776:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-4-1791474738776",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-4-1791474738776:10047:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-4-1791474738776:10051:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-4-1791474738776",
+    "measured": []
+  }
+]

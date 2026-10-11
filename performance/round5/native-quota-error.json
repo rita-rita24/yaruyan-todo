@@ -1,0 +1,8 @@
+[
+  {
+    "level": "error",
+    "message": "QuotaExceededError: Failed to execute 'setItem' on 'Storage': Setting the value of 'perf-native-after-035a0973-37b3-4486-8b63-d395c4e407a7-tasks-v8' exceeded the quota.\n    at setup (http://127.0.0.1:49192/native?version=after:2997:16)\n    at http://127.0.0.1:49192/native?version=after:3010:3",
+    "timestamp": "2026-10-09T18:19:55.422Z",
+    "url": "http://127.0.0.1:49192/native?version=after"
+  }
+]

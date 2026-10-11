@@ -1,0 +1,540 @@
+[
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-0-1791563651692",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "initial",
+    "date": "2026-10-09T16:34:12.173Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 6634,
+        "duration": 69.39999997615814,
+        "navigationId": 2158,
+        "paintTime": 6703.399999976158,
+        "presentationTime": 6756,
+        "renderStart": 6703,
+        "styleAndLayoutStart": 6703,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 13.5,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 6634.099999964237,
+            "duration": 63.10000002384186,
+            "navigationId": 2158,
+            "invoker": "Window.fetch.then",
+            "invokerType": "resolve-promise",
+            "windowAttribution": "self",
+            "executionStart": 6634.099999964237,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/?compare=paths-profile&parents=200&children=50&route=tasks&trials=5&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 2045
+          }
+        ]
+      },
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 6773.299999952316,
+        "duration": 309.30000001192093,
+        "navigationId": 2158,
+        "paintTime": 7082.599999964237,
+        "presentationTime": 7096,
+        "renderStart": 7059.5,
+        "styleAndLayoutStart": 7060.599999964237,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 259.1,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 6773.299999952316,
+            "duration": 286.10000002384186,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "descendant",
+            "executionStart": 6773.299999952316,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-0-1791563651692&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-0-1791563651692",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "repeat",
+    "date": "2026-10-09T16:34:12.565Z",
+    "frames": []
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-1-1791563652567",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "initial",
+    "date": "2026-10-09T16:34:13.259Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 7201,
+        "duration": 289.0999999642372,
+        "navigationId": 2158,
+        "paintTime": 7490.099999964237,
+        "presentationTime": 7500,
+        "renderStart": 7471.199999988079,
+        "styleAndLayoutStart": 7472,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 239.1,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 7201,
+            "duration": 270,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "other",
+            "executionStart": 7201,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=repeat&group=round4-after-paths-profile-200-tasks-0-1791563651692&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      },
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 7766.399999976158,
+        "duration": 397.30000001192093,
+        "navigationId": 2158,
+        "paintTime": 8163.699999988079,
+        "presentationTime": 8176,
+        "renderStart": 8133.099999964237,
+        "styleAndLayoutStart": 8134,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 347.3,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 7766.399999976158,
+            "duration": 366.60000002384186,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "descendant",
+            "executionStart": 7766.399999976158,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-1-1791563652567&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-1-1791563652567",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "repeat",
+    "date": "2026-10-09T16:34:13.686Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 8197.899999976158,
+        "duration": 76,
+        "navigationId": 2158,
+        "paintTime": 8273.899999976158,
+        "presentationTime": 8284,
+        "renderStart": 8272.799999952316,
+        "styleAndLayoutStart": 8272.799999952316,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 18.9,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 8205,
+            "duration": 67.69999998807907,
+            "navigationId": 2158,
+            "invoker": "Window.fetch.then",
+            "invokerType": "resolve-promise",
+            "windowAttribution": "self",
+            "executionStart": 8205,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/?compare=paths-profile&parents=200&children=50&route=tasks&trials=5&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 2045
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-2-1791563655617",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "initial",
+    "date": "2026-10-09T16:34:16.006Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 10167.899999976158,
+        "duration": 373.69999998807907,
+        "navigationId": 2158,
+        "paintTime": 10541.599999964237,
+        "presentationTime": 10552,
+        "renderStart": 10398.699999988079,
+        "styleAndLayoutStart": 10533.599999964237,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 321,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 10170.5,
+            "duration": 228.19999998807907,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "other",
+            "executionStart": 10170.5,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-before-paths-profile&parents=200&children=50&route=tasks&cache=repeat&group=round4-before-paths-profile-200-tasks-2-1791563654633&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11579
+          }
+        ]
+      },
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 10550.899999976158,
+        "duration": 60.69999998807907,
+        "navigationId": 2158,
+        "paintTime": 10611.599999964237,
+        "presentationTime": 10656,
+        "renderStart": 10611.299999952316,
+        "styleAndLayoutStart": 10611.299999952316,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 2.4,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 10559,
+            "duration": 52.19999998807907,
+            "navigationId": 2158,
+            "invoker": "Window.fetch.then",
+            "invokerType": "resolve-promise",
+            "windowAttribution": "self",
+            "executionStart": 10559,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/?compare=paths-profile&parents=200&children=50&route=tasks&trials=5&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 2045
+          }
+        ]
+      },
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 10648.099999964237,
+        "duration": 284,
+        "navigationId": 2158,
+        "paintTime": 10932.099999964237,
+        "presentationTime": 10944,
+        "renderStart": 10913.799999952316,
+        "styleAndLayoutStart": 10924.899999976158,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 221.9,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 10649,
+            "duration": 7.799999952316284,
+            "navigationId": 2158,
+            "invoker": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-2-1791563655617&suite=profile#/tasks",
+            "invokerType": "classic-script",
+            "windowAttribution": "descendant",
+            "executionStart": 10651.399999976158,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-2-1791563655617&suite=profile#/tasks",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 0
+          },
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 10660.199999988079,
+            "duration": 253.5999999642372,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "descendant",
+            "executionStart": 10660.199999988079,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-2-1791563655617&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-2-1791563655617",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "repeat",
+    "date": "2026-10-09T16:34:16.340Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 11014,
+        "duration": 250.69999998807907,
+        "navigationId": 2158,
+        "paintTime": 11264.699999988079,
+        "presentationTime": 11276,
+        "renderStart": 11247.799999952316,
+        "styleAndLayoutStart": 11248.599999964237,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 200.6,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 11014,
+            "duration": 233.69999998807907,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "descendant",
+            "executionStart": 11014,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=repeat&group=round4-after-paths-profile-200-tasks-2-1791563655617&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-3-1791563656342",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "initial",
+    "date": "2026-10-09T16:34:16.691Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 11354.599999964237,
+        "duration": 263.30000001192093,
+        "navigationId": 2158,
+        "paintTime": 11617.899999976158,
+        "presentationTime": 11628,
+        "renderStart": 11600.799999952316,
+        "styleAndLayoutStart": 11601.599999964237,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 213.3,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 11354.599999964237,
+            "duration": 246.19999998807907,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "descendant",
+            "executionStart": 11354.599999964237,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-3-1791563656342&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-3-1791563656342",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "repeat",
+    "date": "2026-10-09T16:34:17.023Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 11690.199999988079,
+        "duration": 256.5,
+        "navigationId": 2158,
+        "paintTime": 11946.699999988079,
+        "presentationTime": 11956,
+        "renderStart": 11929.599999964237,
+        "styleAndLayoutStart": 11940.399999976158,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 204.3,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 11692.299999952316,
+            "duration": 237.30000001192093,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "descendant",
+            "executionStart": 11692.299999952316,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=repeat&group=round4-after-paths-profile-200-tasks-3-1791563656342&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-4-1791563660044",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "initial",
+    "date": "2026-10-09T16:34:20.431Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 14982.299999952316,
+        "duration": 68.70000004768372,
+        "navigationId": 2158,
+        "paintTime": 15051,
+        "presentationTime": 15104,
+        "renderStart": 15050.699999988079,
+        "styleAndLayoutStart": 15050.699999988079,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 14.5,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 14986.5,
+            "duration": 64,
+            "navigationId": 2158,
+            "invoker": "Window.fetch.then",
+            "invokerType": "resolve-promise",
+            "windowAttribution": "self",
+            "executionStart": 14986.5,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/?compare=paths-profile&parents=200&children=50&route=tasks&trials=5&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 2045
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "version": "round4-after-paths-profile-frames",
+    "group": "round4-after-paths-profile-200-tasks-4-1791563660044",
+    "sourceSha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+    "route": "tasks",
+    "parents": 200,
+    "children": 50,
+    "cache": "repeat",
+    "date": "2026-10-09T16:34:20.797Z",
+    "frames": [
+      {
+        "name": "long-animation-frame",
+        "entryType": "long-animation-frame",
+        "startTime": 15099.199999988079,
+        "duration": 259.30000001192093,
+        "navigationId": 2158,
+        "paintTime": 15358.5,
+        "presentationTime": 15368,
+        "renderStart": 15341.5,
+        "styleAndLayoutStart": 15342.399999976158,
+        "firstUIEventTimestamp": 0,
+        "blockingDuration": 209.3,
+        "scripts": [
+          {
+            "name": "script",
+            "entryType": "script",
+            "startTime": 15099.199999988079,
+            "duration": 242.30000001192093,
+            "navigationId": 2158,
+            "invoker": "IDBTransaction.oncomplete",
+            "invokerType": "event-listener",
+            "windowAttribution": "other",
+            "executionStart": 15099.199999988079,
+            "forcedStyleAndLayoutDuration": 0,
+            "pauseDuration": 0,
+            "sourceURL": "http://127.0.0.1:49189/app?version=round4-after-paths-profile&parents=200&children=50&route=tasks&cache=initial&group=round4-after-paths-profile-200-tasks-4-1791563660044&suite=profile",
+            "sourceFunctionName": "",
+            "sourceCharPosition": 11572
+          }
+        ]
+      }
+    ]
+  }
+]

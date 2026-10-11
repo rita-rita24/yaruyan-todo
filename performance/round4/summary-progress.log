@@ -1,0 +1,54 @@
+[
+  {
+    suite: 'icons-large',
+    route: 'tasks',
+    cache: 'initial',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 3,
+      median: 428.30000001192093,
+      min: 160.0999999642372,
+      max: 518.6000000238419,
+      samples: [Array]
+    },
+    after: {
+      n: 3,
+      median: 194.69999998807907,
+      min: 171,
+      max: 467.69999998807907,
+      samples: [Array]
+    },
+    delta: 233.60000002384186,
+    percent: 54.54120943668924,
+    verdict: 'insufficient trials'
+  },
+  {
+    suite: 'icons-large',
+    route: 'tasks',
+    cache: 'repeat',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 3,
+      median: 398.10000002384186,
+      min: 158.0999999642372,
+      max: 428.60000002384186,
+      samples: [Array]
+    },
+    after: {
+      n: 3,
+      median: 246.5,
+      min: 222.5,
+      max: 383.39999997615814,
+      samples: [Array]
+    },
+    delta: 151.60000002384186,
+    percent: 38.080884203658044,
+    verdict: 'insufficient trials'
+  }
+]

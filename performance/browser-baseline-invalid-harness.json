@@ -1,0 +1,1332 @@
+[
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-0-1791474691750:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-0-1791474691750:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-0-1791474691750:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-0-1791474691750:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-0-1791474691750",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 89.60000002384186,
+        "displayMs": 104.60000002384186,
+        "seedMs": 22.600000023841858
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5.600000023841858,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-0-1791474691750:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-0-1791474691750:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-0-1791474691750:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-0-1791474691750:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-0-1791474691750",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 56.89999997615814,
+        "displayMs": 80.59999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.400000035762787,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-1-1791474692031:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-1-1791474692031:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-1-1791474692031:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-1-1791474692031:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-1-1791474692031",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 57.09999996423721,
+        "displayMs": 73.30000001192093,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.399999976158142,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-1-1791474692031:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-1-1791474692031:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-1-1791474692031:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-1-1791474692031:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-1-1791474692031",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 57.80000001192093,
+        "displayMs": 74.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.899999976158142,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-2-1791474692261:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-2-1791474692261:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-2-1791474692261:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-2-1791474692261:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-2-1791474692261",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 36.5,
+        "displayMs": 59.60000002384186,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.300000011920929,
+        "displayMs": 33.700000047683716
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-2-1791474692261:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-2-1791474692261:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-2-1791474692261:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-2-1791474692261:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-2-1791474692261",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 42,
+        "displayMs": 59.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.400000035762787,
+        "displayMs": 32.200000047683716
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-3-1791474692460:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-3-1791474692460:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-3-1791474692460:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-3-1791474692460:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-3-1791474692460",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 35.60000002384186,
+        "displayMs": 61.40000003576279,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5.399999976158142,
+        "displayMs": 32.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-3-1791474692460:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-3-1791474692460:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-3-1791474692460:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-3-1791474692460:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-3-1791474692460",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 36.200000047683716,
+        "displayMs": 59.30000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.300000011920929,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-4-1791474692671:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-4-1791474692671:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-4-1791474692671:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=initial&group=baseline-0-tasks-4-1791474692671:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-4-1791474692671",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 61.80000001192093,
+        "displayMs": 83.80000001192093,
+        "seedMs": 0.10000002384185791
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.5,
+        "displayMs": 32.90000003576279
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-4-1791474692671:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-4-1791474692671:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-4-1791474692671:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=tasks&cache=repeat&group=baseline-0-tasks-4-1791474692671:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-tasks-4-1791474692671",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 42.5,
+        "displayMs": 58.09999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.5,
+        "displayMs": 34.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-0-1791474692897:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-0-1791474692897:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-0-1791474692897:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-0-1791474692897:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-0-1791474692897",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 53.10000002384186,
+        "displayMs": 73.80000001192093,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.09999996423721313,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-0-1791474692897:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-0-1791474692897:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-0-1791474692897:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-0-1791474692897:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-0-1791474692897",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 49.90000003576279,
+        "displayMs": 69.60000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.09999996423721313,
+        "displayMs": 32.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-1-1791474693166:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-1-1791474693166:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-1-1791474693166:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-1-1791474693166:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-1-1791474693166",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 38.10000002384186,
+        "displayMs": 54.90000003576279,
+        "seedMs": 0.10000002384185791
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.09999996423721313,
+        "displayMs": 32.5
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-1-1791474693166:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-1-1791474693166:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-1-1791474693166:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-1-1791474693166:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-1-1791474693166",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 37.09999996423721,
+        "displayMs": 54.799999952316284,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.10000002384185791,
+        "displayMs": 34
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-2-1791474693365:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-2-1791474693365:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-2-1791474693365:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-2-1791474693365:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-2-1791474693365",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 50.80000001192093,
+        "displayMs": 72.09999996423721,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.10000002384185791,
+        "displayMs": 33
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-2-1791474693365:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-2-1791474693365:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-2-1791474693365:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-2-1791474693365:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-2-1791474693365",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 51.40000003576279,
+        "displayMs": 73.90000003576279,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.10000002384185791,
+        "displayMs": 33.40000003576279
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-3-1791474693598:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-3-1791474693598:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-3-1791474693598:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-3-1791474693598:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-3-1791474693598",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 40.09999996423721,
+        "displayMs": 56.80000001192093,
+        "seedMs": 0.10000002384185791
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 32.69999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-3-1791474693598:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-3-1791474693598:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-3-1791474693598:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-3-1791474693598:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-3-1791474693598",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 58,
+        "displayMs": 84.09999996423721,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.20000004768371582,
+        "displayMs": 32.200000047683716
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-4-1791474693831:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-4-1791474693831:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-4-1791474693831:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=initial&group=baseline-0-memo-4-1791474693831:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-4-1791474693831",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 41.200000047683716,
+        "displayMs": 56.30000001192093,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 34
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-4-1791474693831:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-4-1791474693831:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-4-1791474693831:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=0&children=0&route=memo&cache=repeat&group=baseline-0-memo-4-1791474693831:10056:9",
+    "version": "baseline",
+    "group": "baseline-0-memo-4-1791474693831",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 48.5,
+        "displayMs": 70.80000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0,
+        "displayMs": 34
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-0-1791474694051",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:34.222Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 51.19999998807907,
+        "displayMs": 70.19999998807907,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5,
+        "displayMs": 33.09999996423721
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.30000001192092896,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.20000004768371582,
+        "displayMs": 33.200000047683716
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-0-1791474694051",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:34.391Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 48.39999997615814,
+        "displayMs": 57.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.399999976158142,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.30000001192092896,
+        "displayMs": 33.59999996423721
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 35.60000002384186
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-1-1791474694395",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:34.555Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 37.30000001192093,
+        "displayMs": 60.5,
+        "seedMs": 0.20000004768371582
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.799999952316284,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 33.39999997615814
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-1-1791474694395",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:34.725Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 44,
+        "displayMs": 61.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.800000011920929,
+        "displayMs": 33.80000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 37.80000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.2999999523162842,
+        "displayMs": 31.69999998807907
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-2-1791474694729",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:34.905Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 48.69999998807907,
+        "displayMs": 75.89999997615814,
+        "seedMs": 0.09999996423721313
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.399999976158142,
+        "displayMs": 33.80000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.2999999523162842,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 32.09999996423721
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-2-1791474694729",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:35.124Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 80.5,
+        "displayMs": 104.10000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 5,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.30000001192092896,
+        "displayMs": 33.200000047683716
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 35.69999998807907
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-3-1791474695129",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:35.288Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 55.5,
+        "displayMs": 60.40000003576279,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.899999976158142,
+        "displayMs": 31.80000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.2999999523162842,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.20000004768371582,
+        "displayMs": 33.40000003576279
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-3-1791474695129",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:35.454Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 42.19999998807907,
+        "displayMs": 61,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.800000011920929,
+        "displayMs": 33
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.30000001192092896,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.2999999523162842,
+        "displayMs": 32.59999996423721
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-4-1791474695459",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:35.622Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 43.89999997615814,
+        "displayMs": 61.59999996423721,
+        "seedMs": 0.09999996423721313
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.800000011920929,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 34.10000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 33.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "baseline",
+    "group": "baseline-0-settings-4-1791474695459",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 0,
+    "children": 0,
+    "date": "2026-10-08T15:51:35.805Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 45,
+        "displayMs": 67.10000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.099999964237213,
+        "displayMs": 34.09999996423721
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 32.80000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 0.30000001192092896,
+        "displayMs": 33.89999997615814
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-0-1791474695811:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-0-1791474695811:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-0-1791474695811:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-0-1791474695811:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-0-1791474695811",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 53,
+        "displayMs": 79,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4,
+        "displayMs": 31.099999964237213
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-0-1791474695811:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-0-1791474695811:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-0-1791474695811:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-0-1791474695811:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-0-1791474695811",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 47.80000001192093,
+        "displayMs": 87.40000003576279,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 6.5,
+        "displayMs": 20.5
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-1-1791474696050:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-1-1791474696050:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-1-1791474696050:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-1-1791474696050:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-1-1791474696050",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 48.30000001192093,
+        "displayMs": 81.30000001192093,
+        "seedMs": 0.5999999642372131
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.599999964237213,
+        "displayMs": 23.80000001192093
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-1-1791474696050:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-1-1791474696050:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-1-1791474696050:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-1-1791474696050:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-1-1791474696050",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 55.89999997615814,
+        "displayMs": 87.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.300000011920929,
+        "displayMs": 18.200000047683716
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-2-1791474696281:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-2-1791474696281:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-2-1791474696281:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-2-1791474696281:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-2-1791474696281",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 47.40000003576279,
+        "displayMs": 89.90000003576279,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.100000023841858,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-2-1791474696281:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-2-1791474696281:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-2-1791474696281:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-2-1791474696281:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-2-1791474696281",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 48.39999997615814,
+        "displayMs": 75.79999995231628,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4,
+        "displayMs": 31.69999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-3-1791474696527:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-3-1791474696527:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-3-1791474696527:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-3-1791474696527:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-3-1791474696527",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 60.799999952316284,
+        "displayMs": 90.39999997615814,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.099999964237213,
+        "displayMs": 21
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-3-1791474696527:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-3-1791474696527:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-3-1791474696527:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-3-1791474696527:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-3-1791474696527",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 52.80000001192093,
+        "displayMs": 81.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4,
+        "displayMs": 28.30000001192093
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-4-1791474696770:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-4-1791474696770:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-4-1791474696770:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=initial&group=baseline-20-tasks-4-1791474696770:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-4-1791474696770",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 72.79999995231628,
+        "displayMs": 97.89999997615814,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 3.899999976158142,
+        "displayMs": 19.69999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-4-1791474696770:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-4-1791474696770:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-4-1791474696770:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=tasks&cache=repeat&group=baseline-20-tasks-4-1791474696770:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-tasks-4-1791474696770",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 64.09999996423721,
+        "displayMs": 94,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 4.100000023841858,
+        "displayMs": 29.80000001192093
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-0-1791474697031:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-0-1791474697031:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-0-1791474697031:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-0-1791474697031:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-0-1791474697031",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 56.5,
+        "displayMs": 73.10000002384186,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-0-1791474697031:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-0-1791474697031:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-0-1791474697031:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-0-1791474697031:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-0-1791474697031",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 52.39999997615814,
+        "displayMs": 69.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.09999996423721
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-1-1791474697265:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-1-1791474697265:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-1-1791474697265:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-1-1791474697265:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-1-1791474697265",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 57.69999998807907,
+        "displayMs": 72.89999997615814,
+        "seedMs": 0.20000004768371582
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.30000001192092896,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-1-1791474697265:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-1-1791474697265:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-1-1791474697265:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-1-1791474697265:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-1-1791474697265",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 75.19999998807907,
+        "displayMs": 97.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.10000002384185791,
+        "displayMs": 32.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-2-1791474697532:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-2-1791474697532:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-2-1791474697532:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-2-1791474697532:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-2-1791474697532",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 49.5,
+        "displayMs": 72.70000004768372,
+        "seedMs": 0.6000000238418579
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.2999999523162842,
+        "displayMs": 32.89999997615814
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-2-1791474697532:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-2-1791474697532:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-2-1791474697532:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-2-1791474697532:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-2-1791474697532",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 43,
+        "displayMs": 57.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-3-1791474697749:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-3-1791474697749:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-3-1791474697749:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-3-1791474697749:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-3-1791474697749",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 62.69999998807907,
+        "displayMs": 72.60000002384186,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.09999996423721313,
+        "displayMs": 33.299999952316284
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-3-1791474697749:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-3-1791474697749:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-3-1791474697749:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-3-1791474697749:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-3-1791474697749",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 53,
+        "displayMs": 57,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.19999998807907104,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-4-1791474697965:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-4-1791474697965:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-4-1791474697965:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=initial&group=baseline-20-memo-4-1791474697965:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-4-1791474697965",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 77.19999998807907,
+        "displayMs": 89.40000003576279,
+        "seedMs": 0.19999998807907104
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.10000002384185791,
+        "displayMs": 32.30000001192093
+      }
+    ]
+  },
+  {
+    "error": "Error: settings ready\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-4-1791474697965:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-4-1791474697965:10056:68\n    at run (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-4-1791474697965:10047:90)\n    at async http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=memo&cache=repeat&group=baseline-20-memo-4-1791474697965:10056:9",
+    "version": "baseline",
+    "group": "baseline-20-memo-4-1791474697965",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 50.09999996423721,
+        "displayMs": 70.69999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 0.09999996423721313,
+        "displayMs": 33.89999997615814
+      }
+    ]
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-0-1791474698216:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-0-1791474698216:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-0-1791474698216",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-0-1791474698216:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-0-1791474698216:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-0-1791474698216",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-1-1791474698328:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-1-1791474698328:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-1-1791474698328",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-1-1791474698328:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-1-1791474698328:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-1-1791474698328",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-2-1791474698443:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-2-1791474698443:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-2-1791474698443",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-2-1791474698443:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-2-1791474698443:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-2-1791474698443",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-3-1791474698542:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-3-1791474698542:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-3-1791474698542",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-3-1791474698542:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-3-1791474698542:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-3-1791474698542",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-4-1791474698664:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=initial&group=baseline-20-settings-4-1791474698664:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-4-1791474698664",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-4-1791474698664:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=20&children=5&route=settings&cache=repeat&group=baseline-20-settings-4-1791474698664:10050:9",
+    "version": "baseline",
+    "group": "baseline-20-settings-4-1791474698664",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-0-1791474698785:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-0-1791474698785:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-0-1791474698785",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-0-1791474698785:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-0-1791474698785:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-0-1791474698785",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-1-1791474698942:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-1-1791474698942:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-1-1791474698942",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-1-1791474698942:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-1-1791474698942:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-1-1791474698942",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-2-1791474699057:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-2-1791474699057:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-2-1791474699057",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-2-1791474699057:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-2-1791474699057:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-2-1791474699057",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-3-1791474699170:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-3-1791474699170:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-3-1791474699170",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-3-1791474699170:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-3-1791474699170:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-3-1791474699170",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-4-1791474699273:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=initial&group=baseline-200-tasks-4-1791474699273:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-4-1791474699273",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-4-1791474699273:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=tasks&cache=repeat&group=baseline-200-tasks-4-1791474699273:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-tasks-4-1791474699273",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-0-1791474699399:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-0-1791474699399:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-0-1791474699399",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-0-1791474699399:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-0-1791474699399:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-0-1791474699399",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-1-1791474699532:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-1-1791474699532:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-1-1791474699532",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-1-1791474699532:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-1-1791474699532:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-1-1791474699532",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-2-1791474699663:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-2-1791474699663:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-2-1791474699663",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-2-1791474699663:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-2-1791474699663:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-2-1791474699663",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-3-1791474699873:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-3-1791474699873:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-3-1791474699873",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-3-1791474699873:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-3-1791474699873:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-3-1791474699873",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-4-1791474700284:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=initial&group=baseline-200-memo-4-1791474700284:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-4-1791474700284",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-4-1791474700284:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=memo&cache=repeat&group=baseline-200-memo-4-1791474700284:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-memo-4-1791474700284",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-0-1791474700505:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-0-1791474700505:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-0-1791474700505",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-0-1791474700505:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-0-1791474700505:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-0-1791474700505",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-1-1791474700721:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-1-1791474700721:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-1-1791474700721",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-1-1791474700721:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-1-1791474700721:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-1-1791474700721",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-2-1791474700868:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-2-1791474700868:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-2-1791474700868",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-2-1791474700868:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-2-1791474700868:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-2-1791474700868",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-3-1791474701001:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-3-1791474701001:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-3-1791474701001",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-3-1791474701001:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-3-1791474701001:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-3-1791474701001",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-4-1791474701154:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=initial&group=baseline-200-settings-4-1791474701154:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-4-1791474701154",
+    "measured": []
+  },
+  {
+    "error": "Error: parent count\n    at check (http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-4-1791474701154:10046:45)\n    at http://127.0.0.1:8766/app?version=baseline&parents=200&children=50&route=settings&cache=repeat&group=baseline-200-settings-4-1791474701154:10050:9",
+    "version": "baseline",
+    "group": "baseline-200-settings-4-1791474701154",
+    "measured": []
+  }
+]

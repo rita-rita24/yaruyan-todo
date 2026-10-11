@@ -1,0 +1,149 @@
+[
+  {
+    "version": "round3-drag-micro",
+    "date": "2026-10-09T15:49:13.511Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "results": [
+      {
+        "version": "before",
+        "samples": [
+          {
+            "trial": 0,
+            "operation": "drop-lookup",
+            "ms": 45.299999952316284,
+            "geometryReads": 19900,
+            "inputs": 199
+          },
+          {
+            "trial": 1,
+            "operation": "drop-lookup",
+            "ms": 30.100000023841858,
+            "geometryReads": 19900,
+            "inputs": 199
+          },
+          {
+            "trial": 2,
+            "operation": "drop-lookup",
+            "ms": 38,
+            "geometryReads": 19900,
+            "inputs": 199
+          },
+          {
+            "trial": 3,
+            "operation": "drop-lookup",
+            "ms": 36.60000002384186,
+            "geometryReads": 19900,
+            "inputs": 199
+          },
+          {
+            "trial": 4,
+            "operation": "drop-lookup",
+            "ms": 29.299999952316284,
+            "geometryReads": 19900,
+            "inputs": 199
+          },
+          {
+            "trial": 0,
+            "operation": "child-render-only",
+            "ms": 24.69999998807907,
+            "retainedSiblings": 0
+          },
+          {
+            "trial": 1,
+            "operation": "child-render-only",
+            "ms": 32.30000001192093,
+            "retainedSiblings": 0
+          },
+          {
+            "trial": 2,
+            "operation": "child-render-only",
+            "ms": 30.19999998807907,
+            "retainedSiblings": 0
+          },
+          {
+            "trial": 3,
+            "operation": "child-render-only",
+            "ms": 33.30000001192093,
+            "retainedSiblings": 0
+          },
+          {
+            "trial": 4,
+            "operation": "child-render-only",
+            "ms": 20.30000001192093,
+            "retainedSiblings": 0
+          }
+        ]
+      },
+      {
+        "version": "after",
+        "samples": [
+          {
+            "trial": 0,
+            "operation": "drop-lookup",
+            "ms": 8.300000011920929,
+            "geometryReads": 1537,
+            "inputs": 199
+          },
+          {
+            "trial": 1,
+            "operation": "drop-lookup",
+            "ms": 7.199999988079071,
+            "geometryReads": 1537,
+            "inputs": 199
+          },
+          {
+            "trial": 2,
+            "operation": "drop-lookup",
+            "ms": 7.199999988079071,
+            "geometryReads": 1537,
+            "inputs": 199
+          },
+          {
+            "trial": 3,
+            "operation": "drop-lookup",
+            "ms": 7.5,
+            "geometryReads": 1537,
+            "inputs": 199
+          },
+          {
+            "trial": 4,
+            "operation": "drop-lookup",
+            "ms": 6.699999988079071,
+            "geometryReads": 1537,
+            "inputs": 199
+          },
+          {
+            "trial": 0,
+            "operation": "child-render-only",
+            "ms": 23.69999998807907,
+            "retainedSiblings": 49
+          },
+          {
+            "trial": 1,
+            "operation": "child-render-only",
+            "ms": 27.399999976158142,
+            "retainedSiblings": 49
+          },
+          {
+            "trial": 2,
+            "operation": "child-render-only",
+            "ms": 28.80000001192093,
+            "retainedSiblings": 49
+          },
+          {
+            "trial": 3,
+            "operation": "child-render-only",
+            "ms": 23.899999976158142,
+            "retainedSiblings": 49
+          },
+          {
+            "trial": 4,
+            "operation": "child-render-only",
+            "ms": 22.5,
+            "retainedSiblings": 49
+          }
+        ]
+      }
+    ]
+  }
+]

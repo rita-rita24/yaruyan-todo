@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-08T17:49:10.423911+00:00",
+  "baseline": {
+    "path": "baseline.html",
+    "sha256": "791a295921f4f122e3a3eeaf500598d1b1a1d3e60c6f9b531612344b62c51d47"
+  },
+  "final": {
+    "path": "../yaruyan-todo.html",
+    "sha256": "4d9c698958d5b36fc5bca94e9c7a4e3e9275ad2bc0048e242ce22c9b12109f14"
+  },
+  "rawCounts": {
+    "main": {
+      "before": 90,
+      "after": 90
+    },
+    "backup": {
+      "before": 40,
+      "after": 40
+    },
+    "extended": {
+      "before": 10,
+      "after": 10
+    },
+    "solo": {
+      "before": 10,
+      "after": 10
+    }
+  },
+  "scope": "local HTTP only, production unmeasured",
+  "finalBenchmarkFileSha256": "5724273d313c927869d597198462668b6cfc56c80100f71cbb365ed2677e53fc",
+  "notes": [
+    "mainの基準測定以後のharness追加は別suite/親のみケース。default main/backupの操作・終了条件は同じ。",
+    "pre-visibility/各candidate/raw/profileは探索的・不採用版の測定。最終比較へ混ぜない。",
+    "定期保存と操作の競合で失敗したextendedの最初の10件はinvalidとして保存。安定した操作開始状態とcleanupを確認して再計測。"
+  ]
+}

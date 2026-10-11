@@ -1,0 +1,670 @@
+[
+  {
+    "version": "round2-adopted-functional",
+    "date": "2026-10-09T01:12:58.193Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1344,
+      786
+    ],
+    "checks": [
+      {
+        "label": "isolated fixture commits",
+        "pass": true
+      },
+      {
+        "label": "all static and new dynamic icons have their expected SVG symbol",
+        "pass": true
+      },
+      {
+        "label": "unchanged task and SVG identity retained",
+        "pass": true
+      },
+      {
+        "label": "each icon owns independent SVG nodes",
+        "pass": true
+      },
+      {
+        "label": "mutating one icon does not corrupt cached templates",
+        "pass": true
+      },
+      {
+        "label": "NFKC search retains exact matching child and parent",
+        "pass": true
+      },
+      {
+        "label": "bulk delete remains blocked during search",
+        "pass": true
+      },
+      {
+        "label": "search and completion filter intersect",
+        "pass": true
+      },
+      {
+        "label": "search reset restores all data",
+        "pass": true
+      },
+      {
+        "label": "task text remains escaped",
+        "pass": true
+      },
+      {
+        "label": "parent editor includes full child list",
+        "pass": true
+      },
+      {
+        "label": "parent editor icons correct",
+        "pass": true
+      },
+      {
+        "label": "child editor has correct target",
+        "pass": true
+      },
+      {
+        "label": "failed focus save restores state and releases all operation locks",
+        "pass": true
+      },
+      {
+        "label": "failed focus save preserves exact task data",
+        "pass": true
+      },
+      {
+        "label": "focus starts on selected child",
+        "pass": true
+      },
+      {
+        "label": "focus transition releases locks and places keyboard focus on pause",
+        "pass": true
+      },
+      {
+        "label": "pause keeps the same focus overlay",
+        "pass": true
+      },
+      {
+        "label": "completion saves and closes focus",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after focus updates",
+        "pass": true
+      },
+      {
+        "label": "new task is saved and immediately displayed",
+        "pass": true
+      },
+      {
+        "label": "backup preserves full task count",
+        "pass": true
+      },
+      {
+        "label": "backup file opens confirmation",
+        "pass": true
+      },
+      {
+        "label": "backup import commits",
+        "pass": true
+      },
+      {
+        "label": "import restores exact task count",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after import",
+        "pass": true
+      },
+      {
+        "label": "empty data remains usable",
+        "pass": true
+      },
+      {
+        "label": "hidden-page update commits",
+        "pass": true
+      },
+      {
+        "label": "returning to tasks shows the latest committed hidden-page update",
+        "pass": true
+      },
+      {
+        "label": "hidden-page import commits",
+        "pass": true
+      },
+      {
+        "label": "returning after hidden-page import shows exact restored content",
+        "pass": true
+      },
+      {
+        "label": "all maximum-size task DOM remains available",
+        "pass": true
+      },
+      {
+        "label": "last offscreen row is fully rendered after scrolling",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent control remains keyboard-focusable and visible",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent edit keeps exact target and children",
+        "pass": true
+      },
+      {
+        "label": "offscreen child edit keeps exact target",
+        "pass": true
+      },
+      {
+        "label": "offscreen keyboard reorder saves exact order and retains focus",
+        "pass": true
+      },
+      {
+        "label": "parent drag insertion indicator remains visible and targets the correct row",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent drag saves exact order",
+        "pass": true
+      },
+      {
+        "label": "offscreen child drag saves exact order",
+        "pass": true
+      }
+    ],
+    "failed": 0
+  },
+  {
+    "version": "round2-adopted-functional",
+    "date": "2026-10-09T01:13:07.012Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ],
+    "checks": [
+      {
+        "label": "isolated fixture commits",
+        "pass": true
+      },
+      {
+        "label": "all static and new dynamic icons have their expected SVG symbol",
+        "pass": true
+      },
+      {
+        "label": "unchanged task and SVG identity retained",
+        "pass": true
+      },
+      {
+        "label": "each icon owns independent SVG nodes",
+        "pass": true
+      },
+      {
+        "label": "mutating one icon does not corrupt cached templates",
+        "pass": true
+      },
+      {
+        "label": "NFKC search retains exact matching child and parent",
+        "pass": true
+      },
+      {
+        "label": "bulk delete remains blocked during search",
+        "pass": true
+      },
+      {
+        "label": "search and completion filter intersect",
+        "pass": true
+      },
+      {
+        "label": "search reset restores all data",
+        "pass": true
+      },
+      {
+        "label": "task text remains escaped",
+        "pass": true
+      },
+      {
+        "label": "parent editor includes full child list",
+        "pass": true
+      },
+      {
+        "label": "parent editor icons correct",
+        "pass": true
+      },
+      {
+        "label": "child editor has correct target",
+        "pass": true
+      },
+      {
+        "label": "failed focus save restores state and releases all operation locks",
+        "pass": true
+      },
+      {
+        "label": "failed focus save preserves exact task data",
+        "pass": true
+      },
+      {
+        "label": "focus starts on selected child",
+        "pass": true
+      },
+      {
+        "label": "focus transition releases locks and places keyboard focus on pause",
+        "pass": true
+      },
+      {
+        "label": "pause keeps the same focus overlay",
+        "pass": true
+      },
+      {
+        "label": "completion saves and closes focus",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after focus updates",
+        "pass": true
+      },
+      {
+        "label": "new task is saved and immediately displayed",
+        "pass": true
+      },
+      {
+        "label": "backup preserves full task count",
+        "pass": true
+      },
+      {
+        "label": "backup file opens confirmation",
+        "pass": true
+      },
+      {
+        "label": "backup import commits",
+        "pass": true
+      },
+      {
+        "label": "import restores exact task count",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after import",
+        "pass": true
+      },
+      {
+        "label": "empty data remains usable",
+        "pass": true
+      },
+      {
+        "label": "hidden-page update commits",
+        "pass": true
+      },
+      {
+        "label": "returning to tasks shows the latest committed hidden-page update",
+        "pass": true
+      },
+      {
+        "label": "hidden-page import commits",
+        "pass": true
+      },
+      {
+        "label": "returning after hidden-page import shows exact restored content",
+        "pass": true
+      },
+      {
+        "label": "all maximum-size task DOM remains available",
+        "pass": true
+      },
+      {
+        "label": "last offscreen row is fully rendered after scrolling",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent control remains keyboard-focusable and visible",
+        "pass": false
+      },
+      {
+        "label": "Error: offscreen parent control remains keyboard-focusable and visible\n    at check (http://127.0.0.1:49187/functional-qa:10081:96)\n    at qa (http://127.0.0.1:49187/functional-qa:10111:124)\n    at async http://127.0.0.1:49187/functional-qa:10080:1",
+        "pass": false
+      }
+    ],
+    "failed": 2
+  },
+  {
+    "version": "round2-adopted-functional",
+    "date": "2026-10-09T01:13:46.943Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ],
+    "checks": [
+      {
+        "label": "isolated fixture commits",
+        "pass": true
+      },
+      {
+        "label": "all static and new dynamic icons have their expected SVG symbol",
+        "pass": true
+      },
+      {
+        "label": "unchanged task and SVG identity retained",
+        "pass": true
+      },
+      {
+        "label": "each icon owns independent SVG nodes",
+        "pass": true
+      },
+      {
+        "label": "mutating one icon does not corrupt cached templates",
+        "pass": true
+      },
+      {
+        "label": "NFKC search retains exact matching child and parent",
+        "pass": true
+      },
+      {
+        "label": "bulk delete remains blocked during search",
+        "pass": true
+      },
+      {
+        "label": "search and completion filter intersect",
+        "pass": true
+      },
+      {
+        "label": "search reset restores all data",
+        "pass": true
+      },
+      {
+        "label": "task text remains escaped",
+        "pass": true
+      },
+      {
+        "label": "parent editor includes full child list",
+        "pass": true
+      },
+      {
+        "label": "parent editor icons correct",
+        "pass": true
+      },
+      {
+        "label": "child editor has correct target",
+        "pass": true
+      },
+      {
+        "label": "failed focus save restores state and releases all operation locks",
+        "pass": true
+      },
+      {
+        "label": "failed focus save preserves exact task data",
+        "pass": true
+      },
+      {
+        "label": "focus starts on selected child",
+        "pass": true
+      },
+      {
+        "label": "focus transition releases locks and places keyboard focus on pause",
+        "pass": true
+      },
+      {
+        "label": "pause keeps the same focus overlay",
+        "pass": true
+      },
+      {
+        "label": "completion saves and closes focus",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after focus updates",
+        "pass": true
+      },
+      {
+        "label": "new task is saved and immediately displayed",
+        "pass": true
+      },
+      {
+        "label": "backup preserves full task count",
+        "pass": true
+      },
+      {
+        "label": "backup file opens confirmation",
+        "pass": true
+      },
+      {
+        "label": "backup import commits",
+        "pass": true
+      },
+      {
+        "label": "import restores exact task count",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after import",
+        "pass": true
+      },
+      {
+        "label": "empty data remains usable",
+        "pass": true
+      },
+      {
+        "label": "hidden-page update commits",
+        "pass": true
+      },
+      {
+        "label": "returning to tasks shows the latest committed hidden-page update",
+        "pass": true
+      },
+      {
+        "label": "hidden-page import commits",
+        "pass": true
+      },
+      {
+        "label": "returning after hidden-page import shows exact restored content",
+        "pass": true
+      },
+      {
+        "label": "all maximum-size task DOM remains available",
+        "pass": true
+      },
+      {
+        "label": "last offscreen row is fully rendered after scrolling",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent control remains keyboard-focusable and visible",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent edit keeps exact target and children",
+        "pass": true
+      },
+      {
+        "label": "offscreen child edit keeps exact target",
+        "pass": true
+      },
+      {
+        "label": "offscreen keyboard reorder saves exact order and retains focus",
+        "pass": true
+      },
+      {
+        "label": "parent drag insertion indicator remains visible and targets the correct row",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent drag saves exact order",
+        "pass": true
+      },
+      {
+        "label": "offscreen child drag saves exact order",
+        "pass": true
+      }
+    ],
+    "failed": 0
+  },
+  {
+    "version": "round2-adopted-functional",
+    "date": "2026-10-09T01:14:03.761Z",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1344,
+      786
+    ],
+    "checks": [
+      {
+        "label": "isolated fixture commits",
+        "pass": true
+      },
+      {
+        "label": "all static and new dynamic icons have their expected SVG symbol",
+        "pass": true
+      },
+      {
+        "label": "unchanged task and SVG identity retained",
+        "pass": true
+      },
+      {
+        "label": "each icon owns independent SVG nodes",
+        "pass": true
+      },
+      {
+        "label": "mutating one icon does not corrupt cached templates",
+        "pass": true
+      },
+      {
+        "label": "NFKC search retains exact matching child and parent",
+        "pass": true
+      },
+      {
+        "label": "bulk delete remains blocked during search",
+        "pass": true
+      },
+      {
+        "label": "search and completion filter intersect",
+        "pass": true
+      },
+      {
+        "label": "search reset restores all data",
+        "pass": true
+      },
+      {
+        "label": "task text remains escaped",
+        "pass": true
+      },
+      {
+        "label": "parent editor includes full child list",
+        "pass": true
+      },
+      {
+        "label": "parent editor icons correct",
+        "pass": true
+      },
+      {
+        "label": "child editor has correct target",
+        "pass": true
+      },
+      {
+        "label": "failed focus save restores state and releases all operation locks",
+        "pass": true
+      },
+      {
+        "label": "failed focus save preserves exact task data",
+        "pass": true
+      },
+      {
+        "label": "focus starts on selected child",
+        "pass": true
+      },
+      {
+        "label": "focus transition releases locks and places keyboard focus on pause",
+        "pass": true
+      },
+      {
+        "label": "pause keeps the same focus overlay",
+        "pass": true
+      },
+      {
+        "label": "completion saves and closes focus",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after focus updates",
+        "pass": true
+      },
+      {
+        "label": "new task is saved and immediately displayed",
+        "pass": true
+      },
+      {
+        "label": "backup preserves full task count",
+        "pass": true
+      },
+      {
+        "label": "backup file opens confirmation",
+        "pass": true
+      },
+      {
+        "label": "backup import commits",
+        "pass": true
+      },
+      {
+        "label": "import restores exact task count",
+        "pass": true
+      },
+      {
+        "label": "icons stay correct after import",
+        "pass": true
+      },
+      {
+        "label": "empty data remains usable",
+        "pass": true
+      },
+      {
+        "label": "hidden-page update commits",
+        "pass": true
+      },
+      {
+        "label": "returning to tasks shows the latest committed hidden-page update",
+        "pass": true
+      },
+      {
+        "label": "hidden-page import commits",
+        "pass": true
+      },
+      {
+        "label": "returning after hidden-page import shows exact restored content",
+        "pass": true
+      },
+      {
+        "label": "all maximum-size task DOM remains available",
+        "pass": true
+      },
+      {
+        "label": "last offscreen row is fully rendered after scrolling",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent control remains keyboard-focusable and visible",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent edit keeps exact target and children",
+        "pass": true
+      },
+      {
+        "label": "offscreen child edit keeps exact target",
+        "pass": true
+      },
+      {
+        "label": "offscreen keyboard reorder saves exact order and retains focus",
+        "pass": true
+      },
+      {
+        "label": "parent drag insertion indicator remains visible and targets the correct row",
+        "pass": true
+      },
+      {
+        "label": "offscreen parent drag saves exact order",
+        "pass": true
+      },
+      {
+        "label": "offscreen child drag saves exact order",
+        "pass": true
+      }
+    ],
+    "failed": 0
+  }
+]

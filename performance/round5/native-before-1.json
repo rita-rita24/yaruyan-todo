@@ -1,0 +1,179 @@
+{
+  "version": "before",
+  "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+  "date": "2026-10-09T18:23:32.236Z",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "viewport": [
+    1280,
+    900
+  ],
+  "devicePixelRatio": 2,
+  "observerSupported": true,
+  "fixturePreparationRevision": 2,
+  "entryThresholdMs": 16,
+  "durationGranularityMs": 8,
+  "events": [
+    {
+      "name": "pointerover",
+      "startTime": 3486.599999964237,
+      "duration": 16,
+      "processingStart": 3500,
+      "processingEnd": 3500.099999964237,
+      "interactionId": 0,
+      "inputDelayMs": 13.400000035762787
+    },
+    {
+      "name": "mouseover",
+      "startTime": 3486.599999964237,
+      "duration": 16,
+      "processingStart": 3500.099999964237,
+      "processingEnd": 3500.099999964237,
+      "interactionId": 0,
+      "inputDelayMs": 13.5
+    },
+    {
+      "name": "pointerdown",
+      "startTime": 3502,
+      "duration": 48,
+      "processingStart": 3503.2999999523163,
+      "processingEnd": 3503.5,
+      "interactionId": 7585,
+      "inputDelayMs": 1.2999999523162842
+    },
+    {
+      "name": "mousedown",
+      "startTime": 3502,
+      "duration": 48,
+      "processingStart": 3503.5,
+      "processingEnd": 3503.5,
+      "interactionId": 0,
+      "inputDelayMs": 1.5
+    },
+    {
+      "name": "pointerup",
+      "startTime": 3534.2999999523163,
+      "duration": 16,
+      "processingStart": 3538.699999988079,
+      "processingEnd": 3538.699999988079,
+      "interactionId": 7585,
+      "inputDelayMs": 4.400000035762787
+    },
+    {
+      "name": "mouseup",
+      "startTime": 3534.2999999523163,
+      "duration": 16,
+      "processingStart": 3538.7999999523163,
+      "processingEnd": 3538.7999999523163,
+      "interactionId": 0,
+      "inputDelayMs": 4.5
+    },
+    {
+      "name": "click",
+      "startTime": 3534.2999999523163,
+      "duration": 16,
+      "processingStart": 3538.7999999523163,
+      "processingEnd": 3538.7999999523163,
+      "interactionId": 7585,
+      "inputDelayMs": 4.5
+    },
+    {
+      "name": "keydown",
+      "startTime": 3743.099999964237,
+      "duration": 376,
+      "processingStart": 3743.2999999523163,
+      "processingEnd": 3743.599999964237,
+      "interactionId": 7592,
+      "inputDelayMs": 0.19999998807907104
+    },
+    {
+      "name": "keypress",
+      "startTime": 3743.099999964237,
+      "duration": 376,
+      "processingStart": 3743.599999964237,
+      "processingEnd": 4101.099999964237,
+      "interactionId": 7592,
+      "inputDelayMs": 0.5
+    },
+    {
+      "name": "beforeinput",
+      "startTime": 3743.599999964237,
+      "duration": 376,
+      "processingStart": 3743.599999964237,
+      "processingEnd": 3743.599999964237,
+      "interactionId": 0,
+      "inputDelayMs": 0
+    },
+    {
+      "name": "input",
+      "startTime": 3744,
+      "duration": 376,
+      "processingStart": 3744.199999988079,
+      "processingEnd": 4050,
+      "interactionId": 0,
+      "inputDelayMs": 0.19999998807907104
+    },
+    {
+      "name": "keyup",
+      "startTime": 4102.5,
+      "duration": 16,
+      "processingStart": 4108.899999976158,
+      "processingEnd": 4108.899999976158,
+      "interactionId": 7592,
+      "inputDelayMs": 6.399999976158142
+    },
+    {
+      "name": "keydown",
+      "startTime": 4149.799999952316,
+      "duration": 696,
+      "processingStart": 4149.899999976158,
+      "processingEnd": 4816.799999952316,
+      "interactionId": 7599,
+      "inputDelayMs": 0.10000002384185791
+    },
+    {
+      "name": "beforeinput",
+      "startTime": 4149.899999976158,
+      "duration": 696,
+      "processingStart": 4149.899999976158,
+      "processingEnd": 4149.899999976158,
+      "interactionId": 0,
+      "inputDelayMs": 0
+    },
+    {
+      "name": "input",
+      "startTime": 4150.199999988079,
+      "duration": 696,
+      "processingStart": 4150.299999952316,
+      "processingEnd": 4673.199999988079,
+      "interactionId": 0,
+      "inputDelayMs": 0.09999996423721313
+    },
+    {
+      "name": "keyup",
+      "startTime": 4839.099999964237,
+      "duration": 120,
+      "processingStart": 4958.199999988079,
+      "processingEnd": 4958.199999988079,
+      "interactionId": 7599,
+      "inputDelayMs": 119.10000002384186
+    }
+  ],
+  "inputs": [
+    {
+      "isTrusted": true,
+      "value": "a",
+      "startTime": 3744,
+      "domReadyMs": 305.89999997615814,
+      "status": "5000件を表示中（子タスクのある親は件数に含みません）。検索中は一括削除できません。"
+    },
+    {
+      "isTrusted": true,
+      "value": "",
+      "startTime": 4150.199999988079,
+      "domReadyMs": 522.8999999761581,
+      "status": "10000件を表示中（子タスクのある親は件数に含みません）"
+    }
+  ],
+  "trial": 1,
+  "procedure": "fresh fixture; confirm 10000 items; click input; native a key; read search state; native BackSpace; read clear state"
+}

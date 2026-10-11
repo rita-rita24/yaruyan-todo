@@ -1,0 +1,332 @@
+[
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-0-1791562782014",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:43.370Z",
+    "profile": {
+      "renderTasks": [
+        555.1000000238419
+      ],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 756.8000000119209,
+        "displayMs": 1055.4000000357628,
+        "seedMs": 2.100000023841858
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-0-1791562782014",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:45.033Z",
+    "profile": {
+      "renderTasks": [
+        495.19999998807907
+      ],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 1170.800000011921,
+        "displayMs": 1384.199999988079,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-1-1791562785045",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:46.339Z",
+    "profile": {
+      "renderTasks": [
+        779.5999999642372
+      ],
+      "hydrateMaterialIcons": [
+        0.5
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 956.8000000119209,
+        "displayMs": 1164.699999988079,
+        "seedMs": 2.099999964237213
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-1-1791562785045",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:47.554Z",
+    "profile": {
+      "renderTasks": [
+        544.6999999880791
+      ],
+      "hydrateMaterialIcons": [
+        0.5
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 673.9000000357628,
+        "displayMs": 997.7000000476837,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-2-1791562792546",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:53.462Z",
+    "profile": {
+      "renderTasks": [
+        425.10000002384186
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 537.1000000238419,
+        "displayMs": 728.9000000357628,
+        "seedMs": 2.300000011920929
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-2-1791562792546",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:54.446Z",
+    "profile": {
+      "renderTasks": [
+        442.80000001192093
+      ],
+      "hydrateMaterialIcons": [
+        0.2999999523162842
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 558.1999999880791,
+        "displayMs": 826.3999999761581,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-3-1791562794466",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:55.765Z",
+    "profile": {
+      "renderTasks": [
+        613.3999999761581
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 824.1999999880791,
+        "displayMs": 1074.6000000238419,
+        "seedMs": 2.699999988079071
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-3-1791562794466",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:19:56.772Z",
+    "profile": {
+      "renderTasks": [
+        442.60000002384186
+      ],
+      "hydrateMaterialIcons": [
+        0.30000001192092896
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 563.1999999880791,
+        "displayMs": 895.3999999761581,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-4-1791562801953",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:20:03.054Z",
+    "profile": {
+      "renderTasks": [
+        541.4000000357628
+      ],
+      "hydrateMaterialIcons": [
+        0.2999999523162842
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 646.8999999761581,
+        "displayMs": 850.0999999642372,
+        "seedMs": 1.7999999523162842
+      }
+    ]
+  },
+  {
+    "version": "round4-after-icons-profile",
+    "group": "round4-after-icons-profile-200-tasks-4-1791562801953",
+    "sourceSha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T16:20:04.188Z",
+    "profile": {
+      "renderTasks": [
+        526.1999999880791
+      ],
+      "hydrateMaterialIcons": [
+        0.5
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 715.6999999880791,
+        "displayMs": 978.3000000119209,
+        "seedMs": 0
+      }
+    ]
+  }
+]

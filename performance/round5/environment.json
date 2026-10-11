@@ -1,0 +1,34 @@
+{
+  "recordedDateJST": "2026-10-10",
+  "os": "macOS 26.2",
+  "osBuild": "25C56",
+  "architecture": "arm64",
+  "cpu": "Apple M4",
+  "logicalCPUs": 10,
+  "memoryBytes": 34359738368,
+  "browser": "Chrome 154.0.0.0",
+  "applicationViewportCSSPixels": [
+    1280,
+    900
+  ],
+  "narrowQaViewportCSSPixels": [
+    390,
+    844
+  ],
+  "devicePixelRatioNative": 2,
+  "transport": "localhost HTTP; no-store",
+  "systemNode": "22.22.2",
+  "additionalVerifiedNodes": [
+    "22.13.0",
+    "24.21.0",
+    "26.11.1"
+  ],
+  "uncontrolled": [
+    "CPU scheduling",
+    "GC",
+    "background applications",
+    "display refresh",
+    "browser zoom"
+  ],
+  "productionEnvironment": "unknown"
+}

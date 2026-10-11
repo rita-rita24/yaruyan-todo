@@ -1,0 +1,30 @@
+[
+  {
+    "version": "round2-intrinsic-probe",
+    "date": "2026-10-09T00:09:39.354Z",
+    "viewport": [
+      1344,
+      786
+    ],
+    "fullHeight": 3707.125,
+    "skippedHeight": 3707.109375,
+    "renderedHeight": 126.671875,
+    "intrinsic": "auto 101.5px",
+    "children": 200,
+    "failed": true
+  },
+  {
+    "version": "round2-intrinsic-probe",
+    "date": "2026-10-09T00:11:31.698Z",
+    "viewport": [
+      1344,
+      786
+    ],
+    "fullHeight": 3707.1171875,
+    "skippedHeight": 119.5,
+    "renderedHeight": 126.671875,
+    "intrinsic": "auto 101.5px",
+    "children": 200,
+    "failed": false
+  }
+]

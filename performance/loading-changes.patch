@@ -1,0 +1,180 @@
+--- performance/baseline.html	2026-10-09 00:48:56
++++ yaruyan-todo.html	2026-10-09 02:20:59
+@@ -355,6 +355,8 @@
+       }
+ 
+       .task-item {
++        content-visibility: auto;
++        contain-intrinsic-block-size: auto var(--task-estimated-size, 4rem);
+         gap: 0.7rem;
+         display: grid;
+         position: relative;
+@@ -4155,8 +4157,12 @@
+         return MATERIAL_ICON_TOKENS.has(normalized) ? normalized : MATERIAL_ICON_FALLBACK;
+       }
+ 
++      const materialIconSvgTemplates = new Map();
++
+       function _createMaterialIconSvg(token) {
+         const resolved = normalizeMaterialIconToken(token);
++        const template = materialIconSvgTemplates.get(resolved);
++        if (template) return template.cloneNode(true);
+         const $svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+         $svg.setAttribute('viewBox', '0 0 24 24');
+         $svg.setAttribute('aria-hidden', 'true');
+@@ -4165,7 +4171,8 @@
+         const ref = `#icon-${resolved}`;
+         $use.setAttribute('href', ref);
+         $svg.append($use);
+-        return $svg;
++        materialIconSvgTemplates.set(resolved, $svg);
++        return $svg.cloneNode(true);
+       }
+ 
+       function setMaterialIcon($el, token) {
+@@ -6286,6 +6293,7 @@
+       }
+ 
+       function matchesTaskSearch(text, query = taskSearchQuery) {
++        if (query === '') return true;
+         return normalizeTaskSearchText(text).includes(normalizeTaskSearchText(query));
+       }
+ 
+@@ -6308,9 +6316,11 @@
+ 
+       function getFilteredSubtasks(task, filterId = taskViewState.filter, query = taskSearchQuery) {
+         if (!hasSubtasks(task)) return [];
+-        const parentMatches = matchesTaskSearch(task.text, query);
++        const normalizedQuery = normalizeTaskSearchText(query);
++        const parentMatches = normalizedQuery === ''
++          || normalizeTaskSearchText(task.text).includes(normalizedQuery);
+         return task.subtasks.filter((sub) => matchesTaskFilter(sub.done, filterId)
+-          && (parentMatches || matchesTaskSearch(sub.text, query)));
++          && (parentMatches || normalizeTaskSearchText(sub.text).includes(normalizedQuery)));
+       }
+ 
+       function isTaskVisible(task, filterId = taskViewState.filter, query = taskSearchQuery) {
+@@ -6376,13 +6386,17 @@
+       function applyColorMode() {
+         const nextColorMode = settings.colorMode === 'dark' ? 'dark' : 'light';
+         settings.colorMode = nextColorMode;
+-        document.documentElement.dataset.mode = nextColorMode;
++        if (document.documentElement.dataset.mode !== nextColorMode) {
++          document.documentElement.dataset.mode = nextColorMode;
++        }
+       }
+ 
+       function applyThemeColor() {
+         const nextTheme = THEME_IDS.has(settings.themeColor) ? settings.themeColor : DEFAULT_THEME_COLOR;
+         settings.themeColor = nextTheme;
+-        document.documentElement.dataset.theme = nextTheme;
++        if (document.documentElement.dataset.theme !== nextTheme) {
++          document.documentElement.dataset.theme = nextTheme;
++        }
+       }
+ 
+       function isCompactSidebarViewport() {
+@@ -6418,6 +6432,10 @@
+       }
+ 
+       function renderRoute(route) {
++        if (route === 'tasks' && renderRoute.tasksDirty) {
++          renderTasks();
++          renderRoute.tasksDirty = false;
++        }
+         const routeChanged = renderRoute.currentRoute != null && renderRoute.currentRoute !== route;
+         renderRoute.currentRoute = route;
+         for (const page of qsa('.page')) {
+@@ -7760,6 +7778,7 @@
+         const $returnFocusEl = document.activeElement;
+         let target = null;
+         let saveOk = false;
++        let transitionPending = false;
+         setFocusOperationPending(true);
+         try {
+           if (!(await commitPomodoroSettingsFromControls())) return;
+@@ -7786,24 +7805,35 @@
+           focusState.lastCheckpointAt = nowMs;
+           startFocusPomodoroSession(nowMs);
+ 
++          // 集中画面の表示完了まで共有ロックを維持する。
++          setStateSaveOperationPending(true);
++          transitionPending = true;
+           saveOk = await _commitFocusStateSave(previousState, previousFocusState);
+         } finally {
+           setFocusOperationPending(false);
++          if (!saveOk && transitionPending) {
++            setStateSaveOperationPending(false);
++            transitionPending = false;
++          }
+         }
+         if (!saveOk || !target) return;
+ 
+-        focusTaskTitle.textContent = target.text;
+-        syncFocusPauseButton();
+-        updateFocusTimer();
++        try {
++          focusTaskTitle.textContent = target.text;
++          syncFocusPauseButton();
++          updateFocusTimer();
+ 
+-        _openModalOverlay(focusOverlay, focusPauseBtn, $returnFocusEl);
+-        document.body.classList.add('focus-open');
++          _openModalOverlay(focusOverlay, focusPauseBtn, $returnFocusEl);
++          document.body.classList.add('focus-open');
+ 
+-        if (focusState.tickerId) clearInterval(focusState.tickerId);
+-        focusState.tickerId = setInterval(updateFocusTimer, 200);
++          if (focusState.tickerId) clearInterval(focusState.tickerId);
++          focusState.tickerId = setInterval(updateFocusTimer, 200);
+ 
+-        playFocusStartSound();
+-        render();
++          playFocusStartSound();
++          render();
++        } finally {
++          if (transitionPending) setStateSaveOperationPending(false);
++        }
+       }
+ 
+       function closeFocusModal() {
+@@ -8411,10 +8441,10 @@
+ 
+         const currentAllDone = isAllDone();
+ 
+-        renderTasks();
+-        syncEditorReorderControls();
++        // 保存データの確定・集計は全画面で維持し、一覧DOMは表示時に最新化する。
++        renderRoute.tasksDirty = true;
+         renderRoute(currentRoute);
+-        hydrateMaterialIcons();
++        syncEditorReorderControls();
+         updateDocumentTaskIndicators();
+         handleTooltipViewportChange();
+ 
+@@ -8581,6 +8611,7 @@
+             </button>
+           `;
+ 
++          li.style.setProperty('--task-estimated-size', `${4 + visibleSubtasks.length * 3.25}rem`);
+           li.innerHTML = `
+             <div class="task-main">
+               <div class="task-leading-controls">
+@@ -8683,6 +8714,8 @@
+             ` : ''}
+           `;
+ 
++          // 新しい行だけを変換し、再利用する行のSVGは走査し直さない。
++          hydrateMaterialIcons(li);
+           rows.push(li);
+           nextRowCache.set(task.id, { key, element: li });
+         });
+@@ -10037,6 +10070,8 @@
+       syncAllParents();
+       previousAllDoneState = isAllDone();
+       applySidebarState();
++      // 静的なアイコンは初回のみ。動的な一覧・ダイアログは生成箇所で変換する。
++      hydrateMaterialIcons();
+       render();
+ 
+       navigate(getRouteFromHash());

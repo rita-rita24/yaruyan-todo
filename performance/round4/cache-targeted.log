@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: all: rendering and counts work with an empty search
+ok 1 - all: rendering and counts work with an empty search
+  ---
+  duration_ms: 2.197
+  type: 'test'
+  ...
+# Subtest: pending: rendering and counts work with an empty search
+ok 2 - pending: rendering and counts work with an empty search
+  ---
+  duration_ms: 0.471458
+  type: 'test'
+  ...
+# Subtest: completed: rendering and counts work with an empty search
+ok 3 - completed: rendering and counts work with an empty search
+  ---
+  duration_ms: 0.399375
+  type: 'test'
+  ...
+# Subtest: no tasks and no matching completion state keep their empty messages
+ok 4 - no tasks and no matching completion state keep their empty messages
+  ---
+  duration_ms: 0.773167
+  type: 'test'
+  ...
+# Subtest: bulk deletion still requires confirmation and respects the save lock and filter
+ok 5 - bulk deletion still requires confirmation and respects the save lock and filter
+  ---
+  duration_ms: 0.415458
+  type: 'test'
+  ...
+# Subtest: search rendering shows only matching work, keeps global progress and disables bulk deletion
+ok 6 - search rendering shows only matching work, keeps global progress and disables bulk deletion
+  ---
+  duration_ms: 0.478209
+  type: 'test'
+  ...
+# Subtest: search and filter returns reuse full rows without accumulating earlier filtered views
+ok 7 - search and filter returns reuse full rows without accumulating earlier filtered views
+  ---
+  duration_ms: 1.429791
+  type: 'test'
+  ...
+# Subtest: retained full rows are invalidated after hidden edits and released after deletion
+ok 8 - retained full rows are invalidated after hidden edits and released after deletion
+  ---
+  duration_ms: 0.575959
+  type: 'test'
+  ...
+# Subtest: detached drag styling is not restored from a retained full row
+ok 9 - detached drag styling is not restored from a retained full row
+  ---
+  duration_ms: 0.67925
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 101.066791

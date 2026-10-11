@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: all: rendering and counts work with an empty search
+ok 1 - all: rendering and counts work with an empty search
+  ---
+  duration_ms: 1.962875
+  type: 'test'
+  ...
+# Subtest: pending: rendering and counts work with an empty search
+ok 2 - pending: rendering and counts work with an empty search
+  ---
+  duration_ms: 0.524125
+  type: 'test'
+  ...
+# Subtest: completed: rendering and counts work with an empty search
+ok 3 - completed: rendering and counts work with an empty search
+  ---
+  duration_ms: 0.479583
+  type: 'test'
+  ...
+# Subtest: no tasks and no matching completion state keep their empty messages
+ok 4 - no tasks and no matching completion state keep their empty messages
+  ---
+  duration_ms: 0.864708
+  type: 'test'
+  ...
+# Subtest: bulk deletion still requires confirmation and respects the save lock and filter
+ok 5 - bulk deletion still requires confirmation and respects the save lock and filter
+  ---
+  duration_ms: 0.400166
+  type: 'test'
+  ...
+# Subtest: search rendering shows only matching work, keeps global progress and disables bulk deletion
+ok 6 - search rendering shows only matching work, keeps global progress and disables bulk deletion
+  ---
+  duration_ms: 0.457875
+  type: 'test'
+  ...
+# Subtest: search detach and restore preserves the exact child nodes and order
+ok 7 - search detach and restore preserves the exact child nodes and order
+  ---
+  duration_ms: 1.536166
+  type: 'test'
+  ...
+# Subtest: edited hidden children are recreated when restored, while unchanged nodes survive
+ok 8 - edited hidden children are recreated when restored, while unchanged nodes survive
+  ---
+  duration_ms: 0.361833
+  type: 'test'
+  ...
+# Subtest: focus and drag state use the original full replacement path
+ok 9 - focus and drag state use the original full replacement path
+  ---
+  duration_ms: 0.298916
+  type: 'test'
+  ...
+# Subtest: changed parent controls use the original full replacement path
+ok 10 - changed parent controls use the original full replacement path
+  ---
+  duration_ms: 0.267042
+  type: 'test'
+  ...
+# Subtest: child cache initializes only on a changed view and retains existing nodes
+ok 11 - child cache initializes only on a changed view and retains existing nodes
+  ---
+  duration_ms: 0.27325
+  type: 'test'
+  ...
+# Subtest: unchanged structure retains its index and changed IDs prune stale entries
+ok 12 - unchanged structure retains its index and changed IDs prune stale entries
+  ---
+  duration_ms: 0.261667
+  type: 'test'
+  ...
+# Subtest: detached deleted children are removed, while connected deletion waits for reconciliation
+ok 13 - detached deleted children are removed, while connected deletion waits for reconciliation
+  ---
+  duration_ms: 0.501917
+  type: 'test'
+  ...
+# Subtest: insertion previews bypass lazy child-cache creation and reconciliation
+ok 14 - insertion previews bypass lazy child-cache creation and reconciliation
+  ---
+  duration_ms: 0.423417
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 107.703042

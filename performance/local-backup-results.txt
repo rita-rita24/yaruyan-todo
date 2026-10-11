@@ -1,0 +1,58 @@
+ローカル計測結果（本番比較ではない）
+displayMs=結果のDOM/件数/状態を検証した後の二重requestAnimationFrame完了。操作可能も表示後に主操作の準備が整った同じ完了点を採用。raw readyMsは描画前のJS処理完了であり利用者の操作可能時間として報告しない。
+HTTPは全件Cache-Control:no-store。initialは新規名前空間・localStorage fixture・空IndexedDB、repeatは同名前空間で保存済みlocalStorage/IndexedDB。HTTP cold/warm、CDN、本番負荷は未計測。
+iframe1280x900、同じCodex IAB Chrome155/Mac上。実機スマホ未計測。
+fixture生成・保存準備時間(seedMs)も直接表示の生値に含む。各条件で前後同じ方法。
+backup手順のrepeatは取込・保存確定後の同じ内容。initialと分離。
+中央値差の95%bootstrap区間は各条件5～10回の探索的判断（浮動小数点誤差1e-6ms以下は0扱い）。小差・区間が0を含むものは改善未確認。
+外部CPU負荷やGCは完全制御できない。全画面の改善率の単純平均はしない。
+
+条件（親x子/直接アクセス先/保存状態） | 操作 | 指標 | 前中央値ms | 後中央値ms | 短縮率% | 前/後回数 | 判定 | 前min-max | 後min-max
+0x0|settings|initial | direct | 主要内容の表示 | 42.8 | 43.0 | -0.5 | 5/5 | 改善未確認 | 39.4-54.8 | 39.3-51.8
+0x0|settings|initial | direct | 操作可能 | 42.8 | 43.0 | -0.5 | 5/5 | 改善未確認 | 39.4-54.8 | 39.3-51.8
+0x0|settings|initial | backup-read-confirm | 主要内容の表示 | 33.3 | 33.3 | 0.0 | 5/5 | 改善未確認 | 32.1-34.2 | 31.7-34.2
+0x0|settings|initial | backup-read-confirm | 操作可能 | 33.3 | 33.3 | 0.0 | 5/5 | 改善未確認 | 32.1-34.2 | 31.7-34.2
+0x0|settings|initial | backup-read-confirm | 必要な結果 | 33.3 | 33.3 | 0.0 | 5/5 | 改善未確認 | 32.1-34.2 | 31.7-34.2
+0x0|settings|initial | backup-confirm-import | 主要内容の表示 | 33.2 | 33.2 | 0.0 | 5/5 | 改善未確認 | 32.4-34.5 | 32.2-33.9
+0x0|settings|initial | backup-confirm-import | 操作可能 | 33.2 | 33.2 | 0.0 | 5/5 | 改善未確認 | 32.4-34.5 | 32.2-33.9
+0x0|settings|initial | backup-confirm-import | 必要な結果 | 33.2 | 33.2 | 0.0 | 5/5 | 改善未確認 | 32.4-34.5 | 32.2-33.9
+0x0|settings|repeat | direct | 主要内容の表示 | 41.1 | 42.7 | -3.9 | 5/5 | 改善未確認 | 39.1-44.5 | 42.4-44.2
+0x0|settings|repeat | direct | 操作可能 | 41.1 | 42.7 | -3.9 | 5/5 | 改善未確認 | 39.1-44.5 | 42.4-44.2
+0x0|settings|repeat | backup-read-confirm | 主要内容の表示 | 33.9 | 33.2 | 2.1 | 5/5 | 改善未確認 | 33.3-35.0 | 32.2-34.1
+0x0|settings|repeat | backup-read-confirm | 操作可能 | 33.9 | 33.2 | 2.1 | 5/5 | 改善未確認 | 33.3-35.0 | 32.2-34.1
+0x0|settings|repeat | backup-read-confirm | 必要な結果 | 33.9 | 33.2 | 2.1 | 5/5 | 改善未確認 | 33.3-35.0 | 32.2-34.1
+0x0|settings|repeat | backup-confirm-import | 主要内容の表示 | 33.2 | 33.2 | 0.0 | 5/5 | 改善未確認 | 33.1-33.2 | 31.4-34.3
+0x0|settings|repeat | backup-confirm-import | 操作可能 | 33.2 | 33.2 | 0.0 | 5/5 | 改善未確認 | 33.1-33.2 | 31.4-34.3
+0x0|settings|repeat | backup-confirm-import | 必要な結果 | 33.2 | 33.2 | 0.0 | 5/5 | 改善未確認 | 33.1-33.2 | 31.4-34.3
+20x5|settings|initial | direct | 主要内容の表示 | 41.6 | 43.0 | -3.6 | 10/10 | 悪化 | 39.6-55.6 | 41.1-58.7
+20x5|settings|initial | direct | 操作可能 | 41.6 | 43.0 | -3.6 | 10/10 | 悪化 | 39.6-55.6 | 41.1-58.7
+20x5|settings|initial | backup-read-confirm | 主要内容の表示 | 33.7 | 33.2 | 1.3 | 10/10 | 改善未確認 | 33.2-34.4 | 32.3-34.9
+20x5|settings|initial | backup-read-confirm | 操作可能 | 33.7 | 33.2 | 1.3 | 10/10 | 改善未確認 | 33.2-34.4 | 32.3-34.9
+20x5|settings|initial | backup-read-confirm | 必要な結果 | 33.7 | 33.2 | 1.3 | 10/10 | 改善未確認 | 33.2-34.4 | 32.3-34.9
+20x5|settings|initial | backup-confirm-import | 主要内容の表示 | 33.2 | 33.2 | 0.0 | 10/10 | 改善未確認 | 31.5-33.3 | 32.1-34.2
+20x5|settings|initial | backup-confirm-import | 操作可能 | 33.2 | 33.2 | 0.0 | 10/10 | 改善未確認 | 31.5-33.3 | 32.1-34.2
+20x5|settings|initial | backup-confirm-import | 必要な結果 | 33.2 | 33.2 | 0.0 | 10/10 | 改善未確認 | 31.5-33.3 | 32.1-34.2
+20x5|settings|repeat | direct | 主要内容の表示 | 41.7 | 43.1 | -3.4 | 10/10 | 改善未確認 | 40.6-45.0 | 41.1-44.8
+20x5|settings|repeat | direct | 操作可能 | 41.7 | 43.1 | -3.4 | 10/10 | 改善未確認 | 40.6-45.0 | 41.1-44.8
+20x5|settings|repeat | backup-read-confirm | 主要内容の表示 | 33.2 | 33.2 | 0.0 | 10/10 | 改善未確認 | 32.3-34.2 | 31.4-34.4
+20x5|settings|repeat | backup-read-confirm | 操作可能 | 33.2 | 33.2 | 0.0 | 10/10 | 改善未確認 | 32.3-34.2 | 31.4-34.4
+20x5|settings|repeat | backup-read-confirm | 必要な結果 | 33.2 | 33.2 | 0.0 | 10/10 | 改善未確認 | 32.3-34.2 | 31.4-34.4
+20x5|settings|repeat | backup-confirm-import | 主要内容の表示 | 33.2 | 33.3 | -0.3 | 10/10 | 改善未確認 | 33.1-34.2 | 31.6-35.1
+20x5|settings|repeat | backup-confirm-import | 操作可能 | 33.2 | 33.3 | -0.3 | 10/10 | 改善未確認 | 33.1-34.2 | 31.6-35.1
+20x5|settings|repeat | backup-confirm-import | 必要な結果 | 33.2 | 33.3 | -0.3 | 10/10 | 改善未確認 | 33.1-34.2 | 31.6-35.1
+200x50|settings|initial | direct | 主要内容の表示 | 305.6 | 56.9 | 81.4 | 5/5 | 改善 | 297.4-359.3 | 55.5-60.0
+200x50|settings|initial | direct | 操作可能 | 305.6 | 56.9 | 81.4 | 5/5 | 改善 | 297.4-359.3 | 55.5-60.0
+200x50|settings|initial | backup-read-confirm | 主要内容の表示 | 37.4 | 32.5 | 13.1 | 5/5 | 改善 | 36.9-49.8 | 32.1-34.2
+200x50|settings|initial | backup-read-confirm | 操作可能 | 37.4 | 32.5 | 13.1 | 5/5 | 改善 | 36.9-49.8 | 32.1-34.2
+200x50|settings|initial | backup-read-confirm | 必要な結果 | 37.4 | 32.5 | 13.1 | 5/5 | 改善 | 36.9-49.8 | 32.1-34.2
+200x50|settings|initial | backup-confirm-import | 主要内容の表示 | 127.9 | 33.2 | 74.0 | 5/5 | 改善 | 117.8-151.2 | 32.1-33.4
+200x50|settings|initial | backup-confirm-import | 操作可能 | 127.9 | 33.2 | 74.0 | 5/5 | 改善 | 117.8-151.2 | 32.1-33.4
+200x50|settings|initial | backup-confirm-import | 必要な結果 | 127.9 | 33.2 | 74.0 | 5/5 | 改善 | 117.8-151.2 | 32.1-33.4
+200x50|settings|repeat | direct | 主要内容の表示 | 300.5 | 40.5 | 86.5 | 5/5 | 改善 | 288.6-409.9 | 40.3-54.6
+200x50|settings|repeat | direct | 操作可能 | 300.5 | 40.5 | 86.5 | 5/5 | 改善 | 288.6-409.9 | 40.3-54.6
+200x50|settings|repeat | backup-read-confirm | 主要内容の表示 | 47.4 | 32.7 | 31.0 | 5/5 | 改善 | 38.3-55.1 | 31.1-33.5
+200x50|settings|repeat | backup-read-confirm | 操作可能 | 47.4 | 32.7 | 31.0 | 5/5 | 改善 | 38.3-55.1 | 31.1-33.5
+200x50|settings|repeat | backup-read-confirm | 必要な結果 | 47.4 | 32.7 | 31.0 | 5/5 | 改善 | 38.3-55.1 | 31.1-33.5
+200x50|settings|repeat | backup-confirm-import | 主要内容の表示 | 133.7 | 33.2 | 75.2 | 5/5 | 改善 | 133.5-152.6 | 32.0-34.4
+200x50|settings|repeat | backup-confirm-import | 操作可能 | 133.7 | 33.2 | 75.2 | 5/5 | 改善 | 133.5-152.6 | 32.0-34.4
+200x50|settings|repeat | backup-confirm-import | 必要な結果 | 133.7 | 33.2 | 75.2 | 5/5 | 改善 | 133.5-152.6 | 32.0-34.4

@@ -1,0 +1,2457 @@
+{
+  "date": "2026-10-09T22:40:12.252Z",
+  "node": "v22.22.2",
+  "parserEcmaVersion": 2026,
+  "files": [
+    {
+      "path": "./.github/workflows/quality.yml",
+      "bytes": 539,
+      "sha256": "23b1f353f54d82edbc7f1f7f1337cd7411543bd1b66c809e515896dddf1e7791",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./.gitignore",
+      "bytes": 24,
+      "sha256": "733961d725dbb9949a0c56081b74be6b056cdca54a228e40141b6d051dd63ecb",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./.htmlvalidate.json",
+      "bytes": 89,
+      "sha256": "bea5f2c97795b2d345567816353a02d447084e11a890aaaf50ed0d92ac5dc517",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./.nvmrc",
+      "bytes": 3,
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./.prettierrc.json",
+      "bytes": 22,
+      "sha256": "269bb7358c08eb4a0b68b44d1b7c741cca3e9ab2a45a0a12b5faa7a7ab372abc",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./README.md",
+      "bytes": 17923,
+      "sha256": "7268819c577bc3316667c5e551ed98b3f1e760fc2786512662f01c839922aa1c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./REPORT.md",
+      "bytes": 91335,
+      "sha256": "631a3a3679fd94266dfc6a4ac18b0b91241c9d930436b085371f9c9b10032b72",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./package-lock.json",
+      "bytes": 43440,
+      "sha256": "250f3752efb560fc0f788d14466f0956a325b4f3d2d296fc84392ce188f9ad33",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./package.json",
+      "bytes": 475,
+      "sha256": "0db23dd06024c1bfffe027ae6c920b68f804c6a177d2e5ec458c4cc7783b80be",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/baseline.html",
+      "bytes": 380663,
+      "sha256": "791a295921f4f122e3a3eeaf500598d1b1a1d3e60c6f9b531612344b62c51d47",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/browser-baseline-backup-extra20-raw.json",
+      "bytes": 8974,
+      "sha256": "3a2adbba94e1628dfc900c540addb4897c4ba434c8205c36408f6f000aa3c21f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-backup-raw.json",
+      "bytes": 25772,
+      "sha256": "4d5946f4b7dc9e3930a4fcd449938afa9958d417dc97ca3d5fd6d7559d6464ee",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-extended-invalid-raw.json",
+      "bytes": 14056,
+      "sha256": "d95936f3d99d104b8e1c1e4a0909c0e40b974a0102018ae32ba7dcca35bda28d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-extended-raw.json",
+      "bytes": 13655,
+      "sha256": "24da203a60ca2597fcdfdd39632875dceaa3114211d83ad921a9d6df759f4233",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-fresh-backup-combined-raw.json",
+      "bytes": 35782,
+      "sha256": "ae0a1fcf41c5fddc9beafbda4c10ec61753aa2f9c5e517ec0bdd9f31f0598f96",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-fresh-backup-raw.json",
+      "bytes": 26809,
+      "sha256": "7c29ad67e1de63a7d472c68847411bfa47962843626cbdd588260bd270fd9bb4",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-fresh-raw.json",
+      "bytes": 126610,
+      "sha256": "28ffd9d8f14390ee12108cb8926b0fe3744cc6ff6420d1bb6e81d12896749589",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-invalid-harness.json",
+      "bytes": 68725,
+      "sha256": "db2567067249b06672984a3624bdb8de21ae2feb775b1d0d27c70b401a3f5c93",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-invalid-quota.json",
+      "bytes": 55542,
+      "sha256": "3ba5ebbb352167e3a4a97eab2864a18c5f2877e5fbe3aea2750390fc288d7048",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-profile-raw.json",
+      "bytes": 7812,
+      "sha256": "8b3da9a210a917922aa292299c03a95ea476404d1cdffab328e5a577e897c3ff",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-raw.json",
+      "bytes": 123398,
+      "sha256": "a90d220213ca2a9a6273cd66bfa29875249e08ad082f4dbbc5b7b99e34e14885",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-round1.json",
+      "bytes": 89143,
+      "sha256": "fcf2983d3071d077a831cf7bd61059cba5e4c22e2db2f29d54f4310a9ceed0cb",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-baseline-solo-raw.json",
+      "bytes": 14804,
+      "sha256": "27672ee118680e830ffbd0d8d12246a9cb93956781de0ce1118a06c3614ad89b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-focus-transition-candidate-raw.json",
+      "bytes": 16410,
+      "sha256": "c3125fc5552e71ef80d742c27773dc4785fcab6adf2692436457a5041cab41e6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-functional-final-raw.json",
+      "bytes": 8657,
+      "sha256": "88e71cafa3814d6c3b5fac5316b5bcb9b92abe713538503e3a4d6de614a7d812",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-inline-candidate-raw.json",
+      "bytes": 15951,
+      "sha256": "8e936384c2678459022663ff07ec13adf4011682479a4f4172202bded36fa413",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-lazy-candidate-raw.json",
+      "bytes": 16186,
+      "sha256": "5a24f053021c8089e24ce643198ff5f839266db7a89de31a2e11bfa4252be62a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-lazy-focus-comparison-raw.json",
+      "bytes": 16284,
+      "sha256": "17e23c2eaea51a21c4c5873a10c0af67e9d2c51e9352c93c929891152b457c83",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-markup-candidate-raw.json",
+      "bytes": 16158,
+      "sha256": "c11911374394455faa63d4c2cc1687be6cf4a56f49cd6269c157a63aab1efa0e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-backup-extra20-raw.json",
+      "bytes": 9042,
+      "sha256": "9cb2114386f2877143c553d186658914a23617feca83b294d62e6ea9dfcef388",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-backup-raw.json",
+      "bytes": 25611,
+      "sha256": "5706c409b22ada0775540272d1969012a45f10c87875f6a85d22e1d0ac1efbbd",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-extended-raw.json",
+      "bytes": 13599,
+      "sha256": "90cea275b3210c932df61f023a12c34f3f865f094b88d3826a8872057735f4db",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-final-backup-combined-raw.json",
+      "bytes": 35757,
+      "sha256": "4cc9452d83f672903caf6bbffa7a6d3de3425d5977c4931777e1abb47611f396",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-final-backup-raw.json",
+      "bytes": 26716,
+      "sha256": "fcff1ec6e8d01da072675849aadca9bffc49b8f3813993435da47ab029ae5261",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-final-raw.json",
+      "bytes": 126218,
+      "sha256": "de85d0d2702e3e8b892d43ddb9f1f23bd38ec09deba8d070b7116faa8aed0ba0",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-profile-raw.json",
+      "bytes": 48272,
+      "sha256": "9a1ee7d17e1ca94081f161f45767c337bbfbde5c8e1fcd912f6fd426d9595af7",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-raw.json",
+      "bytes": 123122,
+      "sha256": "f8174c4b8f9b75873cda97a8ea365355417b37f2fecb4621168887dd6381aede",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-optimized-solo-raw.json",
+      "bytes": 14950,
+      "sha256": "2535035c483de88fea3a7d2172573255df13b40de09e652e5f3696af56ace0c7",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-pre-visibility-raw.json",
+      "bytes": 126210,
+      "sha256": "f8cb7e513ed0c385897138e470b19368ae6ad241ae2f7bc37114275869aae4a9",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-adopted-functional-raw.json",
+      "bytes": 17000,
+      "sha256": "b4543f2565217f28b50ede4531b46ab714e2d4b7f6e3b4a02e7c074fe258235e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-fresh-main-raw.json",
+      "bytes": 39235,
+      "sha256": "3d884f77b246cd7d714d97c7bd3b509e162db863d74df0fca2ece5d78231c76c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-main-raw.json",
+      "bytes": 126454,
+      "sha256": "fe1494acba7d67bf3b489945c25882c5587af0f8ab69a2b0b2b12e0623444e31",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-backup-raw.json",
+      "bytes": 27391,
+      "sha256": "5020e3293560b45bc737d8285bbcc9db45659f1960adc5e62fc442d3f37e207b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-extended-raw.json",
+      "bytes": 13994,
+      "sha256": "dbd46abc782a2ffd137b83cbce77c2523f736260460d07c35c3ed1c39be273fa",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-extra-raw.json",
+      "bytes": 10214,
+      "sha256": "1d6a62f5845af79d4d178dbe760a60d296a91225d1899f433cb50667f5fea7e6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-final-confirm-raw.json",
+      "bytes": 92523,
+      "sha256": "3cd2bdf8291db9d1f2693bf6039da7939783cde59d83f7f81f0f963ba0c688d0",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-main-raw.json",
+      "bytes": 129707,
+      "sha256": "48298aaae3242a42708e31e65c3b2b7ab2c18496d8dd988e678ca4c35cd4c235",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-shell-main-raw.json",
+      "bytes": 130320,
+      "sha256": "f8dfdceb4f9adf775c7572ed7353d5a3965ac595d68b77cbb4c4a1378b28c46e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-chrome-solo-raw.json",
+      "bytes": 15258,
+      "sha256": "29f37a55de9a3e2a9ac02f307a0e4bc4d1222411b82e78c2c63ef536d6e0e81a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-guarded-main-raw.json",
+      "bytes": 124350,
+      "sha256": "85786dc90c6881e35470a269ceee707f3719eb19be2147acb364b72baf2d1ae8",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-after-paired-main-raw.json",
+      "bytes": 128033,
+      "sha256": "2d59803e80e46970cd2f7ccee0eb965f380829d61a7499e2749c81096183af93",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-fresh-main-raw.json",
+      "bytes": 35843,
+      "sha256": "b30efa044080a0b9b571f77373ce6da2ef895a1880a7aa6c2dc80bba192d9f97",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-main-raw.json",
+      "bytes": 126879,
+      "sha256": "7eff5929a24d9734fea22e94c5634ec40d9d66808d0a43f41316ecf59892a07a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-backup-raw.json",
+      "bytes": 27387,
+      "sha256": "6170fec1752ef105bb6ddf870112d7824de4f64653e1fdae98d9e37898817df6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-extended-raw.json",
+      "bytes": 14038,
+      "sha256": "8e4c39ca47cdb9d0b1239807b5bc047569bdf415028018b73c276d01f4aa2b69",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-extra-raw.json",
+      "bytes": 10355,
+      "sha256": "b6586bb3688bd192d1ad2d6dd1f716a5b0af3427ff32df5aefe63fd8025d65c5",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-final-confirm-raw.json",
+      "bytes": 92249,
+      "sha256": "9da6dd14f326df6f98e6039f95f504403d3796301388274ce7e15a381c4e46de",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-main-raw.json",
+      "bytes": 129560,
+      "sha256": "50d79d1e36740085ff9942308bedcd760cebf79e2f45f4ad3a04f02e6a94e67e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-shell-main-raw.json",
+      "bytes": 130614,
+      "sha256": "e7a5171979b5d814d45fc0b537f0beeb388b6ccfe222fcef943b8cb329982c83",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-chrome-solo-raw.json",
+      "bytes": 15290,
+      "sha256": "c2e1426a046e407d15321c61fba9622718747f91e444379dab7c45410dbfaeae",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-guarded-main-raw.json",
+      "bytes": 122933,
+      "sha256": "3d4e571354babf73ebca0f950c839e7f4b4f4d03c9eb684aae9b05d61cc11191",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-before-paired-main-raw.json",
+      "bytes": 128123,
+      "sha256": "70f8572f2b19fde55e2116396b7346a35695b6f1c76cd65216460510dda51208",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-final-main-raw.json",
+      "bytes": 127097,
+      "sha256": "624532164fed00d3047eab9baeb65060bd0ed222d2888700d87ffb7c80831af2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-functional-raw.json",
+      "bytes": 26641,
+      "sha256": "47f928b27fda04226d85f43107c4cc729237388975aba874b459ca71dae79291",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-intrinsic-probe-raw.json",
+      "bytes": 613,
+      "sha256": "a84c619f52b5fb5173a69dc522ae64003779cc95703b422ce228dd223f1f2fc4",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-lazy-main-raw.json",
+      "bytes": 126203,
+      "sha256": "4adf5113bc07bdfcf603bd14041c353bc410f22f667d8b968d9553d423883dac",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-markup-profile-raw.json",
+      "bytes": 7401,
+      "sha256": "910940f2b8e21d9fd0d4df789ef1dba0d0ab063642c3b4bb55ff306ecc52c919",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-round2-shell-profile-raw.json",
+      "bytes": 53951,
+      "sha256": "7adfa7d74793760f1bc67d3d401ef48895f3f5fec28c4938ea17f51cd7b5c47e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/browser-visibility-candidate-raw.json",
+      "bytes": 16168,
+      "sha256": "501b162e13ea41f427d186619d5a4612779fd9c48c4b848a4c3de19ea324c370",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/create-functional-qa.mjs",
+      "bytes": 13310,
+      "sha256": "89bfbb2ebe1aaa202f79148c1220225bf61a7b49dcbebc9042abc55568bb79dd",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/create-report.mjs",
+      "bytes": 14695,
+      "sha256": "47d2e76122920c6f769736262e45928c308816182c180333dfdf046c4ddeb874",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/focus-transition-candidate.html",
+      "bytes": 382254,
+      "sha256": "a5c13ee236306fb97e0b30ea54386f67d44e74a6646dfd582769d0f669068b17",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/focus-transition-results.json",
+      "bytes": 43373,
+      "sha256": "69aacdb7296dc9572af65037f42e77ee94b2cc8340322be6cfeca02ed793cd31",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/functional-inline.html",
+      "bytes": 386345,
+      "sha256": "9f861f132123e41719a874063be6bbe6e17a1cb507b0f540fb7f8ffe6e4f8265",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/functional-lazy.html",
+      "bytes": 386058,
+      "sha256": "34599810c19d3a559315f745e6d6ca4d31ab9cd726f181942b95258787c493d4",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/functional-markup.html",
+      "bytes": 388274,
+      "sha256": "7f1faf2093d165b2ba7070914bb0b8a23fd5565948e564707523f2ad638b995b",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/functional-qa.html",
+      "bytes": 393314,
+      "sha256": "652836c6ff9f8d819ba543f784d3524282fad9baa9c5871cb2b7c77703b46d12",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/functional-results.json",
+      "bytes": 9488,
+      "sha256": "ee68289dbe43acc62f0756519eaac916c0ebd5add1e64a02d43219507c074b55",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/functional-transition.html",
+      "bytes": 388173,
+      "sha256": "f093ad3124f9fb7135205c0795669606f5a6cc29a2631ddc3fed96ea7a35ccc1",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/functional-visibility.html",
+      "bytes": 390265,
+      "sha256": "cba9d53c90b9cd24867351ff16c7fc4c54cfc23eb285c07c607e698f29ccb277",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/icon-optimized.html",
+      "bytes": 381340,
+      "sha256": "eb977dcf965806e6643624395583bc07069f1866d0169a12a72b3ec90e3bf064",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/inline-candidate.html",
+      "bytes": 381893,
+      "sha256": "b03f496af54fa784d0f59e5dcc8babd585d427ec62a65bb21aa6451c3f46354a",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/investigation.json",
+      "bytes": 20345,
+      "sha256": "86b28e8bca3406eedd3ec4176ddf74d00165633e83ea00b9199a6b568141915f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/lazy-candidate.html",
+      "bytes": 381606,
+      "sha256": "6d8bbda0b82795cb2be3c7a20d53e018b3ee7c1b9ce915735ada90bd70579a49",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/local-backup-results.json",
+      "bytes": 57280,
+      "sha256": "0c76a136254ff2314447f625f468baa4ad9a0290a8cbe5a6b3b9bbed74e15955",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/local-extended-results.json",
+      "bytes": 34738,
+      "sha256": "ebb399bc6d8408eefdeb09cccbe69817562ebe0fa8d6d44f3f9d301e548bc251",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/local-results.json",
+      "bytes": 304148,
+      "sha256": "83fbf899414fd3db1cbd3be23dd231cb460612534470b6ebbde94cb1da9c65b8",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/local-solo-results.json",
+      "bytes": 38763,
+      "sha256": "b5caeefd614f2d8966ec074467d3b4ddb85d8d0397818297b1ba2fcfc19ff020",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/markup-candidate.html",
+      "bytes": 382156,
+      "sha256": "0c266f5c7ece36dee1c0472e48bd7426806b81a652451be0afbffd5a0d17766f",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/merge-backup-extra.mjs",
+      "bytes": 552,
+      "sha256": "8fbbebddcf081b18c0f2021445866950e5b98b9ba37b5bbfd4bfe84dbe0dcd2a",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/pre-visibility.html",
+      "bytes": 382248,
+      "sha256": "a5fae02ce0261d098c394edf5b0c8966ddaf5d3e61c00b796b4849f9dccff43d",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/recovery-candidates.json",
+      "bytes": 11952,
+      "sha256": "e32b5acb6a871eb5f6036785bfdeb9cf5107dfa4989c4a899131df5127f335b0",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/adopted-functional-qa.html",
+      "bytes": 393314,
+      "sha256": "652836c6ff9f8d819ba543f784d3524282fad9baa9c5871cb2b7c77703b46d12",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/backup-results.json",
+      "bytes": 52513,
+      "sha256": "9113f706f9ca99ecc59b7100a0ddf4aed4be2199cd7e0fa60f296046f0a0dcdf",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/baseline.html",
+      "bytes": 382459,
+      "sha256": "4d9c698958d5b36fc5bca94e9c7a4e3e9275ad2bc0048e242ce22c9b12109f14",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/candidate-versions.json",
+      "bytes": 13038,
+      "sha256": "aa4e5c24cd625a3eed48ac5b364518bbe18343f85c33119d7947c82ce3c1d18e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/confirmation-results.json",
+      "bytes": 223974,
+      "sha256": "f0da3dfc58d19fbd216444cd0f4b8de131877c8462416a9d5c7ec69953d356f8",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/create-adopted-qa.mjs",
+      "bytes": 13322,
+      "sha256": "c762416a0c8f8fa87bae78146bd623d9644fed7e15d2ed06c5e296136012645f",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/create-adopted-report.mjs",
+      "bytes": 8816,
+      "sha256": "3922fdcdfeae4587e15b537cb8bb9aee4fe2313f326e918796c764b0516ac8d3",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/create-functional-qa.mjs",
+      "bytes": 16627,
+      "sha256": "fe94e8b08f52054345d62fb558cc88e642a43e286372e55592348e07139ce720",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/create-intrinsic-probe.mjs",
+      "bytes": 2349,
+      "sha256": "d6dc5b7eb39e12f094bb1e52247495ef2c436d4e0d818de5cbe3324b59eaf581",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/create-report.mjs",
+      "bytes": 17557,
+      "sha256": "3e2e193506447bc7625865ca772544d9252be7f44b3970fd4a1041ff2999cc4f",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/eager-child-map-candidate.html",
+      "bytes": 383629,
+      "sha256": "10000ac782deea60126c728683e551e421e98affb65d868f4f1c0e669299e4bf",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/extended-results.json",
+      "bytes": 34892,
+      "sha256": "5f3d16b2c117c3f046e94a9f1c4333210f6ee9c91ff53615ccd79dbc899ed9bc",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/focus-css-candidate.html",
+      "bytes": 385059,
+      "sha256": "b9b29c121986cbaba6a8c361517ea67136f70416716a1f672ade8af4158fec5e",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/functional-qa.html",
+      "bytes": 398006,
+      "sha256": "52fde8e9d10045447dca71ac21c4d90cf04923dcd93b11e5c1d36b0fa36b54c0",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/guarded-candidate.html",
+      "bytes": 383883,
+      "sha256": "d0ca444b0028137696a9a9dd2c0494eca6ece9220428b7fa28d1d0e62e63961f",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/intrinsic-probe.html",
+      "bytes": 386702,
+      "sha256": "ac48ee88bb1878fcd8dbc5f13a2aed8c0ab6b34717baa3f9aba5c8adcb5bda25",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/markup-candidate.html",
+      "bytes": 385011,
+      "sha256": "169627e6a7681e9b225e11d707a7b1a0da363cb9cf12155ccbc09d6322a67fd0",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/measured-shell.html",
+      "bytes": 385002,
+      "sha256": "9bdaeeeea089c20eff92b82038be81493658f85c8eeec1f934387e4135877c98",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/rejected-reuse.html",
+      "bytes": 385059,
+      "sha256": "b9b29c121986cbaba6a8c361517ea67136f70416716a1f672ade8af4158fec5e",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/results.json",
+      "bytes": 301938,
+      "sha256": "c3717fa95ced306a6c9d72d04eea556a52d6dc74ec4d34c4fdb157573f07ec79",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/retained-shell-candidate.html",
+      "bytes": 383883,
+      "sha256": "d0ca444b0028137696a9a9dd2c0494eca6ece9220428b7fa28d1d0e62e63961f",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round2/solo-results.json",
+      "bytes": 39001,
+      "sha256": "1f30d9b5e0a28d02a6e1bcb360329eb9751dc49f8b9fbaa472a61acc7e9da510",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/summarize-backup.mjs",
+      "bytes": 5437,
+      "sha256": "563bf2c6fb952e2f9b4c0f844148f16f7fcabdecf0667138921b2afed1b7ee08",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/summarize-confirmation.mjs",
+      "bytes": 5572,
+      "sha256": "e3318d50d964a1b48a117274bad8fecf87299f69a9034f682eb8f56b599087b2",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/summarize-extended.mjs",
+      "bytes": 5445,
+      "sha256": "7e435018e8f7796abee80e86ef9f39afeff943619c6af82ecb90d455515c00ff",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/summarize-solo.mjs",
+      "bytes": 5429,
+      "sha256": "e6d3f08072aaee27fd38013206142629da18f42f2cfe422ca721d3a28a12490c",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/summarize.mjs",
+      "bytes": 5424,
+      "sha256": "1257dd64e39ca6b77057577eb236537c2fa7cda06e3c917f6f17340bedaafb30",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round2/versions.json",
+      "bytes": 9909,
+      "sha256": "09a8cc9f8f0cbe46e81939165d0b8a71140666d81f4b6cd8719c3945bbb1f73e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round2/whole-row-candidate.html",
+      "bytes": 383113,
+      "sha256": "2547747423f653cbf05f42de38618343e395c6fc4b269bb571e07ed695387153",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round3/adopted-measured.html",
+      "bytes": 383370,
+      "sha256": "0bccedb319f39e0d37a54060f3aa98531d8b0de889dbfd3190b6eb973aa23e5c",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 2
+    },
+    {
+      "path": "./performance/round3/adopted.html",
+      "bytes": 382903,
+      "sha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round3/application-index.json",
+      "bytes": 43071,
+      "sha256": "2bbd6b3e71df778377e13ac4712a5465769463cd015e8626f357b10141aaf7bc",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/baseline.html",
+      "bytes": 383080,
+      "sha256": "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-adopted-backup-raw.json",
+      "bytes": 9848,
+      "sha256": "3b5d2ed2ac0885cb6c48fcbc7434d2c476ef35c279e5e71746361f5042d7b571",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-adopted-clean-raw.json",
+      "bytes": 50260,
+      "sha256": "64a083a928c72a4d6b7b88e6ef5dea5a6fa1a61ffb519eb0e303241eef131412",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-adopted-extended-raw.json",
+      "bytes": 14606,
+      "sha256": "41466d4c4b0517569212a0b774bfbcc41aadd762da79d5af4cde1e143da56762",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-adopted-large-raw.json",
+      "bytes": 19649,
+      "sha256": "508a5cf4f3c36029bf438ec5e2cc627ac2d11dd5bd9061765524ad8b336e9965",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-adopted-small-raw.json",
+      "bytes": 59277,
+      "sha256": "f626e9d7af5dc095beff225729c253791e328ea7402026e0799fc965b2130c56",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-chrome-confirm-raw.json",
+      "bytes": 19537,
+      "sha256": "1991dc7534f24d97a8d9cf2187162de0c70d4f1aaa416a7e81d67077bd928b31",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-chrome-large-raw.json",
+      "bytes": 19991,
+      "sha256": "750717279a652c992237bb0fa95f7185b0800df46568eb4ef2746e34d5b8d8a1",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-after-valid-raw.json",
+      "bytes": 1889,
+      "sha256": "1d0b88f980d5d52269aaf2ed53275a4746955bc669dc45a230236075cfead846",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-adopted-backup-raw.json",
+      "bytes": 9868,
+      "sha256": "c87e13d8b40ae84783cf7f55731f3b8dd25de2e47e38efd2eba2fdc25d1deeb7",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-adopted-clean-raw.json",
+      "bytes": 50429,
+      "sha256": "5b0936ff787505bd85f719f22b15e590632b9722e8635f605426f3c60f5f945f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-adopted-extended-raw.json",
+      "bytes": 14662,
+      "sha256": "c5891ac319ffadc0783006cc83c388a4afd85b1508d03115fd0e16a84747e418",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-adopted-large-raw.json",
+      "bytes": 19809,
+      "sha256": "76802b5c7a3c4ec13e0a89078249edfbd323afa752412a3225e9fcf831351e35",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-adopted-small-raw.json",
+      "bytes": 59019,
+      "sha256": "842062ec9da816f14f8a395d20ae11a2a456bb96311486f8299c7f0d0d55c5b6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-chrome-confirm-raw.json",
+      "bytes": 19678,
+      "sha256": "5dfa582102270d090e8731d291edd39ab4e68fb83d1bffbeb14e7f563da6fdb6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-chrome-large-raw.json",
+      "bytes": 19728,
+      "sha256": "9910d8cce401ea3688e57bfd5e2da9a2911ac452a40128f38d20ec98ff3c6fd2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-main-raw.json",
+      "bytes": 20733,
+      "sha256": "e2358e59e3e7ceae72c5a0ce76895aa42c25fa993849db704474101821e48cfe",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-before-valid-raw.json",
+      "bytes": 18730,
+      "sha256": "88abc73a9a3ea866f50e2f65d14732d2c68854e7e5bd93bb703c13b0174fa287",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-drag-micro-raw.json",
+      "bytes": 3901,
+      "sha256": "a8846ec99654a64cd2cfaf8de655cc777a71ab71e3efb2bb02d1f0a22ce39275",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/browser-round3-functional-raw.json",
+      "bytes": 18631,
+      "sha256": "8e68b345fafff9f78cd2d0a487a96f486c743ee4b5603e7f20171f3891b671fe",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/candidate-tests.mjs",
+      "bytes": 5266,
+      "sha256": "390872d345f10851d5353b9772aeb2160ff97dbd990832272c8073f14f4f66ee",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round3/candidate.html",
+      "bytes": 384952,
+      "sha256": "13f3810b6ac089f6e57712f669b1f1405bf0e95fc584442dfe5a88768b9ad945",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 2
+    },
+    {
+      "path": "./performance/round3/comparison.json",
+      "bytes": 390878,
+      "sha256": "a0b47f82e5dba9a3e8cfc130e6940c70727509ebf1d1c3cdee4c599466e68ca3",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/comparison.md",
+      "bytes": 36094,
+      "sha256": "9dbc9d4c816f5b389e4b97cf56b5021af94f945246d5827763ea97212a1ac19c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/create-drag-qa.mjs",
+      "bytes": 3484,
+      "sha256": "3110f24d12b30ca8e6c137be3e5d4f7cea7ccc360a6c25249fbc73f9d88cb27c",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round3/create-qa.mjs",
+      "bytes": 14046,
+      "sha256": "3b9dc2f1d10819860c27c03757cf799e9518278e2d813b02b758e38da129e36d",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round3/drag-qa.html",
+      "bytes": 796711,
+      "sha256": "56aca9e096572a97e281f14b9bfb7f1f837a020c5ae40a7108bc1e6e2be43552",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round3/functional-qa.html",
+      "bytes": 396649,
+      "sha256": "389fd48aed363c36d1d49dd9f13877c462fad2f25cc560a1433468bb5316f2c6",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round3/functional-verified.html",
+      "bytes": 399702,
+      "sha256": "3caf27da8ba9228a7163a24d55629ff7a2cd4fbfe9e156516a9491cac52547dd",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 2
+    },
+    {
+      "path": "./performance/round3/index-source.mjs",
+      "bytes": 4269,
+      "sha256": "7e720daee240bd90fd729ab8ef51173fa693331c6f1695b5ff674602eb401013",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round3/operations.md",
+      "bytes": 8649,
+      "sha256": "280ced4c85216aa8e2abcc533791e6eeca258e048d93b8f98eb936f19a34abda",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/report.md",
+      "bytes": 18716,
+      "sha256": "eb41ac0c28fd418742bfdc545d7f1812e3dea32c825674c6c43b9f45e45ba4d9",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/serve.mjs",
+      "bytes": 15578,
+      "sha256": "e5cd4cdbd65c9ce769fcef6ed10ef2fa576f667122cf1c64a5e174ae681f6fd8",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round3/source-inventory.json",
+      "bytes": 50366,
+      "sha256": "7f91c0fed2add969f21dc2103753279fb3ce6e34d5f459767fb003827a6494bb",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/standards.md",
+      "bytes": 6783,
+      "sha256": "e57e8f321fe1f453937bc756743dc98e97d5c2cd1b583f54c08f3796b49e7828",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/summarize.mjs",
+      "bytes": 4248,
+      "sha256": "052097a4912e826d01c21c71939c97fd142da0d8a3919dddb3949a3505ac41fa",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round3/unused-audit.json",
+      "bytes": 1594,
+      "sha256": "6c74ae81dbd95c0b3e2418eefb9a05bc0b97da3fc80aa453df80a3d395ea0a8d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round3/versions.json",
+      "bytes": 4300,
+      "sha256": "99357fce3729da68e3feb74aa9b83c9a460d07b0599dae3ded87c30bfd63fe62",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/adopted.html",
+      "bytes": 382892,
+      "sha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/application-index.json",
+      "bytes": 43114,
+      "sha256": "61da06a221cf064955efee25caaea3366d68d05a74edc712368e9d6fd16be7a9",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/baseline.html",
+      "bytes": 382903,
+      "sha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-cache-large-raw.json",
+      "bytes": 20246,
+      "sha256": "9b6baa52bc9a8adaff0db0ee6c481de25c76644c01949c29943602b5837606d8",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-final-large-raw.json",
+      "bytes": 20313,
+      "sha256": "dba39c202f525542ef241606171684f115ac36cfd6ba2086174fd31d13293eb7",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-final-large-repeat-raw.json",
+      "bytes": 20495,
+      "sha256": "433437e08e8859e4a9eaca89160bdeed6918ab5c173e489c4527507a5bf0f094",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-final-small-raw.json",
+      "bytes": 60684,
+      "sha256": "a42bc5e2ac1136450e6eabf6fc576b2aebff026ccddae5ab8c00f89186b48f08",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-backup-raw.json",
+      "bytes": 10388,
+      "sha256": "3527188bf20c8d32894995ab88814232492a4a745564d996a831281ff211376e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-coverage-raw.json",
+      "bytes": 27002,
+      "sha256": "bbb45e309ab95acf3c2b30bd4b5e515f858430ee94bdbf23c80c3450eb0e17a7",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-direct-frames-raw.json",
+      "bytes": 7352,
+      "sha256": "6207d9e78aabaea05e0701c4eb984c9eb1ca0ae168f27e17d004a11eff5ead2b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-direct-raw.json",
+      "bytes": 17833,
+      "sha256": "8b917dafa1fc5bfcfe8b99ec25605287327d4bd84a99fbf6b710c462233ef18d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-empty-raw.json",
+      "bytes": 34761,
+      "sha256": "ce1106e8c195daac29a66e919dfcf6fc4d2933b976887a04051c66ac40cb7128",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-extended-raw.json",
+      "bytes": 15299,
+      "sha256": "42df814c940bf0ce75d772fc5035c273c55deb10c179755e9ece4aa67d453150",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-large-raw.json",
+      "bytes": 20406,
+      "sha256": "d451aafd8b49900ec156d58714bdc36d453a1358ab1a5c4ada1f69c4abba1f5a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-large-repeat-raw.json",
+      "bytes": 20375,
+      "sha256": "be16d68302f4d443f2b1b3cbd4b6f5b5af6be25b88b8b68ffb265be7c918de98",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-html-final-small-raw.json",
+      "bytes": 20401,
+      "sha256": "27f86f722f60da891e4bab1383ef319edbe4a56140615e50adfe355afe73960b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-icons-coverage-smoke-raw.json",
+      "bytes": 5447,
+      "sha256": "f001ec4da5966ccb9c750ee43cfb914bc61dfbd84b0c3ba96dcbbea0a5c136cf",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-icons-large-raw.json",
+      "bytes": 19762,
+      "sha256": "779fc7796674e3b8cc6f12077bc7effba95d3ce760f38b9813b317223bb4ed50",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-icons-profile-raw.json",
+      "bytes": 9024,
+      "sha256": "e88361d50d6986fae5515218c192b45fe11256ba5c27b195554ce2cc86b5792f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-paths-large-raw.json",
+      "bytes": 20451,
+      "sha256": "e5f479365f3a9f7eccfa13e834aa9c5e7b210c2ed59f9077252bc7885c83394d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-paths-profile-frames-raw.json",
+      "bytes": 20165,
+      "sha256": "11b341114417bd56fc84ddb04524aec70c789f3bb0cc83ad28b1e5b4fab5fcae",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-after-paths-profile-raw.json",
+      "bytes": 52645,
+      "sha256": "f9c3d361a3ea4ae89ec26f952870173fe6487d6b18cf914e4c6d0bfbb7e6517a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-cache-large-raw.json",
+      "bytes": 20467,
+      "sha256": "6c3a20e2966593ea24f41ad60565ba84fec2b9169982efe190e9f28499f13791",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-final-large-raw.json",
+      "bytes": 20357,
+      "sha256": "2969e9fccde4ff5408fceaa8e22bc830e1902236b8c3382d93549d148c7c07b6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-final-large-repeat-raw.json",
+      "bytes": 20486,
+      "sha256": "d992045035edffc15ec40e83d31734fa0e58ca60ba665db2c339efb21ac11daf",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-final-small-raw.json",
+      "bytes": 61008,
+      "sha256": "562500b7da7ef6b46f6b1cc1c2cc70e1a8b8ed5044fb1f2c847bb8d627c6b874",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-backup-raw.json",
+      "bytes": 10603,
+      "sha256": "8568ea1bc4ed77dae5b35f103eecf6d5e31b2e820ee37658d74faac161531e30",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-coverage-raw.json",
+      "bytes": 26879,
+      "sha256": "e9e1322a61faf0e9d8dbdbbda35c80cfdbff79c7f19ff2f08b81d083bfabcd87",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-direct-frames-raw.json",
+      "bytes": 7392,
+      "sha256": "cd65c974051e3b6c32e57a64c8b6a09a97e1c6235c7eefe08b9407fd9fbb142d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-direct-raw.json",
+      "bytes": 17843,
+      "sha256": "d61aa12ab9137c0bb4be7a03a9d8478c8df00a9ad7cc00c0e04acb1e3dd590af",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-empty-raw.json",
+      "bytes": 35018,
+      "sha256": "762b3b448a2a3c629a76e147b297dfe9045ca746f3ec6bd303b4feb4200c0870",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-extended-raw.json",
+      "bytes": 15438,
+      "sha256": "176f84600a0bd8a1cf8abb7732af296146567ced15fb16adf49106d3c5ddddb7",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-large-raw.json",
+      "bytes": 20350,
+      "sha256": "fb13a07876639d9efa5f41499f5933c489ab8a2b28a43191f64c3f14a41705e2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-large-repeat-raw.json",
+      "bytes": 20509,
+      "sha256": "80de3a345d8912311ebc7f2ddc470ecabf7e6863b2a23b53095b3e2c891e6a38",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-html-final-small-raw.json",
+      "bytes": 20426,
+      "sha256": "9e6b391a8828143febbb4d17bdd43eb2d63d5edc6245d0753e729a0e336340a6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-icons-coverage-smoke-raw.json",
+      "bytes": 5411,
+      "sha256": "41c4bedaaebb4b8afc0e37ab1b38b679059eee6d56c9c0e060d4a0c71ecebe46",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-icons-large-raw.json",
+      "bytes": 19628,
+      "sha256": "b5120386c055c7f358cd88d162c32a3b91711b5ff8c3f1a02226741508585c0c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-icons-profile-raw.json",
+      "bytes": 54541,
+      "sha256": "14de14b32da7c34fd320ddc1bc862495b212b1143e9bddde60a6ce02d5f77bd4",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-paths-large-raw.json",
+      "bytes": 20440,
+      "sha256": "f1c5fc52fe04602de811683f5837c7da450313b5cb664426183e22abc30d208b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-paths-profile-frames-raw.json",
+      "bytes": 26079,
+      "sha256": "a8df451f5f7ffc9a33a5aa61e66135c2e8eb156f3ec6d4bd887e034e84ae3da9",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-before-paths-profile-raw.json",
+      "bytes": 56980,
+      "sha256": "c092f4274b429785f1270a1ab4f11b69e38c65d61906b3e3502648bbbae32661",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-final-functional-raw.json",
+      "bytes": 9941,
+      "sha256": "05b7aee94dae7d36cf26b1e5d5d2841f67b06c927d0d69567cdb7196e8995989",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-functional-raw.json",
+      "bytes": 9515,
+      "sha256": "f3e544b7a1d00f4944aa76e254119d1c38ce983dfe032f23e4d41df0816aff2f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-html-final-functional-raw.json",
+      "bytes": 10127,
+      "sha256": "bc9372f180724267076c39c2cf80b42582cc0e709c3e454dcd5d40c6331db3a2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/browser-round4-paths-functional-raw.json",
+      "bytes": 4569,
+      "sha256": "811f289aad1051f6ba59596e793bda84ca2c13664dfccd069cd64db0fb497a3e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/cache-candidate.html",
+      "bytes": 383992,
+      "sha256": "5eba985fb522f797762f7b2721631b977f7a771a733b719884d0647261158eef",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/cache-candidate.test.mjs",
+      "bytes": 10143,
+      "sha256": "8948f02c7cff4bf443650d1ad531dddddcfde6fd493f87d2cfbf811f066eed58",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/cache-qa-first.html",
+      "bytes": 398522,
+      "sha256": "15895b9e8f31a6020c796abeca773da4fe587dce37d6477f70ce2346078319d7",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/cache-qa.html",
+      "bytes": 398541,
+      "sha256": "59f99ab01219ad4740ccf3c60d50009b5726cfe1ba08c8bc746d5f0e3293b778",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/candidate.html",
+      "bytes": 382968,
+      "sha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/comparison.json",
+      "bytes": 626205,
+      "sha256": "c8fcc1e329055f3608b5823b511309440e191a09e214197dfa74e3df2604ddf2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/comparison.md",
+      "bytes": 59263,
+      "sha256": "5182548cc410e1eb4252c460f593c2dc9bef796054f4005a792099a91aa2212c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/create-paths-qa.mjs",
+      "bytes": 14901,
+      "sha256": "67c335a8543986e8f2da73552d08908e45c3a7a3d6b86923985803c88c7bc383",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/create-qa.mjs",
+      "bytes": 14973,
+      "sha256": "3ffb944058b10e549d6cee5d400af363f536d2585ab6e1d282b77b720ebabec8",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/final-comparison.md",
+      "bytes": 35163,
+      "sha256": "be6ed07ebe07cb9bdacfd2529ca09074eba8f705d432fb3c8f6ada4d97e99123",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/finalize-evidence.mjs",
+      "bytes": 4083,
+      "sha256": "49e3e2edd106971da8548c1c34d5635f93fbf5dda9b637b019197fa9822551cf",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/frame-summary.json",
+      "bytes": 7553,
+      "sha256": "97acb8aa52e1ee954983422819c52aecf0495eaf4ef9a36387d8617dba5eb55c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/function-delta.json",
+      "bytes": 84915,
+      "sha256": "6860987e69b20b55ecab30c78d8c57aba0b3c32a8fe8a23ff6a9ad4e00afa1b9",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/functional-qa.html",
+      "bytes": 397780,
+      "sha256": "c0992a1fcf4b405976076df467163cd53e56002780396b73ce2d5ec3611cccd2",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/html-after.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/html-before.json",
+      "bytes": 401327,
+      "sha256": "b0b1a912fd3c4637b7d7b3bf1217061c58a292fa693d60ced48ef8e55794689e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/html-rendered-after.json",
+      "bytes": 413746,
+      "sha256": "95fef395bbe1025d3e2502e7965a3ab69b2e21e8d7362e8bf12f951f3660a7c8",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/html-rendered-first.json",
+      "bytes": 214574,
+      "sha256": "0727edf9b439fcc3adaf2f054208cceb3567d60c7c342ed16cafec0d97fa07c3",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/icons-candidate.html",
+      "bytes": 382968,
+      "sha256": "487f915db65bc551ce2d31ad5dd5b856092200af171f29c34a4950f066531a1c",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/icons-candidate.test.mjs",
+      "bytes": 1351,
+      "sha256": "5112941bf4aec40289d7676ecfe3e1bd32f87df4c8fe392d6f8051ea04663183",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/index-source.mjs",
+      "bytes": 4312,
+      "sha256": "0bb36299dee01fe3f0ba8924b21e024ced91e728186aa159b66dff8dc48303ee",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/native-ui.json",
+      "bytes": 851,
+      "sha256": "edfe94ef01959e65939fb2082ab3204a69ca58d66e55f593728ee931aa8825a0",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/operations.md",
+      "bytes": 9294,
+      "sha256": "7bf01722606f4051ccb68fd9e23a9352bf47d2229eb3a986d5b102e6be2d428e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/paths-candidate.html",
+      "bytes": 382862,
+      "sha256": "c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/paths-candidate.test.mjs",
+      "bytes": 2649,
+      "sha256": "a520d63c9e456d7e8a2cf4b2e17abbcfe1cce09738e3c35b8d2aabd7aae80f05",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/paths-qa.html",
+      "bytes": 396825,
+      "sha256": "a795203f2d2d808f4418713caa4f77316726edf1b9ea6853a0875150f623c97f",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/rendered-final.html",
+      "bytes": 393793,
+      "sha256": "1d3456165b34999d9b297e0a1a5f7eb0bf9a100680c5fa53827922ce618584ff",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/report.md",
+      "bytes": 15888,
+      "sha256": "a0aee391fe354f6c4f216fdd8cdb71fa2753f77ccc2df8c4f384824cc9c8d235",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/serve.mjs",
+      "bytes": 21134,
+      "sha256": "6429757a84b0ef290a7f67b9c149fc574e51ba0187a1a7f267e34dea726c758a",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/source-inventory.json",
+      "bytes": 70849,
+      "sha256": "9d10b1791b02711ea3e6db1a5326fe545bf666d5f09d82df7ff9ef9cb9477381",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/standards.md",
+      "bytes": 3913,
+      "sha256": "90ea854a4e422926f4263d97fcd06264fe6fa9cc2cb6f6a955eefa4d3f6256c0",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round4/summarize-frames.mjs",
+      "bytes": 2465,
+      "sha256": "82c0629e71edca9291b1f2cb3e000b35387df92d7edccc0273134db31c46d432",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/summarize.mjs",
+      "bytes": 4521,
+      "sha256": "633574d1ac3fdf6461d0cfae9c87509b127d95598c02124f2368cade7c2641ae",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round4/svg-html-candidate.html",
+      "bytes": 382851,
+      "sha256": "fce50409de97968cf3f532eef1606df61a23e74d8be212e33c8751ce5d22c3c7",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round4/versions.json",
+      "bytes": 31736,
+      "sha256": "3cbf6f2f89834928503ac931e95a784e4963f5b69b325aeec2ce9f3971644102",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/adopted.html",
+      "bytes": 386245,
+      "sha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/application-index.json",
+      "bytes": 167415,
+      "sha256": "47f4c8d9e436acd9c8ca483f1e4716acb4f205706c98b77ccf84c464ce1ee432",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/baseline.html",
+      "bytes": 382892,
+      "sha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/batch-v3.html",
+      "bytes": 1625,
+      "sha256": "ca74b28c9beb6c7e8d362057052e18bd306a80157a27bbb7ce702413ea41831b",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/batch.html",
+      "bytes": 1829,
+      "sha256": "90105d0dce043eeb9dbbdbecdde84ccc244b23d56a6485f0120e743df988d108",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-large-raw.json",
+      "bytes": 20118,
+      "sha256": "b54c372255ac455c9a18af13654d1f1ea1dcd99d3b21381eee3c5ee04729926c",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v2-large-raw.json",
+      "bytes": 20306,
+      "sha256": "07b72adf1887e954f3b8ea572e05400d4add540e9358b4ebf918554b410f4a8f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-backup-raw.json",
+      "bytes": 10442,
+      "sha256": "4bcbdb2b28d8a6f2b5efb7bb75e6e2771dc1ccb3a5975f301f406c2bca548ba3",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-coverage-raw.json",
+      "bytes": 27069,
+      "sha256": "bce9ac4172f6fd45ac424233937559ca17e97f299c1c3e357430d12eb542eb4f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-empty-raw.json",
+      "bytes": 34641,
+      "sha256": "b0463bcafa51a4f8e3273eb53877104e355d8b3ad5ab2463e8d57ed167145c0f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-extended-raw.json",
+      "bytes": 15302,
+      "sha256": "7e5681e16e0383f61ce6d15f0d45f6c487363792296fcc16f995c0d3a7ac8d40",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-large-raw.json",
+      "bytes": 20504,
+      "sha256": "43dda780ab5f65474f2dd9bfa0f8183b3cf62765ac77076f7aa21782e37d3272",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-large-repeat-raw.json",
+      "bytes": 20458,
+      "sha256": "960bee758290875f2f663638004573d0af88d52fb47355c56c31d621951ef164",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v3-small-raw.json",
+      "bytes": 60643,
+      "sha256": "1192fce929c686bacb91f7921c72a45057f89f05641e7f43e25532a58e3fb942",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-backup-raw.json",
+      "bytes": 10525,
+      "sha256": "2f8983f2742f9956163e261ca05efa73b147967e9dcdfdd95f8dea445534fb00",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-coverage-raw.json",
+      "bytes": 27050,
+      "sha256": "827e441e749601ffdd694642ef7b1e492bf7124b7d33d2f961f44f4c5f90e231",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-empty-raw.json",
+      "bytes": 34960,
+      "sha256": "9bb392c6b34d74b3cd229ab794dd8a2e704496dc26304b31a4ff5a746e082168",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-extended-raw.json",
+      "bytes": 15402,
+      "sha256": "135ec12a8c62a41c713ce9b068351739ee489f328b3a1f8499b7a5b1085536ce",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-large-raw.json",
+      "bytes": 20353,
+      "sha256": "91aa64d42884b940f15e8b1ee1d687f19fb5494333e557119a629e553847bbc5",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-large-repeat-raw.json",
+      "bytes": 20505,
+      "sha256": "028979a16287a1c59618525a140cf0de711755be6ddf41bb5756c919fbc20250",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-child-v4-small-raw.json",
+      "bytes": 60973,
+      "sha256": "c518734ab88027d7e08beb6ba9d40a8232fbe95c3c40809ed38b401f2dc3e198",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-compact-large-raw.json",
+      "bytes": 20450,
+      "sha256": "94ea073998008b820adb4b8394cbd6cdc186c04b78194cc0b6d067f38cfebdc6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-after-trace-child-v4-raw.json",
+      "bytes": 39694,
+      "sha256": "d13efb8dc016fba5e723311507485f4b35f232c3525c599d63e2dabb34dd4fa3",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-large-raw.json",
+      "bytes": 20371,
+      "sha256": "6f2d8dcb56abc3785b544a5844dd2f109b5075747f4b4d5552515e3e3c55be8b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v2-large-raw.json",
+      "bytes": 20288,
+      "sha256": "c7982342ba7dcd37313e11b8fa39f8f5a1b1f2543b118e5fc99b5adbec81e64b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-backup-raw.json",
+      "bytes": 10578,
+      "sha256": "b33d51057dfea70e1a886beaebc4d772c6f3c0418cf4dbd3df3b4810eb426898",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-coverage-raw.json",
+      "bytes": 26952,
+      "sha256": "bda7a34cf2f992d04d5afe78baaaf102444771a2ab2480a55537bb2995245425",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-empty-raw.json",
+      "bytes": 34897,
+      "sha256": "c29062af9b032c7f62375972760d0e2251865d8b575589511a71b0605bb47bf0",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-extended-raw.json",
+      "bytes": 15376,
+      "sha256": "1035b08ede27558d0339776dfeec305936dd5fa7a5646d85eef9dfa350b3f70f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-large-raw.json",
+      "bytes": 20459,
+      "sha256": "71e611b84f32d45b2a62ac9800598c9dcde14cf3239c66224e81dbe57013c75d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-large-repeat-raw.json",
+      "bytes": 20667,
+      "sha256": "aec60adad8fbf38b2868b5efc77eb03cfddcda03a56f214681ea575253cea853",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v3-small-raw.json",
+      "bytes": 60820,
+      "sha256": "08b6d3b3bc9bed41a9aeb243c2b14a461ab761be1c8aa66464360b15a853ede5",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-backup-raw.json",
+      "bytes": 10589,
+      "sha256": "ca83d1633b54f4afe6304b90990d8d315176d348c33afd9dca26017b1360efbc",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-coverage-raw.json",
+      "bytes": 26978,
+      "sha256": "ba90f897e081d0fd7846697062197401a69d4f4d773d7e2e1531354105ca80ad",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-empty-raw.json",
+      "bytes": 35059,
+      "sha256": "5672832241a0ce9ce02ffeaa8a2e6f04ba896b333b962575ce58943c6a0efcd8",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-extended-raw.json",
+      "bytes": 15291,
+      "sha256": "3d694296c649d6f227800362fb5f70a9869a81a97812b8361f49e253de98dd4d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-large-raw.json",
+      "bytes": 20439,
+      "sha256": "942b5ec4b36a5c0abf43d8cafd4f4eff24be7682a6d615f9004763ad7672cd4b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-large-repeat-raw.json",
+      "bytes": 20406,
+      "sha256": "ef206787787e73f31863d463f147aee6e31bc0f6b4b1ca974b8c5a1139b817e2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-child-v4-small-raw.json",
+      "bytes": 61111,
+      "sha256": "4149dc72b0ca6161fb2b2c44193942a617466a71176232e79db8e35a15cf3819",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-compact-large-raw.json",
+      "bytes": 20315,
+      "sha256": "e3b4c7482fb073c32fc386b1229fcd364b16b5f3d2dbeb091aa4437abbcb8091",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-before-trace-child-v4-raw.json",
+      "bytes": 39525,
+      "sha256": "1389e0ebf303ece0e92adb921d712572afac7cd8cafffc9538ef9c8728290e59",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round4-html-final-functional-raw.json",
+      "bytes": 5065,
+      "sha256": "ba4bcca3ba4e67a2a9bebb9cc216f6bb06bf8fb11d7feed748c56d4986dd5c6e",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round5-child-functional-raw.json",
+      "bytes": 5408,
+      "sha256": "d77a9ace7f4da74ed15730f788935edf34082641770af13b591543103e78ac6b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round5-child-v2-functional-raw.json",
+      "bytes": 5740,
+      "sha256": "18bff3e659b864f19afb6784716b6664b2d4d8226162615fe1af1422dcbdcc28",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round5-child-v3-functional-raw.json",
+      "bytes": 6239,
+      "sha256": "da66ccea73d50c79a27e8a4f5f73741c6c06c18d3895f52bbbb944cd473e65be",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round5-child-v4-functional-raw.json",
+      "bytes": 19296,
+      "sha256": "31c2f10f61245010b126b40ebba33e872762679c0526a68b9fbea873dd2fe74a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/browser-round5-final-functional-raw.json",
+      "bytes": 6600,
+      "sha256": "866e7b58c8b237ae06dac6cbe61787801d53a4ee3aea86a51921f122ab68c970",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/candidate.html",
+      "bytes": 380403,
+      "sha256": "ffe4ef95a84ac4021fdd72661a4a118f6ae95b609afd2f7d8ab534838ad8daeb",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/child-candidate.html",
+      "bytes": 385061,
+      "sha256": "611e39045c5faa60bc7ea39af8e33297cd379ba3f74bb978285476ac1992dc36",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/child-reconciliation.test.mjs",
+      "bytes": 6256,
+      "sha256": "bd69ae4ece3d412906c929189ca186afb8808510b5e3b6629fdad1f98d241a00",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/child-v2-candidate.html",
+      "bytes": 385416,
+      "sha256": "12a084345b0bd8cdaf7d399e6e1979f3e0cf7739bb76eb34923ceac32d21eb48",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/child-v3-candidate.html",
+      "bytes": 385806,
+      "sha256": "112946ef70d0149652efb3b6aa856eafb1bbf2565176bd244cece91acaf517aa",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/child-v4-candidate.html",
+      "bytes": 386245,
+      "sha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/child-v4-first-candidate.html",
+      "bytes": 386142,
+      "sha256": "71b0cca885c942838ec3700be1162fde824092cfe63622860a30746db1e84cbc",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/compact-candidate.html",
+      "bytes": 380403,
+      "sha256": "ffe4ef95a84ac4021fdd72661a4a118f6ae95b609afd2f7d8ab534838ad8daeb",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/comparison.json",
+      "bytes": 684263,
+      "sha256": "4cd1fd0acf6fa5e2a61deaf5065ebcd730b85d607cbc909d4d4d2d4046ef91ec",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/create-candidate.mjs",
+      "bytes": 1691,
+      "sha256": "b4820426f151c9aaf03036ab78d8efc123577464a94ed63fba4a7a5d9043d5d4",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/create-child-candidate.mjs",
+      "bytes": 2880,
+      "sha256": "bbf05a3748b058d2899ed8a2d2ae8614dfd20f8e76477fee48a634487dae0dcf",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/create-child-qa.mjs",
+      "bytes": 19764,
+      "sha256": "6cfbd0d76028f2f3f903f9dd084c83da02548375ece0bfa3ca37b8e6af08e42e",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/environment.json",
+      "bytes": 677,
+      "sha256": "b42a83f99f1543ab26672d45381e1fc61690da1571ab3968cb13602cb04ce972",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/final-comparison.json",
+      "bytes": 290962,
+      "sha256": "3b92818385f70125d7294b89f59324ccc8814bc2a74335f7f7463929b28e23af",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/final-comparison.md",
+      "bytes": 44590,
+      "sha256": "4810d4360ccfedcefc48baf04acf801134234dd363df35de4a1bc941d843adc2",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/finalize-evidence.mjs",
+      "bytes": 4640,
+      "sha256": "a0b3cea9842569484d2fa14897aee1ce10c22f05aa26b2b8657eaefc1881d851",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/functional-qa.html",
+      "bytes": 405996,
+      "sha256": "cbc7ce8535f7ce7dd06d583b8a255ec1dd35ed067bdd01acbef8c6fbca48c75b",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/index-source.mjs",
+      "bytes": 3830,
+      "sha256": "4ca683adaf55c027d766f39a25dfb50a4d909ef0635d3f08d914c155718bdae8",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/native-after-0.json",
+      "bytes": 4474,
+      "sha256": "92f468e2922c4dd725d500502ee2a23095423b23214f6c17c6677114f5bfdbff",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-after-1.json",
+      "bytes": 4537,
+      "sha256": "3046321375fbde782b9208e85a621262d74ca85dfd00e167b47028214bf2d6ce",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-after-2.json",
+      "bytes": 4537,
+      "sha256": "ae6b1ec4ae2fa7ed612f8a5ed046421ce70c051c9b3e47347a05449dd45203ea",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-after-3.json",
+      "bytes": 4532,
+      "sha256": "e574684c35adbedd59eed58b49f80e928c0cebe5bef383875ff8cb810639b44a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-after-4.json",
+      "bytes": 4548,
+      "sha256": "f41507e36db5f71634452b4d419408f38fafdd52b40f56fee2043e278d43bb82",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-before-0.json",
+      "bytes": 5036,
+      "sha256": "19438153c58a40c84804b28ab85e95aeb6eaeb96f69bc5ad75c40e7a4ecb9207",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-before-1.json",
+      "bytes": 5002,
+      "sha256": "c440e8d174271c0926355fc11e2d2883decea278297357120c43e27e9acd7d38",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-before-2.json",
+      "bytes": 5038,
+      "sha256": "e7b19b0cf5baddea84f294b8c67f0f3d2059e003e0d6829cdf3792b0127b51c5",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-before-3.json",
+      "bytes": 5062,
+      "sha256": "ef26496833e1542eeb46a3d66359963d4e6e69772b7a433df61037913eb2074f",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-before-4.json",
+      "bytes": 5014,
+      "sha256": "e3d2dc44bbb9b8cae3d1bf38ac22c3cf7f3ab398f053a2e2fa149866dbc04528",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-calibration-before.json",
+      "bytes": 4804,
+      "sha256": "ff55b330022e2f38ac3fcb4549cdb9d38331a9c9fd64463b0f52bf9077ead6db",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-comparison.json",
+      "bytes": 5040,
+      "sha256": "b280f708886a8229f610057dda2d2f0eb1350463b1931d38d751cb2237b7f50d",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-invalid-after-quota.json",
+      "bytes": 1794,
+      "sha256": "2ae101703c5e8ce4948c1f94dd7143abfd956799c2a4bc3ef42730c982c84e9b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-page.mjs",
+      "bytes": 3698,
+      "sha256": "4948f308403c4366e6394c5ab4cbe605ef0b2b6adadc1e891e26941b2d57edc9",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/native-preparation-v1-after-0.json",
+      "bytes": 4473,
+      "sha256": "b8c2695e711a5367ee9230acafdef1e2cb214e514f5c64d2e2b4cba21c335e91",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-preparation-v1-after-1.json",
+      "bytes": 4524,
+      "sha256": "588050a2dc18ef81c009fd5cdf2bcd44d114d1aa3523464cfb5a1c388a665508",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-preparation-v1-after-2.json",
+      "bytes": 4473,
+      "sha256": "b28ff6d7a2126af51a19bfa56897c467cf15bb02cc47291c242a8bcea8396852",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-preparation-v1-before-0.json",
+      "bytes": 5059,
+      "sha256": "23fab27e2a6dcf5703d66aa1c8b88d6d17eb0f5d907f04604158aa24f04db640",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-preparation-v1-before-1.json",
+      "bytes": 5034,
+      "sha256": "181df86236ce2907ccda87cba5681f21a8a085d2886971a6a2c34874873b708b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-preparation-v1-before-2.json",
+      "bytes": 4922,
+      "sha256": "8a1282a13c2073e4acc930ae25966dadd041674731bf81c0c320d33ef3496849",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-quota-error.json",
+      "bytes": 449,
+      "sha256": "c47b6872aa60e4e414111875e90a0426383a14e082e67b404465136b3dfd6c9a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/native-runner.html",
+      "bytes": 958,
+      "sha256": "f4a79e25793d25d7eec22feac191c77b89939f9d76eaba26a983b81affd1d96d",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 0
+    },
+    {
+      "path": "./performance/round5/operations.md",
+      "bytes": 9802,
+      "sha256": "e25ae8e6b98136c371bf36cf9b3a344e43a33e272a8bf9bbbacb4db0b081523a",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/report.md",
+      "bytes": 9761,
+      "sha256": "0b36ab6d9140720a94c60009526aef198067e45e3a7a7ced3f232025b0ac040b",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/selected-comparison.json",
+      "bytes": 99602,
+      "sha256": "a9c7003c4ffc85490e8caf836c1b9820cc5e0dbf9f6c58f8613aad8770a76047",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/selected-native-comparison.json",
+      "bytes": 3876,
+      "sha256": "69d2d497501311157cd6eb631ec0dbe3b3b573c5e7c8060a23fa8df16ccb69b6",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/serve.mjs",
+      "bytes": 23355,
+      "sha256": "0169d8741ae3c789fd4c663f224ddeb09e00a44dcd6f2f869493cad031a4f4ee",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/source-evidence.json",
+      "bytes": 503,
+      "sha256": "92c034daf71c1b573d8f8043c4613d4faae0fef87471b060bb579e45b2cc2030",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/standards.md",
+      "bytes": 2635,
+      "sha256": "8d6e5b55a79bb2a1e9e2c48f408217368a128a29b2a26e54aabc47164ea9d658",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/summarize-native.mjs",
+      "bytes": 3361,
+      "sha256": "5ac4e5ef39a2105041c7e36021bac1fb4df0ac96bde24b322584bd66219dc0d8",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/summarize-trace.mjs",
+      "bytes": 1750,
+      "sha256": "976bc20fe1a894d45e18db69816f27e1ac39544ce4c7dc53c8695ae214005162",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/summarize.mjs",
+      "bytes": 2259,
+      "sha256": "fced9e4e28d77fea1591e615e0b766b67c13d4c7242b6470b3b1060fd0d2e643",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/trace-summary.json",
+      "bytes": 18810,
+      "sha256": "98437f7d66aa35c2aa17bf9eb0e59f3d25974aaefc7c75054993c3fe17922032",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/round5/verify-transform.mjs",
+      "bytes": 1877,
+      "sha256": "5d5c745c11affcee8f793b149626acfb936366cf3ac638fb1ab3376d929192c3",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/round5/versions.json",
+      "bytes": 3117,
+      "sha256": "94056ae857fd9e6f79b3017d2f85748ef611012f3d7af8b3aff015b0718b82bd",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/scoped-candidate.html",
+      "bytes": 381099,
+      "sha256": "8966c8ccf3fb528b3c497e07c23da92ad9b66beae7b2c0eb36a8e46811800f28",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./performance/serve-benchmark.mjs",
+      "bytes": 18056,
+      "sha256": "b06e3975c07421b83c4ab58251bde97ce4e7b27c4a8b9ad0928821c8774d2636",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-backup.mjs",
+      "bytes": 5034,
+      "sha256": "7b2633fb3c05892138120aacb827b268324d9b3c29c443c4c949dbf7d8932055",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-extended.mjs",
+      "bytes": 5352,
+      "sha256": "39f88b59fbd000b185c7bb60cacd63a8ef86438d24a5d245ec4ecfd736f76278",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-final-backup.mjs",
+      "bytes": 5353,
+      "sha256": "7b160678c8fad331ff5d0a2c1a51beb740f7a31e7ef48e45704d0676432755dc",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-final.mjs",
+      "bytes": 5321,
+      "sha256": "103cab9c3498a37ffbc25011406e40976e6b4f46950e7936310e5260f9cfd551",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-focus-transition.mjs",
+      "bytes": 5317,
+      "sha256": "1f974b8c665b149f947a4225a645a64d4212fecf72cf993bd91266c44d37d3ad",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-inline-candidate.mjs",
+      "bytes": 5036,
+      "sha256": "3be7898e5440f26da02c022e53bc0957fd660779b63f4fb2af3800160f5ab3b7",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize-solo.mjs",
+      "bytes": 5329,
+      "sha256": "02e3634117c54a0cbaf51495271d470f320a9002515f0a1878061a17191c4136",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/summarize.mjs",
+      "bytes": 4996,
+      "sha256": "a4f24578d4a190b6213b324ff08f694c1867a2699331ad9a8c4dea7b67b506f5",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./performance/versions.json",
+      "bytes": 1177,
+      "sha256": "d50b8d1dac304dc99abb6cfa2b60ec2d263c42e3db26c74612b1549b0f30eaae",
+      "scope": "configuration, evidence or documentation"
+    },
+    {
+      "path": "./performance/visibility-candidate.html",
+      "bytes": 382459,
+      "sha256": "4d9c698958d5b36fc5bca94e9c7a4e3e9275ad2bc0048e242ce22c9b12109f14",
+      "scope": "immutable experiment or generated QA",
+      "scriptDiagnostics": 3
+    },
+    {
+      "path": "./scripts/check.mjs",
+      "bytes": 6136,
+      "sha256": "fc6e655bf66d30db50823f4f09a540174cba2bd3e9ea1854a495e2679a372571",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/app-source-parser.test.mjs",
+      "bytes": 1106,
+      "sha256": "47d5da66d7cea80b5211b5bf161ea1351fe8ceb2d21b64dfc425f35105bdfe2a",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-boundary-qa.mjs",
+      "bytes": 10869,
+      "sha256": "71a0f576e0b3fa6a341ba1cf663e4bf779c0d1eb9696c3ed8ca19a82cbcb4554",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-browser-qa.mjs",
+      "bytes": 6000,
+      "sha256": "201136180fb9c2c6bf82874841fbc79c65f834f795528b0f1f233207ea384fe7",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-continuity-qa.mjs",
+      "bytes": 8473,
+      "sha256": "f137f504eb9fae2eda45490e758bbb2de07fed918674af6d423b475f2f7b9051",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-interaction-qa.mjs",
+      "bytes": 8107,
+      "sha256": "e3c7ba18288c633848faa9de7cb3661bd8a029bd70893aef85de2531d5364ce4",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-lifecycle-qa.mjs",
+      "bytes": 7567,
+      "sha256": "12f402aaae90f54d078813a7cb41da4d84e805642da5ab8778b493102b30eda0",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-navigation-qa.mjs",
+      "bytes": 4236,
+      "sha256": "c787f7ec88d70212e76b29abcf2145170f24dd3410b8df91cc8f723617afc421",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-polish-qa.mjs",
+      "bytes": 7774,
+      "sha256": "7666502a6a7c03097407ac8661702e69ab7bf9953ee368a00c3ebf590ea063bf",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-refinement-qa.mjs",
+      "bytes": 8086,
+      "sha256": "59105fd11b89ca0ee60b47daa8951ad53528c43a2393a2d58bbeeb52c046bbe6",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-search-qa.mjs",
+      "bytes": 5909,
+      "sha256": "8905dfef8b8866ce32f0e67dfc8a2b2ff7bdc1a14d5ce4db98f94a2bd05b8682",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-storage-commit-qa.mjs",
+      "bytes": 11180,
+      "sha256": "9b9e6f163677ffabf505f2c69fed75741275217a2dc20d97f265b8fd198302c9",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-ten-pass-qa.mjs",
+      "bytes": 6369,
+      "sha256": "f777b37509086ddca71ff0ffd4e37662cc7922f8098e8a010f5fb1eb14028279",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/create-usability-followup-qa.mjs",
+      "bytes": 11971,
+      "sha256": "5352254baa67eddb764c068b86e0856ebc1056a382e1706fb5aea07b6773fc0b",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/helpers/app-source.mjs",
+      "bytes": 2972,
+      "sha256": "214b966f4981de9c7b58378f9c72326f22c994525efafd9f46c62282db85eab4",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/helpers/browser-icons.mjs",
+      "bytes": 690,
+      "sha256": "8240d4825b53845685262d7e8e365fffb5dfbecb6217a95d7069490a79c2d0b5",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-accessibility.test.mjs",
+      "bytes": 14654,
+      "sha256": "5839fe0584662905f9caf7d6e76e000f33f4ee8ea676559b604fb61021280f76",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-boundaries.test.mjs",
+      "bytes": 12185,
+      "sha256": "e1be1c5f727f6b7f83affb694bbd8b9e99b22288e152d4d13a16399f53c42ab3",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-continuity.test.mjs",
+      "bytes": 8500,
+      "sha256": "08ad938f261a70ce35b09a0798797ff2ed80966a713b804c199158924f2de3c4",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-dom-refactor.test.mjs",
+      "bytes": 3494,
+      "sha256": "44309620fa61b2ff80867660193f645ec3e914bf3a6eb272674d1ffae8f5fd22",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-gyomu-drag.test.mjs",
+      "bytes": 7387,
+      "sha256": "ce465dca7f8111f84a54ab698d999cafd05e189301f3f1c4c205d6cce4a9534e",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-gyomu-task-view.test.mjs",
+      "bytes": 7030,
+      "sha256": "c68fb9a31c5dd1927b07a2c4897207799c35ec44183fdb537e27c641ca652530",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-lifecycle.test.mjs",
+      "bytes": 6163,
+      "sha256": "218533015fa890052d9b51ebfb5efe502b1723dbcaeb1b53b042b4ac9af651ab",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-logic.test.mjs",
+      "bytes": 151158,
+      "sha256": "b7d80e92ae432162d0f638bc88c2ab2b03171b268d7d9f3096bc1c0c00c60f38",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-modernization.test.mjs",
+      "bytes": 3017,
+      "sha256": "03962d7ff4559cdb8f7ac2a09bea747e3a0ec2bb1d182bdef06c0ac917890180",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-performance.test.mjs",
+      "bytes": 5049,
+      "sha256": "0a3c6993267909310d85b4578c1cf08a79e310b514152cda72c349bde103b277",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-polish.test.mjs",
+      "bytes": 6413,
+      "sha256": "63ca1f8d2f2c2a9cea966ada9010514a6b9d4b82bd22c93122615772f354d1da",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-product.test.mjs",
+      "bytes": 4672,
+      "sha256": "1cc7724377ea76cba984563255d2599b50f2ebb21f73a132c542c2b4810a7c94",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-quality.test.mjs",
+      "bytes": 7767,
+      "sha256": "5b2dffa2acf22a1f9afa394a81179592795878e667b45f26395e4ba092028241",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-refinements.test.mjs",
+      "bytes": 7898,
+      "sha256": "cc002d56e1d21f9c0035e7d71d247b290c9de3152a71f842fc920485cedfa9dc",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-resilience.test.mjs",
+      "bytes": 12055,
+      "sha256": "1ff7d8ea3e657cad1e6b8e45d00fccc80855e02de8dd99f699d760a75dd044de",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-row-cache.test.mjs",
+      "bytes": 6202,
+      "sha256": "ed8a9267974d3b8ebabe385f71b98e07ee81e950fae746d1c201a495647e7789",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-search.test.mjs",
+      "bytes": 4382,
+      "sha256": "2d2efb6c5c93935a3f57807e2c003ab912127fadf88fa1d9bd64c2721640a34b",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-syntax.test.mjs",
+      "bytes": 323,
+      "sha256": "cc239dff103767dd0b1714b013f5ffdcf9c6fe6b079a7d41db7ab4172c677718",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-ten-pass.test.mjs",
+      "bytes": 13983,
+      "sha256": "ebd87b83cf6040c844b84fda637d7f8b2b9d8196965609464f2a59502eccc2a3",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-tooltips.test.mjs",
+      "bytes": 2783,
+      "sha256": "c17ecdf41712a4a8bed71c25915408adf82668244562103b5b6a73cdb505165a",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-usability-followup.test.mjs",
+      "bytes": 5385,
+      "sha256": "2c9a095ef6568a9cdc391bfd2e525e6121f5dfde4d1da71e273d51bcbb0c7667",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./tests/yaruyan-usability.test.mjs",
+      "bytes": 7329,
+      "sha256": "c538b104821503a8332420e0701edc943c16c7df84d22b705fd506f3bc0a6020",
+      "scope": "maintained source"
+    },
+    {
+      "path": "./yaruyan-todo.html",
+      "bytes": 386245,
+      "sha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+      "scope": "maintained source",
+      "scriptDiagnostics": 0
+    }
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "caughtErrors": "none"
+      }
+    ],
+    "no-var": "error",
+    "prefer-const": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "no-unreachable": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-constant-binary-expression": "error",
+    "no-unsafe-finally": "error",
+    "no-new-wrappers": "error",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-prototype-builtins": "error",
+    "no-async-promise-executor": "error"
+  },
+  "errors": 0,
+  "limitations": [
+    "Current static application HTML uses html-validate recommended rules; CSS parsing and generated-markup parsing are not full conformance or cross-browser validation",
+    "No type checking for untyped JavaScript",
+    "No claim that regex API inventory detects every deprecated API",
+    "Immutable experiment HTML is parsed; script diagnostics are recorded, not treated as current-source migration failures"
+  ]
+}

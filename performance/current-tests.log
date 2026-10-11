@@ -1,0 +1,536 @@
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-accessibility.test.mjs:6:43
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-accessibility.test.mjs
+not ok 1 - tests/yaruyan-accessibility.test.mjs
+  ---
+  duration_ms: 117.686333
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-accessibility.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-boundaries.test.mjs:6:31
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-boundaries.test.mjs
+not ok 2 - tests/yaruyan-boundaries.test.mjs
+  ---
+  duration_ms: 122.152042
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-boundaries.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-continuity.test.mjs:5:17
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-continuity.test.mjs
+not ok 3 - tests/yaruyan-continuity.test.mjs
+  ---
+  duration_ms: 126.867334
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-continuity.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-dom-refactor.test.mjs:6:37
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-dom-refactor.test.mjs
+not ok 4 - tests/yaruyan-dom-refactor.test.mjs
+  ---
+  duration_ms: 135.942125
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-dom-refactor.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-gyomu-drag.test.mjs:6:23
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-gyomu-drag.test.mjs
+not ok 5 - tests/yaruyan-gyomu-drag.test.mjs
+  ---
+  duration_ms: 145.724167
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-gyomu-drag.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-gyomu-task-view.test.mjs:6:20
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-gyomu-task-view.test.mjs
+not ok 6 - tests/yaruyan-gyomu-task-view.test.mjs
+  ---
+  duration_ms: 141.162166
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-gyomu-task-view.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-lifecycle.test.mjs:5:23
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-lifecycle.test.mjs
+not ok 7 - tests/yaruyan-lifecycle.test.mjs
+  ---
+  duration_ms: 127.951625
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-lifecycle.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-logic.test.mjs:6:49
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-logic.test.mjs
+not ok 8 - tests/yaruyan-logic.test.mjs
+  ---
+  duration_ms: 216.92425
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-logic.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-polish.test.mjs:6:51
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-polish.test.mjs
+not ok 9 - tests/yaruyan-polish.test.mjs
+  ---
+  duration_ms: 123.255125
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-polish.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-product.test.mjs:6:20
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-product.test.mjs
+not ok 10 - tests/yaruyan-product.test.mjs
+  ---
+  duration_ms: 126.44725
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-product.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-quality.test.mjs:5:25
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-quality.test.mjs
+not ok 11 - tests/yaruyan-quality.test.mjs
+  ---
+  duration_ms: 128.264791
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-quality.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-refinements.test.mjs:6:51
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-refinements.test.mjs
+not ok 12 - tests/yaruyan-refinements.test.mjs
+  ---
+  duration_ms: 140.595209
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-refinements.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-resilience.test.mjs:6:26
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-resilience.test.mjs
+not ok 13 - tests/yaruyan-resilience.test.mjs
+  ---
+  duration_ms: 113.403959
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-resilience.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-search.test.mjs:5:17
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-search.test.mjs
+not ok 14 - tests/yaruyan-search.test.mjs
+  ---
+  duration_ms: 111.605542
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-search.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# Subtest: the complete application script parses
+not ok 15 - the complete application script parses
+  ---
+  duration_ms: 0.811167
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-syntax.test.mjs:6:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'"
+  code: 'ENOENT'
+  stack: |-
+    readFileSync (node:fs:440:20)
+    loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+    TestContext.<anonymous> (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-syntax.test.mjs:7:24)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-ten-pass.test.mjs:5:17
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-ten-pass.test.mjs
+not ok 16 - tests/yaruyan-ten-pass.test.mjs
+  ---
+  duration_ms: 110.228083
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-ten-pass.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-tooltips.test.mjs:5:17
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-tooltips.test.mjs
+not ok 17 - tests/yaruyan-tooltips.test.mjs
+  ---
+  duration_ms: 138.945292
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-tooltips.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-usability-followup.test.mjs:4:17
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-usability-followup.test.mjs
+not ok 18 - tests/yaruyan-usability-followup.test.mjs
+  ---
+  duration_ms: 80.97275
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-usability-followup.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-usability.test.mjs:5:17
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-usability.test.mjs
+not ok 19 - tests/yaruyan-usability.test.mjs
+  ---
+  duration_ms: 73.618416
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-usability.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 0
+# fail 19
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 328.94225

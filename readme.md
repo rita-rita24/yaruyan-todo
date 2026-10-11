@@ -36,10 +36,14 @@ CSSのネスト、`light-dark()`、`structuredClone()`、Canvasの`roundRect()`�
 
 ## 主な機能
 
-- 親タスク / 子タスクの作成、編集、削除、並び替え
+- 親タスク / 子タスクの作成、編集、削除、並び替え（ドラッグ、キーボード、編集画面の上へ・下へ移動）
 - `すべて / 未完了 / 完了` の表示フィルタ
+- 親子タスクの名前検索（全角・半角、大文字・小文字の違いを吸収）
 - 全体の完了件数と進捗表示（子タスクのある親は二重計上しません）
 - 集中モードの開始、一時停止、再開、完了、中断
+- 集中中は一時停止しても集中画面を維持。Escapeでは一覧へ戻らず、完了または確認を伴う中断で終了
+- 子タスクの常時表示と、親タスクの編集画面からの子タスク追加
+- ポモドーロの区間残り時間と、累積実績時間の個別表示
 - 集中モード中は中央のコンパクトな表示で経過時間を確認し、背面を見ながらスクロールできます
 - 実績時間の表示
 - ポモドーロ設定（集中時間 / 休憩時間）
@@ -49,26 +53,53 @@ CSSのネスト、`light-dark()`、`structuredClone()`、Canvasの`roundRect()`�
 - 削除後のUndo復元
 - 入力中の誤発火を抑えたキーボード操作とモーダルのフォーカス管理
 - 自動保存や集中タイマーの操作後も、入力欄やボタンの選択位置を維持
-- 集中操作の文字ラベル
+- 一覧の開始・再開・取り消しはアイコンで表示し、フォーカス・マウス操作時にツールチップを表示
+- 編集画面の追加・保存の文字ラベル
+- 一括操作メニューのEscape・外側クリック・Tab移動による閉じる操作
+- ダイアログ表示中の背面操作の無効化と、画面移動時の見出しへのフォーカス
+- 画面切り替え時はページ先頭から表示し、上部メニューの文言は中央揃え
+- Tabで表示する「本文へ移動」リンク
 - JSONバックアップの書き出し / 読み込み
 
-完了フィルタから追加した場合は、追加したタスクが見えるよう「すべて」に切り替わります。
+完了フィルタから親・子タスクを追加した場合は、新しいタスクが見えるよう「すべて」に切り替わります。子タスクは常に一覧に表示します。検索・フィルタ中は条件に一致する子タスクを表示します。
+
+タスク名は120文字までです。長文の貼り付けも途中で切り捨てず、上限を超えた場合は入力を保持して修正を促します。親・子タスク名の編集は「保存」で反映し、子タスク追加・削除と親・子タスクの並び替えはその都度保存します。編集画面の移動ボタンは、検索・フィルタで非表示のタスクも含む保存順で移動します。未保存の編集を閉じる際は破棄確認を表示します。一括削除は「一括操作」メニューにまとめています。
+
+検索は表示フィルタと組み合わせられます。親の名前が一致すると該当する状態の子タスクを表示し、子の名前だけが一致するとその子と親を表示します。検索語は保存・バックアップには含めません。検索中は一括削除を停止し、検索解除ボタンまたはEscapeキーで解除できます。親タスクの追加が成功すると検索も解除し、新しいタスクを表示します。保存に失敗した場合は検索語と入力を保持します。
 
 ## 開発・品質確認
 
 GitHub Actionsのワークフローは使用しません。
 
-Node.js 22を使用します。追加パッケージのインストールやビルドは不要です。
+開発ではNode.js 24 LTSを推奨します。Node.js 22.13以降の22系も対応します。検証はローカルで `npm run verify` を実行してください。配布HTMLの利用にNode.jsやビルドは不要です。静的解析・整形用の開発依存はロックファイルで固定しています。
 
 ```sh
-npm test
+npm ci --ignore-scripts
+npm run verify
 ```
 
-`npm test` は配布HTMLの構文、保存・復元・入力・集中タイマー、フィルタ・ドラッグ操作を検証します。テストは `tests/helpers/app-source.mjs` を通して業務UI版の実コードを読み込みます。
+`npm test` は配布HTMLの構文、保存・復元・入力・集中タイマー、検索・フィルタ・ドラッグ操作を検証します。テストは `tests/helpers/app-source.mjs` を通して業務UI版の実コードを読み込みます。
 
-実ブラウザの確認用コピーは、例えば `node tests/create-continuity-qa.mjs` や `node tests/create-storage-commit-qa.mjs` で生成できます。表示された一時ディレクトリをlocalhostで配信して `index.html` を開いてください。保存キーとDB名は通常利用のデータから分離されます。
+実ブラウザの確認用コピーは、`node tests/create-continuity-qa.mjs`（復元・操作継続）、`node tests/create-storage-commit-qa.mjs`（保存競合）、`node tests/create-search-qa.mjs`（検索・一括削除防止・追加失敗）で生成できます。表示された一時ディレクトリをlocalhostで配信して `index.html` を開いてください。保存キーとDB名は通常利用のデータから分離されます。
 
-直近の実画面確認と、販売前に残る確認範囲は `quality.md` に記録しています。
+課題の解決状況と直近の検証範囲は `REPORT.md` に記録しています。
+
+`node tests/create-usability-followup-qa.mjs` は、メニュー・モーダル・並び替え・入力保持の実ブラウザ検証用コピーを生成します。`index.html` は自動検証、`app.html` はサンプルデータ入りの画面確認用です。
+
+`node tests/create-navigation-qa.mjs` は、画面切り替え時のスクロール位置と上部メニューの配置を確認する、保存データを分離したコピーを生成します。
+
+
+### 読み込み性能の再検証
+
+変更前の現行HTMLは `performance/baseline.html` に保存しています。`node performance/serve-benchmark.mjs` で、通常の保存キーとDB名を分離した検証サーバーを起動できます。表示されたlocalhost URLの `?version=baseline-fresh` と `?version=optimized-final` で計測開始を押し、各90試行の完了後に `node performance/summarize-final.mjs` で集計します。バックアップ処理は `?version=baseline-fresh-backup&suite=backup` と `?version=optimized-final-backup&suite=backup` で各30試行を実行し、`node performance/summarize-final-backup.mjs` で集計します。
+
+計測は1280×900のiframeで、空・親20件×子5件・親200件×子50件を使います。試行ごとにiframeを作り直し、HTTPキャッシュは無効にします。初期の保存状態（localStorageの旧形式データ・空IndexedDB）と、保存確定後の同じ保存領域への再アクセスを分けます。通常のブラウザHTTPキャッシュの初回・再読込比較ではありません。これはローカル検証です。本番の改善率には、本番URLでの変更前後の計測が別途必要です。結果・生値・完了条件・未実施の工程は `performance/` に保存し、結論は `performance/investigation.txt` にまとめます。補足のフィルタ・集中一時停止／再開は、`?version=baseline-extended&suite=extended&parents=200&children=50&route=tasks` と `?version=optimized-extended&suite=extended&parents=200&children=50&route=tasks` の各10試行を `node performance/summarize-extended.mjs` で比較します。
+
+バックアップの標準ケースは、`?version=baseline-backup-extra20&suite=backup&parents=20&children=5` と `?version=optimized-backup-extra20&suite=backup&parents=20&children=5` で各10試行を追加し、`node performance/merge-backup-extra.mjs` の後に集計します。子タスクなしの補足は、`?version=baseline-solo&parents=20&children=0&route=tasks` と `?version=optimized-solo&parents=20&children=0&route=tasks` を各10試行、`node performance/summarize-solo.mjs` で比較します。
+
+`node performance/create-functional-qa.mjs` で、アイコン・検索・編集・集中・バックアップを検証するコピーを生成し、同じサーバーの `/functional-qa` で実行できます。`/functional-narrow` は390px幅で、上限データの末尾表示・親子編集・キーボード並び替え・ドラッグイベントも確認します。
+
+画面外の親カードは `content-visibility: auto` でDOMを保持したまま描画を延期します。子件数から概算高さ（4 + 子件数 × 3.25rem）を用意し、表示後はブラウザが実寸を記憶します。表示前のスクロールバー寸法は概算のため、表示時に調整されます。非対応ブラウザは従来どおり描画します。保存・世代照合を省略するデータキャッシュは追加していません。
 
 ### HTML・CSS・JavaScriptの編集方針
 
@@ -103,8 +134,23 @@ npm test
 
 - `yaruyan-todo.html`: 業務UI版
 - `readme.md`: この紹介ドキュメント
-- `report.md`: 監査、改善メモ
-- `quality.md`: 製品品質の改善内容、検証結果、販売前の未確認事項
-- `quality-10-passes.md`: 過去の改善・検証記録
+- `REPORT.md`: 課題の解決状況、検証結果と未確認の範囲
 - `package.json`: テスト実行スクリプト
 - `tests/`: 回帰テストとブラウザ検証用コピーの生成スクリプト
+
+### 現代化と性能検証（2026-10-10）
+
+`npm run check` は全管理モジュールのESLint・Prettier検査、全HTMLスナップショットのHTML/CSS/JS構文解析、配布HTMLの旧API・廃止要素・過剰なCSSトランジションを検査します。構文解析は規格適合性・実ブラウザ検証の代わりにはなりません。`npm run format` は管理中のテスト・計測・運用モジュールを整形します。配布HTMLは検証用生成スクリプトの挿入マーカーを保つため既存のインデントを維持します。履歴・比較用HTMLを整形して変更前の証拠を変えないでください。
+
+- 新しいソースでも`const`/`let`、ES modules（Node）、`async`/`await`、安全な後処理を使います。`finally`から`return`して例外を消さないでください。
+- キー識別は`key`/`code`を使います。既存の日本語変換229判定7箇所は互換性の例外で、最低対応ブラウザの実IME確認後に撤去を判断します。追加用途で`keyCode`を使わないでください。
+- 接続済みの同じ一覧内でノードを動かす場合は、対応ブラウザで`moveBefore()`を使います。非対応環境と新規ノードには`insertBefore()`を使い、最低対応環境を縮小しません。
+- 子行のマークアップを共通関数に分離しています。Round3の子行更新候補は不採用として保存しています。Round5では検索で隠れた既存行を保持し、変更された子だけ更新する実装を追加比較して採用しました。フォーカス・ドラッグ・挿入プレビュー・親属性の変更時は従来の再生成へ戻します。削除済みモデルのキャッシュを解放し、保持数をモデル件数以内にしてください。保存世代確認を省略しないでください。
+- ドラッグの座標はイベントごとに取り直します。DOM順の縦一覧を前提とする二分探索なので、CSSで視覚順を逆転させる変更には判定方法の再検証が必要です。
+- 現行の静的HTMLはhtml-validateのrecommended/prettierでも検査し、JSONを解析します。閉じたダイアログは`inert`を維持し、開閉・保存ロック解除・入れ子フォーカスを検証してください。HTML検査の成功だけで全状態や全ブラウザの適合を認定しないでください。
+- JSの解析設定は年版2026に統一しています。解析成功と実行環境のAPI対応は別で、対応環境の実行確認が必要です。
+- SVGの標準`use`参照を維持しています。直接マークアップ、全行DOMキャッシュ、独立形状の複製候補は、副作用または安定効果未確認で不採用です。維持中QA生成元は共有SVG検証を使い、固定した候補HTMLは変更しません。
+
+最新の追加結果は [Round5報告書](performance/round5/report.md)、前段は [Round4報告書](performance/round4/report.md)、変更前版・生データ・対象一覧・採用根拠・計測の限界は`performance/round4/`に保存します。前段の結果は [Round3](performance/round3/report.md) に保存します。過去と今回、本番とlocalhost、採用版と撤回候補の計測値を混ぜないでください。
+
+Round5の再現手順・実入力結果・版SHA・互換例外・未測定項目は`performance/round5/report.md`にまとめています。検索/解除の改善率はlocalhostのChromeで、全操作や本番の改善率ではありません。

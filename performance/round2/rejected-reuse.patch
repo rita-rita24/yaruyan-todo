@@ -1,0 +1,105 @@
+--- round2/baseline.html
++++ round2/rejected-reuse.html
+@@ -357,6 +357,8 @@
+       .task-item {
+         content-visibility: auto;
+         contain-intrinsic-block-size: auto var(--task-estimated-size, 4rem);
++
++        &:focus-within { content-visibility: visible; }
+         gap: 0.7rem;
+         display: grid;
+         position: relative;
+@@ -8494,10 +8496,10 @@
+         return JSON.stringify([fields(task), hasSubtasks(task), visibleSubtasks.map(fields)]);
+       }
+ 
+-      function reconcileTaskRows(rows) {
++      function reconcileTaskRows(rows, preservedFocusEntry = null) {
+         const activeElement = document.activeElement;
+-        const focusEntry = taskList.contains(activeElement)
+-          ? { returnFocusEl: activeElement, returnFocusTarget: _captureModalReturnFocus(activeElement) } : null;
++        const focusEntry = preservedFocusEntry || (taskList.contains(activeElement)
++          ? { returnFocusEl: activeElement, returnFocusTarget: _captureModalReturnFocus(activeElement) } : null);
+         reconcileChildren(taskList, rows);
+         if (focusEntry && document.activeElement === document.body) {
+           _restoreFocusAfterPending(focusEntry);
+@@ -8511,6 +8513,7 @@
+       function renderTasks() {
+         const nextRowCache = new Map();
+         const rows = [];
++        let preservedFocusEntry = null;
+ 
+         const progress = getProgressStats();
+         const hasAnyTask = tasks.length > 0;
+@@ -8544,15 +8547,53 @@
+           const visibleSubtasks = getFilteredSubtasks(task, activeFilter);
+           const shouldRenderTask = hasSubtasks(task) ? visibleSubtasks.length > 0
+             : matchesTaskFilter(task.done, activeFilter) && matchesTaskSearch(task.text);
++          const previousRow = taskRowCache.get(task.id);
++          // 各親につき現在の行と全件表示の行だけを保持する。削除済みの親は次のMapに残さない。
++          if (previousRow) nextRowCache.set(task.id, previousRow);
+           if (!shouldRenderTask) return;
+ 
+           visibleTaskCount += 1;
+           visibleWorkCount += hasSubtasks(task) ? visibleSubtasks.length : 1;
+           const key = getTaskRowRenderKey(task, visibleSubtasks);
+-          const cached = taskRowCache.get(task.id);
+-          if (cached?.key === key) {
+-            rows.push(cached.element);
+-            nextRowCache.set(task.id, cached);
++          if (previousRow?.key === key) {
++            rows.push(previousRow.element);
++            nextRowCache.set(task.id, previousRow);
++            return;
++          }
++          // 全件の表示キーも照合し、非表示中の変更がないときだけ子行を付け替える。
++          const full = previousRow?.full;
++          if (full && full.key === (visibleSubtasks.length === task.subtasks.length
++            ? key : getTaskRowRenderKey(task, task.subtasks))) {
++            const activeElement = document.activeElement;
++            if (!preservedFocusEntry && full.element.contains(activeElement)) {
++              preservedFocusEntry = {
++                returnFocusEl: activeElement, returnFocusTarget: _captureModalReturnFocus(activeElement)
++              };
++            }
++            const oldList = full.element.querySelector('.subtask-list');
++            if (oldList && !full.children) full.children = new Map(
++              [...oldList.children].map(row => [row.dataset.subId, row])
++            );
++            // 外枠を新しくして、画面外の行が以前の実測高さを保持するのを防ぐ。
++            // 重い子行とそのSVGは複製せず、表示キーが一致する既存DOMを移す。
++            const element = full.element.cloneNode(false);
++            for (const child of full.element.children) {
++              if (!child.classList.contains('subtask-wrap')) {
++                element.append(child.cloneNode(true));
++                continue;
++              }
++              const wrap = child.cloneNode(false);
++              for (const item of child.children) {
++                wrap.append(item.cloneNode(!item.classList.contains('subtask-list')));
++              }
++              element.append(wrap);
++            }
++            const list = element.querySelector('.subtask-list');
++            if (list) reconcileChildren(list, visibleSubtasks.map(sub => full.children.get(sub.id)));
++            element.style.setProperty('--task-estimated-size', `${4 + visibleSubtasks.length * 3.25}rem`);
++            full.element = element;
++            rows.push(element);
++            nextRowCache.set(task.id, { key, element, full });
+             return;
+           }
+           const li = document.createElement('li');
+@@ -8717,9 +8758,11 @@
+           // 新しい行だけを変換し、再利用する行のSVGは走査し直さない。
+           hydrateMaterialIcons(li);
+           rows.push(li);
+-          nextRowCache.set(task.id, { key, element: li });
++          const retainedFull = visibleSubtasks.length === task.subtasks.length
++            ? { key, element: li, children: null } : previousRow?.full;
++          nextRowCache.set(task.id, { key, element: li, full: retainedFull });
+         });
+-        reconcileTaskRows(rows);
++        reconcileTaskRows(rows, preservedFocusEntry);
+         taskRowCache = nextRowCache;
+ 
+         const viewStatus = `${visibleWorkCount}件を表示中${tasks.some(hasSubtasks) ? '（子タスクのある親は件数に含みません）' : ''}${isSearching ? '。検索中は一括削除できません。' : ''}`;

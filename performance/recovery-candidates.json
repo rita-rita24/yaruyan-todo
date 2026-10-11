@@ -1,0 +1,464 @@
+[
+  {
+    "sha": "2220533b0fda1cd0ac72ec96f141fcfca442276f",
+    "bytes": 385413,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": false,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "49c01724f4bd9af58c86c49f69d665be9db9bda4",
+    "bytes": 382185,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": true,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "59a4fe89f320d3fb87388800ff03c3a89fff2a49",
+    "bytes": 400361,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "6154d85f9912df95b0ba2c7839cbdc480caafe3a",
+    "bytes": 395599,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "8610aa71b101b5c454090f70597bbe5e8f877770",
+    "bytes": 381913,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": true,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "8e508ce7b8356ff4a93f6ce13cc10ea370618f78",
+    "bytes": 368851,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "970877624aed3c8c0959da9ff04bbe6ab0c30f43",
+    "bytes": 378139,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": false
+    }
+  },
+  {
+    "sha": "a79c403ad5e96ea773ae44170f0fe99ef5242ac4",
+    "bytes": 582177,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "1e553f7b78cb360297a2ead6ed496cc495405ad8",
+    "bytes": 368653,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "3ae1dd7e891a311251d462a721370eb15db4576a",
+    "bytes": 402965,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": false
+    }
+  },
+  {
+    "sha": "4259af426e8bd75b1111a86f64bcce693f378220",
+    "bytes": 369484,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "459d0854a2bca8afa28432b819802618fbc8132f",
+    "bytes": 401867,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "7e15a2bc4822cd7e3153e6c8aaf4d0db246516c1",
+    "bytes": 373738,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "928db4b02493c61ef80fb300abe6b3cc525c9c66",
+    "bytes": 393776,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "ba41f9773739aca93d65a5ad4695d35546e7de75",
+    "bytes": 401834,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "c4a5a0b660563671b5be3faaed2bec2b0b8874a2",
+    "bytes": 399172,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "d08923ad996ae041db0d2ab8e827c6c13352b285",
+    "bytes": 398557,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "f4fd8bce5e1b3eca9c47351367ac78e32851bff1",
+    "bytes": 584272,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "091a13022f583b79f97fdd92a6c5e207dd9794cb",
+    "bytes": 403644,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "418254cdb4819d50d9d01e9a2b62d46927929303",
+    "bytes": 383422,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": false
+    }
+  },
+  {
+    "sha": "51ceb1814e7ae0c519fedc1d583b73cbf1e30192",
+    "bytes": 586549,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "5f565afd82ab2c1362a1e8b7a327101b6a479d33",
+    "bytes": 397030,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "6f4a0ba3c4b29b61e0d05e060391e2b4e09e6052",
+    "bytes": 364886,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "876ee82a073ff597ce03667902862aedc058513e",
+    "bytes": 382090,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": false,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "8c7e5bd865895fc85e7e311420f8c5598388de12",
+    "bytes": 393923,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "954e0413195408b7f73f20578f67094f901fb423",
+    "bytes": 389064,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "9bba3b5d329d8b0ac23188b7399b14744a393f05",
+    "bytes": 586484,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "9f8ebbf9528f64d55e01216975ab14f1d1e7ff08",
+    "bytes": 584375,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "be2e7951a085a7dc4d2f0f501511d1d9ae0cda15",
+    "bytes": 381631,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": false
+    }
+  },
+  {
+    "sha": "d9f20ce33ecfd27e07726cc15ed5f1026b96febd",
+    "bytes": 386870,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": false,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "db7a3925ea3109a564756364569651273d868ce6",
+    "bytes": 373953,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "dd166abd57d7d230226c192b7b95f734399bf80a",
+    "bytes": 388970,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "fe16a362e23f0d62b63561b6c32c2990f95d1744",
+    "bytes": 586506,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "3d3fb7e05afbbfa7525e8b9c6787ef4691f3ad01",
+    "bytes": 383948,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": false
+    }
+  },
+  {
+    "sha": "48e35a078305bd1089c49074755d05ffb6d9f0bc",
+    "bytes": 398880,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "62fbbee7f69b62835e34bc06c8caa121829c9233",
+    "bytes": 380515,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "7c43743b10f0cb09a6d25fd8acbb9c9b38dbb28e",
+    "bytes": 368409,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "8debf41fedc57297e898ab1bb07dbbc23831cdab",
+    "bytes": 366830,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "93075d4adb9d642f68fcdb703a67073ea3edd606",
+    "bytes": 584447,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "a62fe18fabc4eb664f039a31b5b87f64aca2a166",
+    "bytes": 385835,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": false,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "c8074531eb5429050e1cf939e149bbf21351de0d",
+    "bytes": 368957,
+    "features": {
+      "normalizeTaskSearchText": false,
+      "syncModalInteractivity": false,
+      "window.scrollTo": false,
+      "bindInputEnter": false,
+      "getTaskRowRenderKey": true
+    }
+  },
+  {
+    "sha": "ce33a14c8f36ee9db0edc12cf14fa057b88ec18c",
+    "bytes": 382201,
+    "features": {
+      "normalizeTaskSearchText": true,
+      "syncModalInteractivity": true,
+      "window.scrollTo": true,
+      "bindInputEnter": true,
+      "getTaskRowRenderKey": true
+    }
+  }
+]

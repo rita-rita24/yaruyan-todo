@@ -1,0 +1,50 @@
+[
+  {
+    side: 'before',
+    cache: 'initial',
+    trials: 5,
+    sourceSha256: [
+      'f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113'
+    ],
+    observedTrials: 5,
+    observedFrameCount: 7,
+    medianObservedMaxDuration: 409.39999997615814,
+    medianObservedTotalBlocking: 336.9
+  },
+  {
+    side: 'before',
+    cache: 'repeat',
+    trials: 5,
+    sourceSha256: [
+      'f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113'
+    ],
+    observedTrials: 5,
+    observedFrameCount: 10,
+    medianObservedMaxDuration: 375.5,
+    medianObservedTotalBlocking: 334.3
+  },
+  {
+    side: 'after',
+    cache: 'initial',
+    trials: 5,
+    sourceSha256: [
+      'c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9'
+    ],
+    observedTrials: 5,
+    observedFrameCount: 9,
+    medianObservedMaxDuration: 309.30000001192093,
+    medianObservedTotalBlocking: 272.6
+  },
+  {
+    side: 'after',
+    cache: 'repeat',
+    trials: 5,
+    sourceSha256: [
+      'c568ee250ae7d02dbba3b4335a922bbaac769974d8ac095ab414f3c0dde76be9'
+    ],
+    observedTrials: 4,
+    observedFrameCount: 4,
+    medianObservedMaxDuration: 253.59999999403954,
+    medianObservedTotalBlocking: 202.45
+  }
+]

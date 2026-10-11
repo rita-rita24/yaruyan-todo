@@ -1,0 +1,280 @@
+--- round3-start/yaruyan-todo.html
++++ round3-final/yaruyan-todo.html
+@@ -2999,7 +2999,6 @@
+ 
+       let _storageWarningEl = null;
+       let _storageWarningReason = '';
+-      let _storageWarningSticky = false;
+       let _indexedDbPromise = null;
+       let _indexedDbWriteQueue = Promise.resolve();
+       let _storedStateSaveQueue = Promise.resolve();
+@@ -3350,7 +3349,6 @@
+           warningEl.hidden = true;
+           warningEl.textContent = '';
+           _storageWarningReason = '';
+-          _storageWarningSticky = false;
+           return;
+         }
+ 
+@@ -3361,7 +3359,6 @@
+ 
+       function _handlePersistentStorageError(mode, key, error) {
+         _reportStorageError(mode, key, error);
+-        _storageWarningSticky = true;
+         _setStorageWarning(true);
+       }
+ 
+@@ -4144,7 +4141,9 @@
+         let next = container.firstElementChild;
+         for (const row of rows) {
+           if (row === next) next = next.nextElementSibling;
+-          else container.insertBefore(row, next);
++          else if (container.moveBefore && row.parentElement === container && container.isConnected) {
++            container.moveBefore(row, next);
++          } else container.insertBefore(row, next);
+         }
+       }
+ 
+@@ -4891,12 +4890,13 @@
+               await onAction();
+             } finally {
+               actionPending = false;
+-              if (toastSessionId !== _toastSessionId) return;
+-              if (toastHideTimerId) {
+-                clearTimeout(toastHideTimerId);
+-                toastHideTimerId = null;
++              if (toastSessionId === _toastSessionId) {
++                if (toastHideTimerId) {
++                  clearTimeout(toastHideTimerId);
++                  toastHideTimerId = null;
++                }
++                _hideToastBySession(toastSessionId);
+               }
+-              _hideToastBySession(toastSessionId);
+             }
+           });
+         }
+@@ -7183,7 +7183,6 @@
+             const $input = qs('.message-edit-input', item);
+             if ($input) {
+               $input.value = messageEditorState.draft ?? msg;
+-              $input.maxLength = MAX_MESSAGE_TEXT_LENGTH;
+             }
+           } else {
+             item.innerHTML = `
+@@ -7654,13 +7653,6 @@
+         return Math.max(0, focusState.pomodoroPhaseRemainingMs);
+       }
+ 
+-      function getPomodoroPhaseElapsedMs(nowMs = Date.now()) {
+-        if (!isPomodoroEnabledForSession()) return 0;
+-        const durationMs = getPomodoroPhaseDurationMs(focusState.pomodoroPhase);
+-        const remainingMs = getPomodoroPhaseRemainingMs(nowMs);
+-        return Math.max(0, Math.min(durationMs, durationMs - remainingMs));
+-      }
+-
+       function startFocusPomodoroSession(nowMs) {
+         const normalizedPomodoro = normalizePomodoroSettings(settings.pomodoro);
+         settings.pomodoro = normalizedPomodoro;
+@@ -8324,19 +8316,19 @@
+           if (clientY > previewRect.bottom) clientY -= previewSpace;
+         }
+ 
+-        let intent = null;
+-        for (const row of candidates) {
+-          const rect = row.getBoundingClientRect();
++        // All three callers pass rows from a vertical, DOM-ordered list.
++        // Read current geometry on every event so scrolling/resizing needs no cache invalidation.
++        let low = 0;
++        let high = candidates.length;
++        while (low < high) {
++          const middle = Math.floor((low + high) / 2);
++          const rect = candidates[middle].getBoundingClientRect();
+           const top = rect.top - (previewRect && rect.top >= previewRect.bottom ? previewSpace : 0);
+-          const midY = top + (rect.height / 2);
+-          const targetId = getId(row);
+-          if (clientY < midY) {
+-            intent = { targetEl: row, targetId, placeAfter: false };
+-            break;
+-          }
+-          intent = { targetEl: row, targetId, placeAfter: true };
+-        }
+-        return intent;
++          if (clientY < top + rect.height / 2) high = middle;
++          else low = middle + 1;
++        }
++        const row = candidates[Math.min(low, candidates.length - 1)];
++        return { targetEl: row, targetId: getId(row), placeAfter: low === candidates.length };
+       }
+ 
+       function startDragFromHandle(handleEl, event) {
+@@ -8494,6 +8486,77 @@
+         const fields = item => [item.id, item.text, item.done, item.focus?.focusState,
+           item.done || item.focus?.focusState === 'paused' ? item.focus?.elapsedMs : 0];
+         return JSON.stringify([fields(task), hasSubtasks(task), visibleSubtasks.map(fields)]);
++      }
++
++      function createSubtaskRowMarkup(parentId, sub) {
++        return `
++                    <li class="subtask-item ${sub.done ? 'done' : ''}" data-parent-id="${parentId}" data-sub-id="${sub.id}">
++                      <div class="task-leading-controls">
++                        <button
++                          class="mini-btn drag-handle subtask-drag-handle gm-btn"
++                          data-parent-id="${parentId}"
++                          data-sub-id="${sub.id}"
++                          draggable="true"
++                          type="button"
++                          aria-label="子タスクをドラッグで並び替え"
++                          aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown"
++                        >
++                          <span aria-hidden="true" class="material-symbols-outlined">drag_indicator</span>
++                        </button>
++
++                        ${sub.done
++                          ? `
++                          <button
++                            class="focus-btn done action-btn undo-subtask-btn gm-btn"
++                            data-parent-id="${parentId}"
++                            data-sub-id="${sub.id}"
++                            type="button"
++                            aria-label="完了を取り消す"
++                          >
++                            <span aria-hidden="true" class="material-symbols-outlined">undo</span>
++                            <span>取り消し</span>
++                          </button>
++                        `
++                          : `
++                          <button
++                            class="focus-btn playable action-btn open-focus-subtask-btn gm-btn"
++                            data-parent-id="${parentId}"
++                            data-sub-id="${sub.id}"
++                            type="button"
++                            aria-label="${sub.focus?.focusState === 'paused' ? '再開' : '開始'}"
++                          >
++                            <span aria-hidden="true" class="material-symbols-outlined">${getFocusIconForMeta(sub.focus, false)}</span>
++                            <span>${sub.focus?.focusState === 'paused' ? '再開' : '開始'}</span>
++                          </button>
++                          `
++                        }
++                      </div>
++
++                      <div class="subtask-text-wrap">
++                        ${sub.done || sub.focus?.focusState === 'paused'
++                          ? `
++                          <div class="achievement-time subtask-achievement">
++                            <span aria-hidden="true" class="material-symbols-outlined">timer</span>
++                            <span>${formatAchievementElapsed(sub.focus?.elapsedMs || 0)}</span>
++                          </div>
++                        `
++                          : ''
++                        }
++                        <div class="text">${escapeHtml(sub.text)}</div>
++                      </div>
++
++                      <div class="subtask-actions">
++                        <button class="mini-btn action-btn edit-subtask-btn gm-btn" data-parent-id="${parentId}" data-sub-id="${sub.id}" type="button" aria-label="編集">
++                          <span aria-hidden="true" class="material-symbols-outlined">edit</span>
++                          <span>編集</span>
++                        </button>
++                        <button class="mini-btn danger action-btn delete-subtask-btn gm-btn" data-parent-id="${parentId}" data-sub-id="${sub.id}" type="button" aria-label="削除">
++                          <span aria-hidden="true" class="material-symbols-outlined">delete</span>
++                          <span>削除</span>
++                        </button>
++                      </div>
++                    </li>
++        `;
+       }
+ 
+       function reconcileTaskRows(rows) {
+@@ -8576,13 +8639,12 @@
+           const parentStartControl = parentFocusDisabled
+             ? '' : `
+               <button
+-                class="focus-btn playable action-btn open-focus-parent-btn ${parentFocusDisabled ? 'disabled' : ''} gm-btn"
++                class="focus-btn playable action-btn open-focus-parent-btn gm-btn"
+                 data-id="${task.id}"
+                 type="button"
+                 aria-label="${parentFocusTitle}"
+-                ${parentFocusDisabled ? 'disabled aria-disabled="true"' : ''}
+               >
+-                <span aria-hidden="true" class="material-symbols-outlined">${parentFocusDisabled ? 'block' : getFocusIconForMeta(task.focus, false)}</span>
++                <span aria-hidden="true" class="material-symbols-outlined">${getFocusIconForMeta(task.focus, false)}</span>
+                 <span>${parentFocusTitle}</span>
+               </button>
+             `;
+@@ -8643,74 +8705,7 @@
+             ${visibleSubtasks.length > 0 ? `
+               <div class="subtask-wrap" id="children-${task.id}">
+                 <ul class="subtask-list" data-parent-id="${task.id}">
+-                  ${visibleSubtasks.map(sub => `
+-                    <li class="subtask-item ${sub.done ? 'done' : ''}" data-parent-id="${task.id}" data-sub-id="${sub.id}">
+-                      <div class="task-leading-controls">
+-                        <button
+-                          class="mini-btn drag-handle subtask-drag-handle gm-btn"
+-                          data-parent-id="${task.id}"
+-                          data-sub-id="${sub.id}"
+-                          draggable="true"
+-                          type="button"
+-                          aria-label="子タスクをドラッグで並び替え"
+-                          aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown"
+-                        >
+-                          <span aria-hidden="true" class="material-symbols-outlined">drag_indicator</span>
+-                        </button>
+-
+-                        ${sub.done
+-                          ? `
+-                          <button
+-                            class="focus-btn done action-btn undo-subtask-btn gm-btn"
+-                            data-parent-id="${task.id}"
+-                            data-sub-id="${sub.id}"
+-                            type="button"
+-                            aria-label="完了を取り消す"
+-                          >
+-                            <span aria-hidden="true" class="material-symbols-outlined">undo</span>
+-                            <span>取り消し</span>
+-                          </button>
+-                        `
+-                          : `
+-                          <button
+-                            class="focus-btn playable action-btn open-focus-subtask-btn gm-btn"
+-                            data-parent-id="${task.id}"
+-                            data-sub-id="${sub.id}"
+-                            type="button"
+-                            aria-label="${sub.focus?.focusState === 'paused' ? '再開' : '開始'}"
+-                          >
+-                            <span aria-hidden="true" class="material-symbols-outlined">${getFocusIconForMeta(sub.focus, false)}</span>
+-                            <span>${sub.focus?.focusState === 'paused' ? '再開' : '開始'}</span>
+-                          </button>
+-                          `
+-                        }
+-                      </div>
+-
+-                      <div class="subtask-text-wrap">
+-                        ${sub.done || sub.focus?.focusState === 'paused'
+-                          ? `
+-                          <div class="achievement-time subtask-achievement">
+-                            <span aria-hidden="true" class="material-symbols-outlined">timer</span>
+-                            <span>${formatAchievementElapsed(sub.focus?.elapsedMs || 0)}</span>
+-                          </div>
+-                        `
+-                          : ''
+-                        }
+-                        <div class="text">${escapeHtml(sub.text)}</div>
+-                      </div>
+-
+-                      <div class="subtask-actions">
+-                        <button class="mini-btn action-btn edit-subtask-btn gm-btn" data-parent-id="${task.id}" data-sub-id="${sub.id}" type="button" aria-label="編集">
+-                          <span aria-hidden="true" class="material-symbols-outlined">edit</span>
+-                          <span>編集</span>
+-                        </button>
+-                        <button class="mini-btn danger action-btn delete-subtask-btn gm-btn" data-parent-id="${task.id}" data-sub-id="${sub.id}" type="button" aria-label="削除">
+-                          <span aria-hidden="true" class="material-symbols-outlined">delete</span>
+-                          <span>削除</span>
+-                        </button>
+-                      </div>
+-                    </li>
+-                  `).join('')}
++                  ${visibleSubtasks.map(sub => createSubtaskRowMarkup(task.id, sub)).join('')}
+                 </ul>
+               </div>
+             ` : ''}

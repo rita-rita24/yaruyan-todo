@@ -1,0 +1,75 @@
+--- performance/round4/baseline.html	2026-10-10 01:13:27
++++ performance/round4/adopted.html	2026-10-10 02:00:37
+@@ -2645,7 +2645,7 @@
+               <div class="setting-meta">
+                 <div class="setting-title">ライト/ダークモード切り替え</div>
+               </div>
+-              <label class="switch" for="lightModeToggle">
++              <label class="switch">
+                 <input checked id="lightModeToggle" type="checkbox" aria-label="ライト/ダークモード切り替え">
+                 <span class="slider">
+                   <span class="star star_1" aria-hidden="true"></span>
+@@ -2705,7 +2705,7 @@
+             <div class="card pomodoro-rhythm-card" id="pomodoroRhythmCard">
+               <h2>ポモドーロのリズム（分）</h2>
+               <div class="pomodoro-rhythm-grid">
+-                <label class="pomodoro-field" for="pomodoroFocusMinutesInput">
++                <label class="pomodoro-field">
+                   <span class="pomodoro-field-label gm-label">集中</span>
+                   <input
+                     id="pomodoroFocusMinutesInput"
+@@ -2718,7 +2718,7 @@
+                     aria-label="集中時間（分）"
+                   >
+                 </label>
+-                <label class="pomodoro-field" for="pomodoroBreakMinutesInput">
++                <label class="pomodoro-field">
+                   <span class="pomodoro-field-label gm-label">休憩</span>
+                   <input
+                     id="pomodoroBreakMinutesInput"
+@@ -2758,7 +2758,7 @@
+   </div>
+ 
+   <!-- 親タスク編集モーダル -->
+-  <div class="modal-overlay" id="parentModalOverlay" aria-hidden="true">
++  <div class="modal-overlay" id="parentModalOverlay" aria-hidden="true" inert>
+     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="parentModalTitle">
+       <div class="modal-header">
+         <div class="modal-title-wrap">
+@@ -2821,7 +2821,7 @@
+   </div>
+ 
+   <!-- 子タスク編集モーダル -->
+-  <div class="modal-overlay" id="subtaskModalOverlay" aria-hidden="true">
++  <div class="modal-overlay" id="subtaskModalOverlay" aria-hidden="true" inert>
+     <div class="modal modal-compact" role="dialog" aria-modal="true" aria-labelledby="subtaskModalTitle">
+       <div class="modal-header">
+         <div class="modal-title-wrap">
+@@ -2861,7 +2861,7 @@
+   </div>
+ 
+   <!-- 確認モーダル -->
+-  <div class="modal-overlay" id="confirmModalOverlay" aria-hidden="true">
++  <div class="modal-overlay" id="confirmModalOverlay" aria-hidden="true" inert>
+     <div class="modal modal-confirm" role="dialog" aria-modal="true" aria-labelledby="confirmModalTitle" aria-describedby="confirmMessage">
+       <div class="modal-header">
+         <div class="modal-title-wrap">
+@@ -2890,7 +2890,7 @@
+   </div>
+ 
+   <!-- 集中モードのモーダル -->
+-  <div class="focus-overlay" id="focusOverlay" aria-hidden="true">
++  <div class="focus-overlay" id="focusOverlay" aria-hidden="true" inert>
+     <div class="focus-modal" role="dialog" aria-modal="true" aria-labelledby="focusTaskTitle">
+       <div class="focus-header">
+         <div class="focus-title-wrap">
+@@ -5121,7 +5121,8 @@
+         const activeOverlay = _getActiveModalOverlay();
+         appShell.toggleAttribute('inert', pending || !!activeOverlay);
+         qsa('.modal-overlay, .focus-overlay').forEach(overlay => {
+-          overlay.toggleAttribute('inert', pending || (!!activeOverlay && overlay !== activeOverlay));
++          overlay.toggleAttribute('inert', pending || !overlay.classList.contains('show')
++            || (!!activeOverlay && overlay !== activeOverlay));
+         });
+       }
+ 

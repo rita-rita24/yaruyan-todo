@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-09T18:28:18.250Z",
+  "condition": "Chrome154 native key events; parent200 x child50; iframe1280x900; fresh namespace; a key then BackSpace after reading search state; alternating source order",
+  "trials": 10,
+  "inputs": 20,
+  "entryThresholdMs": 16,
+  "durationGranularityMs": 8,
+  "caveats": [
+    "Local controlled native automation, not production RUM or INP",
+    "EventTiming estimates next paint; not first pixel of every item",
+    "Only discrete search input and clearing; not continuous drag/scroll FPS",
+    "Preparation-v1, calibration and quota-failed records excluded",
+    "Host CPU/GC/background workload and display refresh not controlled",
+    "Input timestamps and values verified; absent entries never treated as zero"
+  ],
+  "rows": [
+    {
+      "operation": "search",
+      "field": "eventToNextPaintMs",
+      "before": {
+        "n": 5,
+        "median": 384,
+        "min": 376,
+        "max": 432,
+        "samples": [
+          384,
+          376,
+          416,
+          384,
+          432
+        ]
+      },
+      "after": {
+        "n": 5,
+        "median": 80,
+        "min": 72,
+        "max": 96,
+        "samples": [
+          72,
+          80,
+          96,
+          80,
+          88
+        ]
+      },
+      "shorterMs": 304,
+      "shorterPercent": 79.16666666666666
+    },
+    {
+      "operation": "search",
+      "field": "eventInputDelayMs",
+      "before": {
+        "n": 5,
+        "median": 0.30000001192092896,
+        "min": 0.19999998807907104,
+        "max": 0.5,
+        "samples": [
+          0.5,
+          0.19999998807907104,
+          0.30000001192092896,
+          0.20000004768371582,
+          0.3999999761581421
+        ]
+      },
+      "after": {
+        "n": 5,
+        "median": 0.30000001192092896,
+        "min": 0.20000004768371582,
+        "max": 0.3999999761581421,
+        "samples": [
+          0.20000004768371582,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.20000004768371582,
+          0.3999999761581421
+        ]
+      },
+      "shorterMs": 0,
+      "shorterPercent": null
+    },
+    {
+      "operation": "search",
+      "field": "eventToDomReadyMs",
+      "before": {
+        "n": 5,
+        "median": 315.30000001192093,
+        "min": 305.89999997615814,
+        "max": 344.60000002384186,
+        "samples": [
+          315.30000001192093,
+          305.89999997615814,
+          344.60000002384186,
+          309.80000001192093,
+          342.39999997615814
+        ]
+      },
+      "after": {
+        "n": 5,
+        "median": 63.89999997615814,
+        "min": 62,
+        "max": 83.90000003576279,
+        "samples": [
+          62,
+          63.89999997615814,
+          83.90000003576279,
+          62.40000003576279,
+          74.89999997615814
+        ]
+      },
+      "shorterMs": 251.4000000357628,
+      "shorterPercent": 79.7335870682708
+    },
+    {
+      "operation": "search-clear",
+      "field": "eventToNextPaintMs",
+      "before": {
+        "n": 5,
+        "median": 696,
+        "min": 640,
+        "max": 752,
+        "samples": [
+          640,
+          696,
+          696,
+          680,
+          752
+        ]
+      },
+      "after": {
+        "n": 5,
+        "median": 288,
+        "min": 280,
+        "max": 296,
+        "samples": [
+          288,
+          280,
+          296,
+          288,
+          288
+        ]
+      },
+      "shorterMs": 408,
+      "shorterPercent": 58.620689655172406
+    },
+    {
+      "operation": "search-clear",
+      "field": "eventInputDelayMs",
+      "before": {
+        "n": 5,
+        "median": 0.10000002384185791,
+        "min": 0.09999996423721313,
+        "max": 0.30000001192092896,
+        "samples": [
+          0.19999998807907104,
+          0.09999996423721313,
+          0.30000001192092896,
+          0.09999996423721313,
+          0.10000002384185791
+        ]
+      },
+      "after": {
+        "n": 5,
+        "median": 0.19999998807907104,
+        "min": 0.09999996423721313,
+        "max": 0.20000004768371582,
+        "samples": [
+          0.19999998807907104,
+          0.09999996423721313,
+          0.09999996423721313,
+          0.19999998807907104,
+          0.20000004768371582
+        ]
+      },
+      "shorterMs": -0.09999996423721313,
+      "shorterPercent": null
+    },
+    {
+      "operation": "search-clear",
+      "field": "eventToDomReadyMs",
+      "before": {
+        "n": 5,
+        "median": 522.8999999761581,
+        "min": 522,
+        "max": 634.1000000238419,
+        "samples": [
+          522.3000000119209,
+          522.8999999761581,
+          562,
+          522,
+          634.1000000238419
+        ]
+      },
+      "after": {
+        "n": 5,
+        "median": 209.89999997615814,
+        "min": 206.5999999642372,
+        "max": 211.19999998807907,
+        "samples": [
+          209.30000001192093,
+          206.5999999642372,
+          209.89999997615814,
+          211.19999998807907,
+          210
+        ]
+      },
+      "shorterMs": 313,
+      "shorterPercent": 59.85848154795781
+    }
+  ]
+}

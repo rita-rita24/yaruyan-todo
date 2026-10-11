@@ -1,0 +1,1012 @@
+[
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-0-1791569109701",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:10.408Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 30.69999998807907,
+        "displayMs": 46.19999998807907,
+        "seedMs": 0.2999999523162842
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 13.300000011920929,
+        "displayMs": 32.89999997615814
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10.200000047683716,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.099999964237213,
+        "displayMs": 31.099999964237213
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 124
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 9.300000011920929,
+        "displayMs": 26
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 9.100000023841858,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.300000011920929,
+        "displayMs": 37
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.700000047683716,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 3.900000035762787,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.299999952316284,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 6.799999952316284,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.899999976158142,
+        "displayMs": 28.5
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.400000035762787,
+        "displayMs": 37.80000001192093
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 16.700000047683716,
+        "displayMs": 41.60000002384186
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 8.199999988079071,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-0-1791569109701",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:11.191Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 33.60000002384186,
+        "displayMs": 73.19999998807907,
+        "seedMs": 0
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 12.599999964237213,
+        "displayMs": 36.19999998807907
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 9.699999988079071,
+        "displayMs": 35.10000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.199999988079071,
+        "displayMs": 76.89999997615814
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.5,
+        "displayMs": 118.20000004768372
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 10.5,
+        "displayMs": 37
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 8.699999988079071,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.600000023841858,
+        "displayMs": 36.5
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.100000023841858,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 2.899999976158142,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 7.199999988079071,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 7.199999988079071,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.800000011920929,
+        "displayMs": 29.5
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.400000035762787,
+        "displayMs": 36.60000002384186
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 15.199999988079071,
+        "displayMs": 25
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 7.300000011920929,
+        "displayMs": 33.30000001192093
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-1-1791569114283",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:14.979Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 27.19999998807907,
+        "displayMs": 43,
+        "seedMs": 0.40000003576278687
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 9.899999976158142,
+        "displayMs": 33.09999996423721
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10.300000011920929,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.099999964237213,
+        "displayMs": 31
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.5,
+        "displayMs": 123.69999998807907
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 9.300000011920929,
+        "displayMs": 26.30000001192093
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 8.699999988079071,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.399999976158142,
+        "displayMs": 36.10000002384186
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 3.899999976158142,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 3.300000011920929,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 12.5,
+        "displayMs": 33.200000047683716
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 6,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.800000011920929,
+        "displayMs": 28.5
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.100000023841858,
+        "displayMs": 39
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 16,
+        "displayMs": 40.39999997615814
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 7.600000023841858,
+        "displayMs": 32.89999997615814
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-1-1791569114283",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:15.723Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 35.700000047683716,
+        "displayMs": 71.90000003576279,
+        "seedMs": 0
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 12.5,
+        "displayMs": 38.10000002384186
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10.600000023841858,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.300000011920929,
+        "displayMs": 32.39999997615814
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 126.40000003576279
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 10.5,
+        "displayMs": 23.299999952316284
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 9,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.5,
+        "displayMs": 34.5
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.5,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 4.299999952316284,
+        "displayMs": 33.59999996423721
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.300000011920929,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 6.600000023841858,
+        "displayMs": 33.200000047683716
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.700000047683716,
+        "displayMs": 30
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.099999964237213,
+        "displayMs": 41.299999952316284
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 15.899999976158142,
+        "displayMs": 37.89999997615814
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 8.199999988079071,
+        "displayMs": 33.10000002384186
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-2-1791569115725",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:16.509Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 30.69999998807907,
+        "displayMs": 68.5,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 14.100000023841858,
+        "displayMs": 30
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10.100000023841858,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.700000047683716,
+        "displayMs": 75.5
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 117.20000004768372
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 10.399999976158142,
+        "displayMs": 39.19999998807907
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 8.899999976158142,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.600000023841858,
+        "displayMs": 35.10000002384186
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.399999976158142,
+        "displayMs": 31.399999976158142
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 3.300000011920929,
+        "displayMs": 35.5
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.699999988079071,
+        "displayMs": 32.89999997615814
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 7.100000023841858,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 1.5,
+        "displayMs": 27.900000035762787
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.600000023841858,
+        "displayMs": 41.10000002384186
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 17.19999998807907,
+        "displayMs": 38.69999998807907
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 8,
+        "displayMs": 33.39999997615814
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-2-1791569115725",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:17.305Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 38.5,
+        "displayMs": 79.5,
+        "seedMs": 0
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 13.199999988079071,
+        "displayMs": 32.80000001192093
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 9.899999976158142,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.5,
+        "displayMs": 79
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.5999999642372131,
+        "displayMs": 130.89999997615814
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 10.600000023841858,
+        "displayMs": 38.69999998807907
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 9.5,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.399999976158142,
+        "displayMs": 34.69999998807907
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 5,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 2.600000023841858,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 7,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 7.400000035762787,
+        "displayMs": 33.200000047683716
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.899999976158142,
+        "displayMs": 29.899999976158142
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.100000023841858,
+        "displayMs": 36.5
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 15.199999988079071,
+        "displayMs": 25.600000023841858
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 8.099999964237213,
+        "displayMs": 33.299999952316284
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-3-1791569120307",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:21.081Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 27.5,
+        "displayMs": 71.10000002384186,
+        "seedMs": 0.30000001192092896
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 13.100000023841858,
+        "displayMs": 30.100000023841858
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.400000035762787,
+        "displayMs": 77.70000004768372
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 122.69999998807907
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 8.900000035762787,
+        "displayMs": 31.600000023841858
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 9,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.5,
+        "displayMs": 35.5
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.699999988079071,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 4,
+        "displayMs": 33.5
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.300000011920929,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 6.199999988079071,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.699999988079071,
+        "displayMs": 28.899999976158142
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.399999976158142,
+        "displayMs": 41.09999996423721
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 17,
+        "displayMs": 38.30000001192093
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 7.699999988079071,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-3-1791569120307",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:21.841Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 35.40000003576279,
+        "displayMs": 78.70000004768372,
+        "seedMs": 0
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 10.800000011920929,
+        "displayMs": 29.899999976158142
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10.5,
+        "displayMs": 32.60000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 11.699999988079071,
+        "displayMs": 32.5
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.3999999761581421,
+        "displayMs": 127.80000001192093
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 10.5,
+        "displayMs": 38.5
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 8.900000035762787,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.300000011920929,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.5,
+        "displayMs": 35
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 4.100000023841858,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.699999988079071,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 7,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.799999952316284,
+        "displayMs": 30.299999952316284
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.699999988079071,
+        "displayMs": 38.30000001192093
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 21.799999952316284,
+        "displayMs": 41.69999998807907
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 8,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-4-1791569121844",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:22.617Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 27.099999964237213,
+        "displayMs": 60.299999952316284,
+        "seedMs": 0.3999999761581421
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 12.300000011920929,
+        "displayMs": 36.69999998807907
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 10.100000023841858,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 11.799999952316284,
+        "displayMs": 79.69999998807907
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 121.60000002384186
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 9.100000023841858,
+        "displayMs": 30.69999998807907
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 8.900000035762787,
+        "displayMs": 33.19999998807907
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.300000011920929,
+        "displayMs": 37.60000002384186
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.600000023841858,
+        "displayMs": 33.60000002384186
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 4.199999988079071,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.699999988079071,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 7,
+        "displayMs": 33.299999952316284
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 3.300000011920929,
+        "displayMs": 28.5
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.199999988079071,
+        "displayMs": 43.40000003576279
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 16.30000001192093,
+        "displayMs": 35.700000047683716
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 7.899999976158142,
+        "displayMs": 33.19999998807907
+      }
+    ]
+  },
+  {
+    "version": "round4-before-child-v4-coverage",
+    "group": "round4-before-child-v4-coverage-20-tasks-4-1791569121844",
+    "sourceSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T18:05:23.405Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 36.89999997615814,
+        "displayMs": 74.89999997615814,
+        "seedMs": 0
+      },
+      {
+        "operation": "parent-add",
+        "readyMs": 12.5,
+        "displayMs": 28.30000001192093
+      },
+      {
+        "operation": "parent-delete",
+        "readyMs": 9.899999976158142,
+        "displayMs": 33.10000002384186
+      },
+      {
+        "operation": "child-add",
+        "readyMs": 10.600000023841858,
+        "displayMs": 78.10000002384186
+      },
+      {
+        "operation": "parent-editor-close",
+        "readyMs": 0.40000003576278687,
+        "displayMs": 123.60000002384186
+      },
+      {
+        "operation": "child-delete",
+        "readyMs": 9.599999964237213,
+        "displayMs": 30
+      },
+      {
+        "operation": "sidebar-toggle",
+        "readyMs": 9,
+        "displayMs": 33.69999998807907
+      },
+      {
+        "operation": "theme-save",
+        "readyMs": 9.600000023841858,
+        "displayMs": 37
+      },
+      {
+        "operation": "message-add",
+        "readyMs": 4.100000023841858,
+        "displayMs": 33.40000003576279
+      },
+      {
+        "operation": "message-editor-open",
+        "readyMs": 3,
+        "displayMs": 33.39999997615814
+      },
+      {
+        "operation": "message-save",
+        "readyMs": 6.5,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "message-delete",
+        "readyMs": 6.399999976158142,
+        "displayMs": 33.30000001192093
+      },
+      {
+        "operation": "memo-input-save",
+        "readyMs": 2.599999964237213,
+        "displayMs": 29.899999976158142
+      },
+      {
+        "operation": "bulk-completed-delete",
+        "readyMs": 6.199999988079071,
+        "displayMs": 40.69999998807907
+      },
+      {
+        "operation": "delete-undo-save",
+        "readyMs": 16.799999952316284,
+        "displayMs": 37.799999952316284
+      },
+      {
+        "operation": "bulk-all-delete",
+        "readyMs": 8.100000023841858,
+        "displayMs": 32.5
+      }
+    ]
+  }
+]

@@ -355,6 +355,10 @@
       }
 
       .task-item {
+        content-visibility: auto;
+        contain-intrinsic-block-size: auto var(--task-estimated-size, 4rem);
+
+        &:focus-within { content-visibility: visible; }
         gap: 0.7rem;
         display: grid;
         position: relative;
@@ -2254,6 +2258,11 @@
         }
 
         @media (width <= 56.25em) {
+          & .nav-btn {
+            justify-content: center;
+            text-align: center;
+          }
+
           & .sidebar-collapse-btn {
             display: none;
           }
@@ -2267,7 +2276,7 @@
           & .nav-btn {
             flex-direction: column;
             align-self: stretch;
-            justify-content: flex-start;
+            justify-content: center;
             gap: var(--gm-space-1);
           }
 
@@ -2287,6 +2296,42 @@
             font-size: 1.42857rem;
           }
         }
+      }
+
+      .bulk-actions {
+        position: relative;
+        & summary { cursor: pointer; list-style: none; }
+        & .bulk-actions-menu {
+          position: absolute; inset-inline-end: 0; inset-block-start: calc(100% + 0.4rem);
+          z-index: 30; display: grid; gap: 0.5rem; padding: 0.75rem;
+          background: var(--gm-surface); border: 1px solid var(--gm-border); border-radius: var(--gm-radius);
+          box-shadow: 0 0.35rem 0.9rem var(--shadow-strong); min-inline-size: 12rem;
+        }
+      }
+      .task-search { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.6rem; }
+      .task-search .row { flex-wrap: nowrap; }
+      .task-tools { max-inline-size: 24rem; }
+      .reorder-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+      .skip-link { position: fixed; inset-block-start: 0.5rem; inset-inline-start: 0.5rem; z-index: 200; transform: translateY(-200%); }
+      .gm .skip-link:not(:focus) { transform: translateY(-200%); }
+      .skip-link:focus { transform: none; }
+      .focus-footer { flex-wrap: wrap; }
+      .text-length-hint.is-error { color: var(--gm-error); }
+      @media (width <= 42.5em) {
+        .task-main { grid-template-columns: auto minmax(0, 1fr) auto; }
+        .subtask-item { grid-template-columns: minmax(0, 1fr) auto; }
+        .subtask-item .subtask-text-wrap { grid-column: 1 / -1; grid-row: 1; }
+        .subtask-item .task-leading-controls { grid-column: 1; grid-row: 2; }
+        .subtask-item .subtask-actions { grid-column: 2; grid-row: 2; width: auto; }
+        .task-tools { grid-column: 3; grid-row: 1; justify-self: end; width: auto; max-inline-size: none; }
+        .gm .tasks-primary { gap: 0.5rem; }
+        .gm .task-hero-actions { flex-wrap: nowrap; gap: 0.5rem; }
+        .gm .task-filter-group { width: auto; flex: 1; min-width: 0; gap: 0.3rem; }
+        .gm .task-search { grid-template-columns: auto minmax(0, 1fr); gap: 0.45rem; }
+        .gm .task-search .row { flex-wrap: nowrap; }
+        .gm .task-search .field-label { white-space: nowrap; }
+        .task-search { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+        .task-search .row { flex-wrap: wrap; }
       }
 
       /* Static presentation belongs here; JavaScript only updates state. */
@@ -2477,6 +2522,7 @@
   </svg>
 
   <div class="shell">
+    <a class="skip-link gm-btn" href="#mainContent" id="skipToContent">本文へ移動</a>
     <aside class="sidebar">
       <div class="sidebar-top">
         <div class="brand">
@@ -2504,7 +2550,7 @@
       </nav>
     </aside>
 
-    <main class="main">
+    <main class="main" id="mainContent" tabindex="-1">
       <div class="page-wrap">
         <!-- タスク -->
         <section class="page" id="page-tasks">
@@ -2526,9 +2572,16 @@
                   <span>追加</span>
                 </button>
               </div>
-              <p class="field-helper gm-help" id="taskInputHint">1件120文字、最大200件まで追加できます。Enterキーでも追加できます。</p>
+              <p class="field-helper gm-help" id="taskInputHint">Enterでも追加できます（120文字まで・最大200件）。</p>
             </div>
 
+            <div class="task-composer task-search" role="search" aria-label="タスク検索">
+              <label class="field-label gm-label" for="taskSearchInput">タスクを検索</label>
+              <div class="row">
+                <input id="taskSearchInput" class="text-input gm-input" type="search" maxlength="120" autocomplete="off" placeholder="タスク・子タスクの名前" aria-describedby="taskViewStatus">
+                <button id="clearTaskSearchBtn" class="icon-btn show-label gm-btn" type="button" hidden>検索を解除</button>
+              </div>
+            </div>
             <p id="taskViewStatus" class="field-helper gm-help" role="status" aria-live="polite" aria-atomic="true" hidden></p>
 
             <div class="row task-hero-actions" id="taskHeaderActions" role="group" aria-label="表示と一括操作" hidden>
@@ -2537,6 +2590,7 @@
                 <button class="task-filter-btn gm-btn" type="button" data-task-filter="pending" aria-pressed="false">未完了</button>
                 <button class="task-filter-btn gm-btn" type="button" data-task-filter="completed" aria-pressed="false">完了</button>
               </div>
+              <details class="bulk-actions" id="bulkActions"><summary class="gm-btn">一括操作</summary><div class="bulk-actions-menu">
               <button type="button" id="clearCompletedBtn" class="icon-btn gm-btn" aria-label="完了済みを削除">
                 <span aria-hidden="true" class="material-symbols-outlined">done_all</span>
                 <span>完了済みを削除</span>
@@ -2545,6 +2599,7 @@
                 <span aria-hidden="true" class="material-symbols-outlined">delete_sweep</span>
                 <span>すべて削除</span>
               </button>
+              </div></details>
             </div>
 
             <ul class="task-list" id="taskList"></ul>
@@ -2590,7 +2645,7 @@
               <div class="setting-meta">
                 <div class="setting-title">ライト/ダークモード切り替え</div>
               </div>
-              <label class="switch" for="lightModeToggle">
+              <label class="switch">
                 <input checked id="lightModeToggle" type="checkbox" aria-label="ライト/ダークモード切り替え">
                 <span class="slider">
                   <span class="star star_1" aria-hidden="true"></span>
@@ -2650,7 +2705,7 @@
             <div class="card pomodoro-rhythm-card" id="pomodoroRhythmCard">
               <h2>ポモドーロのリズム（分）</h2>
               <div class="pomodoro-rhythm-grid">
-                <label class="pomodoro-field" for="pomodoroFocusMinutesInput">
+                <label class="pomodoro-field">
                   <span class="pomodoro-field-label gm-label">集中</span>
                   <input
                     id="pomodoroFocusMinutesInput"
@@ -2663,7 +2718,7 @@
                     aria-label="集中時間（分）"
                   >
                 </label>
-                <label class="pomodoro-field" for="pomodoroBreakMinutesInput">
+                <label class="pomodoro-field">
                   <span class="pomodoro-field-label gm-label">休憩</span>
                   <input
                     id="pomodoroBreakMinutesInput"
@@ -2703,7 +2758,7 @@
   </div>
 
   <!-- 親タスク編集モーダル -->
-  <div class="modal-overlay" id="parentModalOverlay" aria-hidden="true">
+  <div class="modal-overlay" id="parentModalOverlay" aria-hidden="true" inert>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="parentModalTitle">
       <div class="modal-header">
         <div class="modal-title-wrap">
@@ -2720,7 +2775,17 @@
           <label class="modal-label gm-label" for="parentEditInput">
             タスク名
           </label>
+          <p class="field-helper gm-help">タスク名は「保存」で反映します。子タスクの操作はその都度保存されます。</p>
           <input id="parentEditInput" class="text-input gm-input" type="text" placeholder="親タスク名を入力">
+        </div>
+        <div class="modal-section">
+          <p class="modal-label gm-label">一覧全体の順番</p>
+          <div class="reorder-controls" role="group" aria-label="親タスクの並び替え">
+            <button type="button" class="gm-btn" data-reorder-kind="parent" data-reorder-offset="-1">上へ移動</button>
+            <button type="button" class="gm-btn" data-reorder-kind="parent" data-reorder-offset="1">下へ移動</button>
+            <span class="field-helper gm-help" id="parentPosition" role="status"></span>
+          </div>
+          <p class="field-helper gm-help">移動はその都度保存されます。検索・フィルタで非表示のタスクも含む順番です。</p>
         </div>
 
         <div class="modal-section">
@@ -2730,7 +2795,7 @@
           </label>
           <div class="row">
             <input id="modalSubtaskInput" class="text-input gm-input" type="text" placeholder="子タスクを入力">
-            <button type="button" id="modalAddSubtaskBtn" class="icon-btn action-btn gm-btn" aria-label="子タスク追加">
+            <button type="button" id="modalAddSubtaskBtn" class="icon-btn action-btn show-label gm-btn" aria-label="子タスク追加">
               <span aria-hidden="true" class="material-symbols-outlined">playlist_add</span>
               <span>追加</span>
             </button>
@@ -2747,7 +2812,7 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="icon-btn gm-btn" id="saveParentEditBtn" aria-label="保存">
+        <button type="button" class="icon-btn show-label gm-btn" id="saveParentEditBtn" aria-label="保存">
           <span aria-hidden="true" class="material-symbols-outlined">save</span>
           <span>保存</span>
         </button>
@@ -2756,7 +2821,7 @@
   </div>
 
   <!-- 子タスク編集モーダル -->
-  <div class="modal-overlay" id="subtaskModalOverlay" aria-hidden="true">
+  <div class="modal-overlay" id="subtaskModalOverlay" aria-hidden="true" inert>
     <div class="modal modal-compact" role="dialog" aria-modal="true" aria-labelledby="subtaskModalTitle">
       <div class="modal-header">
         <div class="modal-title-wrap">
@@ -2775,10 +2840,19 @@
           </label>
           <input id="subtaskEditInput" class="text-input gm-input" type="text" placeholder="子タスク名を入力">
         </div>
+        <div class="modal-section">
+          <p class="modal-label gm-label">親タスク内の順番</p>
+          <div class="reorder-controls" role="group" aria-label="子タスクの並び替え">
+            <button type="button" class="gm-btn" data-reorder-kind="subtask" data-reorder-offset="-1">上へ移動</button>
+            <button type="button" class="gm-btn" data-reorder-kind="subtask" data-reorder-offset="1">下へ移動</button>
+            <span class="field-helper gm-help" id="subtaskPosition" role="status"></span>
+          </div>
+          <p class="field-helper gm-help">移動はその都度保存されます。名前の編集は「保存」で反映します。</p>
+        </div>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="icon-btn gm-btn" id="saveSubtaskEditBtn" aria-label="保存">
+        <button type="button" class="icon-btn show-label gm-btn" id="saveSubtaskEditBtn" aria-label="保存">
           <span aria-hidden="true" class="material-symbols-outlined">save</span>
           <span>保存</span>
         </button>
@@ -2787,7 +2861,7 @@
   </div>
 
   <!-- 確認モーダル -->
-  <div class="modal-overlay" id="confirmModalOverlay" aria-hidden="true">
+  <div class="modal-overlay" id="confirmModalOverlay" aria-hidden="true" inert>
     <div class="modal modal-confirm" role="dialog" aria-modal="true" aria-labelledby="confirmModalTitle" aria-describedby="confirmMessage">
       <div class="modal-header">
         <div class="modal-title-wrap">
@@ -2806,6 +2880,7 @@
       </div>
 
       <div class="modal-footer">
+        <button type="button" class="gm-btn" id="cancelConfirmBtn">キャンセル</button>
         <button type="button" class="icon-btn danger confirm-action-btn gm-btn gm-btn-danger" id="confirmDeleteBtn" aria-label="実行">
           <span aria-hidden="true" class="material-symbols-outlined" id="confirmActionIcon">delete_forever</span>
           <span id="confirmActionLabel">削除する</span>
@@ -2815,7 +2890,7 @@
   </div>
 
   <!-- 集中モードのモーダル -->
-  <div class="focus-overlay" id="focusOverlay" aria-hidden="true">
+  <div class="focus-overlay" id="focusOverlay" aria-hidden="true" inert>
     <div class="focus-modal" role="dialog" aria-modal="true" aria-labelledby="focusTaskTitle">
       <div class="focus-header">
         <div class="focus-title-wrap">
@@ -2830,6 +2905,7 @@
       <div class="focus-body">
         <div class="focus-timer" id="focusTimer">00:00:00</div>
         <div class="focus-timer-caption" id="focusTimerCaption">経過時間</div>
+        <p id="focusElapsedSummary" class="field-helper gm-help" hidden></p>
       </div>
 
       <div class="focus-footer">
@@ -2908,7 +2984,7 @@
       const FAVICON_SIZE = 64;
       const MAX_FAVICON_BADGE_COUNT = 99;
       // ボタンの読み上げ名を共用し、titleや別属性に文言を重複させない。
-      const TOOLTIP_SELECTOR = 'button[aria-label]';
+      const TOOLTIP_SELECTOR = 'button[aria-label]:not(.theme-btn)';
       const TOOLTIP_OFFSET_PX = 5;
       const TOOLTIP_VIEWPORT_PADDING_PX = 8;
       const DELETE_UNDO_WINDOW_MS = 5000;
@@ -2923,7 +2999,6 @@
 
       let _storageWarningEl = null;
       let _storageWarningReason = '';
-      let _storageWarningSticky = false;
       let _indexedDbPromise = null;
       let _indexedDbWriteQueue = Promise.resolve();
       let _storedStateSaveQueue = Promise.resolve();
@@ -3274,7 +3349,6 @@
           warningEl.hidden = true;
           warningEl.textContent = '';
           _storageWarningReason = '';
-          _storageWarningSticky = false;
           return;
         }
 
@@ -3285,7 +3359,6 @@
 
       function _handlePersistentStorageError(mode, key, error) {
         _reportStorageError(mode, key, error);
-        _storageWarningSticky = true;
         _setStorageWarning(true);
       }
 
@@ -3936,6 +4009,8 @@
       let isSidebarCollapsed = _readStoredBoolean(SIDEBAR_KEY, false);
       let organizeMemo = normalizeOrganizeMemo(_readStoredText(ORGANIZE_MEMO_KEY, ''));
       const taskViewState = loadTaskViewState();
+      // 検索語はこの画面だけの状態とし、保存世代やバックアップには含めない。
+      let taskSearchQuery = '';
       const _initialLocalStateSnapshot = _readLocalStateSnapshot();
       let _persistedStateRevision = _initialLocalStateSnapshot.meta?.revision || 0;
       let _persistedStateUpdatedAt = _initialLocalStateSnapshot.meta?.updatedAt || 0;
@@ -4066,7 +4141,9 @@
         let next = container.firstElementChild;
         for (const row of rows) {
           if (row === next) next = next.nextElementSibling;
-          else container.insertBefore(row, next);
+          else if (container.moveBefore && row.parentElement === container && container.isConnected) {
+            container.moveBefore(row, next);
+          } else container.insertBefore(row, next);
         }
       }
 
@@ -4081,8 +4158,12 @@
         return MATERIAL_ICON_TOKENS.has(normalized) ? normalized : MATERIAL_ICON_FALLBACK;
       }
 
+      const materialIconSvgTemplates = new Map();
+
       function _createMaterialIconSvg(token) {
         const resolved = normalizeMaterialIconToken(token);
+        const template = materialIconSvgTemplates.get(resolved);
+        if (template) return template.cloneNode(true);
         const $svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
         $svg.setAttribute('viewBox', '0 0 24 24');
         $svg.setAttribute('aria-hidden', 'true');
@@ -4091,7 +4172,8 @@
         const ref = `#icon-${resolved}`;
         $use.setAttribute('href', ref);
         $svg.append($use);
-        return $svg;
+        materialIconSvgTemplates.set(resolved, $svg);
+        return $svg.cloneNode(true);
       }
 
       function setMaterialIcon($el, token) {
@@ -4118,6 +4200,8 @@
       let _lastFaviconBadgeCount = null;
 
       const taskInput = qs('#taskInput');
+      const taskSearchInput = qs('#taskSearchInput');
+      const clearTaskSearchBtn = qs('#clearTaskSearchBtn');
       const addBtn = qs('#addBtn');
       const clearCompletedBtn = qs('#clearCompletedBtn');
       const clearAllBtn = qs('#clearAllBtn');
@@ -4133,6 +4217,8 @@
       const taskProgressText = qs('#taskProgressText');
       const taskProgressBar = qs('#taskProgressBar');
       const appShell = qs('.shell');
+      const bulkActions = qs('#bulkActions');
+      const bulkActionsSummary = qs('summary', bulkActions);
 
       const lightModeToggle = qs('#lightModeToggle');
       const themeColorGrid = qs('#themeColorGrid');
@@ -4197,6 +4283,7 @@
       const focusPauseIcon = qs('#focusPauseIcon');
       const focusPauseLabel = qs('#focusPauseLabel');
       const focusAbortBtn = qs('#focusAbortBtn');
+      const focusElapsedSummary = qs('#focusElapsedSummary');
       const focusStatusChip = qs('#focusStatusChip');
       const focusStatusIcon = qs('#focusStatusIcon');
       const focusStatusText = qs('#focusStatusText');
@@ -4305,9 +4392,9 @@
         [appShell, parentModalOverlay, subtaskModalOverlay, confirmModalOverlay, focusOverlay]
           .filter(Boolean)
           .forEach((container) => {
-            container.toggleAttribute('inert', pending);
             container.setAttribute('aria-busy', String(pending));
           });
+        syncModalInteractivity();
         if (!pending) {
           const returnFocus = stateSaveOperationState.returnFocus;
           stateSaveOperationState.returnFocus = null;
@@ -4803,12 +4890,13 @@
               await onAction();
             } finally {
               actionPending = false;
-              if (toastSessionId !== _toastSessionId) return;
-              if (toastHideTimerId) {
-                clearTimeout(toastHideTimerId);
-                toastHideTimerId = null;
+              if (toastSessionId === _toastSessionId) {
+                if (toastHideTimerId) {
+                  clearTimeout(toastHideTimerId);
+                  toastHideTimerId = null;
+                }
+                _hideToastBySession(toastSessionId);
               }
-              _hideToastBySession(toastSessionId);
             }
           });
         }
@@ -4935,7 +5023,7 @@
 
       function _isFocusableElement($el) {
         if (!($el instanceof HTMLElement)) return false;
-        if ($el.hasAttribute('disabled')) return false;
+        if ($el.hasAttribute('disabled') || $el.closest('[inert]')) return false;
         if ($el.getAttribute('aria-hidden') === 'true') return false;
         if ($el.getAttribute('tabindex') === '-1') return false;
         return $el.getClientRects().length > 0;
@@ -5028,6 +5116,16 @@
         $target?.focus({ preventScroll: true });
       }
 
+      function syncModalInteractivity() {
+        const pending = isStateSaveOperationPending();
+        const activeOverlay = _getActiveModalOverlay();
+        appShell.toggleAttribute('inert', pending || !!activeOverlay);
+        qsa('.modal-overlay, .focus-overlay').forEach(overlay => {
+          overlay.toggleAttribute('inert', pending || !overlay.classList.contains('show')
+            || (!!activeOverlay && overlay !== activeOverlay));
+        });
+      }
+
       function _openModalOverlay($overlay, $preferredFocus = null, $returnFocusEl = document.activeElement) {
         if (!$overlay || $overlay.classList.contains('show')) return;
 
@@ -5039,6 +5137,7 @@
 
         $overlay.classList.add('show');
         $overlay.setAttribute('aria-hidden', 'false');
+        syncModalInteractivity();
         requestAnimationFrame(() => _focusWithinOverlay($overlay, $preferredFocus));
       }
 
@@ -5055,6 +5154,7 @@
 
         $overlay.classList.remove('show');
         $overlay.setAttribute('aria-hidden', 'true');
+        syncModalInteractivity();
 
         requestAnimationFrame(() => {
           if (!modalEntry || $overlay.classList.contains('show')) return;
@@ -6191,15 +6291,45 @@
         return true;
       }
 
-      function getFilteredSubtasks(task, filterId = taskViewState.filter) {
-        if (!hasSubtasks(task)) return [];
-        return task.subtasks.filter((sub) => matchesTaskFilter(sub.done, filterId));
+      function normalizeTaskSearchText(value) {
+        return String(value ?? '').normalize('NFKC').toLowerCase().replace(/\s+/g, ' ').trim();
       }
 
-      function isTaskVisible(task, filterId = taskViewState.filter) {
+      function matchesTaskSearch(text, query = taskSearchQuery) {
+        if (query === '') return true;
+        return normalizeTaskSearchText(text).includes(normalizeTaskSearchText(query));
+      }
+
+      function isTaskSearchActive() {
+        return normalizeTaskSearchText(taskSearchQuery).length > 0;
+      }
+
+      function resetTaskSearch() {
+        taskSearchQuery = '';
+        taskSearchInput.value = '';
+      }
+
+      function handleTaskSearchInput(event) {
+        if (event.isComposing || isStateSaveOperationPending()) return;
+        const query = normalizeTaskSearchText(taskSearchInput.value);
+        if (query === taskSearchQuery) return;
+        taskSearchQuery = query;
+        render();
+      }
+
+      function getFilteredSubtasks(task, filterId = taskViewState.filter, query = taskSearchQuery) {
+        if (!hasSubtasks(task)) return [];
+        const normalizedQuery = normalizeTaskSearchText(query);
+        const parentMatches = normalizedQuery === ''
+          || normalizeTaskSearchText(task.text).includes(normalizedQuery);
+        return task.subtasks.filter((sub) => matchesTaskFilter(sub.done, filterId)
+          && (parentMatches || normalizeTaskSearchText(sub.text).includes(normalizedQuery)));
+      }
+
+      function isTaskVisible(task, filterId = taskViewState.filter, query = taskSearchQuery) {
         return hasSubtasks(task)
-          ? getFilteredSubtasks(task, filterId).length > 0
-          : matchesTaskFilter(task.done, filterId);
+          ? getFilteredSubtasks(task, filterId, query).length > 0
+          : matchesTaskFilter(task.done, filterId) && matchesTaskSearch(task.text, query);
       }
 
       function getVisibleParentTaskIds(filterId = taskViewState.filter) {
@@ -6259,13 +6389,17 @@
       function applyColorMode() {
         const nextColorMode = settings.colorMode === 'dark' ? 'dark' : 'light';
         settings.colorMode = nextColorMode;
-        document.documentElement.dataset.mode = nextColorMode;
+        if (document.documentElement.dataset.mode !== nextColorMode) {
+          document.documentElement.dataset.mode = nextColorMode;
+        }
       }
 
       function applyThemeColor() {
         const nextTheme = THEME_IDS.has(settings.themeColor) ? settings.themeColor : DEFAULT_THEME_COLOR;
         settings.themeColor = nextTheme;
-        document.documentElement.dataset.theme = nextTheme;
+        if (document.documentElement.dataset.theme !== nextTheme) {
+          document.documentElement.dataset.theme = nextTheme;
+        }
       }
 
       function isCompactSidebarViewport() {
@@ -6301,6 +6435,12 @@
       }
 
       function renderRoute(route) {
+        if (route === 'tasks' && renderRoute.tasksDirty) {
+          renderTasks();
+          renderRoute.tasksDirty = false;
+        }
+        const routeChanged = renderRoute.currentRoute != null && renderRoute.currentRoute !== route;
+        renderRoute.currentRoute = route;
         for (const page of qsa('.page')) {
           page.classList.toggle('active', page.id === `page-${route}`);
         }
@@ -6313,6 +6453,15 @@
 
         if (route === 'settings') {
           renderSettings();
+        }
+        if (routeChanged) {
+          closeBulkActions();
+          if (!_getActiveModalOverlay()) {
+            const heading = qs(`#page-${route} h1`);
+            heading.setAttribute('tabindex', '-1');
+            heading.focus({ preventScroll: true });
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+          }
         }
       }
 
@@ -6912,10 +7061,12 @@
           'clear-completed': { icon: 'done_all', label: '完了済みを削除' },
           'clear-all': { icon: 'delete_sweep', label: 'すべて削除' },
           'import-backup': { icon: 'playlist_add', label: '読み込む' },
+          'discard-parent-edit': { icon: 'close', label: '破棄して閉じる' },
+          'discard-subtask-edit': { icon: 'close', label: '破棄して閉じる' },
           'abort-focus': { icon: 'stop_circle', label: '中断する' }
         };
         const ui = actionUiMap[action] || { icon: 'check_circle', label: '実行する' };
-        const shouldShowConfirmLabel = action === 'clear-completed' || action === 'clear-all' || action === 'import-backup';
+        const shouldShowConfirmLabel = action.startsWith('discard-') || action === 'clear-completed' || action === 'clear-all' || action === 'import-backup';
         confirmDeleteBtn.classList.toggle('show-label', shouldShowConfirmLabel);
         confirmModalOverlay.classList.toggle('over-focus', action === 'abort-focus');
         if (confirmActionLabel) confirmActionLabel.textContent = ui.label;
@@ -6923,7 +7074,7 @@
         confirmDeleteBtn.setAttribute('aria-keyshortcuts', 'Enter');
         setMaterialIcon(confirmActionIcon, ui.icon);
 
-        _openModalOverlay(confirmModalOverlay, confirmDeleteBtn);
+        _openModalOverlay(confirmModalOverlay, action.startsWith('discard-') ? qs('#cancelConfirmBtn') : confirmDeleteBtn);
         return true;
       }
 
@@ -6942,6 +7093,12 @@
         closeConfirmModal();
 
         switch (action) {
+          case 'discard-parent-edit':
+            closeParentModal({ force: true });
+            break;
+          case 'discard-subtask-edit':
+            closeSubtaskModal({ force: true });
+            break;
           case 'delete-parent':
             await performDeleteParent(payload?.parentId, payload?.buttonEl);
             break;
@@ -7027,7 +7184,6 @@
             const $input = qs('.message-edit-input', item);
             if ($input) {
               $input.value = messageEditorState.draft ?? msg;
-              $input.maxLength = MAX_MESSAGE_TEXT_LENGTH;
             }
           } else {
             item.innerHTML = `
@@ -7063,6 +7219,11 @@
 
       async function saveMessage() {
         if (isStateSaveOperationPending() || isAddOperationPending('message') || isMessageOperationPending()) return;
+        if (messageInput.value.trim().length > MAX_MESSAGE_TEXT_LENGTH) {
+          showErrorToast(`最大${MAX_MESSAGE_TEXT_LENGTH}文字までです。入力を短くしてください`);
+          messageInput.focus();
+          return;
+        }
         const value = normalizeInputText(messageInput.value, MAX_MESSAGE_TEXT_LENGTH);
         if (!value) {
           showErrorToast('メッセージを入力してください');
@@ -7090,6 +7251,7 @@
         }
         if (!saveOk) return;
         messageInput.value = '';
+        messageInput.dispatchEvent?.(new Event('input'));
         renderMessages();
       }
 
@@ -7113,6 +7275,11 @@
         if (!Number.isInteger(index) || index < 0 || index >= messages.length) return;
 
         const $input = qs(`.message-edit-input[data-index="${index}"]`, messageList);
+        if (($input?.value || '').trim().length > MAX_MESSAGE_TEXT_LENGTH) {
+          showErrorToast(`最大${MAX_MESSAGE_TEXT_LENGTH}文字までです。入力を短くしてください`);
+          $input?.focus();
+          return;
+        }
         const value = normalizeInputText($input?.value, MAX_MESSAGE_TEXT_LENGTH);
         if (!value) {
           showErrorToast('メッセージを入力してください');
@@ -7200,14 +7367,21 @@
         resetModalSubtaskDragState();
         parentEditInput.value = parent.text;
         modalSubtaskInput.value = '';
+        modalSubtaskInput.dispatchEvent?.(new Event('input'));
         renderParentModalSubtasks(parent);
         updateParentModalPendingState();
+        syncEditorReorderControls();
         _openModalOverlay(parentModalOverlay, parentEditInput);
       }
 
       function closeParentModal(options = {}) {
         if (!options?.force && isStateSaveOperationPending()) return false;
         if (!options?.force && (isEditOperationPending('parent') || isAddOperationPending('subtask'))) return false;
+        const parent = getTask(modalState.parentId);
+        if (!options?.force && parent && (parentEditInput.value !== parent.text || modalSubtaskInput.value.trim())) {
+          openConfirmModal('保存していないタスク名や追加前の子タスクを破棄して閉じますか？', 'discard-parent-edit');
+          return false;
+        }
         resetModalSubtaskDragState();
         modalState.parentId = null;
         _closeModalOverlay(parentModalOverlay);
@@ -7287,6 +7461,11 @@
         const parent = getTask(modalState.parentId);
         if (!parent) return;
 
+        if (parentEditInput.value.trim().length > MAX_TASK_TEXT_LENGTH) {
+          showErrorToast(`最大${MAX_TASK_TEXT_LENGTH}文字までです。入力を短くしてください`);
+          parentEditInput.focus();
+          return;
+        }
         const value = normalizeInputText(parentEditInput.value, MAX_TASK_TEXT_LENGTH);
         if (!value) {
           showErrorToast('タスク名を入力してください');
@@ -7305,7 +7484,11 @@
         }
         if (!saveOk) return;
         render();
-        closeParentModal({ force: true });
+        if (modalSubtaskInput.value.trim()) {
+          showToast('タスク名を保存しました。入力中の子タスクは「追加」で保存できます', { type: 'success' });
+        } else {
+          closeParentModal({ force: true });
+        }
       }
 
       async function addSubtaskFromModal() {
@@ -7313,6 +7496,11 @@
         const parent = getTask(modalState.parentId);
         if (!parent) return;
 
+        if (modalSubtaskInput.value.trim().length > MAX_SUBTASK_TEXT_LENGTH) {
+          showErrorToast(`最大${MAX_SUBTASK_TEXT_LENGTH}文字までです。入力を短くしてください`);
+          modalSubtaskInput.focus();
+          return;
+        }
         const value = normalizeInputText(modalSubtaskInput.value, MAX_SUBTASK_TEXT_LENGTH);
         if (!value) {
           showErrorToast('子タスク名を入力してください');
@@ -7330,6 +7518,7 @@
         let saveOk = false;
         setAddOperationPending('subtask', true);
         try {
+          if (taskViewState.filter === 'completed') taskViewState.filter = 'all';
           parent.subtasks.push({
             id: uid(),
             text: value,
@@ -7347,6 +7536,8 @@
         }
         if (!saveOk) return;
         modalSubtaskInput.value = '';
+        modalSubtaskInput.dispatchEvent?.(new Event('input'));
+        resetTaskSearch();
         playAddSound();
         renderParentModalSubtasks(parent);
         render();
@@ -7364,12 +7555,18 @@
         modalState.subtaskId = subId;
         subtaskEditInput.value = sub.text;
         updateSubtaskModalPendingState();
+        syncEditorReorderControls();
         _openModalOverlay(subtaskModalOverlay, subtaskEditInput);
       }
 
       function closeSubtaskModal(options = {}) {
         if (!options?.force && isStateSaveOperationPending()) return false;
         if (!options?.force && isEditOperationPending('subtask')) return false;
+        const sub = getSubtask(modalState.subtaskParentId, modalState.subtaskId);
+        if (!options?.force && sub && subtaskEditInput.value !== sub.text) {
+          openConfirmModal('保存していない子タスク名を破棄して閉じますか？', 'discard-subtask-edit');
+          return false;
+        }
         modalState.subtaskParentId = null;
         modalState.subtaskId = null;
         _closeModalOverlay(subtaskModalOverlay);
@@ -7381,6 +7578,11 @@
         const sub = getSubtask(modalState.subtaskParentId, modalState.subtaskId);
         if (!sub) return;
 
+        if (subtaskEditInput.value.trim().length > MAX_SUBTASK_TEXT_LENGTH) {
+          showErrorToast(`最大${MAX_SUBTASK_TEXT_LENGTH}文字までです。入力を短くしてください`);
+          subtaskEditInput.focus();
+          return;
+        }
         const value = normalizeInputText(subtaskEditInput.value, MAX_SUBTASK_TEXT_LENGTH);
         if (!value) {
           showErrorToast('子タスク名を入力してください');
@@ -7450,13 +7652,6 @@
           return Math.max(0, focusState.pomodoroPhaseEndsAt - nowMs);
         }
         return Math.max(0, focusState.pomodoroPhaseRemainingMs);
-      }
-
-      function getPomodoroPhaseElapsedMs(nowMs = Date.now()) {
-        if (!isPomodoroEnabledForSession()) return 0;
-        const durationMs = getPomodoroPhaseDurationMs(focusState.pomodoroPhase);
-        const remainingMs = getPomodoroPhaseRemainingMs(nowMs);
-        return Math.max(0, Math.min(durationMs, durationMs - remainingMs));
       }
 
       function startFocusPomodoroSession(nowMs) {
@@ -7570,6 +7765,7 @@
 
       async function openFocusModal(type, parentId, subtaskId = null) {
         if (isStateSaveOperationPending() || isFocusOperationPending()) return;
+        if (focusOverlay.classList.contains('show')) return;
         if (confirmModalOverlay.classList.contains('show')) return;
         if (parentModalOverlay.classList.contains('show')) return;
         if (subtaskModalOverlay.classList.contains('show')) return;
@@ -7577,6 +7773,7 @@
         const $returnFocusEl = document.activeElement;
         let target = null;
         let saveOk = false;
+        let transitionPending = false;
         setFocusOperationPending(true);
         try {
           if (!(await commitPomodoroSettingsFromControls())) return;
@@ -7603,24 +7800,35 @@
           focusState.lastCheckpointAt = nowMs;
           startFocusPomodoroSession(nowMs);
 
+          // 集中画面の表示完了まで共有ロックを維持する。
+          setStateSaveOperationPending(true);
+          transitionPending = true;
           saveOk = await _commitFocusStateSave(previousState, previousFocusState);
         } finally {
           setFocusOperationPending(false);
+          if (!saveOk && transitionPending) {
+            setStateSaveOperationPending(false);
+            transitionPending = false;
+          }
         }
         if (!saveOk || !target) return;
 
-        focusTaskTitle.textContent = target.text;
-        syncFocusPauseButton();
-        updateFocusTimer();
+        try {
+          focusTaskTitle.textContent = target.text;
+          syncFocusPauseButton();
+          updateFocusTimer();
 
-        _openModalOverlay(focusOverlay, focusPauseBtn, $returnFocusEl);
-        document.body.classList.add('focus-open');
+          _openModalOverlay(focusOverlay, focusPauseBtn, $returnFocusEl);
+          document.body.classList.add('focus-open');
 
-        if (focusState.tickerId) clearInterval(focusState.tickerId);
-        focusState.tickerId = setInterval(updateFocusTimer, 200);
+          if (focusState.tickerId) clearInterval(focusState.tickerId);
+          focusState.tickerId = setInterval(updateFocusTimer, 200);
 
-        playFocusStartSound();
-        render();
+          playFocusStartSound();
+          render();
+        } finally {
+          if (transitionPending) setStateSaveOperationPending(false);
+        }
       }
 
       function closeFocusModal() {
@@ -7658,9 +7866,15 @@
         }
 
         const onBreak = isPomodoroEnabledForSession() && focusState.pomodoroPhase === 'break';
-        const timerText = formatElapsed(onBreak ? getPomodoroPhaseElapsedMs(nowMs) : getElapsedMs(target.focus, nowMs));
+        const pomodoro = isPomodoroEnabledForSession();
+        const timerText = formatElapsed(pomodoro ? Math.ceil(getPomodoroPhaseRemainingMs(nowMs) / 1000) * 1000 : getElapsedMs(target.focus, nowMs));
         if (focusTimer.textContent !== timerText) focusTimer.textContent = timerText;
-        const caption = onBreak ? '休憩経過' : '経過時間';
+        const caption = pomodoro ? (onBreak ? '休憩の残り時間' : '集中の残り時間') : '経過時間';
+        focusElapsedSummary.hidden = !pomodoro;
+        if (pomodoro) {
+          const summary = `実績時間 ${formatElapsed(getElapsedMs(target.focus, nowMs))}`;
+          if (focusElapsedSummary.textContent !== summary) focusElapsedSummary.textContent = summary;
+        }
         if (focusTimerCaption && focusTimerCaption.textContent !== caption) focusTimerCaption.textContent = caption;
 
         syncFocusPhaseVisualState(target);
@@ -7684,8 +7898,8 @@
       function syncFocusPauseButton() {
         const target = getActiveFocusTarget();
         if (!target) return;
-        const elapsedCaption = isPomodoroEnabledForSession() && focusState.pomodoroPhase === 'break'
-          ? '休憩経過'
+        const elapsedCaption = isPomodoroEnabledForSession()
+          ? (focusState.pomodoroPhase === 'break' ? '休憩の残り時間' : '集中の残り時間')
           : '経過時間';
         syncFocusPhaseVisualState(target);
 
@@ -7971,6 +8185,44 @@
         return true;
       }
 
+      function getEditorReorderContext(kind) {
+        const parentId = kind === 'parent' ? modalState.parentId : modalState.subtaskParentId;
+        const list = kind === 'parent' ? tasks : getTask(parentId)?.subtasks || [];
+        const id = kind === 'parent' ? parentId : modalState.subtaskId;
+        return { parentId, list, id, index: list.findIndex(item => item.id === id) };
+      }
+
+      function syncEditorReorderControls() {
+        for (const kind of ['parent', 'subtask']) {
+          const { list, index } = getEditorReorderContext(kind);
+          qsa(`[data-reorder-kind="${kind}"]`).forEach(button => {
+            const offset = Number(button.dataset.reorderOffset);
+            button.disabled = isStateSaveOperationPending() || index < 0 || index + offset < 0 || index + offset >= list.length;
+          });
+          qs(`#${kind}Position`).textContent = index < 0 ? '' : `${index + 1} / ${list.length}番目`;
+        }
+      }
+
+      async function moveEditorTask(kind, offset) {
+        if (isStateSaveOperationPending() || !['parent', 'subtask'].includes(kind)
+          || ![-1, 1].includes(offset)) return false;
+        const { parentId, list, id, index } = getEditorReorderContext(kind);
+        const target = index >= 0 ? list[index + offset] : null;
+        if (!target) return false;
+        const saved = kind === 'parent'
+          ? await reorderParentTasks(id, target.id, offset > 0)
+          : await reorderSubtasks(parentId, id, target.id, offset > 0);
+        syncEditorReorderControls();
+        if (saved) {
+          const overlay = kind === 'parent' ? parentModalOverlay : subtaskModalOverlay;
+          const buttons = qsa(`[data-reorder-kind="${kind}"]`, overlay);
+          const nextButton = buttons.find(button => Number(button.dataset.reorderOffset) === offset && !button.disabled)
+            || buttons.find(button => !button.disabled);
+          if (_getActiveModalOverlay() === overlay) nextButton?.focus({ preventScroll: true });
+        }
+        return saved;
+      }
+
       function _restoreFocusToTaskRow(type, parentId, subId = null) {
         requestAnimationFrame(() => {
           if (getRouteFromHash() !== 'tasks' || _getActiveModalOverlay() || isStateSaveOperationPending()) return;
@@ -8065,19 +8317,19 @@
           if (clientY > previewRect.bottom) clientY -= previewSpace;
         }
 
-        let intent = null;
-        for (const row of candidates) {
-          const rect = row.getBoundingClientRect();
+        // All three callers pass rows from a vertical, DOM-ordered list.
+        // Read current geometry on every event so scrolling/resizing needs no cache invalidation.
+        let low = 0;
+        let high = candidates.length;
+        while (low < high) {
+          const middle = Math.floor((low + high) / 2);
+          const rect = candidates[middle].getBoundingClientRect();
           const top = rect.top - (previewRect && rect.top >= previewRect.bottom ? previewSpace : 0);
-          const midY = top + (rect.height / 2);
-          const targetId = getId(row);
-          if (clientY < midY) {
-            intent = { targetEl: row, targetId, placeAfter: false };
-            break;
-          }
-          intent = { targetEl: row, targetId, placeAfter: true };
+          if (clientY < top + rect.height / 2) high = middle;
+          else low = middle + 1;
         }
-        return intent;
+        const row = candidates[Math.min(low, candidates.length - 1)];
+        return { targetEl: row, targetId: getId(row), placeAfter: low === candidates.length };
       }
 
       function startDragFromHandle(handleEl, event) {
@@ -8184,9 +8436,10 @@
 
         const currentAllDone = isAllDone();
 
-        renderTasks();
+        // 保存データの確定・集計は全画面で維持し、一覧DOMは表示時に最新化する。
+        renderRoute.tasksDirty = true;
         renderRoute(currentRoute);
-        hydrateMaterialIcons();
+        syncEditorReorderControls();
         updateDocumentTaskIndicators();
         handleTooltipViewportChange();
 
@@ -8232,8 +8485,129 @@
 
       function getTaskRowRenderKey(task, visibleSubtasks) {
         const fields = item => [item.id, item.text, item.done, item.focus?.focusState,
-          item.done ? item.focus?.elapsedMs : 0];
+          item.done || item.focus?.focusState === 'paused' ? item.focus?.elapsedMs : 0];
         return JSON.stringify([fields(task), hasSubtasks(task), visibleSubtasks.map(fields)]);
+      }
+
+      function createSubtaskRowMarkup(parentId, sub) {
+        return `
+                    <li class="subtask-item ${sub.done ? 'done' : ''}" data-parent-id="${parentId}" data-sub-id="${sub.id}">
+                      <div class="task-leading-controls">
+                        <button
+                          class="mini-btn drag-handle subtask-drag-handle gm-btn"
+                          data-parent-id="${parentId}"
+                          data-sub-id="${sub.id}"
+                          draggable="true"
+                          type="button"
+                          aria-label="子タスクをドラッグで並び替え"
+                          aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown"
+                        >
+                          <span aria-hidden="true" class="material-symbols-outlined">drag_indicator</span>
+                        </button>
+
+                        ${sub.done
+                          ? `
+                          <button
+                            class="focus-btn done action-btn undo-subtask-btn gm-btn"
+                            data-parent-id="${parentId}"
+                            data-sub-id="${sub.id}"
+                            type="button"
+                            aria-label="完了を取り消す"
+                          >
+                            <span aria-hidden="true" class="material-symbols-outlined">undo</span>
+                            <span>取り消し</span>
+                          </button>
+                        `
+                          : `
+                          <button
+                            class="focus-btn playable action-btn open-focus-subtask-btn gm-btn"
+                            data-parent-id="${parentId}"
+                            data-sub-id="${sub.id}"
+                            type="button"
+                            aria-label="${sub.focus?.focusState === 'paused' ? '再開' : '開始'}"
+                          >
+                            <span aria-hidden="true" class="material-symbols-outlined">${getFocusIconForMeta(sub.focus, false)}</span>
+                            <span>${sub.focus?.focusState === 'paused' ? '再開' : '開始'}</span>
+                          </button>
+                          `
+                        }
+                      </div>
+
+                      <div class="subtask-text-wrap">
+                        ${sub.done || sub.focus?.focusState === 'paused'
+                          ? `
+                          <div class="achievement-time subtask-achievement">
+                            <span aria-hidden="true" class="material-symbols-outlined">timer</span>
+                            <span>${formatAchievementElapsed(sub.focus?.elapsedMs || 0)}</span>
+                          </div>
+                        `
+                          : ''
+                        }
+                        <div class="text">${escapeHtml(sub.text)}</div>
+                      </div>
+
+                      <div class="subtask-actions">
+                        <button class="mini-btn action-btn edit-subtask-btn gm-btn" data-parent-id="${parentId}" data-sub-id="${sub.id}" type="button" aria-label="編集">
+                          <span aria-hidden="true" class="material-symbols-outlined">edit</span>
+                          <span>編集</span>
+                        </button>
+                        <button class="mini-btn danger action-btn delete-subtask-btn gm-btn" data-parent-id="${parentId}" data-sub-id="${sub.id}" type="button" aria-label="削除">
+                          <span aria-hidden="true" class="material-symbols-outlined">delete</span>
+                          <span>削除</span>
+                        </button>
+                      </div>
+                    </li>
+        `;
+      }
+
+      function pruneCachedChildRows(cached, subtasks) {
+        if (cached.childStructure?.length === subtasks.length
+          && cached.childStructure.every((id, index) => id === subtasks[index].id)) return;
+        const liveIds = new Set(subtasks.map(sub => sub.id));
+        for (const id of cached.childRows.keys()) {
+          if (!liveIds.has(id)) {
+            // Connected rows remain until reconciliation so document focus can be restored.
+            if (!cached.element.isConnected) cached.childRows.get(id).element.remove();
+            cached.childRows.delete(id);
+          }
+        }
+        cached.childStructure = [...liveIds];
+      }
+
+      function hasTaskRowDragState(element) {
+        return element.classList.contains('dragging')
+          || !!element.querySelector('.dragging, .drag-insertion-slot');
+      }
+
+      // One node per cached child; filtered children are detached, never duplicated.
+      function reconcileCachedTaskRow(cached, task, visibleSubtasks, key) {
+        if (!cached || cached.element.contains(document.activeElement)
+          || hasTaskRowDragState(cached.element)) return false;
+        const previous = JSON.parse(cached.key);
+        const next = JSON.parse(key);
+        if (previous[1] !== next[1] || previous[0].some((value, index) => value !== next[0][index])) return false;
+        const list = cached.element.querySelector('.subtask-list');
+        if (!list) return false;
+        if (!cached.childRows) {
+          cached.childRows = new Map([...list.children].map((element, index) =>
+            [previous[2][index][0], { key: JSON.stringify(previous[2][index]), element }]));
+          pruneCachedChildRows(cached, task.subtasks);
+        }
+        const rows = visibleSubtasks.map((sub, index) => {
+          const childKey = JSON.stringify(next[2][index]);
+          const child = cached.childRows.get(sub.id);
+          if (child?.key === childKey) return child.element;
+          const template = document.createElement('template');
+          template.innerHTML = createSubtaskRowMarkup(task.id, sub);
+          const element = template.content.firstElementChild;
+          hydrateMaterialIcons(element);
+          cached.childRows.set(sub.id, { key: childKey, element });
+          return element;
+        });
+        reconcileChildren(list, rows);
+        cached.element.style.setProperty('--task-estimated-size', `${4 + visibleSubtasks.length * 3.25}rem`);
+        cached.key = key;
+        return true;
       }
 
       function reconcileTaskRows(rows) {
@@ -8257,9 +8631,11 @@
         const progress = getProgressStats();
         const hasAnyTask = tasks.length > 0;
         const activeFilter = taskViewState.filter;
+        const isSearching = isTaskSearchActive();
+        clearTaskSearchBtn.hidden = !isSearching;
         let visibleTaskCount = 0;
         let visibleWorkCount = 0;
-        taskViewStatus.hidden = !hasAnyTask;
+        taskViewStatus.hidden = !hasAnyTask && !isSearching;
         taskOverview.hidden = !hasAnyTask;
         taskProgressText.textContent = `${progress.completed} / ${progress.total} 完了`;
         taskProgressBar.value = progress.pct;
@@ -8267,29 +8643,43 @@
         taskHeaderActions.hidden = !hasAnyTask;
         syncTaskFilterButtons();
         const clearCompletedCounts = getClearCompletedDeleteCounts(activeFilter);
-        const hasCompletedItems = clearCompletedCounts.totalCount > 0;
-        const clearCompletedTitle = hasCompletedItems
+        const hasCompletedItems = clearCompletedCounts.totalCount > 0 && !isSearching;
+        const clearCompletedTitle = isSearching ? '一括削除するには検索を解除してください' : hasCompletedItems
           ? `${getClearCompletedScopeText(activeFilter)}完了済みを削除`
           : '削除できる完了済みタスクはありません';
         clearCompletedBtn.disabled = !hasCompletedItems;
         clearCompletedBtn.setAttribute('aria-disabled', String(!hasCompletedItems));
         clearCompletedBtn.setAttribute('aria-label', clearCompletedTitle);
-        const clearAllTitle = hasAnyTask ? 'すべて削除' : '削除できるタスクはありません';
-        clearAllBtn.disabled = !hasAnyTask;
-        clearAllBtn.setAttribute('aria-disabled', String(!hasAnyTask));
+        const clearAllTitle = isSearching ? '一括削除するには検索を解除してください'
+          : hasAnyTask ? 'すべて削除' : '削除できるタスクはありません';
+        clearAllBtn.disabled = !hasAnyTask || isSearching;
+        clearAllBtn.setAttribute('aria-disabled', String(!hasAnyTask || isSearching));
         clearAllBtn.setAttribute('aria-label', clearAllTitle);
 
         tasks.forEach(task => {
           const visibleSubtasks = getFilteredSubtasks(task, activeFilter);
           const shouldRenderTask = hasSubtasks(task) ? visibleSubtasks.length > 0
-            : matchesTaskFilter(task.done, activeFilter);
-          if (!shouldRenderTask) return;
+            : matchesTaskFilter(task.done, activeFilter) && matchesTaskSearch(task.text);
+          const retained = taskRowCache.get(task.id);
+          // Cleanup only visits connected rows; hidden cards must not retain drag previews.
+          if (!shouldRenderTask && retained && hasTaskRowDragState(retained.element)) return;
+          if (retained && !shouldRenderTask && !retained.childRows) {
+            const fields = JSON.parse(retained.key)[2];
+            const list = retained.element.querySelector('.subtask-list');
+            retained.childRows = new Map([...(list?.children || [])].map((element, index) =>
+              [fields[index][0], { key: JSON.stringify(fields[index]), element }]));
+          }
+          if (retained?.childRows) pruneCachedChildRows(retained, task.subtasks);
+          if (!shouldRenderTask) {
+            if (retained) nextRowCache.set(task.id, retained);
+            return;
+          }
 
           visibleTaskCount += 1;
           visibleWorkCount += hasSubtasks(task) ? visibleSubtasks.length : 1;
           const key = getTaskRowRenderKey(task, visibleSubtasks);
           const cached = taskRowCache.get(task.id);
-          if (cached?.key === key) {
+          if (cached?.key === key || reconcileCachedTaskRow(cached, task, visibleSubtasks, key)) {
             rows.push(cached.element);
             nextRowCache.set(task.id, cached);
             return;
@@ -8299,7 +8689,7 @@
           li.dataset.id = task.id;
 
           const runnableParent = isRunnableParent(task);
-          const parentAchievement = task.done && runnableParent
+          const parentAchievement = (task.done || task.focus?.focusState === 'paused') && runnableParent
             ? `
               <div class="achievement-time task-achievement">
                 <span aria-hidden="true" class="material-symbols-outlined">timer</span>
@@ -8309,17 +8699,17 @@
             : '';
 
           const parentFocusDisabled = !runnableParent;
-          const parentFocusTitle = parentFocusDisabled ? '子タスクがあるため開始できません' : '開始';
-          const parentStartControl = `
+          const parentFocusTitle = parentFocusDisabled ? '子タスクがあるため開始できません' : task.focus?.focusState === 'paused' ? '再開' : '開始';
+          const parentStartControl = parentFocusDisabled
+            ? '' : `
               <button
-                class="focus-btn playable action-btn open-focus-parent-btn ${parentFocusDisabled ? 'disabled' : ''} gm-btn"
+                class="focus-btn playable action-btn open-focus-parent-btn gm-btn"
                 data-id="${task.id}"
                 type="button"
                 aria-label="${parentFocusTitle}"
-                ${parentFocusDisabled ? 'disabled aria-disabled="true"' : ''}
               >
-                <span aria-hidden="true" class="material-symbols-outlined">${parentFocusDisabled ? 'block' : getFocusIconForMeta(task.focus, false)}</span>
-                <span>開始</span>
+                <span aria-hidden="true" class="material-symbols-outlined">${getFocusIconForMeta(task.focus, false)}</span>
+                <span>${parentFocusTitle}</span>
               </button>
             `;
           const leftControl = task.done && runnableParent
@@ -8349,13 +8739,14 @@
             </button>
           `;
 
+          li.style.setProperty('--task-estimated-size', `${4 + visibleSubtasks.length * 3.25}rem`);
           li.innerHTML = `
             <div class="task-main">
               <div class="task-leading-controls">
                 ${parentDragHandle}
-                <div class="task-focus-wrap">
+                ${leftControl ? `<div class="task-focus-wrap">
                   ${leftControl}
-                </div>
+                </div>` : ''}
               </div>
 
               <div class="task-meta">
@@ -8376,92 +8767,32 @@
             </div>
 
             ${visibleSubtasks.length > 0 ? `
-              <div class="subtask-wrap">
+              <div class="subtask-wrap" id="children-${task.id}">
                 <ul class="subtask-list" data-parent-id="${task.id}">
-                  ${visibleSubtasks.map(sub => `
-                    <li class="subtask-item ${sub.done ? 'done' : ''}" data-parent-id="${task.id}" data-sub-id="${sub.id}">
-                      <div class="task-leading-controls">
-                        <button
-                          class="mini-btn drag-handle subtask-drag-handle gm-btn"
-                          data-parent-id="${task.id}"
-                          data-sub-id="${sub.id}"
-                          draggable="true"
-                          type="button"
-                          aria-label="子タスクをドラッグで並び替え"
-                          aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown"
-                        >
-                          <span aria-hidden="true" class="material-symbols-outlined">drag_indicator</span>
-                        </button>
-
-                        ${sub.done
-                          ? `
-                          <button
-                            class="focus-btn done action-btn undo-subtask-btn gm-btn"
-                            data-parent-id="${task.id}"
-                            data-sub-id="${sub.id}"
-                            type="button"
-                            aria-label="完了を取り消す"
-                          >
-                            <span aria-hidden="true" class="material-symbols-outlined">undo</span>
-                            <span>取り消し</span>
-                          </button>
-                        `
-                          : `
-                          <button
-                            class="focus-btn playable action-btn open-focus-subtask-btn gm-btn"
-                            data-parent-id="${task.id}"
-                            data-sub-id="${sub.id}"
-                            type="button"
-                            aria-label="開始"
-                          >
-                            <span aria-hidden="true" class="material-symbols-outlined">${getFocusIconForMeta(sub.focus, false)}</span>
-                            <span>開始</span>
-                          </button>
-                          `
-                        }
-                      </div>
-
-                      <div class="subtask-text-wrap">
-                        ${sub.done
-                          ? `
-                          <div class="achievement-time subtask-achievement">
-                            <span aria-hidden="true" class="material-symbols-outlined">timer</span>
-                            <span>${formatAchievementElapsed(sub.focus?.elapsedMs || 0)}</span>
-                          </div>
-                        `
-                          : ''
-                        }
-                        <div class="text">${escapeHtml(sub.text)}</div>
-                      </div>
-
-                      <div class="subtask-actions">
-                        <button class="mini-btn action-btn edit-subtask-btn gm-btn" data-parent-id="${task.id}" data-sub-id="${sub.id}" type="button" aria-label="編集">
-                          <span aria-hidden="true" class="material-symbols-outlined">edit</span>
-                          <span>編集</span>
-                        </button>
-                        <button class="mini-btn danger action-btn delete-subtask-btn gm-btn" data-parent-id="${task.id}" data-sub-id="${sub.id}" type="button" aria-label="削除">
-                          <span aria-hidden="true" class="material-symbols-outlined">delete</span>
-                          <span>削除</span>
-                        </button>
-                      </div>
-                    </li>
-                  `).join('')}
+                  ${visibleSubtasks.map(sub => createSubtaskRowMarkup(task.id, sub)).join('')}
                 </ul>
               </div>
             ` : ''}
           `;
 
+          // 新しい行だけを変換し、再利用する行のSVGは走査し直さない。
+          hydrateMaterialIcons(li);
           rows.push(li);
           nextRowCache.set(task.id, { key, element: li });
         });
         reconcileTaskRows(rows);
         taskRowCache = nextRowCache;
 
-        const viewStatus = `${visibleWorkCount}件を表示中${tasks.some(hasSubtasks) ? '（子タスクのある親は件数に含みません）' : ''}`;
+        const viewStatus = `${visibleWorkCount}件を表示中${tasks.some(hasSubtasks) ? '（子タスクのある親は件数に含みません）' : ''}${isSearching ? '。検索中は一括削除できません。' : ''}`;
         if (taskViewStatus.textContent !== viewStatus) taskViewStatus.textContent = viewStatus;
         const shouldShowEmptyState = !hasAnyTask || visibleTaskCount === 0;
         emptyState.hidden = !shouldShowEmptyState;
         if (!shouldShowEmptyState || !emptyStateTitle || !emptyStateDescription) return;
+        if (isSearching) {
+          emptyStateTitle.textContent = '一致するタスクはありません';
+          emptyStateDescription.textContent = 'キーワードを変えるか、検索や表示フィルタを解除してください。';
+          return;
+        }
         if (!hasAnyTask) {
           emptyStateTitle.textContent = 'まだタスクがありません';
           emptyStateDescription.textContent = '上の入力欄から、最初のタスクを追加してください。';
@@ -8726,6 +9057,10 @@
 
       async function performClearCompleted(filterId = taskViewState.filter) {
         if (isStateSaveOperationPending()) return false;
+        if (isTaskSearchActive()) {
+          showErrorToast('一括削除するには検索を解除してください');
+          return false;
+        }
         const deleteCounts = getClearCompletedDeleteCounts(filterId);
         if (deleteCounts.totalCount <= 0) return;
         const undoPayload = _createClearCompletedUndoPayload(filterId);
@@ -8757,6 +9092,10 @@
 
       async function performClearAll() {
         if (isStateSaveOperationPending()) return false;
+        if (isTaskSearchActive()) {
+          showErrorToast('一括削除するには検索を解除してください');
+          return false;
+        }
         if (tasks.length === 0) return;
         const undoPayload = _createClearAllUndoPayload();
         if (!_isValidDeleteUndoPayload(undoPayload)) return;
@@ -8773,6 +9112,11 @@
       ============================================ */
       async function addTask() {
         if (isStateSaveOperationPending() || isAddOperationPending('task')) return;
+        if (taskInput.value.trim().length > MAX_TASK_TEXT_LENGTH) {
+          showErrorToast(`最大${MAX_TASK_TEXT_LENGTH}文字までです。入力を短くしてください`);
+          taskInput.focus();
+          return;
+        }
         const text = normalizeInputText(taskInput.value, MAX_TASK_TEXT_LENGTH);
         if (!text) {
           showErrorToast('タスク名を入力してください');
@@ -8804,6 +9148,8 @@
         }
         if (!saveOk) return;
         taskInput.value = '';
+        taskInput.dispatchEvent?.(new Event('input'));
+        resetTaskSearch();
         taskInput.focus();
         playAddSound();
         render();
@@ -8812,20 +9158,7 @@
       /* ============================================
          キーボードショートカット
       ============================================ */
-      const SHORTCUT_HELP_MESSAGE = [
-        'Alt+1 タスク',
-        'Alt+2 整理メモ',
-        'Alt+3 設定',
-        'Alt+N タスク入力',
-        'Alt+ArrowUp/Down 行を移動',
-        'Alt+M メッセージ入力',
-        'Alt+S サイドバー',
-        'Alt+L ライト/ダーク',
-        'Alt+Shift+C 完了削除',
-        'Alt+Shift+A 全削除',
-        '? ヘルプ',
-        '集中: Tabで選択 Enter/Spaceで操作 Xで中断'
-      ].join(' / ');
+
 
       function isTypingTarget(target) {
         if (!(target instanceof HTMLElement)) return false;
@@ -8854,6 +9187,10 @@
 
       function openClearCompletedConfirm() {
         if (isStateSaveOperationPending()) return;
+        if (isTaskSearchActive()) {
+          showErrorToast('一括削除するには検索を解除してください');
+          return;
+        }
         const filterId = taskViewState.filter;
         if (getClearCompletedDeleteCounts(filterId).totalCount <= 0) {
           showErrorToast('完了済みタスクがありません');
@@ -8864,6 +9201,10 @@
 
       function openClearAllConfirm() {
         if (isStateSaveOperationPending()) return;
+        if (isTaskSearchActive()) {
+          showErrorToast('一括削除するには検索を解除してください');
+          return;
+        }
         if (getTaskStructureCounts().totalCount <= 0) {
           showErrorToast('削除できるタスクがありません');
           return;
@@ -8913,10 +9254,6 @@
         settings.colorMode = settings.colorMode === 'dark' ? 'light' : 'dark';
         if (!(await _commitStateSave(previousState))) return;
         render();
-      }
-
-      function showShortcutHelpToast() {
-        showToast(SHORTCUT_HELP_MESSAGE, { type: 'success', icon: 'keyboard', durationMs: 5600 });
       }
 
       function applyAriaKeyShortcuts() {
@@ -8978,7 +9315,7 @@
             }
             const $eventTarget = e.target instanceof HTMLElement ? e.target : null;
             const $button = $eventTarget?.closest('button');
-            if ($button === closeConfirmModalBtn) return;
+            if ($button === closeConfirmModalBtn || $button?.id === 'cancelConfirmBtn') return;
             e.preventDefault();
             void executeConfirmedAction();
           }
@@ -9016,6 +9353,10 @@
         }
 
         if ($activeModalOverlay === focusOverlay) {
+          if (key === 'Escape') {
+            e.preventDefault();
+            return;
+          }
           const $eventTarget = e.target instanceof HTMLElement ? e.target : null;
           const isActivationKey = key === 'Enter' || key === ' ' || e.code === 'Space';
           // フォーカス中のボタンは Enter / Space による標準操作を優先する。
@@ -9039,13 +9380,6 @@
             if (!e.repeat) abortFocus();
             return;
           }
-          return;
-        }
-
-        const isHelpKey = key === '?' || (e.code === 'Slash' && e.shiftKey);
-        if (isHelpKey && !e.altKey && !isWithMeta && !isTypingTarget(e.target)) {
-          e.preventDefault();
-          showShortcutHelpToast();
           return;
         }
 
@@ -9154,17 +9488,62 @@
         importBackupFile(backupFileInput.files?.[0] || null);
       });
 
+      function closeBulkActions({ restoreFocus = false } = {}) {
+        if (!bulkActions.open) return;
+        const focusWasInside = bulkActions.contains(document.activeElement);
+        bulkActions.open = false;
+        if (restoreFocus && focusWasInside) bulkActionsSummary.focus({ preventScroll: true });
+      }
+
+      bulkActions.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || event.isComposing || event.keyCode === 229) return;
+        event.preventDefault();
+        closeBulkActions({ restoreFocus: true });
+      });
+      document.addEventListener('pointerdown', event => {
+        if (!bulkActions.contains(event.target)) closeBulkActions();
+      }, { capture: true });
+      bulkActions.addEventListener('focusout', event => {
+        if (event.relatedTarget && !bulkActions.contains(event.relatedTarget)) closeBulkActions();
+      });
+      bulkActions.addEventListener('click', event => {
+        if (event.target.closest('.bulk-actions-menu button')) closeBulkActions({ restoreFocus: true });
+      }, { capture: true });
+      qs('#skipToContent').addEventListener('click', event => {
+        event.preventDefault();
+        const main = qs('#mainContent');
+        main.focus({ preventScroll: true });
+        main.scrollIntoView({ block: 'start', behavior: 'instant' });
+      });
+      for (const overlay of [parentModalOverlay, subtaskModalOverlay]) {
+        overlay.addEventListener('click', event => {
+          const button = event.target.closest('[data-reorder-kind]');
+          if (button) void moveEditorTask(button.dataset.reorderKind, Number(button.dataset.reorderOffset));
+        });
+      }
+
       addBtn.addEventListener('click', addTask);
 
       taskFilterGroup?.addEventListener('click', handleTaskFilterClick);
+      taskSearchInput.addEventListener('input', handleTaskSearchInput);
+      taskSearchInput.addEventListener('compositionend', handleTaskSearchInput);
+      taskSearchInput.addEventListener('search', handleTaskSearchInput);
+      taskSearchInput.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || event.isComposing || event.keyCode === 229
+          || isStateSaveOperationPending()) return;
+        event.preventDefault();
+        resetTaskSearch();
+        render();
+      });
+      clearTaskSearchBtn.addEventListener('click', () => {
+        if (isStateSaveOperationPending()) return;
+        resetTaskSearch();
+        render();
+        taskSearchInput.focus();
+      });
 
       [
-        [taskInput, MAX_TASK_TEXT_LENGTH],
-        [messageInput, MAX_MESSAGE_TEXT_LENGTH],
-        [organizeMemoInput, MAX_ORGANIZE_MEMO_LENGTH],
-        [parentEditInput, MAX_TASK_TEXT_LENGTH],
-        [modalSubtaskInput, MAX_SUBTASK_TEXT_LENGTH],
-        [subtaskEditInput, MAX_SUBTASK_TEXT_LENGTH]
+        [organizeMemoInput, MAX_ORGANIZE_MEMO_LENGTH]
       ].forEach(([inputEl, maxLength]) => {
         if (!inputEl) return;
         inputEl.maxLength = maxLength;
@@ -9353,6 +9732,7 @@
 
       // 確認モーダル
       closeConfirmModalBtn.addEventListener('click', closeConfirmModal);
+      qs('#cancelConfirmBtn').addEventListener('click', closeConfirmModal);
       confirmDeleteBtn.addEventListener('click', () => {
         void executeConfirmedAction();
       });
@@ -9706,6 +10086,18 @@
       document.addEventListener('keydown', handleTooltipKeyDown);
       document.addEventListener('pointerover', handleTooltipPointerOver);
       document.addEventListener('pointerout', handleTooltipPointerOut);
+      taskList.addEventListener('focusin', (event) => {
+        const target = event.target;
+        // Rendering a skipped long row can change its height after native focus scrolling.
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          if (document.activeElement !== target || !target.isConnected) return;
+          const rect = target.getBoundingClientRect();
+          if (rect.top < 0 || rect.bottom > window.innerHeight) {
+            target.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+          }
+        }));
+      });
+
       document.addEventListener('focusin', handleTooltipFocusIn);
       document.addEventListener('focusout', handleTooltipFocusOut);
       document.addEventListener('pointerdown', _hideQuickTooltip, {
@@ -9721,12 +10113,38 @@
       document.addEventListener('keydown', handleDocumentShortcuts);
       compactSidebarQuery.addEventListener('change', applySidebarState);
 
+      function bindTextLengthHint(input, limit) {
+        const hint = document.createElement('p');
+        hint.className = 'field-helper gm-help text-length-hint';
+        hint.id = `${input.id}-length`;
+        hint.hidden = true;
+        input.parentElement.insertAdjacentElement('afterend', hint);
+        input.setAttribute('aria-describedby', [input.getAttribute('aria-describedby'), hint.id].filter(Boolean).join(' '));
+        const update = () => {
+          const length = input.value.trim().length;
+          const exceeded = length > limit;
+          hint.hidden = length === 0;
+          hint.textContent = `${length} / ${limit}文字${exceeded ? ' — 上限を超えています。入力を短くしてください。' : ''}`;
+          input.setAttribute('aria-invalid', String(exceeded));
+          hint.classList.toggle('is-error', exceeded);
+        };
+        input.addEventListener('input', update);
+        input.addEventListener('focus', update);
+        input.addEventListener('blur', update);
+      }
+
+      for (const [input, limit] of [[taskInput, MAX_TASK_TEXT_LENGTH], [parentEditInput, MAX_TASK_TEXT_LENGTH], [modalSubtaskInput, MAX_SUBTASK_TEXT_LENGTH], [subtaskEditInput, MAX_SUBTASK_TEXT_LENGTH], [messageInput, MAX_MESSAGE_TEXT_LENGTH]]) {
+        bindTextLengthHint(input, limit);
+      }
+
       /* ============================================
          初期化
       ============================================ */
       syncAllParents();
       previousAllDoneState = isAllDone();
       applySidebarState();
+      // 静的なアイコンは初回のみ。動的な一覧・ダイアログは生成箇所で変換する。
+      hydrateMaterialIcons();
       render();
 
       navigate(getRouteFromHash());

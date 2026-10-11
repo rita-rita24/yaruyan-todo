@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-09T16:08:24.041Z",
+  "production": {
+    "url": null,
+    "deployed": false,
+    "verified": false
+  },
+  "currentMatchesAdopted": true,
+  "versions": [
+    {
+      "name": "baseline.html",
+      "sha256": "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33",
+      "bytes": 383080
+    },
+    {
+      "name": "candidate.html",
+      "sha256": "13f3810b6ac089f6e57712f669b1f1405bf0e95fc584442dfe5a88768b9ad945",
+      "bytes": 384952
+    },
+    {
+      "name": "adopted-measured.html",
+      "sha256": "0bccedb319f39e0d37a54060f3aa98531d8b0de889dbfd3190b6eb973aa23e5c",
+      "bytes": 383370
+    },
+    {
+      "name": "adopted.html",
+      "sha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+      "bytes": 382903
+    },
+    {
+      "name": "functional-qa.html",
+      "sha256": "389fd48aed363c36d1d49dd9f13877c462fad2f25cc560a1433468bb5316f2c6",
+      "bytes": 396649
+    }
+  ],
+  "resolverFunctionHashes": [
+    {
+      "name": "candidate.html",
+      "sha256": "0d75124a530792bbeb7242fdd3c4da3528b481b299f563818374cc23a2b1b4dc"
+    },
+    {
+      "name": "adopted.html",
+      "sha256": "0d75124a530792bbeb7242fdd3c4da3528b481b299f563818374cc23a2b1b4dc"
+    }
+  ],
+  "series": [
+    {
+      "name": "browser-round3-after-adopted-backup-raw.json",
+      "trials": 10,
+      "errors": 0,
+      "sourceSha256": [
+        "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113"
+      ],
+      "start": "2026-10-09T16:07:52.544Z",
+      "end": "2026-10-09T16:07:54.813Z"
+    },
+    {
+      "name": "browser-round3-after-adopted-clean-raw.json",
+      "trials": 30,
+      "errors": 0,
+      "sourceSha256": [
+        "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113"
+      ],
+      "start": "2026-10-09T15:59:49.156Z",
+      "end": "2026-10-09T16:02:31.635Z"
+    },
+    {
+      "name": "browser-round3-after-adopted-extended-raw.json",
+      "trials": 10,
+      "errors": 0,
+      "sourceSha256": [
+        "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113"
+      ],
+      "start": "2026-10-09T16:07:28.209Z",
+      "end": "2026-10-09T16:07:40.499Z"
+    },
+    {
+      "name": "browser-round3-after-adopted-large-raw.json",
+      "trials": 10,
+      "errors": 0,
+      "sourceSha256": [
+        "0bccedb319f39e0d37a54060f3aa98531d8b0de889dbfd3190b6eb973aa23e5c"
+      ],
+      "start": "2026-10-09T15:54:02.294Z",
+      "end": "2026-10-09T15:56:22.674Z"
+    },
+    {
+      "name": "browser-round3-after-adopted-small-raw.json",
+      "trials": 30,
+      "errors": 0,
+      "sourceSha256": [
+        "0bccedb319f39e0d37a54060f3aa98531d8b0de889dbfd3190b6eb973aa23e5c"
+      ],
+      "start": "2026-10-09T15:51:10.071Z",
+      "end": "2026-10-09T15:52:00.171Z"
+    },
+    {
+      "name": "browser-round3-before-adopted-backup-raw.json",
+      "trials": 10,
+      "errors": 0,
+      "sourceSha256": [
+        "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33"
+      ],
+      "start": "2026-10-09T16:07:52.278Z",
+      "end": "2026-10-09T16:07:54.545Z"
+    },
+    {
+      "name": "browser-round3-before-adopted-clean-raw.json",
+      "trials": 30,
+      "errors": 0,
+      "sourceSha256": [
+        "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33"
+      ],
+      "start": "2026-10-09T15:59:48.855Z",
+      "end": "2026-10-09T16:02:18.818Z"
+    },
+    {
+      "name": "browser-round3-before-adopted-extended-raw.json",
+      "trials": 10,
+      "errors": 0,
+      "sourceSha256": [
+        "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33"
+      ],
+      "start": "2026-10-09T16:07:26.814Z",
+      "end": "2026-10-09T16:07:39.552Z"
+    },
+    {
+      "name": "browser-round3-before-adopted-large-raw.json",
+      "trials": 10,
+      "errors": 0,
+      "sourceSha256": [
+        "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33"
+      ],
+      "start": "2026-10-09T15:53:43.767Z",
+      "end": "2026-10-09T15:56:03.217Z"
+    },
+    {
+      "name": "browser-round3-before-adopted-small-raw.json",
+      "trials": 30,
+      "errors": 0,
+      "sourceSha256": [
+        "ac79972b04877a75e0869b68a33f64507c0939a112f33cb985d58ee070f41d33"
+      ],
+      "start": "2026-10-09T15:51:07.920Z",
+      "end": "2026-10-09T15:51:57.720Z"
+    }
+  ]
+}

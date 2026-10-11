@@ -1,0 +1,14 @@
+
+> verify
+> npm run check && npm test
+
+
+> check
+> node scripts/check.mjs
+
+./performance/round4/rendered-final.html: Unexpected character "EOF" (5365:33)
+  5363 |       }
+  5364 |
+> 5365 |       function handle[Truncated]
+       |                                 ^
+Node v24.21.0: 288 files inventoried, 75 modules checked, 1 errors

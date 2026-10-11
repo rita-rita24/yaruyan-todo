@@ -1,0 +1,7 @@
+tests/helpers/browser-icons.mjs 41ms
+performance/create-functional-qa.mjs 87ms
+performance/round2/create-functional-qa.mjs 71ms
+performance/round2/create-adopted-qa.mjs 65ms
+performance/round3/create-qa.mjs 28ms
+performance/round4/create-qa.mjs 28ms
+performance/round4/create-paths-qa.mjs 24ms

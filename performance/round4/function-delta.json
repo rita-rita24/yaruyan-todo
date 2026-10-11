@@ -1,0 +1,2006 @@
+{
+  "count": 333,
+  "changed": [
+    "syncModalInteractivity"
+  ],
+  "functions": [
+    {
+      "name": "_safeStorageGet",
+      "unchanged": true,
+      "beforeSha256": "300183b2ed5c1a86b603016f99ac7f1db4b1472b491f30fc90de5a04c15a4dad",
+      "afterSha256": "300183b2ed5c1a86b603016f99ac7f1db4b1472b491f30fc90de5a04c15a4dad"
+    },
+    {
+      "name": "_safeStorageSet",
+      "unchanged": true,
+      "beforeSha256": "9190a1de24ace08a48164b1caaa4e5af957636e2151b02b42670879af9fb1567",
+      "afterSha256": "9190a1de24ace08a48164b1caaa4e5af957636e2151b02b42670879af9fb1567"
+    },
+    {
+      "name": "_safeStorageRemove",
+      "unchanged": true,
+      "beforeSha256": "a66ac838d03c34a648e05433224b6c0399b47d7abfb55c8bb142369d3f53bd68",
+      "afterSha256": "a66ac838d03c34a648e05433224b6c0399b47d7abfb55c8bb142369d3f53bd68"
+    },
+    {
+      "name": "_createCorruptStorageBackupValue",
+      "unchanged": true,
+      "beforeSha256": "37b0f8ab7a64f87d869b6f3848180d5e9f23ffc1c3cfe06d75d879a493005948",
+      "afterSha256": "37b0f8ab7a64f87d869b6f3848180d5e9f23ffc1c3cfe06d75d879a493005948"
+    },
+    {
+      "name": "_backupCorruptStorageValue",
+      "unchanged": true,
+      "beforeSha256": "bd51e2a13eb8dbf55c5a7211e981fc1d52e9605cc96a3c3f5d4e008c3af62315",
+      "afterSha256": "bd51e2a13eb8dbf55c5a7211e981fc1d52e9605cc96a3c3f5d4e008c3af62315"
+    },
+    {
+      "name": "_snapshotStorageEntry",
+      "unchanged": true,
+      "beforeSha256": "e183f7ecb4fac801663f98d46ba64ec7759611c5ba46606fb091765637edf494",
+      "afterSha256": "e183f7ecb4fac801663f98d46ba64ec7759611c5ba46606fb091765637edf494"
+    },
+    {
+      "name": "_restoreStorageEntry",
+      "unchanged": true,
+      "beforeSha256": "220ec14f4cf840b7d7f74985ba03c74680a0d4e23e3dcc11eecedb9bb7bfbcbc",
+      "afterSha256": "220ec14f4cf840b7d7f74985ba03c74680a0d4e23e3dcc11eecedb9bb7bfbcbc"
+    },
+    {
+      "name": "_rollbackStorageWrites",
+      "unchanged": true,
+      "beforeSha256": "4162b1b8bb7c39c40056cd7ff1e3f679ffe8823ee83449ded8dcffc5258c126b",
+      "afterSha256": "4162b1b8bb7c39c40056cd7ff1e3f679ffe8823ee83449ded8dcffc5258c126b"
+    },
+    {
+      "name": "_readJsonFromStorage",
+      "unchanged": true,
+      "beforeSha256": "691d7dae313869bc3fb5d3c39faa20716dfb497ee003f8bb0568afbc687519fc",
+      "afterSha256": "691d7dae313869bc3fb5d3c39faa20716dfb497ee003f8bb0568afbc687519fc"
+    },
+    {
+      "name": "_readBooleanFromStorage",
+      "unchanged": true,
+      "beforeSha256": "a4c5874cae3d17e408e05c4e4031ce57cf735bac8dd18cd7ef6bf6d15186e1a7",
+      "afterSha256": "a4c5874cae3d17e408e05c4e4031ce57cf735bac8dd18cd7ef6bf6d15186e1a7"
+    },
+    {
+      "name": "_writeManyToStorage",
+      "unchanged": true,
+      "beforeSha256": "e66cf452df6b2af9b0574a0546ddef1a0aa37ce2277e7e8cf4547d415216222b",
+      "afterSha256": "e66cf452df6b2af9b0574a0546ddef1a0aa37ce2277e7e8cf4547d415216222b"
+    },
+    {
+      "name": "_createStorageWriteId",
+      "unchanged": true,
+      "beforeSha256": "aedc0b1321a9edcff919f8f3c62f5ee62bc29ab44020e7aecfac4fe6fdc119c5",
+      "afterSha256": "aedc0b1321a9edcff919f8f3c62f5ee62bc29ab44020e7aecfac4fe6fdc119c5"
+    },
+    {
+      "name": "_requestIndexedDbOpen",
+      "unchanged": true,
+      "beforeSha256": "c54518a8d5c411b52d4eaeda9386451b3c654d19d14a3352711ad4fb59df979f",
+      "afterSha256": "c54518a8d5c411b52d4eaeda9386451b3c654d19d14a3352711ad4fb59df979f"
+    },
+    {
+      "name": "_waitForIndexedDbRequest",
+      "unchanged": true,
+      "beforeSha256": "df1fcf4e7296e0744768d7f05fef68a704efef66e93d616c4ef2558b87caaa0c",
+      "afterSha256": "df1fcf4e7296e0744768d7f05fef68a704efef66e93d616c4ef2558b87caaa0c"
+    },
+    {
+      "name": "_waitForIndexedDbTransaction",
+      "unchanged": true,
+      "beforeSha256": "e685ca84e6eff1e8f9a291d64df95ba86ff377af103a134e679cea1bfab5248f",
+      "afterSha256": "e685ca84e6eff1e8f9a291d64df95ba86ff377af103a134e679cea1bfab5248f"
+    },
+    {
+      "name": "_readManyFromIndexedDb",
+      "unchanged": true,
+      "beforeSha256": "6289cc4fd045e656765afb01ee5b7a96b77297a7bc5a6b8fa5811ce9be42ba8c",
+      "afterSha256": "6289cc4fd045e656765afb01ee5b7a96b77297a7bc5a6b8fa5811ce9be42ba8c"
+    },
+    {
+      "name": "_writeManyToIndexedDb",
+      "unchanged": true,
+      "beforeSha256": "b3346abeea3b60b72a05bdb32839c534076c1f06470db6419506e7c445b1426c",
+      "afterSha256": "b3346abeea3b60b72a05bdb32839c534076c1f06470db6419506e7c445b1426c"
+    },
+    {
+      "name": "_reportStorageError",
+      "unchanged": true,
+      "beforeSha256": "6c8f70ffa91ad1d56a37010448f09ef231a633fe5014a0701997c0473a333da0",
+      "afterSha256": "6c8f70ffa91ad1d56a37010448f09ef231a633fe5014a0701997c0473a333da0"
+    },
+    {
+      "name": "_getStorageWarningEl",
+      "unchanged": true,
+      "beforeSha256": "39009ece12b7bcfb1205f46540a403c66d315fc535aaf4010a4984b411184bcc",
+      "afterSha256": "39009ece12b7bcfb1205f46540a403c66d315fc535aaf4010a4984b411184bcc"
+    },
+    {
+      "name": "_setStorageWarning",
+      "unchanged": true,
+      "beforeSha256": "48954e9d67e9fafa31b91c18af9e2993853d618ed72bb905d0e0d56b7ea69856",
+      "afterSha256": "48954e9d67e9fafa31b91c18af9e2993853d618ed72bb905d0e0d56b7ea69856"
+    },
+    {
+      "name": "_handlePersistentStorageError",
+      "unchanged": true,
+      "beforeSha256": "1a1803646d82433de08faec78db347680ed41391f77b92f87600915054b337a3",
+      "afterSha256": "1a1803646d82433de08faec78db347680ed41391f77b92f87600915054b337a3"
+    },
+    {
+      "name": "_readStoredJson",
+      "unchanged": true,
+      "beforeSha256": "a09a8fe275ade981dc94bd828590d166d0fe6474a566bfe04d683db5010db08a",
+      "afterSha256": "a09a8fe275ade981dc94bd828590d166d0fe6474a566bfe04d683db5010db08a"
+    },
+    {
+      "name": "_readStoredBoolean",
+      "unchanged": true,
+      "beforeSha256": "22997d9450fd313d8752b43c2ffaa6b4f1f209bb8fa0d5a61462f0059685e291",
+      "afterSha256": "22997d9450fd313d8752b43c2ffaa6b4f1f209bb8fa0d5a61462f0059685e291"
+    },
+    {
+      "name": "_readStoredText",
+      "unchanged": true,
+      "beforeSha256": "249e6c2bbc629f52bc28c99cd3b334ebd01dfe4e8992d0873a719f7bac376209",
+      "afterSha256": "249e6c2bbc629f52bc28c99cd3b334ebd01dfe4e8992d0873a719f7bac376209"
+    },
+    {
+      "name": "_normalizeStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "542957b977e069227b895ef5b7debc5f94a6f0bc0da193e022e4442af37e36d9",
+      "afterSha256": "542957b977e069227b895ef5b7debc5f94a6f0bc0da193e022e4442af37e36d9"
+    },
+    {
+      "name": "_normalizeStorageMetaRecord",
+      "unchanged": true,
+      "beforeSha256": "43013b607ce517e79e0fcd463456be08b5684e8be2e4b355a06ec784487a7a39",
+      "afterSha256": "43013b607ce517e79e0fcd463456be08b5684e8be2e4b355a06ec784487a7a39"
+    },
+    {
+      "name": "_createStorageMetaIdentity",
+      "unchanged": true,
+      "beforeSha256": "52f680bb7e3ed1b7dbbec7babe6e0be6a30c5150e8ba6d4b26eee2b5344a61a4",
+      "afterSha256": "52f680bb7e3ed1b7dbbec7babe6e0be6a30c5150e8ba6d4b26eee2b5344a61a4"
+    },
+    {
+      "name": "_compareStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "78cf47f7164ba5669ac56d578af4f7c3a7a5de1eac1664b580775a8aa63d10a7",
+      "afterSha256": "78cf47f7164ba5669ac56d578af4f7c3a7a5de1eac1664b580775a8aa63d10a7"
+    },
+    {
+      "name": "_isEmptyStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "ca18d6372e2c9a185a181ca62ba74152db420b16cc483b7ccbee4bf5ab62d076",
+      "afterSha256": "ca18d6372e2c9a185a181ca62ba74152db420b16cc483b7ccbee4bf5ab62d076"
+    },
+    {
+      "name": "_isSameStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "b56fb312e96c535de48f1f74e77932b48e46301a784c4d18684ee9975092e053",
+      "afterSha256": "b56fb312e96c535de48f1f74e77932b48e46301a784c4d18684ee9975092e053"
+    },
+    {
+      "name": "_hasStorageMetaConflictSince",
+      "unchanged": true,
+      "beforeSha256": "4483b95121791c03c7b1e25be4e6ee62bca5555d2d8c174310efe2fdfaa9ed13",
+      "afterSha256": "4483b95121791c03c7b1e25be4e6ee62bca5555d2d8c174310efe2fdfaa9ed13"
+    },
+    {
+      "name": "_isVerifiedCheckpointAncestor",
+      "unchanged": true,
+      "beforeSha256": "f2d172c2da10d7927b3e9f3f2546b6b6ec0f6a3fd6f6b7b447439670ccbbfb79",
+      "afterSha256": "f2d172c2da10d7927b3e9f3f2546b6b6ec0f6a3fd6f6b7b447439670ccbbfb79"
+    },
+    {
+      "name": "_getCurrentStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "e151641f1640b91db4adb54e275c9a10995624547ae878840cb81ceeb0eccf86",
+      "afterSha256": "e151641f1640b91db4adb54e275c9a10995624547ae878840cb81ceeb0eccf86"
+    },
+    {
+      "name": "_getStorageMetaFromEntries",
+      "unchanged": true,
+      "beforeSha256": "34f7378405c0b909536b3d4ffb299821bdac3c4c501093009cd4a5df540b6b4e",
+      "afterSha256": "34f7378405c0b909536b3d4ffb299821bdac3c4c501093009cd4a5df540b6b4e"
+    },
+    {
+      "name": "_hasCurrentStorageMetaChangedSince",
+      "unchanged": true,
+      "beforeSha256": "c9a63c3906cb7e5458b78104212ea1cccf630cdc4e6e30566f150fb9668b9f73",
+      "afterSha256": "c9a63c3906cb7e5458b78104212ea1cccf630cdc4e6e30566f150fb9668b9f73"
+    },
+    {
+      "name": "_hasAnySnapshotData",
+      "unchanged": true,
+      "beforeSha256": "c7c15ad1fe975f9d5b14f60c8baf20bd98b7974dcaf174f8fac838921b6b1c00",
+      "afterSha256": "c7c15ad1fe975f9d5b14f60c8baf20bd98b7974dcaf174f8fac838921b6b1c00"
+    },
+    {
+      "name": "_readLocalStateSnapshot",
+      "unchanged": true,
+      "beforeSha256": "8376a1e78a3c719e6a1a8fa40a0c4eaeed66ce071ccad3ae0e11118dd9fa1e02",
+      "afterSha256": "8376a1e78a3c719e6a1a8fa40a0c4eaeed66ce071ccad3ae0e11118dd9fa1e02"
+    },
+    {
+      "name": "_createIndexedStateSnapshot",
+      "unchanged": true,
+      "beforeSha256": "446f1d2100c17298491406245eeb26e7ec737042ed6d3bc2b071b803601e0049",
+      "afterSha256": "446f1d2100c17298491406245eeb26e7ec737042ed6d3bc2b071b803601e0049"
+    },
+    {
+      "name": "_validatePersistentStateSnapshot",
+      "unchanged": true,
+      "beforeSha256": "459fc0af0657d387e98b0942b8b11a569c00f805d3db3671cb6f31c55368585e",
+      "afterSha256": "459fc0af0657d387e98b0942b8b11a569c00f805d3db3671cb6f31c55368585e"
+    },
+    {
+      "name": "_shouldUseIndexedState",
+      "unchanged": true,
+      "beforeSha256": "c24b0a82721bd00d4cb4705fe188b84e5529b45f0a953c5cc5b10d51a84de774",
+      "afterSha256": "c24b0a82721bd00d4cb4705fe188b84e5529b45f0a953c5cc5b10d51a84de774"
+    },
+    {
+      "name": "_adoptStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "4e425405f3a6df332481b46aa44088a95a0eaf4075b9bcd2c3fe6fec4f6e6f62",
+      "afterSha256": "4e425405f3a6df332481b46aa44088a95a0eaf4075b9bcd2c3fe6fec4f6e6f62"
+    },
+    {
+      "name": "_createStorageMetaRecord",
+      "unchanged": true,
+      "beforeSha256": "2c94ef5ad6e2e33b8ef429b774c560b4f9f50bb8650a828172ce8ab9496cdfdf",
+      "afterSha256": "2c94ef5ad6e2e33b8ef429b774c560b4f9f50bb8650a828172ce8ab9496cdfdf"
+    },
+    {
+      "name": "_setCurrentStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "c4304d0ddd0c2de4da8b05174b5bc744c5a868979d61bab3cbf9a3a95b3053d3",
+      "afterSha256": "c4304d0ddd0c2de4da8b05174b5bc744c5a868979d61bab3cbf9a3a95b3053d3"
+    },
+    {
+      "name": "_createNextStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "086034101da5a1947fc66fc4c405ae936614a051379fe55dab26720908589434",
+      "afterSha256": "086034101da5a1947fc66fc4c405ae936614a051379fe55dab26720908589434"
+    },
+    {
+      "name": "_restoreStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "311cb499f967df5bf8d8018d5c9c98ef691ff00528917ff49abb3a5e57feacda",
+      "afterSha256": "311cb499f967df5bf8d8018d5c9c98ef691ff00528917ff49abb3a5e57feacda"
+    },
+    {
+      "name": "_getDataEntries",
+      "unchanged": true,
+      "beforeSha256": "cc552ed4b498a3727de1fbd28284e2b0794dbb35b50766e44fee2bc5bede3292",
+      "afterSha256": "cc552ed4b498a3727de1fbd28284e2b0794dbb35b50766e44fee2bc5bede3292"
+    },
+    {
+      "name": "_hasPersistedDataChanges",
+      "unchanged": true,
+      "beforeSha256": "580d5fca7918231226673106afdb0fc5f3eebb7a80b51540428396a11baae403",
+      "afterSha256": "580d5fca7918231226673106afdb0fc5f3eebb7a80b51540428396a11baae403"
+    },
+    {
+      "name": "_rememberPersistedDataEntries",
+      "unchanged": true,
+      "beforeSha256": "31b8c614060838f744ba35040c2dcc25980f0555265b72073f89077df72458bb",
+      "afterSha256": "31b8c614060838f744ba35040c2dcc25980f0555265b72073f89077df72458bb"
+    },
+    {
+      "name": "_readLocalStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "e7a64c37d41f9714a189b96c433d73252f29623d93ca6ecd831e11b9b29bf8bb",
+      "afterSha256": "e7a64c37d41f9714a189b96c433d73252f29623d93ca6ecd831e11b9b29bf8bb"
+    },
+    {
+      "name": "_isNewerThanPersistedMeta",
+      "unchanged": true,
+      "beforeSha256": "7399f24b5013339f749d39755b9038631a02fc7b460fb98e3722186f644d538e",
+      "afterSha256": "7399f24b5013339f749d39755b9038631a02fc7b460fb98e3722186f644d538e"
+    },
+    {
+      "name": "_readIndexedDbStorageMeta",
+      "unchanged": true,
+      "beforeSha256": "3a4afa1e6ee5b68ad81857b82c498a48811e6781f38d84ae20017a498e9007db",
+      "afterSha256": "3a4afa1e6ee5b68ad81857b82c498a48811e6781f38d84ae20017a498e9007db"
+    },
+    {
+      "name": "_hasNewerPersistedStorageState",
+      "unchanged": true,
+      "beforeSha256": "43d49d37b5383ce9cd9c6017ca1ebf4ffd87882ed9c3954fabe0ade228d783bd",
+      "afterSha256": "43d49d37b5383ce9cd9c6017ca1ebf4ffd87882ed9c3954fabe0ade228d783bd"
+    },
+    {
+      "name": "_saveLocalStorageCheckpoint",
+      "unchanged": true,
+      "beforeSha256": "ee4912821c6b968a33bd3d96ee9a1dae73ac61a8e63b164eece7d91c7ba77bb6",
+      "afterSha256": "ee4912821c6b968a33bd3d96ee9a1dae73ac61a8e63b164eece7d91c7ba77bb6"
+    },
+    {
+      "name": "_saveStoredState",
+      "unchanged": true,
+      "beforeSha256": "2f9dd612eb9a84760667340295d33b6c57a975004c909a253159c256768ed91d",
+      "afterSha256": "2f9dd612eb9a84760667340295d33b6c57a975004c909a253159c256768ed91d"
+    },
+    {
+      "name": "_enqueueStoredStateSave",
+      "unchanged": true,
+      "beforeSha256": "47d4db725d9088add4dfbad16739d388612d394345372ab23aead942b309bec7",
+      "afterSha256": "47d4db725d9088add4dfbad16739d388612d394345372ab23aead942b309bec7"
+    },
+    {
+      "name": "_saveLocalStorageForUnload",
+      "unchanged": true,
+      "beforeSha256": "3cd4ae84d262a417944611715219abec24ee9bd3e3c0ec5d0b749da5a8dbfe62",
+      "afterSha256": "3cd4ae84d262a417944611715219abec24ee9bd3e3c0ec5d0b749da5a8dbfe62"
+    },
+    {
+      "name": "_mirrorPersistentStorageState",
+      "unchanged": true,
+      "beforeSha256": "05d54e34417903f9eac1f24cacbd995af68e1703935388d6e806353087a25201",
+      "afterSha256": "05d54e34417903f9eac1f24cacbd995af68e1703935388d6e806353087a25201"
+    },
+    {
+      "name": "bindInputEnter",
+      "unchanged": true,
+      "beforeSha256": "0c26d4e2747db8f227556117c5d4366aafe9483e3758452d34a6318afcbdb0a7",
+      "afterSha256": "0c26d4e2747db8f227556117c5d4366aafe9483e3758452d34a6318afcbdb0a7"
+    },
+    {
+      "name": "reconcileChildren",
+      "unchanged": true,
+      "beforeSha256": "66264ff06d897a256fbaa80bfce088081cfc8f957c6a1dda7650b784ca6bdde8",
+      "afterSha256": "66264ff06d897a256fbaa80bfce088081cfc8f957c6a1dda7650b784ca6bdde8"
+    },
+    {
+      "name": "normalizeMaterialIconToken",
+      "unchanged": true,
+      "beforeSha256": "77234e01ff31d462968e055f9dc45e3f6da0ccd94f045275a6a28d2db0570cea",
+      "afterSha256": "77234e01ff31d462968e055f9dc45e3f6da0ccd94f045275a6a28d2db0570cea"
+    },
+    {
+      "name": "_createMaterialIconSvg",
+      "unchanged": true,
+      "beforeSha256": "f340ca314639d0379a0cf258c5876beade33d86148c43263de883f5b370292af",
+      "afterSha256": "f340ca314639d0379a0cf258c5876beade33d86148c43263de883f5b370292af"
+    },
+    {
+      "name": "setMaterialIcon",
+      "unchanged": true,
+      "beforeSha256": "6f21f9ba27c5791d5b248ebd234cf026631f5a1af99eee15301a87b35fe24453",
+      "afterSha256": "6f21f9ba27c5791d5b248ebd234cf026631f5a1af99eee15301a87b35fe24453"
+    },
+    {
+      "name": "hydrateMaterialIcons",
+      "unchanged": true,
+      "beforeSha256": "765d6b21434a59c7a762db4ae80ef09da5f0fbd3e872335148c1a463fff00a37",
+      "afterSha256": "765d6b21434a59c7a762db4ae80ef09da5f0fbd3e872335148c1a463fff00a37"
+    },
+    {
+      "name": "uid",
+      "unchanged": true,
+      "beforeSha256": "81d60a94fce84ec03e794f520347f3f26a0592b5db66ef37927d33e32446472c",
+      "afterSha256": "81d60a94fce84ec03e794f520347f3f26a0592b5db66ef37927d33e32446472c"
+    },
+    {
+      "name": "escapeHtml",
+      "unchanged": true,
+      "beforeSha256": "8800eee61339291af028f03c8bf1c0e8ea77dd975c6e972d03a344c8fdef72a0",
+      "afterSha256": "8800eee61339291af028f03c8bf1c0e8ea77dd975c6e972d03a344c8fdef72a0"
+    },
+    {
+      "name": "_copyTaskSnapshot",
+      "unchanged": true,
+      "beforeSha256": "57757673642fc8a520e2fc7ee615c2178b9079a3e386f99510b9707200e36ec9",
+      "afterSha256": "57757673642fc8a520e2fc7ee615c2178b9079a3e386f99510b9707200e36ec9"
+    },
+    {
+      "name": "normalizeOrganizeMemo",
+      "unchanged": true,
+      "beforeSha256": "a66d0a84a6f5fbbef91a6d5157505a9e9d8de7d49c61396f2f6afb08a54dee71",
+      "afterSha256": "a66d0a84a6f5fbbef91a6d5157505a9e9d8de7d49c61396f2f6afb08a54dee71"
+    },
+    {
+      "name": "formatFileSize",
+      "unchanged": true,
+      "beforeSha256": "e5e99f5bf4ad0a87c4723326067aeae82e7bb78446cd402f44cc21b74f8bbf96",
+      "afterSha256": "e5e99f5bf4ad0a87c4723326067aeae82e7bb78446cd402f44cc21b74f8bbf96"
+    },
+    {
+      "name": "updateBackupImportLimitText",
+      "unchanged": true,
+      "beforeSha256": "614294872cdca7892d472eec7e09dd8e79ed1d96ec44d0c4a77366aa3f97e8cf",
+      "afterSha256": "614294872cdca7892d472eec7e09dd8e79ed1d96ec44d0c4a77366aa3f97e8cf"
+    },
+    {
+      "name": "getMemoLimitStatusText",
+      "unchanged": true,
+      "beforeSha256": "94099325ec25a99fb1e2e8ccfd225f798307030dbe90a9c81630caa9a9e24391",
+      "afterSha256": "94099325ec25a99fb1e2e8ccfd225f798307030dbe90a9c81630caa9a9e24391"
+    },
+    {
+      "name": "_markAppStateChanged",
+      "unchanged": true,
+      "beforeSha256": "8bec4f98264d685e61e6c580d00d9f71de15138abe9eb9e0da5363cffdfc217b",
+      "afterSha256": "8bec4f98264d685e61e6c580d00d9f71de15138abe9eb9e0da5363cffdfc217b"
+    },
+    {
+      "name": "_canRestoreFailedSaveSnapshot",
+      "unchanged": true,
+      "beforeSha256": "068fa67aa2280be1e0907908a09356145f3a774634072ec8d029b43c9f8474f2",
+      "afterSha256": "068fa67aa2280be1e0907908a09356145f3a774634072ec8d029b43c9f8474f2"
+    },
+    {
+      "name": "_showSkippedRollbackToast",
+      "unchanged": true,
+      "beforeSha256": "7f7e09bbea7e018b6788e6f10364131c470ec4cf7181dca013068436238b0ba1",
+      "afterSha256": "7f7e09bbea7e018b6788e6f10364131c470ec4cf7181dca013068436238b0ba1"
+    },
+    {
+      "name": "setInputActionPending",
+      "unchanged": true,
+      "beforeSha256": "e989f14bd484fc771c4a8d2a070374dc9cc810dc7b9386bbfacb1637f37cfa07",
+      "afterSha256": "e989f14bd484fc771c4a8d2a070374dc9cc810dc7b9386bbfacb1637f37cfa07"
+    },
+    {
+      "name": "setActionControlPending",
+      "unchanged": true,
+      "beforeSha256": "101be3e93357dd55ec5f76803c0179b23172540c146b4f56acda2fedc9fbb140",
+      "afterSha256": "101be3e93357dd55ec5f76803c0179b23172540c146b4f56acda2fedc9fbb140"
+    },
+    {
+      "name": "isStateSaveOperationPending",
+      "unchanged": true,
+      "beforeSha256": "9463c38492484876f91ddf987928092f2e9b1f3d78ae6b89a78c8dbf7f02c0c7",
+      "afterSha256": "9463c38492484876f91ddf987928092f2e9b1f3d78ae6b89a78c8dbf7f02c0c7"
+    },
+    {
+      "name": "setStateSaveOperationPending",
+      "unchanged": true,
+      "beforeSha256": "dd24a0c3abd7b390a41384cd064c3d7e946cca745ac3da98f05fb8efad1db0bf",
+      "afterSha256": "dd24a0c3abd7b390a41384cd064c3d7e946cca745ac3da98f05fb8efad1db0bf"
+    },
+    {
+      "name": "setAddOperationPending",
+      "unchanged": true,
+      "beforeSha256": "04ddb56c7fc20360a1e8f83789dc3d0c609b5bb0a5c927decb0e3f13cab07439",
+      "afterSha256": "04ddb56c7fc20360a1e8f83789dc3d0c609b5bb0a5c927decb0e3f13cab07439"
+    },
+    {
+      "name": "isAddOperationPending",
+      "unchanged": true,
+      "beforeSha256": "1c37a8f45fb0699c4b80df63279357f72f9166e50f4b1c2990d7feb81d1694d4",
+      "afterSha256": "1c37a8f45fb0699c4b80df63279357f72f9166e50f4b1c2990d7feb81d1694d4"
+    },
+    {
+      "name": "isMessageOperationPending",
+      "unchanged": true,
+      "beforeSha256": "6620016dc81215ffcd9c67d63e373594d8b8b6a27bb7c666518bcf2d30187187",
+      "afterSha256": "6620016dc81215ffcd9c67d63e373594d8b8b6a27bb7c666518bcf2d30187187"
+    },
+    {
+      "name": "updateMessageListPendingState",
+      "unchanged": true,
+      "beforeSha256": "7f646ec02d2ab473e88a8ca96175c758a4eed802da517612881091ed81964ba8",
+      "afterSha256": "7f646ec02d2ab473e88a8ca96175c758a4eed802da517612881091ed81964ba8"
+    },
+    {
+      "name": "setMessageOperationPending",
+      "unchanged": true,
+      "beforeSha256": "165d399c7f17efb2767d6f64de1c5acc233062ab0830593e85fbc16484658e00",
+      "afterSha256": "165d399c7f17efb2767d6f64de1c5acc233062ab0830593e85fbc16484658e00"
+    },
+    {
+      "name": "isEditOperationPending",
+      "unchanged": true,
+      "beforeSha256": "dd90041c2667cf5ce5836bffc1336c0ac61a93a33f6b61e7b2b004a78cf4166c",
+      "afterSha256": "dd90041c2667cf5ce5836bffc1336c0ac61a93a33f6b61e7b2b004a78cf4166c"
+    },
+    {
+      "name": "updateParentModalPendingState",
+      "unchanged": true,
+      "beforeSha256": "51c4a3be4198d8de3d05c4e3b5b5b22167b90f88ef9498f0b8cf0d8cc7455d77",
+      "afterSha256": "51c4a3be4198d8de3d05c4e3b5b5b22167b90f88ef9498f0b8cf0d8cc7455d77"
+    },
+    {
+      "name": "updateSubtaskModalPendingState",
+      "unchanged": true,
+      "beforeSha256": "accf9f687a61a4c00fa737cc21f68412719b59384a31529aedf18a1b7176efa8",
+      "afterSha256": "accf9f687a61a4c00fa737cc21f68412719b59384a31529aedf18a1b7176efa8"
+    },
+    {
+      "name": "setEditOperationPending",
+      "unchanged": true,
+      "beforeSha256": "e3775cf6fbc58b010b8f5b086244df0e178985796a8464b8ff93337461622105",
+      "afterSha256": "e3775cf6fbc58b010b8f5b086244df0e178985796a8464b8ff93337461622105"
+    },
+    {
+      "name": "isFocusOperationPending",
+      "unchanged": true,
+      "beforeSha256": "09a3bc44427fd0c4f950587aa366f9f09ae08e480c66f265194f2a65d48e2f22",
+      "afterSha256": "09a3bc44427fd0c4f950587aa366f9f09ae08e480c66f265194f2a65d48e2f22"
+    },
+    {
+      "name": "setFocusStartControlPending",
+      "unchanged": true,
+      "beforeSha256": "5d937b382ab22bcae1e751979ccc3448842dc0ea1a50e9e5fd175e8619d62ee8",
+      "afterSha256": "5d937b382ab22bcae1e751979ccc3448842dc0ea1a50e9e5fd175e8619d62ee8"
+    },
+    {
+      "name": "setFocusOperationPending",
+      "unchanged": true,
+      "beforeSha256": "33b6b7e9abb942d1d1ea490cc52880a5ba27e5da5bad498bbbc6d1df8ef42f57",
+      "afterSha256": "33b6b7e9abb942d1d1ea490cc52880a5ba27e5da5bad498bbbc6d1df8ef42f57"
+    },
+    {
+      "name": "_createAppStateSnapshot",
+      "unchanged": true,
+      "beforeSha256": "1a0e53cd2e26f7db6ceeb81f0f29c6ae66561793005eb247bcda5e7e1ff8538b",
+      "afterSha256": "1a0e53cd2e26f7db6ceeb81f0f29c6ae66561793005eb247bcda5e7e1ff8538b"
+    },
+    {
+      "name": "_applyAppStateSnapshot",
+      "unchanged": true,
+      "beforeSha256": "73f844d8e173c78598075842d9ee5645f6e2508c452fd0e68247818e351d0fdb",
+      "afterSha256": "73f844d8e173c78598075842d9ee5645f6e2508c452fd0e68247818e351d0fdb"
+    },
+    {
+      "name": "_restoreStateAfterFailedSave",
+      "unchanged": true,
+      "beforeSha256": "7e4a978553484a3e1e22ad131e0327ac3327db59828e7887d72024eb13671d11",
+      "afterSha256": "7e4a978553484a3e1e22ad131e0327ac3327db59828e7887d72024eb13671d11"
+    },
+    {
+      "name": "_commitStateSave",
+      "unchanged": true,
+      "beforeSha256": "420e4d262a964dab079fff5dadc159b305650c683c117336e0c82501d084de51",
+      "afterSha256": "420e4d262a964dab079fff5dadc159b305650c683c117336e0c82501d084de51"
+    },
+    {
+      "name": "_createFocusRuntimeSnapshot",
+      "unchanged": true,
+      "beforeSha256": "b7ebea6a717dffadbe58e66079eede9538ac796a622f4dc36dbf88ae2de085d9",
+      "afterSha256": "b7ebea6a717dffadbe58e66079eede9538ac796a622f4dc36dbf88ae2de085d9"
+    },
+    {
+      "name": "_applyFocusRuntimeSnapshot",
+      "unchanged": true,
+      "beforeSha256": "db3e8ee01f565d0d93b395e2c0b321857a461bd383c64358dd53e1617fc4e4e6",
+      "afterSha256": "db3e8ee01f565d0d93b395e2c0b321857a461bd383c64358dd53e1617fc4e4e6"
+    },
+    {
+      "name": "_restoreFocusStateAfterFailedSave",
+      "unchanged": true,
+      "beforeSha256": "5945d0767a7b434a7d512d6267fa1ad2b95bb6811103d2c05ebc6ccc2a922e4c",
+      "afterSha256": "5945d0767a7b434a7d512d6267fa1ad2b95bb6811103d2c05ebc6ccc2a922e4c"
+    },
+    {
+      "name": "_commitFocusStateSave",
+      "unchanged": true,
+      "beforeSha256": "ca0f30dba4d88186a0c0f8c2f4fd53ccee39a7fe6931ffb9d915da5ab99f6324",
+      "afterSha256": "ca0f30dba4d88186a0c0f8c2f4fd53ccee39a7fe6931ffb9d915da5ab99f6324"
+    },
+    {
+      "name": "_isValidDeleteUndoPayload",
+      "unchanged": true,
+      "beforeSha256": "91c071bdcb5b7d63a6db3faf8291d30a3c93a5a7f53785bdd65b982d8f772847",
+      "afterSha256": "91c071bdcb5b7d63a6db3faf8291d30a3c93a5a7f53785bdd65b982d8f772847"
+    },
+    {
+      "name": "_createDeleteUndoRestorePlan",
+      "unchanged": true,
+      "beforeSha256": "e3b2cb7e90b54a0eb44e5dacb1fd25c2a587f5a77a1582e9d7ad4070ce5035cf",
+      "afterSha256": "e3b2cb7e90b54a0eb44e5dacb1fd25c2a587f5a77a1582e9d7ad4070ce5035cf"
+    },
+    {
+      "name": "_applyDeleteUndoPayload",
+      "unchanged": true,
+      "beforeSha256": "d55f89be7a41b71778705d312f6b1863bedd387b1f9cfcf9dc5d6993d37bc9fb",
+      "afterSha256": "d55f89be7a41b71778705d312f6b1863bedd387b1f9cfcf9dc5d6993d37bc9fb"
+    },
+    {
+      "name": "_runToastDismissHandler",
+      "unchanged": true,
+      "beforeSha256": "07c3eceb2950945982a9e456b43d83c3450a1353dc4bfe516f54507a34c5e935",
+      "afterSha256": "07c3eceb2950945982a9e456b43d83c3450a1353dc4bfe516f54507a34c5e935"
+    },
+    {
+      "name": "_hideToastBySession",
+      "unchanged": true,
+      "beforeSha256": "fd18968a0841f187c76570490254bd477ce65b5daf2df5f70ffe8df03dc6dc7d",
+      "afterSha256": "fd18968a0841f187c76570490254bd477ce65b5daf2df5f70ffe8df03dc6dc7d"
+    },
+    {
+      "name": "showToast",
+      "unchanged": true,
+      "beforeSha256": "bdc17a1168f8243e9dee58a4a6ae6a3402e57dc8f2370eaa06d81b5f3d349b9e",
+      "afterSha256": "bdc17a1168f8243e9dee58a4a6ae6a3402e57dc8f2370eaa06d81b5f3d349b9e"
+    },
+    {
+      "name": "showErrorToast",
+      "unchanged": true,
+      "beforeSha256": "b5cd52e21f0b02bf52d2a2c196a185bbfbf984ca0ad53e0957711881bbfe2113",
+      "afterSha256": "b5cd52e21f0b02bf52d2a2c196a185bbfbf984ca0ad53e0957711881bbfe2113"
+    },
+    {
+      "name": "_hideDeleteUndoToastBySession",
+      "unchanged": true,
+      "beforeSha256": "c3bbade183ea33c4c88c6101863831564871a97122dd36b6ab925ec2b9276cd6",
+      "afterSha256": "c3bbade183ea33c4c88c6101863831564871a97122dd36b6ab925ec2b9276cd6"
+    },
+    {
+      "name": "_showDeleteUndoToast",
+      "unchanged": true,
+      "beforeSha256": "21000dc59c222c68d026c1624fd95f6f8e8720af09048b18eddaa13c1533f4f5",
+      "afterSha256": "21000dc59c222c68d026c1624fd95f6f8e8720af09048b18eddaa13c1533f4f5"
+    },
+    {
+      "name": "_registerDeleteUndoToast",
+      "unchanged": true,
+      "beforeSha256": "b665c403d2a74990d043d0a19926a01983cb5a87160cf895b3d0d1cf78fae431",
+      "afterSha256": "b665c403d2a74990d043d0a19926a01983cb5a87160cf895b3d0d1cf78fae431"
+    },
+    {
+      "name": "_invalidateDeleteUndo",
+      "unchanged": true,
+      "beforeSha256": "6876ec616b83dc01bd5eced9d6b663681776ec12236f2acd1ce4b5a6790d5184",
+      "afterSha256": "6876ec616b83dc01bd5eced9d6b663681776ec12236f2acd1ce4b5a6790d5184"
+    },
+    {
+      "name": "_isFocusableElement",
+      "unchanged": true,
+      "beforeSha256": "6314637faedc46e5d46551be42f70c792c092236a3320ea91328f111a60c0e03",
+      "afterSha256": "6314637faedc46e5d46551be42f70c792c092236a3320ea91328f111a60c0e03"
+    },
+    {
+      "name": "_getModalFocusableElements",
+      "unchanged": true,
+      "beforeSha256": "1f281c5537a0d2ddcf733d65077fae051b80178cf6502e246008d68eb45d5399",
+      "afterSha256": "1f281c5537a0d2ddcf733d65077fae051b80178cf6502e246008d68eb45d5399"
+    },
+    {
+      "name": "_getActiveModalOverlay",
+      "unchanged": true,
+      "beforeSha256": "2fdfa3d2e986314ce7acf66bae3fed10b07b0db49b8c6b0a231bc7f2c567cfc5",
+      "afterSha256": "2fdfa3d2e986314ce7acf66bae3fed10b07b0db49b8c6b0a231bc7f2c567cfc5"
+    },
+    {
+      "name": "_focusWithinOverlay",
+      "unchanged": true,
+      "beforeSha256": "03b8ee8001f73a4e36f7225cce4732a9fd290a33b0280ca49f8757ea0b6eaece",
+      "afterSha256": "03b8ee8001f73a4e36f7225cce4732a9fd290a33b0280ca49f8757ea0b6eaece"
+    },
+    {
+      "name": "_captureModalReturnFocus",
+      "unchanged": true,
+      "beforeSha256": "a63ed4abf0155b943d19f0c0e26d22b869fe6eb9893ef2cfa2ed33865b87ed37",
+      "afterSha256": "a63ed4abf0155b943d19f0c0e26d22b869fe6eb9893ef2cfa2ed33865b87ed37"
+    },
+    {
+      "name": "_resolveModalReturnFocus",
+      "unchanged": true,
+      "beforeSha256": "1a73508cb395466ee7e552c3565809e360c10285449b7fce6315204fb63cd2a8",
+      "afterSha256": "1a73508cb395466ee7e552c3565809e360c10285449b7fce6315204fb63cd2a8"
+    },
+    {
+      "name": "_restoreFocusAfterPending",
+      "unchanged": true,
+      "beforeSha256": "1ca38226838fc8a82e9ceb903a3e074ac8a81b1ffc85378b59c10c4dff259727",
+      "afterSha256": "1ca38226838fc8a82e9ceb903a3e074ac8a81b1ffc85378b59c10c4dff259727"
+    },
+    {
+      "name": "syncModalInteractivity",
+      "unchanged": false,
+      "beforeSha256": "dddbdc54ee97cc617ac32bddbbd063a00b172cfe2059d43b8b9c3be6fe92632a",
+      "afterSha256": "fd7d1d0215c1533fcbbb7fb31502e1c27a60e187aae31afe969465440beed368"
+    },
+    {
+      "name": "_openModalOverlay",
+      "unchanged": true,
+      "beforeSha256": "d44cea01bd3e7b161706a48b9cd2f6f63128c3f7f973c8478293287f1905456c",
+      "afterSha256": "d44cea01bd3e7b161706a48b9cd2f6f63128c3f7f973c8478293287f1905456c"
+    },
+    {
+      "name": "_closeModalOverlay",
+      "unchanged": true,
+      "beforeSha256": "27f4af263f3066d6b9422aac20c1f013e6257deae11e41bbeca027bf27c87ea4",
+      "afterSha256": "27f4af263f3066d6b9422aac20c1f013e6257deae11e41bbeca027bf27c87ea4"
+    },
+    {
+      "name": "_trapFocusInOverlay",
+      "unchanged": true,
+      "beforeSha256": "3895ff20fb567f77aa57287f1860d1a81f56365e60616538b23a10fde30fa45c",
+      "afterSha256": "3895ff20fb567f77aa57287f1860d1a81f56365e60616538b23a10fde30fa45c"
+    },
+    {
+      "name": "_resolveTooltipTarget",
+      "unchanged": true,
+      "beforeSha256": "5f6a45b97297ac35468a2daacfcee6e77d60b89df5ec3f73170c0a457b7004e8",
+      "afterSha256": "5f6a45b97297ac35468a2daacfcee6e77d60b89df5ec3f73170c0a457b7004e8"
+    },
+    {
+      "name": "_isIconOnlyButton",
+      "unchanged": true,
+      "beforeSha256": "cabc86b0b2757d02bd7183eee12af98c1fba18112ddc626df3ddcd8ebbd3b3e8",
+      "afterSha256": "cabc86b0b2757d02bd7183eee12af98c1fba18112ddc626df3ddcd8ebbd3b3e8"
+    },
+    {
+      "name": "_extractTooltipText",
+      "unchanged": true,
+      "beforeSha256": "57063db5cdcd34b454b05fc5c4b044746e14b6b337cddc33a9206032be74cf04",
+      "afterSha256": "57063db5cdcd34b454b05fc5c4b044746e14b6b337cddc33a9206032be74cf04"
+    },
+    {
+      "name": "_hideQuickTooltip",
+      "unchanged": true,
+      "beforeSha256": "f1a55366ef0477129fd762d4931f2b326a40845469bdbfb3498e8a28ed47165c",
+      "afterSha256": "f1a55366ef0477129fd762d4931f2b326a40845469bdbfb3498e8a28ed47165c"
+    },
+    {
+      "name": "_isTooltipAnchorActive",
+      "unchanged": true,
+      "beforeSha256": "ee4f8bd5ed95c1e86b75a2ec5c5dce3a938996d300fbfb0ebe664c6a315bcbdb",
+      "afterSha256": "ee4f8bd5ed95c1e86b75a2ec5c5dce3a938996d300fbfb0ebe664c6a315bcbdb"
+    },
+    {
+      "name": "_positionQuickTooltip",
+      "unchanged": true,
+      "beforeSha256": "345a71554752c9bdffeefb00dac5467f05fc9e4f23195a49b010a944d63e39fc",
+      "afterSha256": "345a71554752c9bdffeefb00dac5467f05fc9e4f23195a49b010a944d63e39fc"
+    },
+    {
+      "name": "_queueQuickTooltipPosition",
+      "unchanged": true,
+      "beforeSha256": "258be6242bcf960a55216d7ef94657940b03edf9a1964b3e1c06efe6e23d67b9",
+      "afterSha256": "258be6242bcf960a55216d7ef94657940b03edf9a1964b3e1c06efe6e23d67b9"
+    },
+    {
+      "name": "_showQuickTooltip",
+      "unchanged": true,
+      "beforeSha256": "166fef6e1e7b317da315e33b605a6188d10dbc1a5920f52266c11e2fd2db5100",
+      "afterSha256": "166fef6e1e7b317da315e33b605a6188d10dbc1a5920f52266c11e2fd2db5100"
+    },
+    {
+      "name": "handleTooltipPointerOver",
+      "unchanged": true,
+      "beforeSha256": "2460ad78c1e167d3d477268bde7aaa3bad27616835c1253d05db5ce442954e8f",
+      "afterSha256": "2460ad78c1e167d3d477268bde7aaa3bad27616835c1253d05db5ce442954e8f"
+    },
+    {
+      "name": "handleTooltipPointerOut",
+      "unchanged": true,
+      "beforeSha256": "385583e7ff2bd9413296b2f20aa9e9e91dccc6c3a460ae7ea978a28fbcf95bbd",
+      "afterSha256": "385583e7ff2bd9413296b2f20aa9e9e91dccc6c3a460ae7ea978a28fbcf95bbd"
+    },
+    {
+      "name": "handleTooltipFocusIn",
+      "unchanged": true,
+      "beforeSha256": "a3db0b4a6dc5a725b185976ae19e23f52af208fd41b5c31cc998cac90548a3c3",
+      "afterSha256": "a3db0b4a6dc5a725b185976ae19e23f52af208fd41b5c31cc998cac90548a3c3"
+    },
+    {
+      "name": "handleTooltipFocusOut",
+      "unchanged": true,
+      "beforeSha256": "9370eeb6df4630b4b8da4f4730efb065764e14f892991c0802d5170a3e4ede3e",
+      "afterSha256": "9370eeb6df4630b4b8da4f4730efb065764e14f892991c0802d5170a3e4ede3e"
+    },
+    {
+      "name": "handleTooltipKeyDown",
+      "unchanged": true,
+      "beforeSha256": "e9dda80f8d3422d2f2a588260412b634a4247812daad26274f2c79d5c896facd",
+      "afterSha256": "e9dda80f8d3422d2f2a588260412b634a4247812daad26274f2c79d5c896facd"
+    },
+    {
+      "name": "handleTooltipViewportChange",
+      "unchanged": true,
+      "beforeSha256": "ccf0e5c6d008f28e23a4c08115b9acaefeaaeb0bdaab0839de7ba8f109fc2637",
+      "afterSha256": "ccf0e5c6d008f28e23a4c08115b9acaefeaaeb0bdaab0839de7ba8f109fc2637"
+    },
+    {
+      "name": "renderTaskCountFavicon",
+      "unchanged": true,
+      "beforeSha256": "75495f1482a146fdcac22a75953f0aff343e2e2d845ddc59c3e3e07cd9fe5b81",
+      "afterSha256": "75495f1482a146fdcac22a75953f0aff343e2e2d845ddc59c3e3e07cd9fe5b81"
+    },
+    {
+      "name": "normalizeInputText",
+      "unchanged": true,
+      "beforeSha256": "ba7356cbcb26c2da63c96aa736072138da16ab0438ce197ab477decbd7d83abd",
+      "afterSha256": "ba7356cbcb26c2da63c96aa736072138da16ab0438ce197ab477decbd7d83abd"
+    },
+    {
+      "name": "normalizeNonNegativeNumber",
+      "unchanged": true,
+      "beforeSha256": "000bec38fb8a65e7a64308a5c56de34d6fac7e4ef530b257930b67326f127546",
+      "afterSha256": "000bec38fb8a65e7a64308a5c56de34d6fac7e4ef530b257930b67326f127546"
+    },
+    {
+      "name": "normalizeEntityId",
+      "unchanged": true,
+      "beforeSha256": "2d73df7033729a20759a61cc143384df03fd367b267017857d278cc7df6484a4",
+      "afterSha256": "2d73df7033729a20759a61cc143384df03fd367b267017857d278cc7df6484a4"
+    },
+    {
+      "name": "normalizeMessageList",
+      "unchanged": true,
+      "beforeSha256": "fb3542a4b46ac5b738c65199e6ae29318094ba00e0b2cdbb61675b50db9565d4",
+      "afterSha256": "fb3542a4b46ac5b738c65199e6ae29318094ba00e0b2cdbb61675b50db9565d4"
+    },
+    {
+      "name": "normalizePomodoroMinutes",
+      "unchanged": true,
+      "beforeSha256": "9dfb994395baba72dcfe5594cd695c4ef5d835e96773b84f06ee980e7b02cec4",
+      "afterSha256": "9dfb994395baba72dcfe5594cd695c4ef5d835e96773b84f06ee980e7b02cec4"
+    },
+    {
+      "name": "normalizePomodoroSettings",
+      "unchanged": true,
+      "beforeSha256": "ba1a7594701a4bd2e5f227fa74ff8ef393a2fd071d43ad789a5a7ba2f91f3330",
+      "afterSha256": "ba1a7594701a4bd2e5f227fa74ff8ef393a2fd071d43ad789a5a7ba2f91f3330"
+    },
+    {
+      "name": "createFocusMeta",
+      "unchanged": true,
+      "beforeSha256": "dbc63e455c6d07185cf997bc700d5414b05f9cff7e608f8cad9f05a843dc6642",
+      "afterSha256": "dbc63e455c6d07185cf997bc700d5414b05f9cff7e608f8cad9f05a843dc6642"
+    },
+    {
+      "name": "normalizeFocusMeta",
+      "unchanged": true,
+      "beforeSha256": "5ac36a05a23e6d1e3bafa75e5b6b48cac6243108de8a0049af0cb66bfbfc6c52",
+      "afterSha256": "5ac36a05a23e6d1e3bafa75e5b6b48cac6243108de8a0049af0cb66bfbfc6c52"
+    },
+    {
+      "name": "normalizeSettings",
+      "unchanged": true,
+      "beforeSha256": "0e74e4cf7904c67f9b2decf775e3753ed9c2fdf1c9ecd16afcd99324e995334b",
+      "afterSha256": "0e74e4cf7904c67f9b2decf775e3753ed9c2fdf1c9ecd16afcd99324e995334b"
+    },
+    {
+      "name": "normalizeTaskViewState",
+      "unchanged": true,
+      "beforeSha256": "bcb15d74b4e5fc3a9cb656406b144606b1cefd18359778efe869214706f3c5dd",
+      "afterSha256": "bcb15d74b4e5fc3a9cb656406b144606b1cefd18359778efe869214706f3c5dd"
+    },
+    {
+      "name": "loadSettings",
+      "unchanged": true,
+      "beforeSha256": "a763eb8965d48e082458abae4f5101ebc6b4fd620361c930dea101bf66ebf1b3",
+      "afterSha256": "a763eb8965d48e082458abae4f5101ebc6b4fd620361c930dea101bf66ebf1b3"
+    },
+    {
+      "name": "loadTaskViewState",
+      "unchanged": true,
+      "beforeSha256": "bdf3a5e5cb9a08a965227e2bfb1aa185bd17df454dd07133ccb47b8793cbab57",
+      "afterSha256": "bdf3a5e5cb9a08a965227e2bfb1aa185bd17df454dd07133ccb47b8793cbab57"
+    },
+    {
+      "name": "_readJsonFromRaw",
+      "unchanged": true,
+      "beforeSha256": "740f029f7904340e85bacbfeeee864568b25df145351e6a0a1f2a7f30cea4c09",
+      "afterSha256": "740f029f7904340e85bacbfeeee864568b25df145351e6a0a1f2a7f30cea4c09"
+    },
+    {
+      "name": "_readBooleanFromRaw",
+      "unchanged": true,
+      "beforeSha256": "a9f8ea521d3fe9eb442a19dc7946b92a42ffd94f9473436b8e43286de913762e",
+      "afterSha256": "a9f8ea521d3fe9eb442a19dc7946b92a42ffd94f9473436b8e43286de913762e"
+    },
+    {
+      "name": "_applyPersistentStateRawValues",
+      "unchanged": true,
+      "beforeSha256": "076162ca517f8d876599f4554b2ea2f200df87af60d5f2f68d71cccf4801df23",
+      "afterSha256": "076162ca517f8d876599f4554b2ea2f200df87af60d5f2f68d71cccf4801df23"
+    },
+    {
+      "name": "_getPersistedStateEntries",
+      "unchanged": true,
+      "beforeSha256": "fb6dd4bbde6a8f8a946a666db3723e8251afdd727818fd7f57c19c75b6e979ae",
+      "afterSha256": "fb6dd4bbde6a8f8a946a666db3723e8251afdd727818fd7f57c19c75b6e979ae"
+    },
+    {
+      "name": "_enqueueIndexedDbWrite",
+      "unchanged": true,
+      "beforeSha256": "4181b6b1a8a7a9d7b38b0f776590817b84ea08a8097e0a72586cf82dc8208adb",
+      "afterSha256": "4181b6b1a8a7a9d7b38b0f776590817b84ea08a8097e0a72586cf82dc8208adb"
+    },
+    {
+      "name": "_initializePersistentStorageState",
+      "unchanged": true,
+      "beforeSha256": "52811abd22e9a55d92291b3bc11e2165d6ab0eb5c609ba5fd9e064817d3e8fcd",
+      "afterSha256": "52811abd22e9a55d92291b3bc11e2165d6ab0eb5c609ba5fd9e064817d3e8fcd"
+    },
+    {
+      "name": "save",
+      "unchanged": true,
+      "beforeSha256": "dd90f2b223cb74fe8450270a262dc0b83a69e556b7f1c6e77ea835aa973968ad",
+      "afterSha256": "dd90f2b223cb74fe8450270a262dc0b83a69e556b7f1c6e77ea835aa973968ad"
+    },
+    {
+      "name": "setMemoSaveStatus",
+      "unchanged": true,
+      "beforeSha256": "f49b3a52cc454a52b8b9c9c26644af3853aef76a4f0902651cd1f5dae0abc36d",
+      "afterSha256": "f49b3a52cc454a52b8b9c9c26644af3853aef76a4f0902651cd1f5dae0abc36d"
+    },
+    {
+      "name": "persistOrganizeMemoLocalCheckpoint",
+      "unchanged": true,
+      "beforeSha256": "f238ea7ffb5b357d91ae130d15471d3d383a17326086d4a1c88e3a31635cb403",
+      "afterSha256": "f238ea7ffb5b357d91ae130d15471d3d383a17326086d4a1c88e3a31635cb403"
+    },
+    {
+      "name": "persistOrganizeMemoCheckpoint",
+      "unchanged": true,
+      "beforeSha256": "176ac79b04ed6331d5e479d73ee75dac9c41ba0c921e39205190740243414a3f",
+      "afterSha256": "176ac79b04ed6331d5e479d73ee75dac9c41ba0c921e39205190740243414a3f"
+    },
+    {
+      "name": "flushOrganizeMemoSave",
+      "unchanged": true,
+      "beforeSha256": "806d28fdd71cab417fbf6ba363ffcad0cc55f8af5acd7eb4652a93a0b9327cf8",
+      "afterSha256": "806d28fdd71cab417fbf6ba363ffcad0cc55f8af5acd7eb4652a93a0b9327cf8"
+    },
+    {
+      "name": "syncRunningFocusElapsedForPersist",
+      "unchanged": true,
+      "beforeSha256": "d38e3853143484b7e06b87b76807ccd46d921f7f0b558cc44e37d2a3fbdc96e3",
+      "afterSha256": "d38e3853143484b7e06b87b76807ccd46d921f7f0b558cc44e37d2a3fbdc96e3"
+    },
+    {
+      "name": "persistRuntimeStateForUnload",
+      "unchanged": true,
+      "beforeSha256": "e3f6ee436a6b49ba59ff378556358235547a0d66eb0d3808e93635704755ead0",
+      "afterSha256": "e3f6ee436a6b49ba59ff378556358235547a0d66eb0d3808e93635704755ead0"
+    },
+    {
+      "name": "checkpointActiveFocusElapsed",
+      "unchanged": true,
+      "beforeSha256": "d8c816efdb92bf26fffbb8273e6a87816055f556b91ac9adbd975f62591cdff7",
+      "afterSha256": "d8c816efdb92bf26fffbb8273e6a87816055f556b91ac9adbd975f62591cdff7"
+    },
+    {
+      "name": "_isObjectRecord",
+      "unchanged": true,
+      "beforeSha256": "8dd22491355f8a03053dba079c65bb14e86308f921da31c6949e53b5c5d1b175",
+      "afterSha256": "8dd22491355f8a03053dba079c65bb14e86308f921da31c6949e53b5c5d1b175"
+    },
+    {
+      "name": "createBackupPayload",
+      "unchanged": true,
+      "beforeSha256": "2e2ef9e839f840c202f151af13988e3a6f8bcf288bbed6357bc42cc45e5c37e9",
+      "afterSha256": "2e2ef9e839f840c202f151af13988e3a6f8bcf288bbed6357bc42cc45e5c37e9"
+    },
+    {
+      "name": "normalizeBackupPayload",
+      "unchanged": true,
+      "beforeSha256": "9b64c86fc5254993561410dd45fc12e82051347a3db535b26d5117b6800be829",
+      "afterSha256": "9b64c86fc5254993561410dd45fc12e82051347a3db535b26d5117b6800be829"
+    },
+    {
+      "name": "_applyNormalizedBackupPayload",
+      "unchanged": true,
+      "beforeSha256": "6e94deadb9dadd38bf4e13118ac3714a551484131bed286055c6916c84ff3fd1",
+      "afterSha256": "6e94deadb9dadd38bf4e13118ac3714a551484131bed286055c6916c84ff3fd1"
+    },
+    {
+      "name": "buildImportBackupConfirmMessage",
+      "unchanged": true,
+      "beforeSha256": "f62beed1074c688e9d4071268a16713da795dcf0e4f4b4f06bf88a4faf1d1428",
+      "afterSha256": "f62beed1074c688e9d4071268a16713da795dcf0e4f4b4f06bf88a4faf1d1428"
+    },
+    {
+      "name": "_registerImportUndoToast",
+      "unchanged": true,
+      "beforeSha256": "a80e1e65a779608d3fd2fa1920fd7b14fe7c63489729e18eefffc3b4edb7c95c",
+      "afterSha256": "a80e1e65a779608d3fd2fa1920fd7b14fe7c63489729e18eefffc3b4edb7c95c"
+    },
+    {
+      "name": "performImportBackup",
+      "unchanged": true,
+      "beforeSha256": "aa41a428972ed0263c50e4c9ba10b3c8e381478049b4dc0aca9219e50a1d54a8",
+      "afterSha256": "aa41a428972ed0263c50e4c9ba10b3c8e381478049b4dc0aca9219e50a1d54a8"
+    },
+    {
+      "name": "exportBackup",
+      "unchanged": true,
+      "beforeSha256": "0ee27dc7559bffded4b10ba72bc102a5ae7d7f096f4636c32b897d8e4c6ba9b6",
+      "afterSha256": "0ee27dc7559bffded4b10ba72bc102a5ae7d7f096f4636c32b897d8e4c6ba9b6"
+    },
+    {
+      "name": "importBackupFile",
+      "unchanged": true,
+      "beforeSha256": "55a5333901624baaa489cab0dd28caf9f1989a5c36c52f0155e4322f5d442319",
+      "afterSha256": "55a5333901624baaa489cab0dd28caf9f1989a5c36c52f0155e4322f5d442319"
+    },
+    {
+      "name": "scheduleOrganizeMemoSave",
+      "unchanged": true,
+      "beforeSha256": "b526265bb90f48a693122db2110971ab07961bf0c779a0d93ca4ad6ec145e454",
+      "afterSha256": "b526265bb90f48a693122db2110971ab07961bf0c779a0d93ca4ad6ec145e454"
+    },
+    {
+      "name": "handleOrganizeMemoInput",
+      "unchanged": true,
+      "beforeSha256": "6bca66f697d018c30f7fc5f617e938913d1c076fe262edaa2cf46205bd1bda37",
+      "afterSha256": "6bca66f697d018c30f7fc5f617e938913d1c076fe262edaa2cf46205bd1bda37"
+    },
+    {
+      "name": "handleOrganizeMemoBlur",
+      "unchanged": true,
+      "beforeSha256": "19743967fd8770a39e1b1bfe77a1d9b8e31d28f264f655ab2fdc1a1b93ad4620",
+      "afterSha256": "19743967fd8770a39e1b1bfe77a1d9b8e31d28f264f655ab2fdc1a1b93ad4620"
+    },
+    {
+      "name": "initializeOrganizeMemoInput",
+      "unchanged": true,
+      "beforeSha256": "7bc89ac45ae64ca4c23dea7cddbf7231430c45494a37778f91614962a8cdb085",
+      "afterSha256": "7bc89ac45ae64ca4c23dea7cddbf7231430c45494a37778f91614962a8cdb085"
+    },
+    {
+      "name": "finishPersistentStorageInitialization",
+      "unchanged": true,
+      "beforeSha256": "1a9b5432c61a1fe4c4966ecd411471996a2f2ce035cdedcc1d289a6cccf91a2b",
+      "afterSha256": "1a9b5432c61a1fe4c4966ecd411471996a2f2ce035cdedcc1d289a6cccf91a2b"
+    },
+    {
+      "name": "normalizeTasks",
+      "unchanged": true,
+      "beforeSha256": "205bb8815197f6bd3cacb060d13d000591c155fa361292b234821bafeee43d5d",
+      "afterSha256": "205bb8815197f6bd3cacb060d13d000591c155fa361292b234821bafeee43d5d"
+    },
+    {
+      "name": "hasSubtasks",
+      "unchanged": true,
+      "beforeSha256": "2a08870912598813932e2d812f74e259b10d6964dc7bdadce2af7ab17b7a0c60",
+      "afterSha256": "2a08870912598813932e2d812f74e259b10d6964dc7bdadce2af7ab17b7a0c60"
+    },
+    {
+      "name": "isLeafParent",
+      "unchanged": true,
+      "beforeSha256": "34180a9b8b7d809849af8ae7e85772d1602d7d3d0d0a1493a0dd1086e52f1495",
+      "afterSha256": "34180a9b8b7d809849af8ae7e85772d1602d7d3d0d0a1493a0dd1086e52f1495"
+    },
+    {
+      "name": "isRunnableParent",
+      "unchanged": true,
+      "beforeSha256": "f02491a9396de0b4bd816e358434609a46f92c0bc73687f5084dcc5d9aa5b853",
+      "afterSha256": "f02491a9396de0b4bd816e358434609a46f92c0bc73687f5084dcc5d9aa5b853"
+    },
+    {
+      "name": "syncParentStatus",
+      "unchanged": true,
+      "beforeSha256": "44f7860481d354d79e7248568f1247d5ccbb95599add82df4f3109d73b9acf6e",
+      "afterSha256": "44f7860481d354d79e7248568f1247d5ccbb95599add82df4f3109d73b9acf6e"
+    },
+    {
+      "name": "syncAllParents",
+      "unchanged": true,
+      "beforeSha256": "cb12f3ec909550b4305856460ceffe4cd2b82428d11fa50d358a9ad5d7cfa5e9",
+      "afterSha256": "cb12f3ec909550b4305856460ceffe4cd2b82428d11fa50d358a9ad5d7cfa5e9"
+    },
+    {
+      "name": "getTask",
+      "unchanged": true,
+      "beforeSha256": "f4f5392de3754accdf5e83d4ed021876900d439b6af5eaab54e10af6a1cc9f64",
+      "afterSha256": "f4f5392de3754accdf5e83d4ed021876900d439b6af5eaab54e10af6a1cc9f64"
+    },
+    {
+      "name": "getSubtask",
+      "unchanged": true,
+      "beforeSha256": "6be0146bd435421d27100ca64275e49bb4525382e4970d1a9b8e0f20a88158e5",
+      "afterSha256": "6be0146bd435421d27100ca64275e49bb4525382e4970d1a9b8e0f20a88158e5"
+    },
+    {
+      "name": "getTarget",
+      "unchanged": true,
+      "beforeSha256": "babe06c4194b181f227d68feafc338f0b79cc4ed9f062ba5bf0c656add1ab9b9",
+      "afterSha256": "babe06c4194b181f227d68feafc338f0b79cc4ed9f062ba5bf0c656add1ab9b9"
+    },
+    {
+      "name": "getMessages",
+      "unchanged": true,
+      "beforeSha256": "9784b0ab3bce412ace2e090bbb097bd7185cd7bc2aac5cd96207c481faedba3c",
+      "afterSha256": "9784b0ab3bce412ace2e090bbb097bd7185cd7bc2aac5cd96207c481faedba3c"
+    },
+    {
+      "name": "getElapsedMs",
+      "unchanged": true,
+      "beforeSha256": "d10810b6f1970beeef65c52e133ab3e92914293e8e4074dab620959ad616d03b",
+      "afterSha256": "d10810b6f1970beeef65c52e133ab3e92914293e8e4074dab620959ad616d03b"
+    },
+    {
+      "name": "formatElapsed",
+      "unchanged": true,
+      "beforeSha256": "2d5046f1c656181c33a0f71df7aa3c99e24f741a8792fa2b730b665f4f06be46",
+      "afterSha256": "2d5046f1c656181c33a0f71df7aa3c99e24f741a8792fa2b730b665f4f06be46"
+    },
+    {
+      "name": "formatAchievementElapsed",
+      "unchanged": true,
+      "beforeSha256": "97dafe43dc8fca5ea9de8cceb8a03577c30303e8b1255e72903d05d5a31838ec",
+      "afterSha256": "97dafe43dc8fca5ea9de8cceb8a03577c30303e8b1255e72903d05d5a31838ec"
+    },
+    {
+      "name": "getProgressStats",
+      "unchanged": true,
+      "beforeSha256": "6127efd6bddb7aeb9aecce1072c0cef8f89f8eec8684d9e5878018c01ea81790",
+      "afterSha256": "6127efd6bddb7aeb9aecce1072c0cef8f89f8eec8684d9e5878018c01ea81790"
+    },
+    {
+      "name": "getTaskStructureCounts",
+      "unchanged": true,
+      "beforeSha256": "e60527d209d0d4ed2f59a6ca10b1ddf8391821a740ed1fb4d173d7208db77a52",
+      "afterSha256": "e60527d209d0d4ed2f59a6ca10b1ddf8391821a740ed1fb4d173d7208db77a52"
+    },
+    {
+      "name": "shouldClearCompletedItem",
+      "unchanged": true,
+      "beforeSha256": "55f15e3ef45cdd261a2a41e8bf42e361aecb32c176b2d708aa4b453372dd9da5",
+      "afterSha256": "55f15e3ef45cdd261a2a41e8bf42e361aecb32c176b2d708aa4b453372dd9da5"
+    },
+    {
+      "name": "getClearCompletedDeleteCounts",
+      "unchanged": true,
+      "beforeSha256": "9220fc3fbdff229dff41317bcb320f82b1433ce4a837700f85177439c53ed60e",
+      "afterSha256": "9220fc3fbdff229dff41317bcb320f82b1433ce4a837700f85177439c53ed60e"
+    },
+    {
+      "name": "formatBulkDeleteCountText",
+      "unchanged": true,
+      "beforeSha256": "f7c4555bf05ac0174f5afc32d7f331dcfd57f5e1ae576eda46cf65ed4d820aba",
+      "afterSha256": "f7c4555bf05ac0174f5afc32d7f331dcfd57f5e1ae576eda46cf65ed4d820aba"
+    },
+    {
+      "name": "matchesTaskFilter",
+      "unchanged": true,
+      "beforeSha256": "575640947b4ed0f249a5a8a6d5cb7042996faf083c04f2626fe335008c5bacf5",
+      "afterSha256": "575640947b4ed0f249a5a8a6d5cb7042996faf083c04f2626fe335008c5bacf5"
+    },
+    {
+      "name": "normalizeTaskSearchText",
+      "unchanged": true,
+      "beforeSha256": "7c1a0a1586e0d957f80e6ee65fc67a9ddb105e2c261cdf6fef22de6d7e4ad692",
+      "afterSha256": "7c1a0a1586e0d957f80e6ee65fc67a9ddb105e2c261cdf6fef22de6d7e4ad692"
+    },
+    {
+      "name": "matchesTaskSearch",
+      "unchanged": true,
+      "beforeSha256": "5b2731a9943ad5144524df06743de0d7bb0acc604d5d05a43f45663d19062505",
+      "afterSha256": "5b2731a9943ad5144524df06743de0d7bb0acc604d5d05a43f45663d19062505"
+    },
+    {
+      "name": "isTaskSearchActive",
+      "unchanged": true,
+      "beforeSha256": "6f636b8162cb9cc657c44d82b4475394824cff768f3f52acac049a4a04af7c13",
+      "afterSha256": "6f636b8162cb9cc657c44d82b4475394824cff768f3f52acac049a4a04af7c13"
+    },
+    {
+      "name": "resetTaskSearch",
+      "unchanged": true,
+      "beforeSha256": "3f2cf47fcaa59d844cdf749bf481c0864d0c6d2253cbc3eeaa861aa5dac1ff63",
+      "afterSha256": "3f2cf47fcaa59d844cdf749bf481c0864d0c6d2253cbc3eeaa861aa5dac1ff63"
+    },
+    {
+      "name": "handleTaskSearchInput",
+      "unchanged": true,
+      "beforeSha256": "d0492ebacfdbcfbcaa5cd5f013c4f0e5d554a15fd1fd3874072d31067ea3d6c8",
+      "afterSha256": "d0492ebacfdbcfbcaa5cd5f013c4f0e5d554a15fd1fd3874072d31067ea3d6c8"
+    },
+    {
+      "name": "getFilteredSubtasks",
+      "unchanged": true,
+      "beforeSha256": "642e25be36db9c9c702f656b9e3a1bf44d5706ed5a8962ba5eef1893e5df30f5",
+      "afterSha256": "642e25be36db9c9c702f656b9e3a1bf44d5706ed5a8962ba5eef1893e5df30f5"
+    },
+    {
+      "name": "isTaskVisible",
+      "unchanged": true,
+      "beforeSha256": "6c8cba6269b1d2612ba2b415528c692325f866788b03fc6ae5bfbfbefe8ac4bf",
+      "afterSha256": "6c8cba6269b1d2612ba2b415528c692325f866788b03fc6ae5bfbfbefe8ac4bf"
+    },
+    {
+      "name": "getVisibleParentTaskIds",
+      "unchanged": true,
+      "beforeSha256": "d3abd29e2a4ad6b5da0be469ac5a824e57a8617bb9ab0f95f5cb113b7ecbc6ef",
+      "afterSha256": "d3abd29e2a4ad6b5da0be469ac5a824e57a8617bb9ab0f95f5cb113b7ecbc6ef"
+    },
+    {
+      "name": "getVisibleSubtaskIds",
+      "unchanged": true,
+      "beforeSha256": "0a4f11a3feca048ac15eb6f64573fd862b9a4f8372af886e75a226105b86674c",
+      "afterSha256": "0a4f11a3feca048ac15eb6f64573fd862b9a4f8372af886e75a226105b86674c"
+    },
+    {
+      "name": "getVisibleMoveTargetId",
+      "unchanged": true,
+      "beforeSha256": "bc22d538fea80570746db7e4c35ec61dc607de15c99c402c2cef98c1e4a996d4",
+      "afterSha256": "bc22d538fea80570746db7e4c35ec61dc607de15c99c402c2cef98c1e4a996d4"
+    },
+    {
+      "name": "syncTaskFilterButtons",
+      "unchanged": true,
+      "beforeSha256": "9d792094b0081595bad7981670e282c9f86df702be1aa839bc4f486235de025a",
+      "afterSha256": "9d792094b0081595bad7981670e282c9f86df702be1aa839bc4f486235de025a"
+    },
+    {
+      "name": "setTaskFilter",
+      "unchanged": true,
+      "beforeSha256": "521976730fbfa92da437328a38ce08563eb771890d7c992bdb10d3ac8da981e4",
+      "afterSha256": "521976730fbfa92da437328a38ce08563eb771890d7c992bdb10d3ac8da981e4"
+    },
+    {
+      "name": "getPendingTaskCount",
+      "unchanged": true,
+      "beforeSha256": "206a8f53598327d38c1ba5713e517bf1adadc74792183ebffb774d94eb0b9c97",
+      "afterSha256": "206a8f53598327d38c1ba5713e517bf1adadc74792183ebffb774d94eb0b9c97"
+    },
+    {
+      "name": "updateDocumentTaskIndicators",
+      "unchanged": true,
+      "beforeSha256": "41c45a93caaa3cfc28eae190b9cc31ed9519fe298a4c8b65d09a6ed7d5e60199",
+      "afterSha256": "41c45a93caaa3cfc28eae190b9cc31ed9519fe298a4c8b65d09a6ed7d5e60199"
+    },
+    {
+      "name": "isAllDone",
+      "unchanged": true,
+      "beforeSha256": "80235ba8aa9d883f3f690199d922585878d33e10713abd599f3676a4fb6078b2",
+      "afterSha256": "80235ba8aa9d883f3f690199d922585878d33e10713abd599f3676a4fb6078b2"
+    },
+    {
+      "name": "applyColorMode",
+      "unchanged": true,
+      "beforeSha256": "c03070fe090525a854cd9b68d912874dcdd26912be0b11908e2f55637ba6f234",
+      "afterSha256": "c03070fe090525a854cd9b68d912874dcdd26912be0b11908e2f55637ba6f234"
+    },
+    {
+      "name": "applyThemeColor",
+      "unchanged": true,
+      "beforeSha256": "9a6e5ce65b334647b9909e8609bbea51fccb6d501ffc6596af127884eb463524",
+      "afterSha256": "9a6e5ce65b334647b9909e8609bbea51fccb6d501ffc6596af127884eb463524"
+    },
+    {
+      "name": "isCompactSidebarViewport",
+      "unchanged": true,
+      "beforeSha256": "f8ba1646ce55e23913f530fd1c7b49d2a434ec90bd5a9eb8ead958efc0035cf8",
+      "afterSha256": "f8ba1646ce55e23913f530fd1c7b49d2a434ec90bd5a9eb8ead958efc0035cf8"
+    },
+    {
+      "name": "applySidebarState",
+      "unchanged": true,
+      "beforeSha256": "141dd631b262362ffb0b9f819bb9e03b597c1ab4a7f598d927cdc1c9dfce4e39",
+      "afterSha256": "141dd631b262362ffb0b9f819bb9e03b597c1ab4a7f598d927cdc1c9dfce4e39"
+    },
+    {
+      "name": "getRouteFromHash",
+      "unchanged": true,
+      "beforeSha256": "954bdf98e1210b9046df3946f2f481c15eb13d06423b6ea0ba39f6c591f5c5b3",
+      "afterSha256": "954bdf98e1210b9046df3946f2f481c15eb13d06423b6ea0ba39f6c591f5c5b3"
+    },
+    {
+      "name": "navigate",
+      "unchanged": true,
+      "beforeSha256": "417a6d4e96d7fbeb7cb3ab6b59192d881575b17f001af95d62ba307b3764fb58",
+      "afterSha256": "417a6d4e96d7fbeb7cb3ab6b59192d881575b17f001af95d62ba307b3764fb58"
+    },
+    {
+      "name": "renderRoute",
+      "unchanged": true,
+      "beforeSha256": "cdfa8301836d5201ec3eb09eb99b71072bc27feeb694adcf8ed0ed7da5570be4",
+      "afterSha256": "cdfa8301836d5201ec3eb09eb99b71072bc27feeb694adcf8ed0ed7da5570be4"
+    },
+    {
+      "name": "getAudioCtx",
+      "unchanged": true,
+      "beforeSha256": "f3877a9025946ec6c801925774203de620aad4ea37a7155ec597f3ce4a59191f",
+      "afterSha256": "f3877a9025946ec6c801925774203de620aad4ea37a7155ec597f3ce4a59191f"
+    },
+    {
+      "name": "_getAudioOutputNode",
+      "unchanged": true,
+      "beforeSha256": "0321c591341dba1156285f39e201e12312b8c46721d3a087d80127655d72b28e",
+      "afterSha256": "0321c591341dba1156285f39e201e12312b8c46721d3a087d80127655d72b28e"
+    },
+    {
+      "name": "_withRunningAudio",
+      "unchanged": true,
+      "beforeSha256": "e908bdee86d510593a99fb529f08db6a449fb10868bbef7e644e40f1b84df8d3",
+      "afterSha256": "e908bdee86d510593a99fb529f08db6a449fb10868bbef7e644e40f1b84df8d3"
+    },
+    {
+      "name": "_primeAudioContext",
+      "unchanged": true,
+      "beforeSha256": "620d6b5bffd32fc0c68e343ee543b84097bfd13fd28278c9c1b511356edfb93b",
+      "afterSha256": "620d6b5bffd32fc0c68e343ee543b84097bfd13fd28278c9c1b511356edfb93b"
+    },
+    {
+      "name": "_clampAudioPan",
+      "unchanged": true,
+      "beforeSha256": "4bf72067147e7ecacf899b6539d3907eea82074ec6940d315d71d72b14856a7f",
+      "afterSha256": "4bf72067147e7ecacf899b6539d3907eea82074ec6940d315d71d72b14856a7f"
+    },
+    {
+      "name": "_connectToOutputWithPan",
+      "unchanged": true,
+      "beforeSha256": "a177ed5f6c41bdde0973ff2d265e6cb79125319393782ebb24b0c16962b733b4",
+      "afterSha256": "a177ed5f6c41bdde0973ff2d265e6cb79125319393782ebb24b0c16962b733b4"
+    },
+    {
+      "name": "playTone",
+      "unchanged": true,
+      "beforeSha256": "cffce1d108a39f4b418503bbf737eef91a3b2f17802ad54bba7aca52a19d7182",
+      "afterSha256": "cffce1d108a39f4b418503bbf737eef91a3b2f17802ad54bba7aca52a19d7182"
+    },
+    {
+      "name": "playSubtaskCompleteSound",
+      "unchanged": true,
+      "beforeSha256": "50ad4a2f40894b2df81ca5ae9c0e7f50e8cd99fefd3e4c7a177dff3937dc49a7",
+      "afterSha256": "50ad4a2f40894b2df81ca5ae9c0e7f50e8cd99fefd3e4c7a177dff3937dc49a7"
+    },
+    {
+      "name": "playParentCompleteSound",
+      "unchanged": true,
+      "beforeSha256": "9985bd224fd89d7cc9bbe850ace4c9247950e8551890d4d107873b9ece2996aa",
+      "afterSha256": "9985bd224fd89d7cc9bbe850ace4c9247950e8551890d4d107873b9ece2996aa"
+    },
+    {
+      "name": "playAllClearSound",
+      "unchanged": true,
+      "beforeSha256": "97baa773e11569ea18c9d87cbefa8ad553631754ead9b0fc0bd04b7104eaf5cb",
+      "afterSha256": "97baa773e11569ea18c9d87cbefa8ad553631754ead9b0fc0bd04b7104eaf5cb"
+    },
+    {
+      "name": "playFocusStartSound",
+      "unchanged": true,
+      "beforeSha256": "01593449cbf292c6e335fe08868d91f5a1b8b04a1ff61fba5d9b7cf8e5a31c8f",
+      "afterSha256": "01593449cbf292c6e335fe08868d91f5a1b8b04a1ff61fba5d9b7cf8e5a31c8f"
+    },
+    {
+      "name": "playFocusShiftSound",
+      "unchanged": true,
+      "beforeSha256": "80045b1118823aefea8f0244bdd15e4172080332d27052945e906e4894b571e2",
+      "afterSha256": "80045b1118823aefea8f0244bdd15e4172080332d27052945e906e4894b571e2"
+    },
+    {
+      "name": "playFocusAbortSound",
+      "unchanged": true,
+      "beforeSha256": "d764b242ac81d9cdb3ef56cab5e756b545672cd056c446d8118a3570b9480945",
+      "afterSha256": "d764b242ac81d9cdb3ef56cab5e756b545672cd056c446d8118a3570b9480945"
+    },
+    {
+      "name": "playAddSound",
+      "unchanged": true,
+      "beforeSha256": "fe75d86ee8ba0da75078e749bbe74fa54bb3c8646ca7a5b365d67abdab796094",
+      "afterSha256": "fe75d86ee8ba0da75078e749bbe74fa54bb3c8646ca7a5b365d67abdab796094"
+    },
+    {
+      "name": "playDeleteSound",
+      "unchanged": true,
+      "beforeSha256": "5eb278ec4a6730cc9099da0cf7b6b9a0f8222549d9ba4314a5eb9a737ac31e31",
+      "afterSha256": "5eb278ec4a6730cc9099da0cf7b6b9a0f8222549d9ba4314a5eb9a737ac31e31"
+    },
+    {
+      "name": "resizeCanvas",
+      "unchanged": true,
+      "beforeSha256": "126b6abcef7ed11c25e5c59eeb1817a43bbb55e8068787099feb503ccd8f1ceb",
+      "afterSha256": "126b6abcef7ed11c25e5c59eeb1817a43bbb55e8068787099feb503ccd8f1ceb"
+    },
+    {
+      "name": "launchConfetti",
+      "unchanged": true,
+      "beforeSha256": "a9933c78b430a3f2f9a895cae17215447fd7cdc4cf49eb09a909c1b00d924dc7",
+      "afterSha256": "a9933c78b430a3f2f9a895cae17215447fd7cdc4cf49eb09a909c1b00d924dc7"
+    },
+    {
+      "name": "animateConfetti",
+      "unchanged": true,
+      "beforeSha256": "67d22e9c46127dd3212aabb9a2224b56070a768e6ba75370a59335fa05e4294d",
+      "afterSha256": "67d22e9c46127dd3212aabb9a2224b56070a768e6ba75370a59335fa05e4294d"
+    },
+    {
+      "name": "showCelebration",
+      "unchanged": true,
+      "beforeSha256": "cdb739c0c1b381983a158f4e6c8bd2f31b10cf8e2e3ad7821b6f60bfe54398b7",
+      "afterSha256": "cdb739c0c1b381983a158f4e6c8bd2f31b10cf8e2e3ad7821b6f60bfe54398b7"
+    },
+    {
+      "name": "celebrateElement",
+      "unchanged": true,
+      "beforeSha256": "554f9d1a7d45a1932409734ec21e26421732026e2916f2cb4f4adcf3357633dd",
+      "afterSha256": "554f9d1a7d45a1932409734ec21e26421732026e2916f2cb4f4adcf3357633dd"
+    },
+    {
+      "name": "buildDeleteParentConfirmMessage",
+      "unchanged": true,
+      "beforeSha256": "7d651524dd65eb0312d4fe190f278d7fb37f9aa928e4fa6b8e0b81af5cadcd60",
+      "afterSha256": "7d651524dd65eb0312d4fe190f278d7fb37f9aa928e4fa6b8e0b81af5cadcd60"
+    },
+    {
+      "name": "buildDeleteSubtaskConfirmMessage",
+      "unchanged": true,
+      "beforeSha256": "64b68c7594ad609e2797731d2d083d42681d241cf7b9c303f2866f1d9fa56217",
+      "afterSha256": "64b68c7594ad609e2797731d2d083d42681d241cf7b9c303f2866f1d9fa56217"
+    },
+    {
+      "name": "getClearCompletedScopeText",
+      "unchanged": true,
+      "beforeSha256": "a0b892a988f0616260de934ee15ba100ece9b0880d098db75468af85b4ef2d9c",
+      "afterSha256": "a0b892a988f0616260de934ee15ba100ece9b0880d098db75468af85b4ef2d9c"
+    },
+    {
+      "name": "buildClearCompletedConfirmMessage",
+      "unchanged": true,
+      "beforeSha256": "194512dcc163e0147767fac7b01a2d373cf533afc699add9b6fcfe273358c20e",
+      "afterSha256": "194512dcc163e0147767fac7b01a2d373cf533afc699add9b6fcfe273358c20e"
+    },
+    {
+      "name": "buildClearAllConfirmMessage",
+      "unchanged": true,
+      "beforeSha256": "b680aaf0c9c9db1a57fb36a15eaaba6ff8e224442c03b55360d6c74cb2ac9e6f",
+      "afterSha256": "b680aaf0c9c9db1a57fb36a15eaaba6ff8e224442c03b55360d6c74cb2ac9e6f"
+    },
+    {
+      "name": "buildAbortFocusConfirmMessage",
+      "unchanged": true,
+      "beforeSha256": "db05644ffc16516a3e7272427070b28720c55093f3646cb86cc4da924e277735",
+      "afterSha256": "db05644ffc16516a3e7272427070b28720c55093f3646cb86cc4da924e277735"
+    },
+    {
+      "name": "openConfirmModal",
+      "unchanged": true,
+      "beforeSha256": "bde9efae5dcfedbd3ec9a8e978f11cfa540dbd98dfed540f338269da9c9ef77f",
+      "afterSha256": "bde9efae5dcfedbd3ec9a8e978f11cfa540dbd98dfed540f338269da9c9ef77f"
+    },
+    {
+      "name": "closeConfirmModal",
+      "unchanged": true,
+      "beforeSha256": "a34de0a93234c10aaf61803ef935d7f364b1449d61f4c5d7da58d13af989bef6",
+      "afterSha256": "a34de0a93234c10aaf61803ef935d7f364b1449d61f4c5d7da58d13af989bef6"
+    },
+    {
+      "name": "executeConfirmedAction",
+      "unchanged": true,
+      "beforeSha256": "bb8c442a24a07757348242d9d9fc3a842ff5206ea9d2749a18fa3444a9aa80d2",
+      "afterSha256": "bb8c442a24a07757348242d9d9fc3a842ff5206ea9d2749a18fa3444a9aa80d2"
+    },
+    {
+      "name": "renderMessages",
+      "unchanged": true,
+      "beforeSha256": "349b462c44c7ff73c58e596e4d6a76b52e80a1bf3ed8505ce797428b7a19077f",
+      "afterSha256": "349b462c44c7ff73c58e596e4d6a76b52e80a1bf3ed8505ce797428b7a19077f"
+    },
+    {
+      "name": "saveMessage",
+      "unchanged": true,
+      "beforeSha256": "f881a34d0729207ae966f3867673fb3917bc9b01e46bad99c0f3e6acd6e70197",
+      "afterSha256": "f881a34d0729207ae966f3867673fb3917bc9b01e46bad99c0f3e6acd6e70197"
+    },
+    {
+      "name": "editMessage",
+      "unchanged": true,
+      "beforeSha256": "550524e743e970ae7421a25fc5cafe4cd1ccd02436a7608913e4e2017c3c54d7",
+      "afterSha256": "550524e743e970ae7421a25fc5cafe4cd1ccd02436a7608913e4e2017c3c54d7"
+    },
+    {
+      "name": "saveEditedMessage",
+      "unchanged": true,
+      "beforeSha256": "d026be0192e6b9dbd2fd189542393df88aaef71e9d52cbd21217e9d475f991e2",
+      "afterSha256": "d026be0192e6b9dbd2fd189542393df88aaef71e9d52cbd21217e9d475f991e2"
+    },
+    {
+      "name": "deleteMessage",
+      "unchanged": true,
+      "beforeSha256": "804e60b4ba2004e65a6843fdaaed5fd19e9087440b4c25d66b502f2987548e54",
+      "afterSha256": "804e60b4ba2004e65a6843fdaaed5fd19e9087440b4c25d66b502f2987548e54"
+    },
+    {
+      "name": "openParentModal",
+      "unchanged": true,
+      "beforeSha256": "85d87348b369ee10b0b06fc501765d158f83b063ab350b6d7809ab8568c73826",
+      "afterSha256": "85d87348b369ee10b0b06fc501765d158f83b063ab350b6d7809ab8568c73826"
+    },
+    {
+      "name": "closeParentModal",
+      "unchanged": true,
+      "beforeSha256": "8fc1dd8bcbd13b32ecf01b1356a577d0c42eabaa3474c20cf2902ab50749de87",
+      "afterSha256": "8fc1dd8bcbd13b32ecf01b1356a577d0c42eabaa3474c20cf2902ab50749de87"
+    },
+    {
+      "name": "renderParentModalSubtasks",
+      "unchanged": true,
+      "beforeSha256": "e360f9779141337e27ea2a3b49ea7c16faed592703b8b70636557d9d391fe200",
+      "afterSha256": "e360f9779141337e27ea2a3b49ea7c16faed592703b8b70636557d9d391fe200"
+    },
+    {
+      "name": "saveParentEdit",
+      "unchanged": true,
+      "beforeSha256": "c283422b3ed198b4bcdb6950a9b9bc3b1583d2ace2d5d398b245786ea624618f",
+      "afterSha256": "c283422b3ed198b4bcdb6950a9b9bc3b1583d2ace2d5d398b245786ea624618f"
+    },
+    {
+      "name": "addSubtaskFromModal",
+      "unchanged": true,
+      "beforeSha256": "d2f935477d9ca0ded930a4501a780cd766cb89f5851b7fdf92d446ce4aad0ec3",
+      "afterSha256": "d2f935477d9ca0ded930a4501a780cd766cb89f5851b7fdf92d446ce4aad0ec3"
+    },
+    {
+      "name": "openSubtaskModal",
+      "unchanged": true,
+      "beforeSha256": "ca5c3904cb5c984b50d3ac11717ae184845707fc82d11d1af6ba140e4b179292",
+      "afterSha256": "ca5c3904cb5c984b50d3ac11717ae184845707fc82d11d1af6ba140e4b179292"
+    },
+    {
+      "name": "closeSubtaskModal",
+      "unchanged": true,
+      "beforeSha256": "83c0a35c201f8ae95a920a8f16c1c16fde9670a960c10d5be8371a3806891068",
+      "afterSha256": "83c0a35c201f8ae95a920a8f16c1c16fde9670a960c10d5be8371a3806891068"
+    },
+    {
+      "name": "saveSubtaskEdit",
+      "unchanged": true,
+      "beforeSha256": "520de0758c9b4179e687fea3eeb306a7124d4272898e51181c77f4088ec7a69e",
+      "afterSha256": "520de0758c9b4179e687fea3eeb306a7124d4272898e51181c77f4088ec7a69e"
+    },
+    {
+      "name": "clearRunningAcrossAllTargets",
+      "unchanged": true,
+      "beforeSha256": "c683afa40edd7639c3c48d11943952156ab7ae2246dac08398794ee5d1a08947",
+      "afterSha256": "c683afa40edd7639c3c48d11943952156ab7ae2246dac08398794ee5d1a08947"
+    },
+    {
+      "name": "resetFocusPomodoroState",
+      "unchanged": true,
+      "beforeSha256": "3d237ba5e6f7e9ba15d502e6b626affa9a9f4f2f008c60fb5f21289b866b3d73",
+      "afterSha256": "3d237ba5e6f7e9ba15d502e6b626affa9a9f4f2f008c60fb5f21289b866b3d73"
+    },
+    {
+      "name": "isPomodoroEnabledForSession",
+      "unchanged": true,
+      "beforeSha256": "db7e9648ff2ff2bea413921fc61c0f64fa37121bc4e0270a0f9e05601bb87215",
+      "afterSha256": "db7e9648ff2ff2bea413921fc61c0f64fa37121bc4e0270a0f9e05601bb87215"
+    },
+    {
+      "name": "getPomodoroPhaseDurationMs",
+      "unchanged": true,
+      "beforeSha256": "bd62e022baf1bc5fd65a82f60f5c94584de8ae9dfc84e7dd07cf9effb0f20233",
+      "afterSha256": "bd62e022baf1bc5fd65a82f60f5c94584de8ae9dfc84e7dd07cf9effb0f20233"
+    },
+    {
+      "name": "getPomodoroPhaseRemainingMs",
+      "unchanged": true,
+      "beforeSha256": "dfc704ea418fea68f93c9756003b99cc63207d0fa2cebf1d0de2b266aded9cd1",
+      "afterSha256": "dfc704ea418fea68f93c9756003b99cc63207d0fa2cebf1d0de2b266aded9cd1"
+    },
+    {
+      "name": "startFocusPomodoroSession",
+      "unchanged": true,
+      "beforeSha256": "956dcd8bc3d55ab159ff429f6e37743786a265ea7b81b9c2329f360b93c6b7ef",
+      "afterSha256": "956dcd8bc3d55ab159ff429f6e37743786a265ea7b81b9c2329f360b93c6b7ef"
+    },
+    {
+      "name": "syncPomodoroPhaseProgress",
+      "unchanged": true,
+      "beforeSha256": "6bd0ffd29dcf09e02d340070b9347c0a1dfd9c1f9f8a5d28f83664ee21b52b67",
+      "afterSha256": "6bd0ffd29dcf09e02d340070b9347c0a1dfd9c1f9f8a5d28f83664ee21b52b67"
+    },
+    {
+      "name": "syncActivePomodoroPhaseProgress",
+      "unchanged": true,
+      "beforeSha256": "7fa7d85d69c5bb0aadb7c4ef13060422eb516efff4b299b0e8102ae173c32aa7",
+      "afterSha256": "7fa7d85d69c5bb0aadb7c4ef13060422eb516efff4b299b0e8102ae173c32aa7"
+    },
+    {
+      "name": "notifyPomodoroPhaseTransition",
+      "unchanged": true,
+      "beforeSha256": "7fcfba51874b70c1d81615f086f79449eb5a94c333d5628fe59b805195292098",
+      "afterSha256": "7fcfba51874b70c1d81615f086f79449eb5a94c333d5628fe59b805195292098"
+    },
+    {
+      "name": "syncFocusPhaseVisualState",
+      "unchanged": true,
+      "beforeSha256": "5f08d3dcb89655e6ee7263c8c17bbfa067c00e91424f1d24f9b26107cd0041e7",
+      "afterSha256": "5f08d3dcb89655e6ee7263c8c17bbfa067c00e91424f1d24f9b26107cd0041e7"
+    },
+    {
+      "name": "canOpenFocusForParent",
+      "unchanged": true,
+      "beforeSha256": "052829160de0aefd84b58c0d4b851c9bb4c1dbb8a192dfdbe55d3104e5a24d14",
+      "afterSha256": "052829160de0aefd84b58c0d4b851c9bb4c1dbb8a192dfdbe55d3104e5a24d14"
+    },
+    {
+      "name": "canOpenFocusForSubtask",
+      "unchanged": true,
+      "beforeSha256": "7881649c3d299c96f10b80ba5414ac09b501b5cceb7a6fa26a05f3b46ef03470",
+      "afterSha256": "7881649c3d299c96f10b80ba5414ac09b501b5cceb7a6fa26a05f3b46ef03470"
+    },
+    {
+      "name": "openFocusModal",
+      "unchanged": true,
+      "beforeSha256": "d952f4c15feb954a13ca9b3b7ea5c40e55568664bc23f9a38e339c5eb6bdb03f",
+      "afterSha256": "d952f4c15feb954a13ca9b3b7ea5c40e55568664bc23f9a38e339c5eb6bdb03f"
+    },
+    {
+      "name": "closeFocusModal",
+      "unchanged": true,
+      "beforeSha256": "80c1044375881c925ba9894f139d811975456edca83947835868c7ea040183b0",
+      "afterSha256": "80c1044375881c925ba9894f139d811975456edca83947835868c7ea040183b0"
+    },
+    {
+      "name": "getActiveFocusTarget",
+      "unchanged": true,
+      "beforeSha256": "c2c70ffa8554213a7ae1834463dc6b0a7dba0fd20a43084f91bcc2785a7b51ca",
+      "afterSha256": "c2c70ffa8554213a7ae1834463dc6b0a7dba0fd20a43084f91bcc2785a7b51ca"
+    },
+    {
+      "name": "updateFocusTimer",
+      "unchanged": true,
+      "beforeSha256": "4f6e5f0014980872ed373ed03766c880bda07dbde575591a9ad9bfb0b4d8d921",
+      "afterSha256": "4f6e5f0014980872ed373ed03766c880bda07dbde575591a9ad9bfb0b4d8d921"
+    },
+    {
+      "name": "syncFocusStatusChip",
+      "unchanged": true,
+      "beforeSha256": "9c40d05bca1639d4a678114dbfe405914c853677bf1a0defd952db62bb406442",
+      "afterSha256": "9c40d05bca1639d4a678114dbfe405914c853677bf1a0defd952db62bb406442"
+    },
+    {
+      "name": "syncFocusPauseButton",
+      "unchanged": true,
+      "beforeSha256": "794d6eba60439b8f993591cad3a4929c97215a201c7dc84f2e6d718e53d1b482",
+      "afterSha256": "794d6eba60439b8f993591cad3a4929c97215a201c7dc84f2e6d718e53d1b482"
+    },
+    {
+      "name": "pauseOrResumeFocus",
+      "unchanged": true,
+      "beforeSha256": "ca442ca7450275583af2c242c9beb3c931198efdd19b5e3ed22ca8103d840da5",
+      "afterSha256": "ca442ca7450275583af2c242c9beb3c931198efdd19b5e3ed22ca8103d840da5"
+    },
+    {
+      "name": "performAbortFocus",
+      "unchanged": true,
+      "beforeSha256": "22faa2d88dbb527207d5758a8c22a26d0a0085f4ea18d2327d1333b2f0b0a0a5",
+      "afterSha256": "22faa2d88dbb527207d5758a8c22a26d0a0085f4ea18d2327d1333b2f0b0a0a5"
+    },
+    {
+      "name": "abortFocus",
+      "unchanged": true,
+      "beforeSha256": "101572cf15824f8f1339ea434e972847589da08613deac63e2d03c4fca4ffbda",
+      "afterSha256": "101572cf15824f8f1339ea434e972847589da08613deac63e2d03c4fca4ffbda"
+    },
+    {
+      "name": "completeFocus",
+      "unchanged": true,
+      "beforeSha256": "d709b7612167ba038e69d4b9cf112c4d847b2034eda918a57521c80b67fca2e1",
+      "afterSha256": "d709b7612167ba038e69d4b9cf112c4d847b2034eda918a57521c80b67fca2e1"
+    },
+    {
+      "name": "undoCompleted",
+      "unchanged": true,
+      "beforeSha256": "cd925628532d2270081dc082a34a33cbb03797b7cb79eecbf42fdd536cbaf2ba",
+      "afterSha256": "cd925628532d2270081dc082a34a33cbb03797b7cb79eecbf42fdd536cbaf2ba"
+    },
+    {
+      "name": "showDragInsertionPreview",
+      "unchanged": true,
+      "beforeSha256": "05c4ed0c2e36526b0c67363319b67e1780d3b17be2ec0cf65c29e5db1910efda",
+      "afterSha256": "05c4ed0c2e36526b0c67363319b67e1780d3b17be2ec0cf65c29e5db1910efda"
+    },
+    {
+      "name": "clearDragDropIndicators",
+      "unchanged": true,
+      "beforeSha256": "c1c9f786a8eaf42563a59a6342a14cb4d018ce17dc710a1513593ea5cc5357e9",
+      "afterSha256": "c1c9f786a8eaf42563a59a6342a14cb4d018ce17dc710a1513593ea5cc5357e9"
+    },
+    {
+      "name": "resetDragState",
+      "unchanged": true,
+      "beforeSha256": "258f5c40d3d6c61811e90ec840be1ceb3b7e498f4488fb15c617950035db4d0b",
+      "afterSha256": "258f5c40d3d6c61811e90ec840be1ceb3b7e498f4488fb15c617950035db4d0b"
+    },
+    {
+      "name": "moveArrayItem",
+      "unchanged": true,
+      "beforeSha256": "741197a745a47135f71c59a0f7a0730f0d772ad688644cfd1ec5d005db8ce902",
+      "afterSha256": "741197a745a47135f71c59a0f7a0730f0d772ad688644cfd1ec5d005db8ce902"
+    },
+    {
+      "name": "reorderParentTasks",
+      "unchanged": true,
+      "beforeSha256": "04b5156d77c751441cd75dd21dc4a8d5f936102f8127f8accdacbf2c501ca6e6",
+      "afterSha256": "04b5156d77c751441cd75dd21dc4a8d5f936102f8127f8accdacbf2c501ca6e6"
+    },
+    {
+      "name": "reorderSubtasks",
+      "unchanged": true,
+      "beforeSha256": "7d60c6609ea0602f712f56a66f44e53294301de50d630c2773c4c76d79664927",
+      "afterSha256": "7d60c6609ea0602f712f56a66f44e53294301de50d630c2773c4c76d79664927"
+    },
+    {
+      "name": "getEditorReorderContext",
+      "unchanged": true,
+      "beforeSha256": "e3703ce869271073c20278defc6eb4c9731758661340ffa080e50d70017d10af",
+      "afterSha256": "e3703ce869271073c20278defc6eb4c9731758661340ffa080e50d70017d10af"
+    },
+    {
+      "name": "syncEditorReorderControls",
+      "unchanged": true,
+      "beforeSha256": "f6029f425b685512a35af93d1aae4ea5fefcb94d042681a5c0a69ca82ba7a88e",
+      "afterSha256": "f6029f425b685512a35af93d1aae4ea5fefcb94d042681a5c0a69ca82ba7a88e"
+    },
+    {
+      "name": "moveEditorTask",
+      "unchanged": true,
+      "beforeSha256": "3927c9035eae2dd92b16c702ab4c4a31f58057531f8e7f65851ffa427006bda0",
+      "afterSha256": "3927c9035eae2dd92b16c702ab4c4a31f58057531f8e7f65851ffa427006bda0"
+    },
+    {
+      "name": "_restoreFocusToTaskRow",
+      "unchanged": true,
+      "beforeSha256": "5e7256a2486156290c232bb526af998f7ea94200b776dfd25ae6d2825a6e979c",
+      "afterSha256": "5e7256a2486156290c232bb526af998f7ea94200b776dfd25ae6d2825a6e979c"
+    },
+    {
+      "name": "_moveFocusedTaskRowByOffset",
+      "unchanged": true,
+      "beforeSha256": "fad553e203fa49ea4c94dae0a510e4b411da06f81876a58b28e41360355b298c",
+      "afterSha256": "fad553e203fa49ea4c94dae0a510e4b411da06f81876a58b28e41360355b298c"
+    },
+    {
+      "name": "isPointNearRect",
+      "unchanged": true,
+      "beforeSha256": "44502f13c23451b320e3cf7725479655772447dbcf63a19cfaa345d53753b598",
+      "afterSha256": "44502f13c23451b320e3cf7725479655772447dbcf63a19cfaa345d53753b598"
+    },
+    {
+      "name": "resolveDropIntentByClientY",
+      "unchanged": true,
+      "beforeSha256": "0d75124a530792bbeb7242fdd3c4da3528b481b299f563818374cc23a2b1b4dc",
+      "afterSha256": "0d75124a530792bbeb7242fdd3c4da3528b481b299f563818374cc23a2b1b4dc"
+    },
+    {
+      "name": "startDragFromHandle",
+      "unchanged": true,
+      "beforeSha256": "e6cf78767b436276ccc5a0948c550a7d51afdcb677c378f7fb9366eaaa61e321",
+      "afterSha256": "e6cf78767b436276ccc5a0948c550a7d51afdcb677c378f7fb9366eaaa61e321"
+    },
+    {
+      "name": "clearModalSubtaskDragIndicators",
+      "unchanged": true,
+      "beforeSha256": "3dfe75b37551c80312e147d045552347865ca2faa9e5dd340ac302e6f4024d9c",
+      "afterSha256": "3dfe75b37551c80312e147d045552347865ca2faa9e5dd340ac302e6f4024d9c"
+    },
+    {
+      "name": "resetModalSubtaskDragState",
+      "unchanged": true,
+      "beforeSha256": "c9d83c94225ee02efbaae64fe5c0fd2dcd2cad59cb67f5f8c8b64b08c3545ba1",
+      "afterSha256": "c9d83c94225ee02efbaae64fe5c0fd2dcd2cad59cb67f5f8c8b64b08c3545ba1"
+    },
+    {
+      "name": "startModalSubtaskDrag",
+      "unchanged": true,
+      "beforeSha256": "fa722407883a781c42e65f0723992452c3921c9a4a0bf9350f237913cb418e3f",
+      "afterSha256": "fa722407883a781c42e65f0723992452c3921c9a4a0bf9350f237913cb418e3f"
+    },
+    {
+      "name": "render",
+      "unchanged": true,
+      "beforeSha256": "0cb4e7e524c9927982939c92e91d95e6db7d6497865b9db16936a5b642f2046f",
+      "afterSha256": "0cb4e7e524c9927982939c92e91d95e6db7d6497865b9db16936a5b642f2046f"
+    },
+    {
+      "name": "getFocusIconForMeta",
+      "unchanged": true,
+      "beforeSha256": "379e2a989028d3c690490ab3bcb67bdbc238e77109d774da2369825b73e30970",
+      "afterSha256": "379e2a989028d3c690490ab3bcb67bdbc238e77109d774da2369825b73e30970"
+    },
+    {
+      "name": "getTaskRowRenderKey",
+      "unchanged": true,
+      "beforeSha256": "bb1806976e773aee5296963fb5a177d382c6763faad3544aa882a36adac83fb5",
+      "afterSha256": "bb1806976e773aee5296963fb5a177d382c6763faad3544aa882a36adac83fb5"
+    },
+    {
+      "name": "createSubtaskRowMarkup",
+      "unchanged": true,
+      "beforeSha256": "fd1f14c89389151f2f9c02b91c382c3d612c9abf1c564f7558849197e00f2ede",
+      "afterSha256": "fd1f14c89389151f2f9c02b91c382c3d612c9abf1c564f7558849197e00f2ede"
+    },
+    {
+      "name": "reconcileTaskRows",
+      "unchanged": true,
+      "beforeSha256": "c2d6decce342464438adb37b096a761d0b16df69af58c28434c9da3155a53704",
+      "afterSha256": "c2d6decce342464438adb37b096a761d0b16df69af58c28434c9da3155a53704"
+    },
+    {
+      "name": "renderTasks",
+      "unchanged": true,
+      "beforeSha256": "35107a09ba7207fa61a3777c01d6ad1e388b52b6864a41ac72ed0f5cfca64ea3",
+      "afterSha256": "35107a09ba7207fa61a3777c01d6ad1e388b52b6864a41ac72ed0f5cfca64ea3"
+    },
+    {
+      "name": "setThemeColor",
+      "unchanged": true,
+      "beforeSha256": "15a0c00cb0ec0496e04d958ed8d386cca5ab8e7c573185fde31d24ddca658cda",
+      "afterSha256": "15a0c00cb0ec0496e04d958ed8d386cca5ab8e7c573185fde31d24ddca658cda"
+    },
+    {
+      "name": "renderThemeOptions",
+      "unchanged": true,
+      "beforeSha256": "a8ca17883f2cef1f03de1db604c70e5a80bbf5f17911fadad0141f5671438046",
+      "afterSha256": "a8ca17883f2cef1f03de1db604c70e5a80bbf5f17911fadad0141f5671438046"
+    },
+    {
+      "name": "renderPomodoroSettings",
+      "unchanged": true,
+      "beforeSha256": "6e22dfaee793a9bc0cd46b91b66d3f45d643da8ef72bf4287068d6e0a70fa1f2",
+      "afterSha256": "6e22dfaee793a9bc0cd46b91b66d3f45d643da8ef72bf4287068d6e0a70fa1f2"
+    },
+    {
+      "name": "syncPomodoroSettingsControls",
+      "unchanged": true,
+      "beforeSha256": "a7d66fe4db79f890759331609011f5c0364f9bfe56cafa20c7cb58e2d151d62d",
+      "afterSha256": "a7d66fe4db79f890759331609011f5c0364f9bfe56cafa20c7cb58e2d151d62d"
+    },
+    {
+      "name": "commitPomodoroSettingsFromControls",
+      "unchanged": true,
+      "beforeSha256": "0e19226abbce88aa0f1d9a500aaac87364ed4e8f5ce31712782cb51fc5304c1c",
+      "afterSha256": "0e19226abbce88aa0f1d9a500aaac87364ed4e8f5ce31712782cb51fc5304c1c"
+    },
+    {
+      "name": "commitPomodoroMinutesFromInput",
+      "unchanged": true,
+      "beforeSha256": "a6cd36854e70805171efc9cd8ec461456796afb7a9a8fa35f4b382cc738e0dba",
+      "afterSha256": "a6cd36854e70805171efc9cd8ec461456796afb7a9a8fa35f4b382cc738e0dba"
+    },
+    {
+      "name": "renderSettings",
+      "unchanged": true,
+      "beforeSha256": "532d1b887cce1f4c099fb9b95e3b33aeea2fb3b6a7817938d31cad5e10239a70",
+      "afterSha256": "532d1b887cce1f4c099fb9b95e3b33aeea2fb3b6a7817938d31cad5e10239a70"
+    },
+    {
+      "name": "_createParentDeleteUndoPayload",
+      "unchanged": true,
+      "beforeSha256": "7dce32113de0f032e5a16f1ec0d90d67b3307c8c7f148ece9df32e5972c6477d",
+      "afterSha256": "7dce32113de0f032e5a16f1ec0d90d67b3307c8c7f148ece9df32e5972c6477d"
+    },
+    {
+      "name": "_createSubtaskDeleteUndoPayload",
+      "unchanged": true,
+      "beforeSha256": "430d7ee3937c1478fbaa67b9f3de18638dbda58a835f1ec7a12fcf0aaef4eb38",
+      "afterSha256": "430d7ee3937c1478fbaa67b9f3de18638dbda58a835f1ec7a12fcf0aaef4eb38"
+    },
+    {
+      "name": "_createClearCompletedUndoPayload",
+      "unchanged": true,
+      "beforeSha256": "2471a46ded518c9d993c0e99a856597d938a49579ddc6a004c9b17b111ecf200",
+      "afterSha256": "2471a46ded518c9d993c0e99a856597d938a49579ddc6a004c9b17b111ecf200"
+    },
+    {
+      "name": "_createClearAllUndoPayload",
+      "unchanged": true,
+      "beforeSha256": "f7efe0726eb687a7dc2822ae73aa7900aad23345334233aa9cfbf2590af9b8df",
+      "afterSha256": "f7efe0726eb687a7dc2822ae73aa7900aad23345334233aa9cfbf2590af9b8df"
+    },
+    {
+      "name": "performDeleteParent",
+      "unchanged": true,
+      "beforeSha256": "4a656ec5b5e1d8d487ad0319586d2a1697bdd079a1c680502e5ded903911646a",
+      "afterSha256": "4a656ec5b5e1d8d487ad0319586d2a1697bdd079a1c680502e5ded903911646a"
+    },
+    {
+      "name": "performDeleteSubtask",
+      "unchanged": true,
+      "beforeSha256": "fa994363b022d9d6d85882b892bf46942c2e459e7b8edbee93b3ce5fb7ae83e7",
+      "afterSha256": "fa994363b022d9d6d85882b892bf46942c2e459e7b8edbee93b3ce5fb7ae83e7"
+    },
+    {
+      "name": "performClearCompleted",
+      "unchanged": true,
+      "beforeSha256": "0aeae087116c27f0525b616a614bd6554ce109167304c37e21f3e3b3b9134302",
+      "afterSha256": "0aeae087116c27f0525b616a614bd6554ce109167304c37e21f3e3b3b9134302"
+    },
+    {
+      "name": "performClearAll",
+      "unchanged": true,
+      "beforeSha256": "00acbd76f4c221f942d4a3fe67ed76ccb3848d2b7ab9990b8bbbd2099ec4581f",
+      "afterSha256": "00acbd76f4c221f942d4a3fe67ed76ccb3848d2b7ab9990b8bbbd2099ec4581f"
+    },
+    {
+      "name": "addTask",
+      "unchanged": true,
+      "beforeSha256": "8a7fa444e6578746740493be41d4d34fd9920cf060f59c0f0c29e5786a5f65c9",
+      "afterSha256": "8a7fa444e6578746740493be41d4d34fd9920cf060f59c0f0c29e5786a5f65c9"
+    },
+    {
+      "name": "isTypingTarget",
+      "unchanged": true,
+      "beforeSha256": "bb06945cae8b826a8a87ed24419dd233b490b83c1c51333a09f63d01ed18eb98",
+      "afterSha256": "bb06945cae8b826a8a87ed24419dd233b490b83c1c51333a09f63d01ed18eb98"
+    },
+    {
+      "name": "toggleSidebar",
+      "unchanged": true,
+      "beforeSha256": "218e12e17eff49b4572807a4691b3921ac9818442dbff22b52eebb1890eb55f9",
+      "afterSha256": "218e12e17eff49b4572807a4691b3921ac9818442dbff22b52eebb1890eb55f9"
+    },
+    {
+      "name": "openClearCompletedConfirm",
+      "unchanged": true,
+      "beforeSha256": "67b418b478d33296a4c84a370d71fcd0be3a1d86a8403fcb8db42423c2692dd3",
+      "afterSha256": "67b418b478d33296a4c84a370d71fcd0be3a1d86a8403fcb8db42423c2692dd3"
+    },
+    {
+      "name": "openClearAllConfirm",
+      "unchanged": true,
+      "beforeSha256": "57345f911f28ce038c3243a1e8415eff550d0fc570eae810ae82fe891181ecab",
+      "afterSha256": "57345f911f28ce038c3243a1e8415eff550d0fc570eae810ae82fe891181ecab"
+    },
+    {
+      "name": "handleTaskFilterClick",
+      "unchanged": true,
+      "beforeSha256": "864c744df86467044df174cf9cf135207b5cd0683337783b29b2093edac97cf1",
+      "afterSha256": "864c744df86467044df174cf9cf135207b5cd0683337783b29b2093edac97cf1"
+    },
+    {
+      "name": "focusTaskInputWithRoute",
+      "unchanged": true,
+      "beforeSha256": "be2d31d52211c84f6ec8e17188cfd7820b1d8b7fa0eb1f752b5e2e7748d156e3",
+      "afterSha256": "be2d31d52211c84f6ec8e17188cfd7820b1d8b7fa0eb1f752b5e2e7748d156e3"
+    },
+    {
+      "name": "focusMemoInputWithRoute",
+      "unchanged": true,
+      "beforeSha256": "f49a097f5efb87aea271f8bc7ab24482277d101e6222b14fd4a3853d131911c1",
+      "afterSha256": "f49a097f5efb87aea271f8bc7ab24482277d101e6222b14fd4a3853d131911c1"
+    },
+    {
+      "name": "focusMessageInputWithRoute",
+      "unchanged": true,
+      "beforeSha256": "a817746f90b8e8f926318e3efab1d988cca31e27c2e4a4410b49e329b580fe66",
+      "afterSha256": "a817746f90b8e8f926318e3efab1d988cca31e27c2e4a4410b49e329b580fe66"
+    },
+    {
+      "name": "toggleColorModeWithShortcut",
+      "unchanged": true,
+      "beforeSha256": "0b325ba089756748120cea1cdaf8b68b44d01d0473b379c0b2bba232cda1b783",
+      "afterSha256": "0b325ba089756748120cea1cdaf8b68b44d01d0473b379c0b2bba232cda1b783"
+    },
+    {
+      "name": "applyAriaKeyShortcuts",
+      "unchanged": true,
+      "beforeSha256": "aa48b31e41be2420b4c0bc453722b89dd8fb8dadec29fe3366901233509d7847",
+      "afterSha256": "aa48b31e41be2420b4c0bc453722b89dd8fb8dadec29fe3366901233509d7847"
+    },
+    {
+      "name": "handleDocumentShortcuts",
+      "unchanged": true,
+      "beforeSha256": "95e2aa07f805f1a655ac4f775d54b70328579cedd0432f7e7a7307d8ed93d3a2",
+      "afterSha256": "95e2aa07f805f1a655ac4f775d54b70328579cedd0432f7e7a7307d8ed93d3a2"
+    },
+    {
+      "name": "closeBulkActions",
+      "unchanged": true,
+      "beforeSha256": "df99266062ee55a9e2500c5b42539a1cad476bfe3e92e4a06540bfb7ec25ecdd",
+      "afterSha256": "df99266062ee55a9e2500c5b42539a1cad476bfe3e92e4a06540bfb7ec25ecdd"
+    },
+    {
+      "name": "bindPomodoroMinutesInput",
+      "unchanged": true,
+      "beforeSha256": "537e0e9aa0ceb3d856f653ea3f70c088d25ce74f61ce7505ef678e5299ae0d48",
+      "afterSha256": "537e0e9aa0ceb3d856f653ea3f70c088d25ce74f61ce7505ef678e5299ae0d48"
+    },
+    {
+      "name": "bindTextLengthHint",
+      "unchanged": true,
+      "beforeSha256": "1555da37b4567df9a9f4fbfc36d83e28ca4e8765931316a0ff05d10ef76c6553",
+      "afterSha256": "1555da37b4567df9a9f4fbfc36d83e28ca4e8765931316a0ff05d10ef76c6553"
+    }
+  ]
+}

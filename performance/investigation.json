@@ -1,0 +1,455 @@
+{
+  "investigatedAt": "2026-10-08T15:43:26.463Z",
+  "timezone": "Asia/Tokyo",
+  "head": "1d3ac502cb802a81b13ddce544e6556277889d6c",
+  "status": "ローカル実装・計測・検証完了。本番未反映・本番未検証・本番全対象画面未計測",
+  "productionUrl": null,
+  "deployedVersion": null,
+  "implemented": true,
+  "productionBeforeMeasured": false,
+  "productionAfterMeasured": false,
+  "rows": [
+    {
+      "screen": "タスク一覧",
+      "url": "#/tasks",
+      "condition": "直接アクセス・再読み込み・メニュー遷移",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "保存世代照合後、対象の親子全件と進捗・フィルタを表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "タスク一覧",
+      "url": "#/tasks",
+      "condition": "直接アクセス・再読み込み・メニュー遷移",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "追加・編集・検索・フィルタが正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "整理メモ",
+      "url": "#/memo",
+      "condition": "直接アクセス・再読み込み・メニュー遷移",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "確定済みメモ全文と保存状態を表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "整理メモ",
+      "url": "#/memo",
+      "condition": "直接アクセス・再読み込み・メニュー遷移",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "入力・保存・画面移動が正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "設定",
+      "url": "#/settings",
+      "condition": "直接アクセス・再読み込み・メニュー遷移",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "テーマ・時間・音・メッセージ・バックアップ設定を正しく表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "設定",
+      "url": "#/settings",
+      "condition": "直接アクセス・再読み込み・メニュー遷移",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "設定変更・バックアップ書き出しが正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "検索・フィルタ",
+      "url": "#/tasks",
+      "condition": "検索入力・解除・完了状態切替",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "条件に合う親子・件数・保存順の結果を表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "検索・フィルタ",
+      "url": "#/tasks",
+      "condition": "検索入力・解除・完了状態切替",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "検索結果の編集・開始・解除が正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "検索・フィルタ",
+      "url": "#/tasks",
+      "condition": "検索入力・解除・完了状態切替",
+      "metric": "必要な結果",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "条件に合う親子・件数・保存順の結果を表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "親タスク編集",
+      "url": "#/tasks（ダイアログ）",
+      "condition": "編集ボタン押下",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "対象名・子全件・実績を表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "親タスク編集",
+      "url": "#/tasks（ダイアログ）",
+      "condition": "編集ボタン押下",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "名前編集・保存・子追加・並び替えが正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "子タスク編集",
+      "url": "#/tasks（ダイアログ）",
+      "condition": "一覧または親編集から子編集を押下",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "対象名・実績を表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "子タスク編集",
+      "url": "#/tasks（ダイアログ）",
+      "condition": "一覧または親編集から子編集を押下",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "名前編集・保存が正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "集中",
+      "url": "#/tasks（オーバーレイ）",
+      "condition": "開始・再開・一時停止",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "対象名・区間残り時間・累積実績を正しく表示",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "集中",
+      "url": "#/tasks（オーバーレイ）",
+      "condition": "開始・再開・一時停止",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "一時停止・再開・完了・中断が正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "バックアップ読込",
+      "url": "#/settings（確認ダイアログ）",
+      "condition": "隔離テストデータでファイル選択→確認確定",
+      "metric": "主要内容の表示",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "全件・設定・メモ・順序が反映され保存確定",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "バックアップ読込",
+      "url": "#/settings（確認ダイアログ）",
+      "condition": "隔離テストデータでファイル選択→確認確定",
+      "metric": "操作可能",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "編集・再書き出し・Undoが正常に受け付けられる",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    },
+    {
+      "screen": "バックアップ読込",
+      "url": "#/settings（確認ダイアログ）",
+      "condition": "隔離テストデータでファイル選択→確認確定",
+      "metric": "必要な結果",
+      "start": "直接アクセスはナビゲーション開始、画面内操作はイベント開始",
+      "end": "全件・設定・メモ・順序が反映され保存確定",
+      "beforeMedianMs": null,
+      "afterMedianMs": null,
+      "reductionPercent": null,
+      "nBefore": 0,
+      "nAfter": 0,
+      "judgement": "未計測・算出不可",
+      "reason": "本番URL・配信版・通常の反映/復旧手順が未特定。本番の変更前後の値は未計測"
+    }
+  ],
+  "plannedConditions": {
+    "data": [
+      "空（親0件・子0件）",
+      "標準（親20件・各子5件、完了/未完了混在）",
+      "アプリ上限（親200件・各子50件=子10000件）",
+      "固定メモ・メッセージ/設定は同一fixture",
+      "親子編集は子5/50件、集中は子s0_0の開始/一時停止/再開"
+    ],
+    "cache": [
+      "HTTP全応答no-store。ブラウザHTTP cold/warm比較ではない",
+      "initialは新しいperf名前空間・localStorage fixture・空IndexedDB",
+      "repeatは同じ名前空間で保存確定済みlocalStorage/IndexedDB、同じ件数/名称/順序（集中実績はpaused）",
+      "各試行でiframeを新規作成し、古いdocumentの履歴保持の影響を削減",
+      "サーバー/CDN/本番負荷/実機モバイルは未計測",
+      "通常のyatta保存キー/DBを触らず、localhost専用のperfテスト領域を利用"
+    ],
+    "measurement": "各条件5回以上、前後で同じ開始/終了条件。中央値・最小・最大・四分位範囲・全生値・日時・版・ブラウザ/OS/画面サイズを保存。ばらつきが大きい場合追加。終了条件成立後の描画までを確認し、loadイベントは完了条件にしない。"
+  },
+  "maintain": [
+    "親子全件と保存順",
+    "検索の全半角・大小文字正規化と状態フィルタ",
+    "二重計上しない進捗",
+    "保存成功時反映と失敗時復元・入力保持",
+    "確定保存世代の選択・更新後反映・別タブ競合防止",
+    "集中状態・実績",
+    "フォーカス・ドラッグ・キーボード",
+    "バックアップ・Undo・テーマ・メッセージ"
+  ],
+  "tests": {
+    "gitHead": {
+      "pass": 189,
+      "fail": 45,
+      "meaning": "一時コピーの旧版比較、現行/本番の検証ではない",
+      "log": "git-head-comparison-tests.log"
+    },
+    "recovery": {
+      "htmlCandidates": 42,
+      "tested": 3,
+      "eachPass": 228,
+      "eachFail": 6,
+      "meaning": "到達不能Gitオブジェクトの3候補。現行仕様に一致せず未採用"
+    },
+    "restored": {
+      "pass": 249,
+      "fail": 0,
+      "log": "restored-baseline-tests.log"
+    },
+    "optimized": {
+      "pass": 249,
+      "fail": 0,
+      "log": "optimized-tests.log"
+    },
+    "beforeRestore": {
+      "pass": 0,
+      "fail": 19,
+      "meaning": "全19ファイルが本体読込ENOENT。機能ケース未実行",
+      "log": "current-tests.log"
+    },
+    "final": {
+      "pass": 253,
+      "fail": 0,
+      "log": "final-tests.log"
+    },
+    "browser": {
+      "passPerViewport": 40,
+      "fail": 0,
+      "viewports": [
+        [
+          1280,
+          720
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "log": "browser-functional-final-raw.json"
+    }
+  },
+  "facts": [
+    "作業開始時からHTML削除。README/package/tests/REPORTに後日の仕様",
+    "旧Git版は単一HTML、CSS/JS/SVG内包、外部fetch/API/認証なし",
+    "旧Git版ルートはtasks/memo/settings、未知ハッシュはtasks",
+    "IndexedDB複数キーは同一トランザクションでPromise.all取得済み",
+    "旧版renderは全ルートでrenderTasks、設定ではrenderSettings→renderMessagesも実行",
+    "旧版のタスク描画は全件ループとJSONキー比較、既存DOM再利用あり",
+    "通常リリース手順・本番URLはローカル定義から特定不能、gh未認証",
+    "ユーザーが2026-10-09に現行HTMLを復旧。249件回帰テスト成功。",
+    "GitHub公開メタデータ: homepage=null、has_pages=false、default_branch=main、pushed_at=2026-09-29T00:50:33Z。",
+    "復旧された現行版も単一HTML、tasks/memo/settings、外部データAPI/認証なし",
+    "現行版で最大親200件・各子50件を確認。全件のDOM生成・全体アイコン走査が描画経路に存在",
+    "SVGテンプレートだけをキャッシュ。利用者データ・保存世代・検索結果のキャッシュは追加しない",
+    "復元・正規化・保存世代照合・全親集計は全画面で従来どおり実施する"
+  ],
+  "hypotheses": [
+    {
+      "priority": 1,
+      "candidate": "非表示タスクDOM初期生成・更新を遷移時まで延期",
+      "impact": "メモ・設定",
+      "basis": "旧版の無条件renderTasks",
+      "risk": "戻る時の最新表示・フォーカス・進捗・faviconを維持",
+      "measuredEffect": "local-results.json参照。個別変更の寄与は分離して断定しない",
+      "status": "採用（複合版で再計測）"
+    },
+    {
+      "priority": 2,
+      "candidate": "大量DOMの差分更新・全件走査/重複正規化削減",
+      "impact": "一覧・検索・フィルタ・集中後再描画",
+      "basis": "全件ループとJSONキー生成",
+      "risk": "全件表示・件数・順序・ドラッグ/キーボード維持",
+      "measuredEffect": "local-results.json参照。個別変更の寄与は分離して断定しない",
+      "status": "採用（複合版で再計測）"
+    },
+    {
+      "priority": 3,
+      "candidate": "起動時復元・正規化・アイコン初期化の重複確認",
+      "impact": "全画面直接アクセス",
+      "basis": "復元後の全体renderとアイコンhydrate",
+      "risk": "世代照合・競合・失敗処理の待機は維持",
+      "measuredEffect": "local-results.json参照。個別変更の寄与は分離して断定しない",
+      "status": "採用（複合版で再計測）"
+    }
+  ],
+  "releaseGate": "現行ソース/本番URL確定→本番変更前計測保存→実装/回帰/隔離ブラウザ検証→通常反映→配信版確認→同条件本番計測。復旧先は確定した変更前配信版。不整合/操作不能/明確な悪化時は通常復旧手順。",
+  "needed": [
+    "本番URLまたはローカル配布が本番である旨",
+    "通常の反映・復旧手順"
+  ],
+  "restoredBaselineSha256": "791a295921f4f122e3a3eeaf500598d1b1a1d3e60c6f9b531612344b62c51d47",
+  "restoredBaselineFile": "baseline.html",
+  "finalLocalVersionSha256": "4d9c698958d5b36fc5bca94e9c7a4e3e9275ad2bc0048e242ce22c9b12109f14",
+  "finalMainDates": {
+    "before": [
+      "2026-10-08T16:40:35.513Z",
+      "2026-10-08T16:46:26.655Z"
+    ],
+    "after": [
+      "2026-10-08T17:22:08.307Z",
+      "2026-10-08T17:23:09.232Z"
+    ]
+  },
+  "completedLocalAt": "2026-10-08T17:49:10.422797+00:00",
+  "localMeasurementCounts": {
+    "main": {
+      "before": 90,
+      "after": 90
+    },
+    "backup": {
+      "before": 40,
+      "after": 40
+    },
+    "extended": {
+      "before": 10,
+      "after": 10
+    },
+    "solo": {
+      "before": 10,
+      "after": 10
+    }
+  },
+  "implementedChanges": [
+    "全体アイコン走査を静的UI初期化と新規行のみに限定・public SVGテンプレート複製",
+    "検索語と子名称の重複正規化を削減",
+    "非表示一覧DOMは最新モデルで初回表示時に生成",
+    "content-visibility:auto・概算高さと表示後実寸記憶で画面外描画を省略",
+    "集中開始時の共有保存ロックを初回描画まで維持・同じテーマ属性の再設定を削減"
+  ],
+  "remainingPerformanceIssues": [
+    "設定直接表示・標準100子・backup initialに1.5msの小さい悪化傾向（10/10、−3.6%）。main手順は改善未確認。原因未特定",
+    "上限データのDOM生成・集計・保存復元は残る",
+    "本番、実機スマートフォン、HTTP/CDNキャッシュ、実利用p95は未検証"
+  ]
+}

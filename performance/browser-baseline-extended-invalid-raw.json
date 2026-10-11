@@ -1,0 +1,492 @@
+[
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-0-1791480466068",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:27:59.607Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 251.30000001192093,
+        "displayMs": 1650,
+        "seedMs": 1.2000000476837158
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 118.19999998807907,
+        "displayMs": 152
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 66.19999998807907,
+        "displayMs": 205.19999998807907
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 821.8999999761581,
+        "displayMs": 1249.5999999642372
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 491.30000001192093,
+        "displayMs": 1694.699999988079
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2002.199999988079,
+        "displayMs": 2474.100000023842
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2305.900000035763,
+        "displayMs": 2922.900000035763
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-0-1791480466068",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:28:13.510Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 272.30000001192093,
+        "displayMs": 1549.800000011921,
+        "seedMs": 0
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 110.39999997615814,
+        "displayMs": 142.0999999642372
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 67.60000002384186,
+        "displayMs": 221.60000002384186
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 819.3000000119209,
+        "displayMs": 1421
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 516.1999999880791,
+        "displayMs": 1584.0999999642372
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2085.100000023842,
+        "displayMs": 2604.300000011921
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 1486.5,
+        "displayMs": 2766.899999976158
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-1-1791480493559",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:28:27.399Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 500.9000000357628,
+        "displayMs": 1896.7000000476837,
+        "seedMs": 1
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 96.39999997615814,
+        "displayMs": 129.5999999642372
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 24.5,
+        "displayMs": 183.19999998807907
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 805.4000000357628,
+        "displayMs": 1219.4000000357628
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 518.5999999642372,
+        "displayMs": 1680.699999988079
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2007.3999999761581,
+        "displayMs": 2491.699999988079
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2295.600000023842,
+        "displayMs": 2899.699999988079
+      }
+    ]
+  },
+  {
+    "error": "Error: focus pause persisted\n    at check (http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=repeat&group=baseline-extended-200-tasks-1-1791480493559&suite=extended:10047:45)\n    at http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=repeat&group=baseline-extended-200-tasks-1-1791480493559&suite=extended:10064:64\n    at run (http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=repeat&group=baseline-extended-200-tasks-1-1791480493559&suite=extended:10048:90)\n    at async http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=repeat&group=baseline-extended-200-tasks-1-1791480493559&suite=extended:10064:11",
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-1-1791480493559",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 356.89999997615814,
+        "displayMs": 1662.199999988079,
+        "seedMs": 0
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 116.5,
+        "displayMs": 148.89999997615814
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 66.30000001192093,
+        "displayMs": 227.5
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 808.6000000238419,
+        "displayMs": 1359.7000000476837
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 510.2999999523163,
+        "displayMs": 1549
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-2-1791480515796",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:28:50.742Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 933.0999999642372,
+        "displayMs": 2162.7999999523163,
+        "seedMs": 0.800000011920929
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 120.10000002384186,
+        "displayMs": 189.80000001192093
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 135.80000001192093,
+        "displayMs": 164.19999998807907
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 792.8000000119209,
+        "displayMs": 1187.9000000357628
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 480.19999998807907,
+        "displayMs": 1490
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2053.5,
+        "displayMs": 2511.100000023842
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2471.699999988079,
+        "displayMs": 3045.600000023842
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-2-1791480515796",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:29:03.557Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 503.30000001192093,
+        "displayMs": 1932.1000000238419,
+        "seedMs": 0
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 114.29999995231628,
+        "displayMs": 147.19999998807907
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 80.5,
+        "displayMs": 240.0999999642372
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 812,
+        "displayMs": 1238
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 529.5,
+        "displayMs": 1816.800000011921
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2123.199999988079,
+        "displayMs": 2597.400000035763
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2453.399999976158,
+        "displayMs": 3089
+      }
+    ]
+  },
+  {
+    "error": "Error: focus pause persisted\n    at check (http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=initial&group=baseline-extended-200-tasks-3-1791480545343&suite=extended:10047:45)\n    at http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=initial&group=baseline-extended-200-tasks-3-1791480545343&suite=extended:10064:64\n    at run (http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=initial&group=baseline-extended-200-tasks-3-1791480545343&suite=extended:10048:90)\n    at async http://127.0.0.1:49187/app?version=baseline-extended&parents=200&children=50&route=tasks&cache=initial&group=baseline-extended-200-tasks-3-1791480545343&suite=extended:10064:11",
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-3-1791480545343",
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 409,
+        "displayMs": 1798.800000011921,
+        "seedMs": 1.0999999642372131
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 108.39999997615814,
+        "displayMs": 141.39999997615814
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 66.89999997615814,
+        "displayMs": 223
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 830.5,
+        "displayMs": 1239.6000000238419
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 508.7999999523163,
+        "displayMs": 1705.5
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-3-1791480545343",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:29:28.988Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 1135,
+        "displayMs": 2515.199999988079,
+        "seedMs": 0
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 108.80000001192093,
+        "displayMs": 141.80000001192093
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 72.70000004768372,
+        "displayMs": 229.70000004768372
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 832,
+        "displayMs": 1266.7999999523163
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 491.30000001192093,
+        "displayMs": 1488.800000011921
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2042.5999999642372,
+        "displayMs": 2539
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2313.300000011921,
+        "displayMs": 2913.800000011921
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-4-1791480569699",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:29:44.238Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 232.0999999642372,
+        "displayMs": 1660.3999999761581,
+        "seedMs": 0.9000000357627869
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 120.80000001192093,
+        "displayMs": 156
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 124.59999996423721,
+        "displayMs": 294
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 869.5999999642372,
+        "displayMs": 1313.0999999642372
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 537.7000000476837,
+        "displayMs": 1571
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2117.199999988079,
+        "displayMs": 2636.899999976158
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2412.300000011921,
+        "displayMs": 3410
+      }
+    ]
+  },
+  {
+    "version": "baseline-extended",
+    "group": "baseline-extended-200-tasks-4-1791480569699",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-08T17:29:58.494Z",
+    "profile": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 245.30000001192093,
+        "displayMs": 1549,
+        "seedMs": 0
+      },
+      {
+        "operation": "scroll-last",
+        "readyMs": 279.30000001192093,
+        "displayMs": 513.6999999880791
+      },
+      {
+        "operation": "scroll-top",
+        "readyMs": 29.80000001192093,
+        "displayMs": 43.40000003576279
+      },
+      {
+        "operation": "filter-completed",
+        "readyMs": 843.5,
+        "displayMs": 1295.3999999761581
+      },
+      {
+        "operation": "filter-all",
+        "readyMs": 515.6999999880791,
+        "displayMs": 1577.6000000238419
+      },
+      {
+        "operation": "focus-pause",
+        "readyMs": 2110.900000035763,
+        "displayMs": 2585.800000011921
+      },
+      {
+        "operation": "focus-resume",
+        "readyMs": 2597,
+        "displayMs": 3195.699999988079
+      }
+    ]
+  }
+]

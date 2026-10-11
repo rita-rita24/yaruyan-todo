@@ -1,0 +1,77 @@
+[
+  {
+    "file": "./performance/round3/serve.mjs",
+    "messages": [
+      {
+        "line": 22,
+        "message": "'route' is assigned a value but never used."
+      }
+    ]
+  },
+  {
+    "file": "./performance/serve-benchmark.mjs",
+    "messages": [
+      {
+        "line": 21,
+        "message": "'route' is assigned a value but never used."
+      }
+    ]
+  },
+  {
+    "file": "./tests/yaruyan-lifecycle.test.mjs",
+    "messages": [
+      {
+        "line": 5,
+        "message": "'html' is assigned a value but never used."
+      }
+    ]
+  },
+  {
+    "file": "./tests/yaruyan-polish.test.mjs",
+    "messages": [
+      {
+        "line": 6,
+        "message": "'html' is assigned a value but never used."
+      },
+      {
+        "line": 6,
+        "message": "'source' is assigned a value but never used."
+      }
+    ]
+  },
+  {
+    "file": "./tests/yaruyan-quality.test.mjs",
+    "messages": [
+      {
+        "line": 5,
+        "message": "'source' is assigned a value but never used."
+      }
+    ]
+  },
+  {
+    "file": "./tests/yaruyan-refinements.test.mjs",
+    "messages": [
+      {
+        "line": 6,
+        "message": "'html' is assigned a value but never used."
+      },
+      {
+        "line": 6,
+        "message": "'source' is assigned a value but never used."
+      }
+    ]
+  },
+  {
+    "file": "yaruyan-todo.html",
+    "messages": [
+      {
+        "line": 60,
+        "message": "'_storageWarningSticky' is assigned a value but never used."
+      },
+      {
+        "line": 4717,
+        "message": "'getPomodoroPhaseElapsedMs' is defined but never used."
+      }
+    ]
+  }
+]

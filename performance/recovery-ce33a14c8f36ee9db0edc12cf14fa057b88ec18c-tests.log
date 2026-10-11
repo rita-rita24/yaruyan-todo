@@ -1,0 +1,1523 @@
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: focus action buttons retain native Enter and Space activation
+ok 1 - focus action buttons retain native Enter and Space activation
+  ---
+  duration_ms: 6.103167
+  type: 'test'
+  ...
+# Subtest: focus shortcuts remain available away from controls and ignore repeats or composition
+ok 2 - focus shortcuts remain available away from controls and ignore repeats or composition
+  ---
+  duration_ms: 41.86625
+  type: 'test'
+  ...
+# Subtest: closing an edit modal returns to the same task action after rows are rebuilt
+ok 3 - closing an edit modal returns to the same task action after rows are rebuilt
+  ---
+  duration_ms: 13.389458
+  type: 'test'
+  ...
+# Subtest: closing after deletion selects the next visible task or the task input when the list is empty
+ok 4 - closing after deletion selects the next visible task or the task input when the list is empty
+  ---
+  duration_ms: 12.145792
+  type: 'test'
+  ...
+# Subtest: nested child editors restore rebuilt actions inside the remaining parent modal
+ok 5 - nested child editors restore rebuilt actions inside the remaining parent modal
+  ---
+  duration_ms: 1.52325
+  type: 'test'
+  ...
+# Subtest: memo autosave restores textarea focus after the shared inert lock releases
+ok 6 - memo autosave restores textarea focus after the shared inert lock releases
+  ---
+  duration_ms: 1.855333
+  type: 'test'
+  ...
+# Subtest: focus pause retains focus across disabled controls and the nested shared save lock
+not ok 7 - focus pause retains focus across disabled controls and the nested shared save lock
+  ---
+  duration_ms: 2.152209
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-accessibility.test.mjs:280:1'
+  failureType: 'testCodeFailure'
+  error: 'focusReturnBtn is not defined'
+  code: 'ERR_TEST_FAILURE'
+  name: 'ReferenceError'
+  stack: |-
+    Object.setFocusOperationPending [as setFocusPending] (evalmachine.<anonymous>:179:58)
+    TestContext.<anonymous> (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-accessibility.test.mjs:285:7)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: periodic focus checkpoints preserve the selected button until the last lock releases
+ok 8 - periodic focus checkpoints preserve the selected button until the last lock releases
+  ---
+  duration_ms: 3.563292
+  type: 'test'
+  ...
+# Subtest: unlocking never steals focus from a newly chosen control
+ok 9 - unlocking never steals focus from a newly chosen control
+  ---
+  duration_ms: 2.462292
+  type: 'test'
+  ...
+# Subtest: nested modals keep the shell and underlying dialogs inert through save unlocks
+ok 10 - nested modals keep the shell and underlying dialogs inert through save unlocks
+  ---
+  duration_ms: 2.00225
+  type: 'test'
+  ...
+# Subtest: bulk deletion is blocked while a state save is pending
+ok 11 - bulk deletion is blocked while a state save is pending
+  ---
+  duration_ms: 3.882917
+  type: 'test'
+  ...
+# Subtest: a locally handled keyboard event cannot also trigger a global focus action
+ok 12 - a locally handled keyboard event cannot also trigger a global focus action
+  ---
+  duration_ms: 1.690042
+  type: 'test'
+  ...
+# Subtest: IME Escape preserves the message draft ({"isComposing":true})
+ok 13 - IME Escape preserves the message draft ({"isComposing":true})
+  ---
+  duration_ms: 1.102458
+  type: 'test'
+  ...
+# Subtest: IME Escape preserves the message draft ({"keyCode":229})
+ok 14 - IME Escape preserves the message draft ({"keyCode":229})
+  ---
+  duration_ms: 0.563959
+  type: 'test'
+  ...
+# Subtest: parent editor routes its existing reorder shortcut to the focused child
+ok 15 - parent editor routes its existing reorder shortcut to the focused child
+  ---
+  duration_ms: 1.05475
+  type: 'test'
+  ...
+# Subtest: message controls recover their focus after being disabled for a save
+ok 16 - message controls recover their focus after being disabled for a save
+  ---
+  duration_ms: 1.456667
+  type: 'test'
+  ...
+# Subtest: failed task additions can restore the original input after enabling controls
+ok 17 - failed task additions can restore the original input after enabling controls
+  ---
+  duration_ms: 2.885083
+  type: 'test'
+  ...
+# Subtest: failed subtask additions can restore the original input after enabling controls
+ok 18 - failed subtask additions can restore the original input after enabling controls
+  ---
+  duration_ms: 0.797917
+  type: 'test'
+  ...
+# Subtest: failed message additions can restore the original input after enabling controls
+ok 19 - failed message additions can restore the original input after enabling controls
+  ---
+  duration_ms: 5.820875
+  type: 'test'
+  ...
+# Subtest: failed parent edits restore the original input after enabling controls
+ok 20 - failed parent edits restore the original input after enabling controls
+  ---
+  duration_ms: 1.565416
+  type: 'test'
+  ...
+# Subtest: failed subtask edits restore the original input after enabling controls
+ok 21 - failed subtask edits restore the original input after enabling controls
+  ---
+  duration_ms: 1.1125
+  type: 'test'
+  ...
+# Subtest: timer catch-up matches a phase-by-phase reference from partially elapsed focus and break
+ok 22 - timer catch-up matches a phase-by-phase reference from partially elapsed focus and break
+  ---
+  duration_ms: 418.133166
+  type: 'test'
+  ...
+# Subtest: very large forward clock jumps finish without iterating through every phase
+ok 23 - very large forward clock jumps finish without iterating through every phase
+  ---
+  duration_ms: 1.056125
+  type: 'test'
+  ...
+# Subtest: timer ticks do not replace unchanged timer or caption text nodes
+ok 24 - timer ticks do not replace unchanged timer or caption text nodes
+  ---
+  duration_ms: 1.42475
+  type: 'test'
+  ...
+# Subtest: IndexedDB reads are queued together and settle only after transaction commit
+ok 25 - IndexedDB reads are queued together and settle only after transaction commit
+  ---
+  duration_ms: 250.657084
+  type: 'test'
+  ...
+# Subtest: an IndexedDB read setup failure aborts and observes the transaction rejection
+ok 26 - an IndexedDB read setup failure aborts and observes the transaction rejection
+  ---
+  duration_ms: 6.467708
+  type: 'test'
+  ...
+# Subtest: _applyNormalizedBackupPayload restores timer controls before a later focus start can commit stale values
+ok 27 - _applyNormalizedBackupPayload restores timer controls before a later focus start can commit stale values
+  ---
+  duration_ms: 6.898833
+  type: 'test'
+  ...
+# Subtest: _applyAppStateSnapshot restores timer controls before a later focus start can commit stale values
+ok 28 - _applyAppStateSnapshot restores timer controls before a later focus start can commit stale values
+  ---
+  duration_ms: 1.739709
+  type: 'test'
+  ...
+# Subtest: an unrelated failed operation preserves a timer draft when the saved rhythm did not change
+ok 29 - an unrelated failed operation preserves a timer draft when the saved rhythm did not change
+  ---
+  duration_ms: 0.845
+  type: 'test'
+  ...
+# Subtest: failed duration saves reset even the focused control and cannot be retried by starting focus
+ok 30 - failed duration saves reset even the focused control and cannot be retried by starting focus
+  ---
+  duration_ms: 0.892
+  type: 'test'
+  ...
+# Subtest: delayed parent reorder focus respects a new modal, route, or save lock
+ok 31 - delayed parent reorder focus respects a new modal, route, or save lock
+  ---
+  duration_ms: 1.949958
+  type: 'test'
+  ...
+# Subtest: delayed subtask reorder focus respects a new modal, route, or save lock
+ok 32 - delayed subtask reorder focus respects a new modal, route, or save lock
+  ---
+  duration_ms: 160.834791
+  type: 'test'
+  ...
+# Subtest: queued all-done feedback is cancelled if work becomes incomplete before the frame
+ok 33 - queued all-done feedback is cancelled if work becomes incomplete before the frame
+  ---
+  duration_ms: 4.231375
+  type: 'test'
+  ...
+# Subtest: a suspended sound cannot play after sound is switched off
+ok 34 - a suspended sound cannot play after sound is switched off
+  ---
+  duration_ms: 3.375417
+  type: 'test'
+  ...
+# Subtest: muted interactions do not initialize an audio context
+ok 35 - muted interactions do not initialize an audio context
+  ---
+  duration_ms: 1.352917
+  type: 'test'
+  ...
+# Subtest: a closed audio context is replaced together with its old audio nodes
+ok 36 - a closed audio context is replaced together with its old audio nodes
+  ---
+  duration_ms: 23.265083
+  type: 'test'
+  ...
+# Subtest: memo autosave waits for every pressed pointer without cancelling the pending click
+ok 37 - memo autosave waits for every pressed pointer without cancelling the pending click
+  ---
+  duration_ms: 2.286625
+  type: 'test'
+  ...
+# Subtest: unchanged list reconciliation does not detach or move any existing row
+ok 38 - unchanged list reconciliation does not detach or move any existing row
+  ---
+  duration_ms: 5.362625
+  type: 'test'
+  ...
+# Subtest: list reconciliation handles filtering, replacement, insertion and reorder while retaining nodes
+ok 39 - list reconciliation handles filtering, replacement, insertion and reorder while retaining nodes
+  ---
+  duration_ms: 1.462375
+  type: 'test'
+  ...
+# Subtest: taskInput: shared Enter handling preserves composition and handled events
+ok 40 - taskInput: shared Enter handling preserves composition and handled events
+  ---
+  duration_ms: 1.367708
+  type: 'test'
+  ...
+# Subtest: messageInput: shared Enter handling preserves composition and handled events
+ok 41 - messageInput: shared Enter handling preserves composition and handled events
+  ---
+  duration_ms: 0.972375
+  type: 'test'
+  ...
+# Subtest: parentEditInput: shared Enter handling preserves composition and handled events
+ok 42 - parentEditInput: shared Enter handling preserves composition and handled events
+  ---
+  duration_ms: 1.201
+  type: 'test'
+  ...
+# Subtest: modalSubtaskInput: shared Enter handling preserves composition and handled events
+ok 43 - modalSubtaskInput: shared Enter handling preserves composition and handled events
+  ---
+  duration_ms: 1.532917
+  type: 'test'
+  ...
+# Subtest: subtaskEditInput: shared Enter handling preserves composition and handled events
+ok 44 - subtaskEditInput: shared Enter handling preserves composition and handled events
+  ---
+  duration_ms: 3.912208
+  type: 'test'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-gyomu-drag.test.mjs:6:23
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-gyomu-drag.test.mjs
+not ok 5 - tests/yaruyan-gyomu-drag.test.mjs
+  ---
+  duration_ms: 308.367709
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-gyomu-drag.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# node:fs:440
+#     return binding.readFileUtf8(path, stringToFlags(options.flag));
+#                    ^
+# Error: ENOENT: no such file or directory, open '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+#     at readFileSync (node:fs:440:20)
+#     at loadAppSource (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/helpers/app-source.mjs:9:16)
+#     at file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-gyomu-task-view.test.mjs:6:20
+#     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+#   errno: -2,
+#   code: 'ENOENT',
+#   syscall: 'open',
+#   path: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/yaruyan-todo.html'
+# }
+# Node.js v22.22.2
+# Subtest: tests/yaruyan-gyomu-task-view.test.mjs
+not ok 6 - tests/yaruyan-gyomu-task-view.test.mjs
+  ---
+  duration_ms: 405.0995
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-gyomu-task-view.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+# Subtest: failed unrelated saves preserve running focus metadata when restoring an internal snapshot
+ok 47 - failed unrelated saves preserve running focus metadata when restoring an internal snapshot
+  ---
+  duration_ms: 167.424375
+  type: 'test'
+  ...
+# Subtest: unrelated save rollback restores the matching pomodoro phase after a timer transition
+ok 48 - unrelated save rollback restores the matching pomodoro phase after a timer transition
+  ---
+  duration_ms: 52.316084
+  type: 'test'
+  ...
+# Subtest: rapid memo checkpoints share the pending write and capture the latest input
+ok 49 - rapid memo checkpoints share the pending write and capture the latest input
+  ---
+  duration_ms: 55.071625
+  type: 'test'
+  ...
+# Subtest: memo checkpoint failures settle without unhandled rejection and permit retry
+ok 50 - memo checkpoint failures settle without unhandled rejection and permit retry
+  ---
+  duration_ms: 23.228458
+  type: 'test'
+  ...
+# Subtest: the save queue handles synchronous serialization failure and continues with the next save
+ok 51 - the save queue handles synchronous serialization failure and continues with the next save
+  ---
+  duration_ms: 1.545209
+  type: 'test'
+  ...
+# Subtest: unchanged parent editor rows retain their DOM while edits and parent switches refresh it
+ok 52 - unchanged parent editor rows retain their DOM while edits and parent switches refresh it
+  ---
+  duration_ms: 3.217959
+  type: 'test'
+  ...
+# Subtest: same-generation IndexedDB conflicts cannot hide behind a later local timestamp
+ok 53 - same-generation IndexedDB conflicts cannot hide behind a later local timestamp
+  ---
+  duration_ms: 456.263292
+  type: 'test'
+  ...
+# Subtest: normalizeTasks caps task counts, syncs parent status, and resets container focus
+ok 54 - normalizeTasks caps task counts, syncs parent status, and resets container focus
+  ---
+  duration_ms: 56.643584
+  type: 'test'
+  ...
+# Subtest: normalizeTasks ignores invalid entries before applying count caps
+ok 55 - normalizeTasks ignores invalid entries before applying count caps
+  ---
+  duration_ms: 193.348875
+  type: 'test'
+  ...
+# Subtest: delete undo refuses to restore parents or subtasks beyond count caps
+ok 56 - delete undo refuses to restore parents or subtasks beyond count caps
+  ---
+  duration_ms: 40.968875
+  type: 'test'
+  ...
+# Subtest: normalizeBackupPayload applies the same task and memo normalization before save
+ok 57 - normalizeBackupPayload applies the same task and memo normalization before save
+  ---
+  duration_ms: 69.948166
+  type: 'test'
+  ...
+# Subtest: maximum UI backup stays within the import file size cap
+ok 58 - maximum UI backup stays within the import file size cap
+  ---
+  duration_ms: 231.139834
+  type: 'test'
+  ...
+# Subtest: backup import help text is generated from the file size cap
+ok 59 - backup import help text is generated from the file size cap
+  ---
+  duration_ms: 0.718792
+  type: 'test'
+  ...
+# Subtest: focus metadata normalization rejects invalid states and negative timing
+ok 60 - focus metadata normalization rejects invalid states and negative timing
+  ---
+  duration_ms: 1.352
+  type: 'test'
+  ...
+# Subtest: settings normalization treats null pomodoro settings as defaults
+ok 61 - settings normalization treats null pomodoro settings as defaults
+  ---
+  duration_ms: 2.024083
+  type: 'test'
+  ...
+# Subtest: syncParentStatus derives parent completion from subtasks
+ok 62 - syncParentStatus derives parent completion from subtasks
+  ---
+  duration_ms: 1.463791
+  type: 'test'
+  ...
+# Subtest: commitStateSave rolls state back when save fails
+ok 63 - commitStateSave rolls state back when save fails
+  ---
+  duration_ms: 4.317792
+  type: 'test'
+  ...
+# Subtest: commitStateSave skips stale rollback after a later state change
+ok 64 - commitStateSave skips stale rollback after a later state change
+  ---
+  duration_ms: 3.038208
+  type: 'test'
+  ...
+# Subtest: commitStateSave holds the shared UI lock until persistence settles
+ok 65 - commitStateSave holds the shared UI lock until persistence settles
+  ---
+  duration_ms: 0.77775
+  type: 'test'
+  ...
+# Subtest: organize memo input advances state version so stale save rollback is skipped
+ok 66 - organize memo input advances state version so stale save rollback is skipped
+  ---
+  duration_ms: 1.0605
+  type: 'test'
+  ...
+# Subtest: organize memo stays read-only until storage selection completes, then accepts edits
+ok 67 - organize memo stays read-only until storage selection completes, then accepts edits
+  ---
+  duration_ms: 2.562916
+  type: 'test'
+  ...
+# Subtest: storage lifecycle listeners are registered before indexedDB initialization is awaited
+ok 68 - storage lifecycle listeners are registered before indexedDB initialization is awaited
+  ---
+  duration_ms: 0.667583
+  type: 'test'
+  ...
+# Subtest: unload before initialization never publishes the stale local snapshot
+ok 69 - unload before initialization never publishes the stale local snapshot
+  ---
+  duration_ms: 1.211417
+  type: 'test'
+  ...
+# Subtest: indexedDB open times out and closes a connection that arrives after timeout
+ok 70 - indexedDB open times out and closes a connection that arrives after timeout
+  ---
+  duration_ms: 12.452833
+  type: 'test'
+  ...
+# Subtest: an unresponsive indexedDB read times out and aborts its transaction
+ok 71 - an unresponsive indexedDB read times out and aborts its transaction
+  ---
+  duration_ms: 58.246584
+  type: 'test'
+  ...
+# Subtest: newer invalid storage snapshots never outrank an older valid snapshot
+ok 72 - newer invalid storage snapshots never outrank an older valid snapshot
+  ---
+  duration_ms: 2.691875
+  type: 'test'
+  ...
+# Subtest: import undo refuses to overwrite changes made after import
+ok 73 - import undo refuses to overwrite changes made after import
+  ---
+  duration_ms: 4.462875
+  type: 'test'
+  ...
+# Subtest: successful import invalidates delete undo and still allows immediate import undo
+ok 74 - successful import invalidates delete undo and still allows immediate import undo
+  ---
+  duration_ms: 1.111416
+  type: 'test'
+  ...
+# Subtest: focus rollback preserves running task metadata after save failure
+ok 75 - focus rollback preserves running task metadata after save failure
+  ---
+  duration_ms: 9.235041
+  type: 'test'
+  ...
+# Subtest: focus save failure paths use the runtime-preserving rollback helper
+ok 76 - focus save failure paths use the runtime-preserving rollback helper
+  ---
+  duration_ms: 19.957125
+  type: 'test'
+  ...
+# Subtest: readJsonFromStorage backs corrupt values up once with a fixed size cap
+ok 77 - readJsonFromStorage backs corrupt values up once with a fixed size cap
+  ---
+  duration_ms: 5.340042
+  type: 'test'
+  ...
+# Subtest: writeManyToStorage rolls back previous values after a partial write failure
+ok 78 - writeManyToStorage rolls back previous values after a partial write failure
+  ---
+  duration_ms: 2.169916
+  type: 'test'
+  ...
+# Subtest: storage diff tracking compares data against the last committed values
+ok 79 - storage diff tracking compares data against the last committed values
+  ---
+  duration_ms: 1.3895
+  type: 'test'
+  ...
+# Subtest: saveStoredState falls back to indexedDB when localStorage write fails
+ok 80 - saveStoredState falls back to indexedDB when localStorage write fails
+  ---
+  duration_ms: 2.402542
+  type: 'test'
+  ...
+# Subtest: saveStoredState still fails when both localStorage and indexedDB are unavailable
+ok 81 - saveStoredState still fails when both localStorage and indexedDB are unavailable
+  ---
+  duration_ms: 5.196584
+  type: 'test'
+  ...
+# Subtest: saveStoredState fails and restores metadata when indexedDB fallback fails
+ok 82 - saveStoredState fails and restores metadata when indexedDB fallback fails
+  ---
+  duration_ms: 8.838375
+  type: 'test'
+  ...
+# Subtest: saveStoredState stops when indexedDB has newer metadata
+ok 83 - saveStoredState stops when indexedDB has newer metadata
+  ---
+  duration_ms: 3.268042
+  type: 'test'
+  ...
+# Subtest: saveStoredState refuses same-generation localStorage writes from another tab
+ok 84 - saveStoredState refuses same-generation localStorage writes from another tab
+  ---
+  duration_ms: 2.942042
+  type: 'test'
+  ...
+# Subtest: indexedDB fallback refuses same-generation writes from another tab
+ok 85 - indexedDB fallback refuses same-generation writes from another tab
+  ---
+  duration_ms: 2.51425
+  type: 'test'
+  ...
+# Subtest: save serializes overlapping full-state writes so the newest state persists last
+ok 86 - save serializes overlapping full-state writes so the newest state persists last
+  ---
+  duration_ms: 2.493
+  type: 'test'
+  ...
+# Subtest: unload persistence does not let an already running stale save overwrite the latest local snapshot
+ok 87 - unload persistence does not let an already running stale save overwrite the latest local snapshot
+  ---
+  duration_ms: 14.549209
+  type: 'test'
+  ...
+# Subtest: a delayed authoritative commit rejects a competing write and preserves local data
+ok 88 - a delayed authoritative commit rejects a competing write and preserves local data
+  ---
+  duration_ms: 2.034125
+  type: 'test'
+  ...
+# Subtest: organize memo checkpoint writes a full local snapshot instead of memo-only metadata
+ok 89 - organize memo checkpoint writes a full local snapshot instead of memo-only metadata
+  ---
+  duration_ms: 1.1625
+  type: 'test'
+  ...
+# Subtest: startup mirror skips targets that already have newer metadata
+ok 90 - startup mirror skips targets that already have newer metadata
+  ---
+  duration_ms: 1.76725
+  type: 'test'
+  ...
+# Subtest: organize memo local checkpoints do not let a delayed stale value overwrite the latest memo
+ok 91 - organize memo local checkpoints do not let a delayed stale value overwrite the latest memo
+  ---
+  duration_ms: 1.244292
+  type: 'test'
+  ...
+# Subtest: persistRuntimeStateForUnload writes localStorage before asynchronous indexedDB checks finish
+ok 92 - persistRuntimeStateForUnload writes localStorage before asynchronous indexedDB checks finish
+  ---
+  duration_ms: 3.012083
+  type: 'test'
+  ...
+# Subtest: persistRuntimeStateForUnload rolls back localStorage when indexedDB conflict is found
+ok 93 - persistRuntimeStateForUnload rolls back localStorage when indexedDB conflict is found
+  ---
+  duration_ms: 4.08075
+  type: 'test'
+  ...
+# Subtest: delayed unload rollback preserves a newer save made by another tab
+ok 94 - delayed unload rollback preserves a newer save made by another tab
+  ---
+  duration_ms: 2.457375
+  type: 'test'
+  ...
+# Subtest: clear completed respects the active task filter
+ok 95 - clear completed respects the active task filter
+  ---
+  duration_ms: 19.318583
+  type: 'test'
+  ...
+# Subtest: shared save pending guard blocks unrelated list mutations
+ok 96 - shared save pending guard blocks unrelated list mutations
+  ---
+  duration_ms: 7.123042
+  type: 'test'
+  ...
+# Subtest: add operations ignore duplicate submissions while save is pending
+ok 97 - add operations ignore duplicate submissions while save is pending
+  ---
+  duration_ms: 10.130958
+  type: 'test'
+  ...
+# Subtest: add operation controls are restored and input is preserved when save fails
+ok 98 - add operation controls are restored and input is preserved when save fails
+  ---
+  duration_ms: 1.175292
+  type: 'test'
+  ...
+# Subtest: message edit and delete ignore stale index submissions while save is pending
+ok 99 - message edit and delete ignore stale index submissions while save is pending
+  ---
+  duration_ms: 6.52475
+  type: 'test'
+  ...
+# Subtest: message edit restores controls and preserves attempted input when save fails
+ok 100 - message edit restores controls and preserves attempted input when save fails
+  ---
+  duration_ms: 7.3105
+  type: 'test'
+  ...
+# Subtest: task edit modals ignore repeat saves and close attempts while save is pending
+ok 101 - task edit modals ignore repeat saves and close attempts while save is pending
+  ---
+  duration_ms: 12.948292
+  type: 'test'
+  ...
+# Subtest: focus operations ignore competing focus actions while save is pending
+not ok 102 - focus operations ignore competing focus actions while save is pending
+  ---
+  duration_ms: 5.641875
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-logic.test.mjs:3498:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-logic.test.mjs:3504:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: keyboard reorder uses visible parent rows under the active filter
+ok 103 - keyboard reorder uses visible parent rows under the active filter
+  ---
+  duration_ms: 11.589125
+  type: 'test'
+  ...
+# Subtest: keyboard reorder uses visible subtask rows under the active filter
+ok 104 - keyboard reorder uses visible subtask rows under the active filter
+  ---
+  duration_ms: 3.364541
+  type: 'test'
+  ...
+# Subtest: pomodoro persistence sync excludes break time from focus elapsed
+ok 105 - pomodoro persistence sync excludes break time from focus elapsed
+  ---
+  duration_ms: 7.828291
+  type: 'test'
+  ...
+# Subtest: pomodoro catches up across phase boundaries and a 30-day background interval without counting breaks
+ok 106 - pomodoro catches up across phase boundaries and a 30-day background interval without counting breaks
+  ---
+  duration_ms: 8.703834
+  type: 'test'
+  ...
+# Subtest: save protects other-tab data through restart when conflict read fails
+ok 107 - save protects other-tab data through restart when conflict read fails
+  ---
+  duration_ms: 5.298958
+  type: 'test'
+  ...
+# Subtest: save protects other-tab data through restart when conflict read succeeds
+ok 108 - save protects other-tab data through restart when conflict read succeeds
+  ---
+  duration_ms: 18.943125
+  type: 'test'
+  ...
+# Subtest: save retries the retained draft after a transient read failure without a competing write
+ok 109 - save retries the retained draft after a transient read failure without a competing write
+  ---
+  duration_ms: 1.99025
+  type: 'test'
+  ...
+# Subtest: persistOrganizeMemoLocalCheckpoint protects other-tab data through restart when conflict read fails
+ok 110 - persistOrganizeMemoLocalCheckpoint protects other-tab data through restart when conflict read fails
+  ---
+  duration_ms: 7.636542
+  type: 'test'
+  ...
+# Subtest: persistOrganizeMemoLocalCheckpoint protects other-tab data through restart when conflict read succeeds
+ok 111 - persistOrganizeMemoLocalCheckpoint protects other-tab data through restart when conflict read succeeds
+  ---
+  duration_ms: 11.933458
+  type: 'test'
+  ...
+# Subtest: persistOrganizeMemoLocalCheckpoint retries the retained draft after a transient read failure without a competing write
+ok 112 - persistOrganizeMemoLocalCheckpoint retries the retained draft after a transient read failure without a competing write
+  ---
+  duration_ms: 3.787666
+  type: 'test'
+  ...
+# Subtest: missing IndexedDB metadata permits saving when IndexedDB is unsupported
+ok 113 - missing IndexedDB metadata permits saving when IndexedDB is unsupported
+  ---
+  duration_ms: 9.338833
+  type: 'test'
+  ...
+# Subtest: missing IndexedDB metadata permits saving when IndexedDB is empty
+ok 114 - missing IndexedDB metadata permits saving when IndexedDB is empty
+  ---
+  duration_ms: 3.384292
+  type: 'test'
+  ...
+# Subtest: failed unload verification retains its provisional checkpoint and read warning until a safe retry
+ok 115 - failed unload verification retains its provisional checkpoint and read warning until a safe retry
+  ---
+  duration_ms: 2.291458
+  type: 'test'
+  ...
+# Subtest: restart after an interrupted unload keeps an IndexedDB-only concurrent task
+ok 116 - restart after an interrupted unload keeps an IndexedDB-only concurrent task
+  ---
+  duration_ms: 4.148
+  type: 'test'
+  ...
+# Subtest: repeated unload checkpoints preserve the original conflict baseline
+ok 117 - repeated unload checkpoints preserve the original conflict baseline
+  ---
+  duration_ms: 4.668792
+  type: 'test'
+  ...
+# Subtest: restart confirms a nonconflicting unload and retains the latest memo
+ok 118 - restart confirms a nonconflicting unload and retains the latest memo
+  ---
+  duration_ms: 3.637459
+  type: 'test'
+  ...
+# Subtest: failed IndexedDB verification never upgrades an unverified unload to a confirmed save
+ok 119 - failed IndexedDB verification never upgrades an unverified unload to a confirmed save
+  ---
+  duration_ms: 1.712792
+  type: 'test'
+  ...
+# Subtest: startup recovery never replaces a local write made while IndexedDB was loading
+ok 120 - startup recovery never replaces a local write made while IndexedDB was loading
+  ---
+  duration_ms: 1.356958
+  type: 'test'
+  ...
+# Subtest: local recovery failure preserves the IndexedDB winner
+ok 121 - local recovery failure preserves the IndexedDB winner
+  ---
+  duration_ms: 1.290541
+  type: 'test'
+  ...
+# Subtest: a completed unload verification clears the marker and mirrors the confirmed data
+ok 122 - a completed unload verification clears the marker and mirrors the confirmed data
+  ---
+  duration_ms: 1.38075
+  type: 'test'
+  ...
+# Subtest: successive unload saves never publish an older memo after the latest synchronous checkpoint
+ok 123 - successive unload saves never publish an older memo after the latest synchronous checkpoint
+  ---
+  duration_ms: 1.7285
+  type: 'test'
+  ...
+# Subtest: local-only environments keep synchronous unload persistence without a verification marker
+ok 124 - local-only environments keep synchronous unload persistence without a verification marker
+  ---
+  duration_ms: 2.315
+  type: 'test'
+  ...
+# Subtest: a valid unload checkpoint still repairs a malformed IndexedDB snapshot
+ok 125 - a valid unload checkpoint still repairs a malformed IndexedDB snapshot
+  ---
+  duration_ms: 1.55825
+  type: 'test'
+  ...
+# Subtest: save rejects a competing IndexedDB write after-read and restores it on restart
+ok 126 - save rejects a competing IndexedDB write after-read and restores it on restart
+  ---
+  duration_ms: 4.053541
+  type: 'test'
+  ...
+# Subtest: save rejects a competing IndexedDB write at-commit and restores it on restart
+ok 127 - save rejects a competing IndexedDB write at-commit and restores it on restart
+  ---
+  duration_ms: 2.824042
+  type: 'test'
+  ...
+# Subtest: save never acknowledges or publishes a write before its transaction commits
+ok 128 - save never acknowledges or publishes a write before its transaction commits
+  ---
+  duration_ms: 36.57
+  type: 'test'
+  ...
+# Subtest: persistOrganizeMemoLocalCheckpoint rejects a competing IndexedDB write after-read and restores it on restart
+ok 129 - persistOrganizeMemoLocalCheckpoint rejects a competing IndexedDB write after-read and restores it on restart
+  ---
+  duration_ms: 4.933167
+  type: 'test'
+  ...
+# Subtest: persistOrganizeMemoLocalCheckpoint rejects a competing IndexedDB write at-commit and restores it on restart
+ok 130 - persistOrganizeMemoLocalCheckpoint rejects a competing IndexedDB write at-commit and restores it on restart
+  ---
+  duration_ms: 3.7085
+  type: 'test'
+  ...
+# Subtest: persistOrganizeMemoLocalCheckpoint never acknowledges or publishes a write before its transaction commits
+ok 131 - persistOrganizeMemoLocalCheckpoint never acknowledges or publishes a write before its transaction commits
+  ---
+  duration_ms: 2.486041
+  type: 'test'
+  ...
+# Subtest: restart during an in-flight save and repeated unload preserves the competing task
+ok 132 - restart during an in-flight save and repeated unload preserves the competing task
+  ---
+  duration_ms: 9.844084
+  type: 'test'
+  ...
+# Subtest: restart during an in-flight save and repeated unload preserves the latest own draft
+ok 133 - restart during an in-flight save and repeated unload preserves the latest own draft
+  ---
+  duration_ms: 9.760542
+  type: 'test'
+  ...
+# Subtest: startup recovers a previously split same-generation save from the transactional backend
+ok 134 - startup recovers a previously split same-generation save from the transactional backend
+  ---
+  duration_ms: 4.218709
+  type: 'test'
+  ...
+# Subtest: a preflight superseded by unload does not acknowledge an unverified competing draft
+ok 135 - a preflight superseded by unload does not acknowledge an unverified competing draft
+  ---
+  duration_ms: 7.650125
+  type: 'test'
+  ...
+# Subtest: an IndexedDB commit failure cannot be masked by writable localStorage
+ok 136 - an IndexedDB commit failure cannot be masked by writable localStorage
+  ---
+  duration_ms: 4.315917
+  type: 'test'
+  ...
+# Error: Test "focus operations ignore competing focus actions while save is pending" at tests/yaruyan-logic.test.mjs:3498:1 generated asynchronous activity after the test ended. This activity created the error "ReferenceError: focusReturnBtn is not defined" and would have caused the test to fail, but instead triggered an unhandledRejection event.
+# Subtest: leaving a memo recovers composition even when compositionend never arrives
+ok 137 - leaving a memo recovers composition even when compositionend never arrives
+  ---
+  duration_ms: 5.36725
+  type: 'test'
+  ...
+# Subtest: memo blur does not clear composition belonging to a different field
+ok 138 - memo blur does not clear composition belonging to a different field
+  ---
+  duration_ms: 0.781834
+  type: 'test'
+  ...
+# Subtest: clicking backup Undo during autosave retains the action for a later retry
+ok 139 - clicking backup Undo during autosave retains the action for a later retry
+  ---
+  duration_ms: 1.350834
+  type: 'test'
+  ...
+# Subtest: a toast action cannot execute twice while its first action is awaiting storage
+ok 140 - a toast action cannot execute twice while its first action is awaiting storage
+  ---
+  duration_ms: 1.584208
+  type: 'test'
+  ...
+# Subtest: focusTaskInputWithRoute ignores stale callbacks after navigation, modal opening, or a save lock
+ok 141 - focusTaskInputWithRoute ignores stale callbacks after navigation, modal opening, or a save lock
+  ---
+  duration_ms: 1.96925
+  type: 'test'
+  ...
+# Subtest: focusMemoInputWithRoute ignores stale callbacks after navigation, modal opening, or a save lock
+ok 142 - focusMemoInputWithRoute ignores stale callbacks after navigation, modal opening, or a save lock
+  ---
+  duration_ms: 1.75875
+  type: 'test'
+  ...
+# Subtest: focusMessageInputWithRoute ignores stale callbacks after navigation, modal opening, or a save lock
+ok 143 - focusMessageInputWithRoute ignores stale callbacks after navigation, modal opening, or a save lock
+  ---
+  duration_ms: 1.938042
+  type: 'test'
+  ...
+# Subtest: Ctrl/Meta+Enter in the child input reaches the parent save shortcut without adding a child
+ok 144 - Ctrl/Meta+Enter in the child input reaches the parent save shortcut without adding a child
+  ---
+  duration_ms: 2.096
+  type: 'test'
+  ...
+# Subtest: moving between children of the same tooltip button does not restart its animation
+ok 145 - moving between children of the same tooltip button does not restart its animation
+  ---
+  duration_ms: 1.930417
+  type: 'test'
+  ...
+# Subtest: status filtering keeps the parent context of matching children
+ok 146 - status filtering keeps the parent context of matching children
+  ---
+  duration_ms: 398.566459
+  type: 'test'
+  ...
+# Subtest: progress counts actual work without double counting parents
+ok 147 - progress counts actual work without double counting parents
+  ---
+  duration_ms: 3.14725
+  type: 'test'
+  ...
+# Subtest: adding from completed results reveals the saved new task
+ok 148 - adding from completed results reveals the saved new task
+  ---
+  duration_ms: 1.983375
+  type: 'test'
+  ...
+# Subtest: failed addition preserves the filter, draft and existing tasks
+ok 149 - failed addition preserves the filter, draft and existing tasks
+  ---
+  duration_ms: 2.042167
+  type: 'test'
+  ...
+# Subtest: successful addition clears search so the new task is visible
+ok 150 - successful addition clears search so the new task is visible
+  ---
+  duration_ms: 1.689041
+  type: 'test'
+  ...
+# Subtest: failed addition preserves search as well as the filter and input
+ok 151 - failed addition preserves search as well as the filter and input
+  ---
+  duration_ms: 5.6945
+  type: 'test'
+  ...
+# Subtest: text limits never split an emoji surrogate pair in tasks or memo
+ok 152 - text limits never split an emoji surrogate pair in tasks or memo
+  ---
+  duration_ms: 5.928834
+  type: 'test'
+  ...
+# Subtest: HTML escaping handles literal markup and quotes without creating DOM nodes
+ok 153 - HTML escaping handles literal markup and quotes without creating DOM nodes
+  ---
+  duration_ms: 2.036
+  type: 'test'
+  ...
+# Subtest: repeated icon hydration retains the SVG and updates changed icons
+ok 154 - repeated icon hydration retains the SVG and updates changed icons
+  ---
+  duration_ms: 1.307084
+  type: 'test'
+  ...
+# Subtest: tooltip follows the current accessible label without a cached copy
+ok 155 - tooltip follows the current accessible label without a cached copy
+  ---
+  duration_ms: 1.313958
+  type: 'test'
+  ...
+# Subtest: memo autosave waits for composition before applying the shared save lock
+ok 156 - memo autosave waits for composition before applying the shared save lock
+  ---
+  duration_ms: 2.749125
+  type: 'test'
+  ...
+# Subtest: IME confirmation marked by keyCode 229 never triggers global shortcuts
+ok 157 - IME confirmation marked by keyCode 229 never triggers global shortcuts
+  ---
+  duration_ms: 310.883542
+  type: 'test'
+  ...
+# Subtest: unchanged focus status does not repeatedly announce through the live region
+ok 158 - unchanged focus status does not repeatedly announce through the live region
+  ---
+  duration_ms: 63.941792
+  type: 'test'
+  ...
+# Subtest: reduced motion suppresses canvas particles and stops an existing animation
+ok 159 - reduced motion suppresses canvas particles and stops an existing animation
+  ---
+  duration_ms: 2.4745
+  type: 'test'
+  ...
+# Subtest: task row cache changes only when displayed content changes
+ok 160 - task row cache changes only when displayed content changes
+  ---
+  duration_ms: 8.594
+  type: 'test'
+  ...
+# Subtest: latest selected backup wins when earlier reading finishes late
+ok 161 - latest selected backup wins when earlier reading finishes late
+  ---
+  duration_ms: 26.814833
+  type: 'test'
+  ...
+# Subtest: latest selected backup wins when earlier reading fails late
+ok 162 - latest selected backup wins when earlier reading fails late
+  ---
+  duration_ms: 0.909833
+  type: 'test'
+  ...
+# Subtest: a truncated corrupt backup never authorizes deleting the full recovery source
+ok 163 - a truncated corrupt backup never authorizes deleting the full recovery source
+  ---
+  duration_ms: 8.112834
+  type: 'test'
+  ...
+# Subtest: holding Enter does not submit taskInput repeatedly
+ok 164 - holding Enter does not submit taskInput repeatedly
+  ---
+  duration_ms: 111.8785
+  type: 'test'
+  ...
+# Subtest: holding Enter does not submit messageInput repeatedly
+ok 165 - holding Enter does not submit messageInput repeatedly
+  ---
+  duration_ms: 6.112125
+  type: 'test'
+  ...
+# Subtest: holding Enter does not submit parentEditInput repeatedly
+ok 166 - holding Enter does not submit parentEditInput repeatedly
+  ---
+  duration_ms: 2.073792
+  type: 'test'
+  ...
+# Subtest: holding Enter does not submit modalSubtaskInput repeatedly
+ok 167 - holding Enter does not submit modalSubtaskInput repeatedly
+  ---
+  duration_ms: 3.967709
+  type: 'test'
+  ...
+# Subtest: holding Enter does not submit subtaskEditInput repeatedly
+ok 168 - holding Enter does not submit subtaskEditInput repeatedly
+  ---
+  duration_ms: 2.064708
+  type: 'test'
+  ...
+# Subtest: holding Enter does not submit messageList repeatedly
+ok 169 - holding Enter does not submit messageList repeatedly
+  ---
+  duration_ms: 1.999333
+  type: 'test'
+  ...
+# Subtest: focus duration saves on change and Enter, ignoring held keys and IME
+ok 170 - focus duration saves on change and Enter, ignoring held keys and IME
+  ---
+  duration_ms: 89.912875
+  type: 'test'
+  ...
+# Subtest: break duration saves on change and Enter, ignoring held keys and IME
+ok 171 - break duration saves on change and Enter, ignoring held keys and IME
+  ---
+  duration_ms: 2.634959
+  type: 'test'
+  ...
+# Subtest: a repeated activation cannot reopen an editor through its restored button
+ok 172 - a repeated activation cannot reopen an editor through its restored button
+  ---
+  duration_ms: 5.47575
+  type: 'test'
+  ...
+# Subtest: a leftover memo autosave defers during composition in another input
+ok 173 - a leftover memo autosave defers during composition in another input
+  ---
+  duration_ms: 2.353834
+  type: 'test'
+  ...
+# Subtest: consecutive celebrations get a full display interval and ignore stale callbacks
+ok 174 - consecutive celebrations get a full display interval and ignore stale callbacks
+  ---
+  duration_ms: 1.793792
+  type: 'test'
+  ...
+# Subtest: backup replacement updates the editor and Undo only after a successful commit
+ok 175 - backup replacement updates the editor and Undo only after a successful commit
+  ---
+  duration_ms: 2.665208
+  type: 'test'
+  ...
+# Subtest: reading a backup reports failure when an intervening modal prevents confirmation
+ok 176 - reading a backup reports failure when an intervening modal prevents confirmation
+  ---
+  duration_ms: 2.099666
+  type: 'test'
+  ...
+# Subtest: static and generated controls never reintroduce native title tooltips
+ok 177 - static and generated controls never reintroduce native title tooltips
+  ---
+  duration_ms: 2.88125
+  type: 'test'
+  ...
+# Subtest: malformed task fields cannot stop recovery of healthy tasks and children
+ok 178 - malformed task fields cannot stop recovery of healthy tasks and children
+  ---
+  duration_ms: 14.881167
+  type: 'test'
+  ...
+# Subtest: only a boolean true marks imported work complete
+ok 179 - only a boolean true marks imported work complete
+  ---
+  duration_ms: 1.864834
+  type: 'test'
+  ...
+# Subtest: invalid messages and timer values use safe defaults without object coercion
+ok 180 - invalid messages and timer values use safe defaults without object coercion
+  ---
+  duration_ms: 2.926916
+  type: 'test'
+  ...
+# Subtest: storage metadata ignores nested ancestry and malformed numeric fields
+ok 181 - storage metadata ignores nested ancestry and malformed numeric fields
+  ---
+  duration_ms: 4.409708
+  type: 'test'
+  ...
+# Subtest: deeply nested metadata from JSON is reduced to a shallow identity
+ok 182 - deeply nested metadata from JSON is reduced to a shallow identity
+  ---
+  duration_ms: 5.6665
+  type: 'test'
+  ...
+# Subtest: repaired task data remains stable across subsequent reloads
+ok 183 - repaired task data remains stable across subsequent reloads
+  ---
+  duration_ms: 3.817166
+  type: 'test'
+  ...
+# Subtest: a synchronous IndexedDB write failure aborts all previously queued writes
+ok 184 - a synchronous IndexedDB write failure aborts all previously queued writes
+  ---
+  duration_ms: 15.830292
+  type: 'test'
+  ...
+# Subtest: IndexedDB metadata-read failures settle and abort the write transaction
+ok 185 - IndexedDB metadata-read failures settle and abort the write transaction
+  ---
+  duration_ms: 7.872042
+  type: 'test'
+  ...
+# Subtest: successful IndexedDB saves commit every key together
+ok 186 - successful IndexedDB saves commit every key together
+  ---
+  duration_ms: 6.24875
+  type: 'test'
+  ...
+# Subtest: closed or superseded IndexedDB connections are reopened for the next operation
+ok 187 - closed or superseded IndexedDB connections are reopened for the next operation
+  ---
+  duration_ms: 1.827041
+  type: 'test'
+  ...
+# Subtest: failed focus checkpoints retry at the checkpoint interval instead of every timer tick
+ok 188 - failed focus checkpoints retry at the checkpoint interval instead of every timer tick
+  ---
+  duration_ms: 3.941833
+  type: 'test'
+  ...
+# Subtest: search normalizes width, case and whitespace and treats markup literally
+ok 189 - search normalizes width, case and whitespace and treats markup literally
+  ---
+  duration_ms: 28.883792
+  type: 'test'
+  ...
+# Subtest: a matching child retains its parent while a matching parent includes matching-status children
+ok 190 - a matching child retains its parent while a matching parent includes matching-status children
+  ---
+  duration_ms: 3.146834
+  type: 'test'
+  ...
+# Subtest: search leaves data and the persisted filter unchanged, and clearing reveals all rows
+ok 191 - search leaves data and the persisted filter unchanged, and clearing reveals all rows
+  ---
+  duration_ms: 0.971083
+  type: 'test'
+  ...
+# Subtest: IME composition does not refresh results until committed input
+ok 192 - IME composition does not refresh results until committed input
+  ---
+  duration_ms: 2.553167
+  type: 'test'
+  ...
+# Subtest: search respects an active save lock
+ok 193 - search respects an active save lock
+  ---
+  duration_ms: 2.55025
+  type: 'test'
+  ...
+# Subtest: search blocks both bulk confirmations and execution without touching data
+ok 194 - search blocks both bulk confirmations and execution without touching data
+  ---
+  duration_ms: 2.843
+  type: 'test'
+  ...
+# Subtest: the complete application script parses
+ok 195 - the complete application script parses
+  ---
+  duration_ms: 20.668625
+  type: 'test'
+  ...
+# Subtest: round 2: corrupt recovery never removes a newer value written by another tab
+ok 196 - round 2: corrupt recovery never removes a newer value written by another tab
+  ---
+  duration_ms: 7.400583
+  type: 'test'
+  ...
+# Subtest: round 2: an older corrupt backup cannot authorize deletion of different current data
+ok 197 - round 2: an older corrupt backup cannot authorize deletion of different current data
+  ---
+  duration_ms: 1.756708
+  type: 'test'
+  ...
+# Subtest: round 1: undo cannot turn an active leaf focus session into a container
+ok 198 - round 1: undo cannot turn an active leaf focus session into a container
+  ---
+  duration_ms: 6.966083
+  type: 'test'
+  ...
+# Subtest: round 1: restoring a child clears obsolete container focus and preserves child progress
+ok 199 - round 1: restoring a child clears obsolete container focus and preserves child progress
+  ---
+  duration_ms: 70.575083
+  type: 'test'
+  ...
+# Subtest: round 3: clock rollback never double-counts already checkpointed parent or child work
+ok 200 - round 3: clock rollback never double-counts already checkpointed parent or child work
+  ---
+  duration_ms: 73.607917
+  type: 'test'
+  ...
+# Subtest: round 3: checkpoint retry interval recovers after a backwards wall-clock adjustment
+ok 201 - round 3: checkpoint retry interval recovers after a backwards wall-clock adjustment
+  ---
+  duration_ms: 111.180125
+  type: 'test'
+  ...
+# Subtest: round 4: delayed focus for a lower modal cannot escape the top modal
+ok 202 - round 4: delayed focus for a lower modal cannot escape the top modal
+  ---
+  duration_ms: 2.986584
+  type: 'test'
+  ...
+# Subtest: round 4: stale close callbacks do not steal focus after a modal reopens
+ok 203 - round 4: stale close callbacks do not steal focus after a modal reopens
+  ---
+  duration_ms: 2.802584
+  type: 'test'
+  ...
+# Subtest: round 5: unrelated settings renders preserve the focused duration draft
+ok 204 - round 5: unrelated settings renders preserve the focused duration draft
+  ---
+  duration_ms: 4.424875
+  type: 'test'
+  ...
+# Subtest: round 6: oversized message imports stop work once the supported messages are recovered
+ok 205 - round 6: oversized message imports stop work once the supported messages are recovered
+  ---
+  duration_ms: 2.05375
+  type: 'test'
+  ...
+# Subtest: round 6: invalid messages do not consume the import limit and retained order stays stable
+ok 206 - round 6: invalid messages do not consume the import limit and retained order stays stable
+  ---
+  duration_ms: 3.1575
+  type: 'test'
+  ...
+# Subtest: round 7: repeated or modified Enter cannot activate a destructive confirmation
+ok 207 - round 7: repeated or modified Enter cannot activate a destructive confirmation
+  ---
+  duration_ms: 2.803875
+  type: 'test'
+  ...
+# Subtest: round 7: ordinary Enter confirms while Enter on cancel retains the native action
+ok 208 - round 7: ordinary Enter confirms while Enter on cancel retains the native action
+  ---
+  duration_ms: 0.874833
+  type: 'test'
+  ...
+# Subtest: round 8: memo live status changes only when its state or limit text changes
+ok 209 - round 8: memo live status changes only when its state or limit text changes
+  ---
+  duration_ms: 1.916125
+  type: 'test'
+  ...
+# Subtest: round 9: saving a changed memo does not rewrite unchanged task and settings payloads
+ok 210 - round 9: saving a changed memo does not rewrite unchanged task and settings payloads
+  ---
+  duration_ms: 2.225917
+  type: 'test'
+  ...
+# Subtest: round 9: duplicate keys retain order and a later failure rolls all changed keys back
+ok 211 - round 9: duplicate keys retain order and a later failure rolls all changed keys back
+  ---
+  duration_ms: 1.147084
+  type: 'test'
+  ...
+# Subtest: round 10: holding Enter on focus controls cannot repeatedly toggle or complete work
+ok 212 - round 10: holding Enter on focus controls cannot repeatedly toggle or complete work
+  ---
+  duration_ms: 0.88675
+  type: 'test'
+  ...
+# Subtest: labeled buttons and non-button elements do not open a tooltip
+ok 213 - labeled buttons and non-button elements do not open a tooltip
+  ---
+  duration_ms: 4.268166
+  type: 'test'
+  ...
+# Subtest: touch does not open a mouse tooltip, while keyboard focus does
+ok 214 - touch does not open a mouse tooltip, while keyboard focus does
+  ---
+  duration_ms: 57.625084
+  type: 'test'
+  ...
+# Subtest: Escape dismisses the tooltip before the underlying dialog handles the key
+ok 215 - Escape dismisses the tooltip before the underlying dialog handles the key
+  ---
+  duration_ms: 1.341917
+  type: 'test'
+  ...
+# Subtest: viewport changes hide a tooltip when its button gains a visible text label
+ok 216 - viewport changes hide a tooltip when its button gains a visible text label
+  ---
+  duration_ms: 17.601125
+  type: 'test'
+  ...
+# Subtest: editor parent moves in saved order without saving name drafts
+ok 217 - editor parent moves in saved order without saving name drafts
+  ---
+  duration_ms: 31.4265
+  type: 'test'
+  ...
+# Subtest: editor parent keeps the original order on save failure
+ok 218 - editor parent keeps the original order on save failure
+  ---
+  duration_ms: 1.169583
+  type: 'test'
+  ...
+# Subtest: editor subtask moves in saved order without saving name drafts
+ok 219 - editor subtask moves in saved order without saving name drafts
+  ---
+  duration_ms: 5.053
+  type: 'test'
+  ...
+# Subtest: editor subtask keeps the original order on save failure
+ok 220 - editor subtask keeps the original order on save failure
+  ---
+  duration_ms: 30.165917
+  type: 'test'
+  ...
+# Subtest: editor movement ignores stale targets, invalid offsets and a pending save
+ok 221 - editor movement ignores stale targets, invalid offsets and a pending save
+  ---
+  duration_ms: 20.603792
+  type: 'test'
+  ...
+# Subtest: bulk menu dismissal restores its summary only when focus was inside
+ok 222 - bulk menu dismissal restores its summary only when focus was inside
+  ---
+  duration_ms: 14.971583
+  type: 'test'
+  ...
+# Subtest: route focus changes only on navigation and stays out of an open dialog
+ok 223 - route focus changes only on navigation and stays out of an open dialog
+  ---
+  duration_ms: 32.786625
+  type: 'test'
+  ...
+# Subtest: addTask preserves an over-limit draft without attempting a save
+ok 224 - addTask preserves an over-limit draft without attempting a save
+  ---
+  duration_ms: 38.007459
+  type: 'test'
+  ...
+# Subtest: saveParentEdit preserves an over-limit draft without attempting a save
+ok 225 - saveParentEdit preserves an over-limit draft without attempting a save
+  ---
+  duration_ms: 3.537708
+  type: 'test'
+  ...
+# Subtest: saveSubtaskEdit preserves an over-limit draft without attempting a save
+ok 226 - saveSubtaskEdit preserves an over-limit draft without attempting a save
+  ---
+  duration_ms: 3.433417
+  type: 'test'
+  ...
+# Subtest: addSubtaskFromModal preserves an over-limit draft without attempting a save
+ok 227 - addSubtaskFromModal preserves an over-limit draft without attempting a save
+  ---
+  duration_ms: 3.570667
+  type: 'test'
+  ...
+# Subtest: Escape keeps the active focus session running and does not close it
+not ok 228 - Escape keeps the active focus session running and does not close it
+  ---
+  duration_ms: 9.929041
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-usability.test.mjs:28:1'
+  failureType: 'testCodeFailure'
+  error: 'Escape must not leave focus'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  operator: 'fail'
+  stack: |-
+    returnFromFocus (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-usability.test.mjs:37:35)
+    handleDocumentShortcuts (evalmachine.<anonymous>:72:18)
+    TestContext.<anonymous> (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-usability.test.mjs:39:3)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: an open focus session cannot be replaced by starting another task
+not ok 229 - an open focus session cannot be replaced by starting another task
+  ---
+  duration_ms: 3.895958
+  type: 'test'
+  location: '/Users/arita-ritsuki/Documents/ドキュメント/個人開発/yaruyan-todo/tests/yaruyan-usability.test.mjs:44:1'
+  failureType: 'testCodeFailure'
+  error: 'confirmModalOverlay is not defined'
+  code: 'ERR_TEST_FAILURE'
+  name: 'ReferenceError'
+  stack: |-
+    openFocusModal (evalmachine.<anonymous>:3:9)
+    TestContext.<anonymous> (file:///Users/arita-ritsuki/Documents/%E3%83%88%E3%82%99%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/yaruyan-todo/tests/yaruyan-usability.test.mjs:51:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: closing a dirty parent editor asks before discarding and keeps the draft
+ok 230 - closing a dirty parent editor asks before discarding and keeps the draft
+  ---
+  duration_ms: 2.822042
+  type: 'test'
+  ...
+# Subtest: adding a child reveals it only after a committed save (true)
+ok 231 - adding a child reveals it only after a committed save (true)
+  ---
+  duration_ms: 3.954042
+  type: 'test'
+  ...
+# Subtest: adding a child reveals it only after a committed save (false)
+ok 232 - adding a child reveals it only after a committed save (false)
+  ---
+  duration_ms: 5.689709
+  type: 'test'
+  ...
+# Subtest: pomodoro shows rounded-up phase remaining time separately from cumulative work
+ok 233 - pomodoro shows rounded-up phase remaining time separately from cumulative work
+  ---
+  duration_ms: 5.622583
+  type: 'test'
+  ...
+# Subtest: row cache updates when filters or search change the visible children
+ok 234 - row cache updates when filters or search change the visible children
+  ---
+  duration_ms: 4.666125
+  type: 'test'
+  ...
+1..234
+# tests 234
+# suites 0
+# pass 228
+# fail 6
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2227.273208

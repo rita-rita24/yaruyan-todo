@@ -1,0 +1,762 @@
+[
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-0-1791568947201",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:02:31.255Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 348.9000000357628,
+        "displayMs": 897,
+        "seedMs": 1.100000023841858
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 35.90000003576279,
+        "displayMs": 44.60000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 13.300000011920929,
+        "displayMs": 71.59999996423721
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 31,
+        "displayMs": 48
+      },
+      {
+        "operation": "search",
+        "readyMs": 100.60000002384186,
+        "displayMs": 147.30000001192093
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 873,
+        "displayMs": 1203.300000011921
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 24.100000023841858,
+        "displayMs": 121.39999997615814
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 59.80000001192093,
+        "displayMs": 142.5
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 204.79999995231628,
+        "displayMs": 225.5999999642372
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 81.80000001192093,
+        "displayMs": 228.30000001192093
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 184.39999997615814,
+        "displayMs": 290.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-0-1791568947201",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:02:37.101Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 320.30000001192093,
+        "displayMs": 497.30000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 67.30000001192093,
+        "displayMs": 435
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 28.30000001192093,
+        "displayMs": 51.80000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 69.69999998807907,
+        "displayMs": 85.80000001192093
+      },
+      {
+        "operation": "search",
+        "readyMs": 90.39999997615814,
+        "displayMs": 197
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 1123.3999999761581,
+        "displayMs": 2269.199999988079
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 126.39999997615814,
+        "displayMs": 301.39999997615814
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 81.10000002384186,
+        "displayMs": 160.9000000357628
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 253.19999998807907,
+        "displayMs": 265.5
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 145.80000001192093,
+        "displayMs": 333.5
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 252.10000002384186,
+        "displayMs": 381.80000001192093
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-1-1791568957112",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:02:41.316Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 319.5,
+        "displayMs": 442.9000000357628,
+        "seedMs": 2.299999952316284
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 59,
+        "displayMs": 485.39999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 28.600000023841858,
+        "displayMs": 48.80000001192093
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 41.60000002384186,
+        "displayMs": 65
+      },
+      {
+        "operation": "search",
+        "readyMs": 95.90000003576279,
+        "displayMs": 146.69999998807907
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 974.4000000357628,
+        "displayMs": 1284.300000011921
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 62.69999998807907,
+        "displayMs": 211.4000000357628
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 49,
+        "displayMs": 122.5
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 197.30000001192093,
+        "displayMs": 218
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 66.5,
+        "displayMs": 213.5999999642372
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 165.10000002384186,
+        "displayMs": 240.10000002384186
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-1-1791568957112",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:02:45.404Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 215.5,
+        "displayMs": 315.30000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 33,
+        "displayMs": 722.6999999880791
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 22.600000023841858,
+        "displayMs": 49.60000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 44,
+        "displayMs": 64.80000001192093
+      },
+      {
+        "operation": "search",
+        "readyMs": 59.59999996423721,
+        "displayMs": 114.39999997615814
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 898.9000000357628,
+        "displayMs": 1190.5
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 63.80000001192093,
+        "displayMs": 200.69999998807907
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 47.5,
+        "displayMs": 122.39999997615814
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 194.69999998807907,
+        "displayMs": 210.9000000357628
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 57.60000002384186,
+        "displayMs": 215.9000000357628
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 145.79999995231628,
+        "displayMs": 235.29999995231628
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-2-1791568989297",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:03:12.927Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 186,
+        "displayMs": 285.4000000357628,
+        "seedMs": 1.0999999642372131
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 50.40000003576279,
+        "displayMs": 455.7000000476837
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 31.299999952316284,
+        "displayMs": 48.89999997615814
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 37.5,
+        "displayMs": 51.89999997615814
+      },
+      {
+        "operation": "search",
+        "readyMs": 66.5,
+        "displayMs": 115.20000004768372
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 797.2999999523163,
+        "displayMs": 1068.2999999523163
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 64.5,
+        "displayMs": 237.10000002384186
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 47.90000003576279,
+        "displayMs": 116.90000003576279
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 175.20000004768372,
+        "displayMs": 187.70000004768372
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 69.40000003576279,
+        "displayMs": 236.10000002384186
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 155.69999998807907,
+        "displayMs": 236.5
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-2-1791568989297",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:03:17.026Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 216.19999998807907,
+        "displayMs": 326.10000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 35.5,
+        "displayMs": 450.89999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 21.900000035762787,
+        "displayMs": 49.40000003576279
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 45.69999998807907,
+        "displayMs": 66.79999995231628
+      },
+      {
+        "operation": "search",
+        "readyMs": 203.30000001192093,
+        "displayMs": 349.80000001192093
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 884,
+        "displayMs": 1168.300000011921
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 60,
+        "displayMs": 209.80000001192093
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 59.80000001192093,
+        "displayMs": 127.90000003576279
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 177.10000002384186,
+        "displayMs": 200.60000002384186
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 63.80000001192093,
+        "displayMs": 260.30000001192093
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 155.19999998807907,
+        "displayMs": 243.89999997615814
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-3-1791568997028",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:03:21.080Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 204.80000001192093,
+        "displayMs": 320.0999999642372,
+        "seedMs": 1.199999988079071
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 57.200000047683716,
+        "displayMs": 450.5
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 21.80000001192093,
+        "displayMs": 49.700000047683716
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 40.299999952316284,
+        "displayMs": 66.19999998807907
+      },
+      {
+        "operation": "search",
+        "readyMs": 204.19999998807907,
+        "displayMs": 350.0999999642372
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 895.8000000119209,
+        "displayMs": 1233.9000000357628
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 51.40000003576279,
+        "displayMs": 200
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 56.5,
+        "displayMs": 128
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 180.30000001192093,
+        "displayMs": 199.30000001192093
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 63.60000002384186,
+        "displayMs": 176.9000000357628
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 169.79999995231628,
+        "displayMs": 347.5999999642372
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-3-1791568997028",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:03:25.048Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 210,
+        "displayMs": 319.80000001192093,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 38.59999996423721,
+        "displayMs": 454.80000001192093
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 21,
+        "displayMs": 49.69999998807907
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 39.19999998807907,
+        "displayMs": 65.89999997615814
+      },
+      {
+        "operation": "search",
+        "readyMs": 189,
+        "displayMs": 333.5
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 861.8000000119209,
+        "displayMs": 1150
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 62.69999998807907,
+        "displayMs": 200.0999999642372
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 49.299999952316284,
+        "displayMs": 122.19999998807907
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 150.69999998807907,
+        "displayMs": 175.19999998807907
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 65.20000004768372,
+        "displayMs": 233.4000000357628
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 166,
+        "displayMs": 228.0999999642372
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-4-1791569029259",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "initial",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:03:53.027Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 204.9000000357628,
+        "displayMs": 307.30000001192093,
+        "seedMs": 1.100000023841858
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 53.700000047683716,
+        "displayMs": 452.60000002384186
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 20.30000001192093,
+        "displayMs": 35.60000002384186
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 35.59999996423721,
+        "displayMs": 51.5
+      },
+      {
+        "operation": "search",
+        "readyMs": 70.60000002384186,
+        "displayMs": 114
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 933.4000000357628,
+        "displayMs": 1234.1000000238419
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 62.39999997615814,
+        "displayMs": 204.89999997615814
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 16.600000023841858,
+        "displayMs": 126.90000003576279
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 203.19999998807907,
+        "displayMs": 223
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 88.89999997615814,
+        "displayMs": 171.30000001192093
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 143.89999997615814,
+        "displayMs": 205.69999998807907
+      }
+    ]
+  },
+  {
+    "version": "round4-after-child-v4-large-repeat",
+    "group": "round4-after-child-v4-large-repeat-200-tasks-4-1791569029259",
+    "sourceSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+    "route": "tasks",
+    "cache": "repeat",
+    "parents": 200,
+    "children": 50,
+    "date": "2026-10-09T18:03:57.208Z",
+    "profile": null,
+    "longFrames": null,
+    "frameObserverSupported": null,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 217.80000001192093,
+        "displayMs": 319.60000002384186,
+        "seedMs": 0
+      },
+      {
+        "operation": "navigate-memo",
+        "readyMs": 34.19999998807907,
+        "displayMs": 385.39999997615814
+      },
+      {
+        "operation": "navigate-settings",
+        "readyMs": 19.899999976158142,
+        "displayMs": 50.5
+      },
+      {
+        "operation": "navigate-tasks",
+        "readyMs": 38.19999998807907,
+        "displayMs": 50.39999997615814
+      },
+      {
+        "operation": "search",
+        "readyMs": 61.10000002384186,
+        "displayMs": 166.30000001192093
+      },
+      {
+        "operation": "search-clear",
+        "readyMs": 1005.6999999880791,
+        "displayMs": 1301.1000000238419
+      },
+      {
+        "operation": "parent-edit",
+        "readyMs": 57.90000003576279,
+        "displayMs": 194.9000000357628
+      },
+      {
+        "operation": "child-edit",
+        "readyMs": 61.40000003576279,
+        "displayMs": 132.30000001192093
+      },
+      {
+        "operation": "focus-start",
+        "readyMs": 181.5999999642372,
+        "displayMs": 207
+      },
+      {
+        "operation": "child-save",
+        "readyMs": 60.80000001192093,
+        "displayMs": 325.30000001192093
+      },
+      {
+        "operation": "parent-save",
+        "readyMs": 167.69999998807907,
+        "displayMs": 354.69999998807907
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: search detach and restore preserves the exact child nodes and order
+ok 1 - search detach and restore preserves the exact child nodes and order
+  ---
+  duration_ms: 3.534166
+  type: 'test'
+  ...
+# Subtest: edited hidden children are recreated when restored, while unchanged nodes survive
+ok 2 - edited hidden children are recreated when restored, while unchanged nodes survive
+  ---
+  duration_ms: 0.658291
+  type: 'test'
+  ...
+# Subtest: focus and drag state use the original full replacement path
+ok 3 - focus and drag state use the original full replacement path
+  ---
+  duration_ms: 0.484791
+  type: 'test'
+  ...
+# Subtest: changed parent controls use the original full replacement path
+ok 4 - changed parent controls use the original full replacement path
+  ---
+  duration_ms: 0.454875
+  type: 'test'
+  ...
+# Subtest: child cache initializes only on a changed view and retains existing nodes
+ok 5 - child cache initializes only on a changed view and retains existing nodes
+  ---
+  duration_ms: 0.469625
+  type: 'test'
+  ...
+# Subtest: unchanged structure retains its index and changed IDs prune stale entries
+ok 6 - unchanged structure retains its index and changed IDs prune stale entries
+  ---
+  duration_ms: 0.424458
+  type: 'test'
+  ...
+# Subtest: detached deleted children are removed, while connected deletion waits for reconciliation
+ok 7 - detached deleted children are removed, while connected deletion waits for reconciliation
+  ---
+  duration_ms: 1.108375
+  type: 'test'
+  ...
+# Subtest: insertion previews bypass lazy child-cache creation and reconciliation
+ok 8 - insertion previews bypass lazy child-cache creation and reconciliation
+  ---
+  duration_ms: 0.431083
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 164.006

@@ -1,0 +1,642 @@
+[
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-0-1791565689421",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:09.470Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 29.5,
+        "displayMs": 46.40000003576279,
+        "seedMs": 0.3999999761581421
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-0-1791565689421",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:09.537Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 28.80000001192093,
+        "displayMs": 56.89999997615814,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-1-1791565689791",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:09.836Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.09999996423721313
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.399999976158142,
+        "displayMs": 41.60000002384186,
+        "seedMs": 0.40000003576278687
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-1-1791565689791",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:09.905Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.10000002384185791
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 28.100000023841858,
+        "displayMs": 59.200000047683716,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-2-1791565689910",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:09.954Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.599999964237213,
+        "displayMs": 40.69999998807907,
+        "seedMs": 0.3999999761581421
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-2-1791565689910",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.020Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 27.69999998807907,
+        "displayMs": 55.80000001192093,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-3-1791565690259",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.302Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.19999998807907,
+        "displayMs": 40.39999997615814,
+        "seedMs": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-3-1791565690259",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.355Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 24.899999976158142,
+        "displayMs": 43,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-4-1791565690360",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.403Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.09999996423721313
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.299999952316284,
+        "displayMs": 40.299999952316284,
+        "seedMs": 0.19999998807907104
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-memo-4-1791565690360",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "memo",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.471Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.10000002384185791
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 28.899999976158142,
+        "displayMs": 59.19999998807907,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-0-1791565690609",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.653Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.100000023841858,
+        "displayMs": 41,
+        "seedMs": 0.3999999761581421
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-0-1791565690609",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:10.721Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104,
+        0,
+        0.10000002384185791
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 30.400000035762787,
+        "displayMs": 59,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-1-1791565690958",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.003Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.20000004768371582,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.399999976158142,
+        "displayMs": 42.5,
+        "seedMs": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-1-1791565690958",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.071Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.20000004768371582,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 29.600000023841858,
+        "displayMs": 58.69999998807907,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-2-1791565691077",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.122Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.10000002384185791,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.899999976158142,
+        "displayMs": 43,
+        "seedMs": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-2-1791565691077",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.187Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 28.599999964237213,
+        "displayMs": 52.39999997615814,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-3-1791565691426",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.471Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.10000002384185791,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 21.899999976158142,
+        "displayMs": 42.5,
+        "seedMs": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-3-1791565691426",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.538Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.19999998807907104,
+        0,
+        0.10000002384185791
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 30.30000001192093,
+        "displayMs": 57.30000001192093,
+        "seedMs": 0
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-4-1791565691544",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "initial",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.587Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.20000004768371582,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 22.299999952316284,
+        "displayMs": 40.19999998807907,
+        "seedMs": 0.30000001192092896
+      }
+    ]
+  },
+  {
+    "version": "round4-before-html-final-direct",
+    "group": "round4-before-html-final-direct-20-settings-4-1791565691544",
+    "sourceSha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+    "route": "settings",
+    "cache": "repeat",
+    "parents": 20,
+    "children": 5,
+    "date": "2026-10-09T17:08:11.654Z",
+    "profile": {
+      "renderTasks": [],
+      "hydrateMaterialIcons": [
+        0.20000004768371582,
+        0,
+        0
+      ]
+    },
+    "longFrames": [],
+    "frameObserverSupported": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      1280,
+      900
+    ],
+    "measured": [
+      {
+        "operation": "direct",
+        "readyMs": 28.400000035762787,
+        "displayMs": 57.30000001192093,
+        "seedMs": 0
+      }
+    ]
+  }
+]

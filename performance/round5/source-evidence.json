@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09T17:39:57.673Z",
+  "changedSegments": 45,
+  "expressionsAndStatementsUnchanged": true,
+  "outsideScriptUnchanged": true,
+  "sources": [
+    {
+      "path": "performance/round5/baseline.html",
+      "sha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+      "bytes": 382892
+    },
+    {
+      "path": "performance/round5/candidate.html",
+      "sha256": "ffe4ef95a84ac4021fdd72661a4a118f6ae95b609afd2f7d8ab534838ad8daeb",
+      "bytes": 380403
+    }
+  ]
+}

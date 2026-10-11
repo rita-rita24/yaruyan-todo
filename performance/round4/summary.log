@@ -1,0 +1,158 @@
+[
+  {
+    suite: 'icons-large',
+    route: 'tasks',
+    cache: 'initial',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 5,
+      median: 428.30000001192093,
+      min: 160.0999999642372,
+      max: 567.5,
+      samples: [Array]
+    },
+    after: {
+      n: 5,
+      median: 221.30000001192093,
+      min: 171,
+      max: 467.69999998807907,
+      samples: [Array]
+    },
+    delta: 207,
+    percent: 48.330609384599235,
+    verdict: 'observed median difference; no statistical significance claim'
+  },
+  {
+    suite: 'icons-large',
+    route: 'tasks',
+    cache: 'repeat',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 5,
+      median: 416.7000000476837,
+      min: 158.0999999642372,
+      max: 428.60000002384186,
+      samples: [Array]
+    },
+    after: {
+      n: 5,
+      median: 383.39999997615814,
+      min: 222.5,
+      max: 476.69999998807907,
+      samples: [Array]
+    },
+    delta: 33.300000071525574,
+    percent: 7.991360707395008,
+    verdict: 'observed median difference; no statistical significance claim'
+  },
+  {
+    suite: 'cache-large',
+    route: 'tasks',
+    cache: 'initial',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 5,
+      median: 527.1999999880791,
+      min: 287.5,
+      max: 883.7000000476837,
+      samples: [Array]
+    },
+    after: {
+      n: 5,
+      median: 592.2000000476837,
+      min: 478.60000002384186,
+      max: 929.3999999761581,
+      samples: [Array]
+    },
+    delta: -65.00000005960464,
+    percent: -12.329286809763735,
+    verdict: 'observed median difference; no statistical significance claim'
+  },
+  {
+    suite: 'cache-large',
+    route: 'tasks',
+    cache: 'repeat',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 5,
+      median: 796,
+      min: 474.10000002384186,
+      max: 1040.199999988079,
+      samples: [Array]
+    },
+    after: {
+      n: 5,
+      median: 464.69999998807907,
+      min: 271.9000000357628,
+      max: 984.6000000238419,
+      samples: [Array]
+    },
+    delta: 331.30000001192093,
+    percent: 41.620603016572986,
+    verdict: 'observed median difference; no statistical significance claim'
+  },
+  {
+    suite: 'paths-large',
+    route: 'tasks',
+    cache: 'initial',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 5,
+      median: 572.1000000238419,
+      min: 349.80000001192093,
+      max: 653.1000000238419,
+      samples: [Array]
+    },
+    after: {
+      n: 5,
+      median: 444,
+      min: 284.0999999642372,
+      max: 883.6999999880791,
+      samples: [Array]
+    },
+    delta: 128.10000002384186,
+    percent: 22.39119035457147,
+    verdict: 'observed median difference; no statistical significance claim'
+  },
+  {
+    suite: 'paths-large',
+    route: 'tasks',
+    cache: 'repeat',
+    parents: 200,
+    children: 50,
+    operation: 'child-save',
+    metric: 'displayMs',
+    before: {
+      n: 5,
+      median: 675.7999999523163,
+      min: 381.5999999642372,
+      max: 816.7000000476837,
+      samples: [Array]
+    },
+    after: {
+      n: 5,
+      median: 426.80000001192093,
+      min: 347.5,
+      max: 773.3999999761581,
+      samples: [Array]
+    },
+    delta: 248.99999994039536,
+    percent: 36.845220473211675,
+    verdict: 'observed median difference; no statistical significance claim'
+  }
+]

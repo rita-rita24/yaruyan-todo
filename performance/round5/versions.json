@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-09T22:39:52.699Z",
+  "gitHead": "1d3ac50",
+  "baselineSha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+  "finalSha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+  "finalTrials": 220,
+  "beforeTrials": 110,
+  "afterTrials": 110,
+  "metricRows": 372,
+  "operationLabels": [
+    "direct",
+    "backup-read-confirm",
+    "backup-confirm-import",
+    "parent-add",
+    "parent-delete",
+    "child-add",
+    "parent-editor-close",
+    "child-delete",
+    "sidebar-toggle",
+    "theme-save",
+    "message-add",
+    "message-editor-open",
+    "message-save",
+    "message-delete",
+    "memo-input-save",
+    "bulk-completed-delete",
+    "delete-undo-save",
+    "bulk-all-delete",
+    "navigate-memo",
+    "navigate-settings",
+    "navigate-tasks",
+    "scroll-last",
+    "scroll-top",
+    "filter-completed",
+    "filter-all",
+    "focus-pause",
+    "focus-resume",
+    "search",
+    "search-clear",
+    "parent-edit",
+    "child-edit",
+    "focus-start",
+    "child-save",
+    "parent-save"
+  ],
+  "conditions": 22,
+  "firstTrial": "2026-10-09T18:00:28.483Z",
+  "lastTrial": "2026-10-09T18:05:34.975Z",
+  "sources": [
+    {
+      "path": "performance/round5/baseline.html",
+      "sha256": "15afc99e9a9c2634196c69db393b50f8a756a2f1e1e5e03573c1e698f8e0c6f3",
+      "bytes": 382892
+    },
+    {
+      "path": "performance/round5/compact-candidate.html",
+      "sha256": "ffe4ef95a84ac4021fdd72661a4a118f6ae95b609afd2f7d8ab534838ad8daeb",
+      "bytes": 380403
+    },
+    {
+      "path": "performance/round5/child-candidate.html",
+      "sha256": "611e39045c5faa60bc7ea39af8e33297cd379ba3f74bb978285476ac1992dc36",
+      "bytes": 385061
+    },
+    {
+      "path": "performance/round5/child-v2-candidate.html",
+      "sha256": "12a084345b0bd8cdaf7d399e6e1979f3e0cf7739bb76eb34923ceac32d21eb48",
+      "bytes": 385416
+    },
+    {
+      "path": "performance/round5/child-v3-candidate.html",
+      "sha256": "112946ef70d0149652efb3b6aa856eafb1bbf2565176bd244cece91acaf517aa",
+      "bytes": 385806
+    },
+    {
+      "path": "performance/round5/child-v4-first-candidate.html",
+      "sha256": "71b0cca885c942838ec3700be1162fde824092cfe63622860a30746db1e84cbc",
+      "bytes": 386142
+    },
+    {
+      "path": "performance/round5/child-v4-candidate.html",
+      "sha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+      "bytes": 386245
+    },
+    {
+      "path": "performance/round5/adopted.html",
+      "sha256": "27c49bd1c7ce94d1f308ed21464bf2da26a086c43f4da8266f65507298ac9ecf",
+      "bytes": 386245
+    }
+  ],
+  "caveats": [
+    "No production URL or release procedure found",
+    "Native search input EventTiming is recorded separately in native-comparison.json; no first-pixel, production INP or continuous FPS measured",
+    "Host CPU/GC/background activity not controlled",
+    "n=5 does not establish statistical significance",
+    "large and large-repeat are separate series; no merged claim",
+    "Filtering retains detached DOM for existing model children, capped by model size; heap bytes were not measured"
+  ]
+}

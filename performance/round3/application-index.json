@@ -1,0 +1,2062 @@
+{
+  "date": "2026-10-09T16:11:20.208Z",
+  "sha256": "f693b06e12709b225d0586d0bc537ce324b6bfbbc2de13f9f50368b996c09113",
+  "languages": [
+    "HTML",
+    "CSS",
+    "SVG",
+    "JavaScript (browser)",
+    "JavaScript ES modules (Node)",
+    "JSON",
+    "YAML",
+    "Markdown with shell examples"
+  ],
+  "functions": [
+    {
+      "name": "_safeStorageGet",
+      "startLine": 3017,
+      "endLine": 3024,
+      "async": false
+    },
+    {
+      "name": "_safeStorageSet",
+      "startLine": 3026,
+      "endLine": 3034,
+      "async": false
+    },
+    {
+      "name": "_safeStorageRemove",
+      "startLine": 3036,
+      "endLine": 3044,
+      "async": false
+    },
+    {
+      "name": "_createCorruptStorageBackupValue",
+      "startLine": 3046,
+      "endLine": 3051,
+      "async": false
+    },
+    {
+      "name": "_backupCorruptStorageValue",
+      "startLine": 3053,
+      "endLine": 3068,
+      "async": false
+    },
+    {
+      "name": "_snapshotStorageEntry",
+      "startLine": 3070,
+      "endLine": 3083,
+      "async": false
+    },
+    {
+      "name": "_restoreStorageEntry",
+      "startLine": 3085,
+      "endLine": 3097,
+      "async": false
+    },
+    {
+      "name": "_rollbackStorageWrites",
+      "startLine": 3099,
+      "endLine": 3111,
+      "async": false
+    },
+    {
+      "name": "_readJsonFromStorage",
+      "startLine": 3113,
+      "endLine": 3135,
+      "async": false
+    },
+    {
+      "name": "_readBooleanFromStorage",
+      "startLine": 3137,
+      "endLine": 3148,
+      "async": false
+    },
+    {
+      "name": "_writeManyToStorage",
+      "startLine": 3150,
+      "endLine": 3179,
+      "async": false
+    },
+    {
+      "name": "_createStorageWriteId",
+      "startLine": 3181,
+      "endLine": 3184,
+      "async": false
+    },
+    {
+      "name": "_requestIndexedDbOpen",
+      "startLine": 3186,
+      "endLine": 3237,
+      "async": false
+    },
+    {
+      "name": "_waitForIndexedDbRequest",
+      "startLine": 3239,
+      "endLine": 3244,
+      "async": false
+    },
+    {
+      "name": "_waitForIndexedDbTransaction",
+      "startLine": 3246,
+      "endLine": 3264,
+      "async": false
+    },
+    {
+      "name": "_readManyFromIndexedDb",
+      "startLine": 3266,
+      "endLine": 3287,
+      "async": true
+    },
+    {
+      "name": "_writeManyToIndexedDb",
+      "startLine": 3289,
+      "endLine": 3332,
+      "async": true
+    },
+    {
+      "name": "_reportStorageError",
+      "startLine": 3335,
+      "endLine": 3338,
+      "async": false
+    },
+    {
+      "name": "_getStorageWarningEl",
+      "startLine": 3340,
+      "endLine": 3343,
+      "async": false
+    },
+    {
+      "name": "_setStorageWarning",
+      "startLine": 3345,
+      "endLine": 3358,
+      "async": false
+    },
+    {
+      "name": "_handlePersistentStorageError",
+      "startLine": 3360,
+      "endLine": 3363,
+      "async": false
+    },
+    {
+      "name": "_readStoredJson",
+      "startLine": 3365,
+      "endLine": 3375,
+      "async": false
+    },
+    {
+      "name": "_readStoredBoolean",
+      "startLine": 3377,
+      "endLine": 3386,
+      "async": false
+    },
+    {
+      "name": "_readStoredText",
+      "startLine": 3388,
+      "endLine": 3394,
+      "async": false
+    },
+    {
+      "name": "_normalizeStorageMeta",
+      "startLine": 3396,
+      "endLine": 3405,
+      "async": false
+    },
+    {
+      "name": "_normalizeStorageMetaRecord",
+      "startLine": 3407,
+      "endLine": 3436,
+      "async": false
+    },
+    {
+      "name": "_createStorageMetaIdentity",
+      "startLine": 3438,
+      "endLine": 3445,
+      "async": false
+    },
+    {
+      "name": "_compareStorageMeta",
+      "startLine": 3447,
+      "endLine": 3454,
+      "async": false
+    },
+    {
+      "name": "_isEmptyStorageMeta",
+      "startLine": 3456,
+      "endLine": 3464,
+      "async": false
+    },
+    {
+      "name": "_isSameStorageMeta",
+      "startLine": 3466,
+      "endLine": 3474,
+      "async": false
+    },
+    {
+      "name": "_hasStorageMetaConflictSince",
+      "startLine": 3476,
+      "endLine": 3484,
+      "async": false
+    },
+    {
+      "name": "_isVerifiedCheckpointAncestor",
+      "startLine": 3486,
+      "endLine": 3495,
+      "async": false
+    },
+    {
+      "name": "_getCurrentStorageMeta",
+      "startLine": 3497,
+      "endLine": 3505,
+      "async": false
+    },
+    {
+      "name": "_getStorageMetaFromEntries",
+      "startLine": 3507,
+      "endLine": 3511,
+      "async": false
+    },
+    {
+      "name": "_hasCurrentStorageMetaChangedSince",
+      "startLine": 3513,
+      "endLine": 3515,
+      "async": false
+    },
+    {
+      "name": "_hasAnySnapshotData",
+      "startLine": 3517,
+      "endLine": 3522,
+      "async": false
+    },
+    {
+      "name": "_readLocalStateSnapshot",
+      "startLine": 3524,
+      "endLine": 3537,
+      "async": false
+    },
+    {
+      "name": "_createIndexedStateSnapshot",
+      "startLine": 3539,
+      "endLine": 3546,
+      "async": false
+    },
+    {
+      "name": "_validatePersistentStateSnapshot",
+      "startLine": 3548,
+      "endLine": 3586,
+      "async": false
+    },
+    {
+      "name": "_shouldUseIndexedState",
+      "startLine": 3588,
+      "endLine": 3610,
+      "async": false
+    },
+    {
+      "name": "_adoptStorageMeta",
+      "startLine": 3612,
+      "endLine": 3618,
+      "async": false
+    },
+    {
+      "name": "_createStorageMetaRecord",
+      "startLine": 3620,
+      "endLine": 3634,
+      "async": false
+    },
+    {
+      "name": "_setCurrentStorageMeta",
+      "startLine": 3636,
+      "endLine": 3643,
+      "async": false
+    },
+    {
+      "name": "_createNextStorageMeta",
+      "startLine": 3645,
+      "endLine": 3663,
+      "async": false
+    },
+    {
+      "name": "_restoreStorageMeta",
+      "startLine": 3665,
+      "endLine": 3667,
+      "async": false
+    },
+    {
+      "name": "_getDataEntries",
+      "startLine": 3669,
+      "endLine": 3672,
+      "async": false
+    },
+    {
+      "name": "_hasPersistedDataChanges",
+      "startLine": 3674,
+      "endLine": 3679,
+      "async": false
+    },
+    {
+      "name": "_rememberPersistedDataEntries",
+      "startLine": 3681,
+      "endLine": 3686,
+      "async": false
+    },
+    {
+      "name": "_readLocalStorageMeta",
+      "startLine": 3688,
+      "endLine": 3693,
+      "async": false
+    },
+    {
+      "name": "_isNewerThanPersistedMeta",
+      "startLine": 3695,
+      "endLine": 3698,
+      "async": false
+    },
+    {
+      "name": "_readIndexedDbStorageMeta",
+      "startLine": 3700,
+      "endLine": 3709,
+      "async": true
+    },
+    {
+      "name": "_hasNewerPersistedStorageState",
+      "startLine": 3711,
+      "endLine": 3732,
+      "async": true
+    },
+    {
+      "name": "_saveLocalStorageCheckpoint",
+      "startLine": 3734,
+      "endLine": 3738,
+      "async": true
+    },
+    {
+      "name": "_saveStoredState",
+      "startLine": 3740,
+      "endLine": 3819,
+      "async": true
+    },
+    {
+      "name": "_enqueueStoredStateSave",
+      "startLine": 3821,
+      "endLine": 3840,
+      "async": false
+    },
+    {
+      "name": "_saveLocalStorageForUnload",
+      "startLine": 3842,
+      "endLine": 3937,
+      "async": false
+    },
+    {
+      "name": "_mirrorPersistentStorageState",
+      "startLine": 3939,
+      "endLine": 3981,
+      "async": false
+    },
+    {
+      "name": "bindInputEnter",
+      "startLine": 4125,
+      "endLine": 4133,
+      "async": false
+    },
+    {
+      "name": "reconcileChildren",
+      "startLine": 4136,
+      "endLine": 4148,
+      "async": false
+    },
+    {
+      "name": "normalizeMaterialIconToken",
+      "startLine": 4155,
+      "endLine": 4159,
+      "async": false
+    },
+    {
+      "name": "_createMaterialIconSvg",
+      "startLine": 4163,
+      "endLine": 4177,
+      "async": false
+    },
+    {
+      "name": "setMaterialIcon",
+      "startLine": 4179,
+      "endLine": 4186,
+      "async": false
+    },
+    {
+      "name": "hydrateMaterialIcons",
+      "startLine": 4188,
+      "endLine": 4193,
+      "async": false
+    },
+    {
+      "name": "uid",
+      "startLine": 4302,
+      "endLine": 4304,
+      "async": false
+    },
+    {
+      "name": "escapeHtml",
+      "startLine": 4306,
+      "endLine": 4310,
+      "async": false
+    },
+    {
+      "name": "_copyTaskSnapshot",
+      "startLine": 4312,
+      "endLine": 4314,
+      "async": false
+    },
+    {
+      "name": "normalizeOrganizeMemo",
+      "startLine": 4316,
+      "endLine": 4318,
+      "async": false
+    },
+    {
+      "name": "formatFileSize",
+      "startLine": 4320,
+      "endLine": 4331,
+      "async": false
+    },
+    {
+      "name": "updateBackupImportLimitText",
+      "startLine": 4333,
+      "endLine": 4336,
+      "async": false
+    },
+    {
+      "name": "getMemoLimitStatusText",
+      "startLine": 4338,
+      "endLine": 4342,
+      "async": false
+    },
+    {
+      "name": "_markAppStateChanged",
+      "startLine": 4344,
+      "endLine": 4347,
+      "async": false
+    },
+    {
+      "name": "_canRestoreFailedSaveSnapshot",
+      "startLine": 4349,
+      "endLine": 4352,
+      "async": false
+    },
+    {
+      "name": "_showSkippedRollbackToast",
+      "startLine": 4354,
+      "endLine": 4356,
+      "async": false
+    },
+    {
+      "name": "setInputActionPending",
+      "startLine": 4358,
+      "endLine": 4367,
+      "async": false
+    },
+    {
+      "name": "setActionControlPending",
+      "startLine": 4369,
+      "endLine": 4374,
+      "async": false
+    },
+    {
+      "name": "isStateSaveOperationPending",
+      "startLine": 4376,
+      "endLine": 4378,
+      "async": false
+    },
+    {
+      "name": "setStateSaveOperationPending",
+      "startLine": 4380,
+      "endLine": 4403,
+      "async": false
+    },
+    {
+      "name": "setAddOperationPending",
+      "startLine": 4405,
+      "endLine": 4427,
+      "async": false
+    },
+    {
+      "name": "isAddOperationPending",
+      "startLine": 4429,
+      "endLine": 4431,
+      "async": false
+    },
+    {
+      "name": "isMessageOperationPending",
+      "startLine": 4433,
+      "endLine": 4435,
+      "async": false
+    },
+    {
+      "name": "updateMessageListPendingState",
+      "startLine": 4437,
+      "endLine": 4450,
+      "async": false
+    },
+    {
+      "name": "setMessageOperationPending",
+      "startLine": 4452,
+      "endLine": 4467,
+      "async": false
+    },
+    {
+      "name": "isEditOperationPending",
+      "startLine": 4469,
+      "endLine": 4471,
+      "async": false
+    },
+    {
+      "name": "updateParentModalPendingState",
+      "startLine": 4473,
+      "endLine": 4485,
+      "async": false
+    },
+    {
+      "name": "updateSubtaskModalPendingState",
+      "startLine": 4487,
+      "endLine": 4491,
+      "async": false
+    },
+    {
+      "name": "setEditOperationPending",
+      "startLine": 4493,
+      "endLine": 4512,
+      "async": false
+    },
+    {
+      "name": "isFocusOperationPending",
+      "startLine": 4514,
+      "endLine": 4516,
+      "async": false
+    },
+    {
+      "name": "setFocusStartControlPending",
+      "startLine": 4518,
+      "endLine": 4534,
+      "async": false
+    },
+    {
+      "name": "setFocusOperationPending",
+      "startLine": 4536,
+      "endLine": 4556,
+      "async": false
+    },
+    {
+      "name": "_createAppStateSnapshot",
+      "startLine": 4558,
+      "endLine": 4568,
+      "async": false
+    },
+    {
+      "name": "_applyAppStateSnapshot",
+      "startLine": 4570,
+      "endLine": 4587,
+      "async": false
+    },
+    {
+      "name": "_restoreStateAfterFailedSave",
+      "startLine": 4589,
+      "endLine": 4602,
+      "async": false
+    },
+    {
+      "name": "_commitStateSave",
+      "startLine": 4604,
+      "endLine": 4614,
+      "async": true
+    },
+    {
+      "name": "_createFocusRuntimeSnapshot",
+      "startLine": 4616,
+      "endLine": 4629,
+      "async": false
+    },
+    {
+      "name": "_applyFocusRuntimeSnapshot",
+      "startLine": 4631,
+      "endLine": 4645,
+      "async": false
+    },
+    {
+      "name": "_restoreFocusStateAfterFailedSave",
+      "startLine": 4647,
+      "endLine": 4664,
+      "async": false
+    },
+    {
+      "name": "_commitFocusStateSave",
+      "startLine": 4666,
+      "endLine": 4682,
+      "async": true
+    },
+    {
+      "name": "_isValidDeleteUndoPayload",
+      "startLine": 4684,
+      "endLine": 4689,
+      "async": false
+    },
+    {
+      "name": "_createDeleteUndoRestorePlan",
+      "startLine": 4691,
+      "endLine": 4768,
+      "async": false
+    },
+    {
+      "name": "_applyDeleteUndoPayload",
+      "startLine": 4770,
+      "endLine": 4812,
+      "async": false
+    },
+    {
+      "name": "_runToastDismissHandler",
+      "startLine": 4814,
+      "endLine": 4826,
+      "async": false
+    },
+    {
+      "name": "_hideToastBySession",
+      "startLine": 4828,
+      "endLine": 4842,
+      "async": false
+    },
+    {
+      "name": "showToast",
+      "startLine": 4844,
+      "endLine": 4914,
+      "async": false
+    },
+    {
+      "name": "showErrorToast",
+      "startLine": 4916,
+      "endLine": 4918,
+      "async": false
+    },
+    {
+      "name": "_hideDeleteUndoToastBySession",
+      "startLine": 4920,
+      "endLine": 4932,
+      "async": false
+    },
+    {
+      "name": "_showDeleteUndoToast",
+      "startLine": 4934,
+      "endLine": 4983,
+      "async": false
+    },
+    {
+      "name": "_registerDeleteUndoToast",
+      "startLine": 4985,
+      "endLine": 5011,
+      "async": false
+    },
+    {
+      "name": "_invalidateDeleteUndo",
+      "startLine": 5013,
+      "endLine": 5022,
+      "async": false
+    },
+    {
+      "name": "_isFocusableElement",
+      "startLine": 5024,
+      "endLine": 5030,
+      "async": false
+    },
+    {
+      "name": "_getModalFocusableElements",
+      "startLine": 5032,
+      "endLine": 5035,
+      "async": false
+    },
+    {
+      "name": "_getActiveModalOverlay",
+      "startLine": 5037,
+      "endLine": 5043,
+      "async": false
+    },
+    {
+      "name": "_focusWithinOverlay",
+      "startLine": 5045,
+      "endLine": 5062,
+      "async": false
+    },
+    {
+      "name": "_captureModalReturnFocus",
+      "startLine": 5064,
+      "endLine": 5082,
+      "async": false
+    },
+    {
+      "name": "_resolveModalReturnFocus",
+      "startLine": 5084,
+      "endLine": 5108,
+      "async": false
+    },
+    {
+      "name": "_restoreFocusAfterPending",
+      "startLine": 5110,
+      "endLine": 5117,
+      "async": false
+    },
+    {
+      "name": "syncModalInteractivity",
+      "startLine": 5119,
+      "endLine": 5126,
+      "async": false
+    },
+    {
+      "name": "_openModalOverlay",
+      "startLine": 5128,
+      "endLine": 5141,
+      "async": false
+    },
+    {
+      "name": "_closeModalOverlay",
+      "startLine": 5143,
+      "endLine": 5173,
+      "async": false
+    },
+    {
+      "name": "_trapFocusInOverlay",
+      "startLine": 5175,
+      "endLine": 5200,
+      "async": false
+    },
+    {
+      "name": "_resolveTooltipTarget",
+      "startLine": 5202,
+      "endLine": 5205,
+      "async": false
+    },
+    {
+      "name": "_isIconOnlyButton",
+      "startLine": 5207,
+      "endLine": 5220,
+      "async": false
+    },
+    {
+      "name": "_extractTooltipText",
+      "startLine": 5222,
+      "endLine": 5224,
+      "async": false
+    },
+    {
+      "name": "_hideQuickTooltip",
+      "startLine": 5226,
+      "endLine": 5238,
+      "async": false
+    },
+    {
+      "name": "_isTooltipAnchorActive",
+      "startLine": 5240,
+      "endLine": 5245,
+      "async": false
+    },
+    {
+      "name": "_positionQuickTooltip",
+      "startLine": 5247,
+      "endLine": 5297,
+      "async": false
+    },
+    {
+      "name": "_queueQuickTooltipPosition",
+      "startLine": 5299,
+      "endLine": 5307,
+      "async": false
+    },
+    {
+      "name": "_showQuickTooltip",
+      "startLine": 5309,
+      "endLine": 5334,
+      "async": false
+    },
+    {
+      "name": "handleTooltipPointerOver",
+      "startLine": 5336,
+      "endLine": 5341,
+      "async": false
+    },
+    {
+      "name": "handleTooltipPointerOut",
+      "startLine": 5343,
+      "endLine": 5350,
+      "async": false
+    },
+    {
+      "name": "handleTooltipFocusIn",
+      "startLine": 5352,
+      "endLine": 5357,
+      "async": false
+    },
+    {
+      "name": "handleTooltipFocusOut",
+      "startLine": 5359,
+      "endLine": 5365,
+      "async": false
+    },
+    {
+      "name": "handleTooltipKeyDown",
+      "startLine": 5367,
+      "endLine": 5372,
+      "async": false
+    },
+    {
+      "name": "handleTooltipViewportChange",
+      "startLine": 5374,
+      "endLine": 5377,
+      "async": false
+    },
+    {
+      "name": "renderTaskCountFavicon",
+      "startLine": 5379,
+      "endLine": 5404,
+      "async": false
+    },
+    {
+      "name": "normalizeInputText",
+      "startLine": 5406,
+      "endLine": 5412,
+      "async": false
+    },
+    {
+      "name": "normalizeNonNegativeNumber",
+      "startLine": 5414,
+      "endLine": 5420,
+      "async": false
+    },
+    {
+      "name": "normalizeEntityId",
+      "startLine": 5422,
+      "endLine": 5436,
+      "async": false
+    },
+    {
+      "name": "normalizeMessageList",
+      "startLine": 5438,
+      "endLine": 5447,
+      "async": false
+    },
+    {
+      "name": "normalizePomodoroMinutes",
+      "startLine": 5449,
+      "endLine": 5457,
+      "async": false
+    },
+    {
+      "name": "normalizePomodoroSettings",
+      "startLine": 5459,
+      "endLine": 5478,
+      "async": false
+    },
+    {
+      "name": "createFocusMeta",
+      "startLine": 5480,
+      "endLine": 5495,
+      "async": false
+    },
+    {
+      "name": "normalizeFocusMeta",
+      "startLine": 5497,
+      "endLine": 5505,
+      "async": false
+    },
+    {
+      "name": "normalizeSettings",
+      "startLine": 5507,
+      "endLine": 5526,
+      "async": false
+    },
+    {
+      "name": "normalizeTaskViewState",
+      "startLine": 5528,
+      "endLine": 5531,
+      "async": false
+    },
+    {
+      "name": "loadSettings",
+      "startLine": 5533,
+      "endLine": 5536,
+      "async": false
+    },
+    {
+      "name": "loadTaskViewState",
+      "startLine": 5538,
+      "endLine": 5541,
+      "async": false
+    },
+    {
+      "name": "_readJsonFromRaw",
+      "startLine": 5543,
+      "endLine": 5561,
+      "async": false
+    },
+    {
+      "name": "_readBooleanFromRaw",
+      "startLine": 5563,
+      "endLine": 5568,
+      "async": false
+    },
+    {
+      "name": "_applyPersistentStateRawValues",
+      "startLine": 5570,
+      "endLine": 5610,
+      "async": false
+    },
+    {
+      "name": "_getPersistedStateEntries",
+      "startLine": 5612,
+      "endLine": 5620,
+      "async": false
+    },
+    {
+      "name": "_enqueueIndexedDbWrite",
+      "startLine": 5622,
+      "endLine": 5650,
+      "async": false
+    },
+    {
+      "name": "_initializePersistentStorageState",
+      "startLine": 5652,
+      "endLine": 5739,
+      "async": true
+    },
+    {
+      "name": "save",
+      "startLine": 5741,
+      "endLine": 5743,
+      "async": true
+    },
+    {
+      "name": "setMemoSaveStatus",
+      "startLine": 5745,
+      "endLine": 5753,
+      "async": false
+    },
+    {
+      "name": "persistOrganizeMemoLocalCheckpoint",
+      "startLine": 5755,
+      "endLine": 5769,
+      "async": false
+    },
+    {
+      "name": "persistOrganizeMemoCheckpoint",
+      "startLine": 5771,
+      "endLine": 5786,
+      "async": true
+    },
+    {
+      "name": "flushOrganizeMemoSave",
+      "startLine": 5788,
+      "endLine": 5794,
+      "async": true
+    },
+    {
+      "name": "syncRunningFocusElapsedForPersist",
+      "startLine": 5796,
+      "endLine": 5816,
+      "async": false
+    },
+    {
+      "name": "persistRuntimeStateForUnload",
+      "startLine": 5818,
+      "endLine": 5869,
+      "async": false
+    },
+    {
+      "name": "checkpointActiveFocusElapsed",
+      "startLine": 5871,
+      "endLine": 5886,
+      "async": true
+    },
+    {
+      "name": "_isObjectRecord",
+      "startLine": 5888,
+      "endLine": 5890,
+      "async": false
+    },
+    {
+      "name": "createBackupPayload",
+      "startLine": 5892,
+      "endLine": 5905,
+      "async": false
+    },
+    {
+      "name": "normalizeBackupPayload",
+      "startLine": 5907,
+      "endLine": 5942,
+      "async": false
+    },
+    {
+      "name": "_applyNormalizedBackupPayload",
+      "startLine": 5944,
+      "endLine": 5954,
+      "async": false
+    },
+    {
+      "name": "buildImportBackupConfirmMessage",
+      "startLine": 5956,
+      "endLine": 5964,
+      "async": false
+    },
+    {
+      "name": "_registerImportUndoToast",
+      "startLine": 5966,
+      "endLine": 6002,
+      "async": false
+    },
+    {
+      "name": "performImportBackup",
+      "startLine": 6004,
+      "endLine": 6015,
+      "async": true
+    },
+    {
+      "name": "exportBackup",
+      "startLine": 6017,
+      "endLine": 6032,
+      "async": false
+    },
+    {
+      "name": "importBackupFile",
+      "startLine": 6034,
+      "endLine": 6053,
+      "async": true
+    },
+    {
+      "name": "scheduleOrganizeMemoSave",
+      "startLine": 6055,
+      "endLine": 6064,
+      "async": false
+    },
+    {
+      "name": "handleOrganizeMemoInput",
+      "startLine": 6066,
+      "endLine": 6081,
+      "async": false
+    },
+    {
+      "name": "handleOrganizeMemoBlur",
+      "startLine": 6083,
+      "endLine": 6092,
+      "async": false
+    },
+    {
+      "name": "initializeOrganizeMemoInput",
+      "startLine": 6094,
+      "endLine": 6107,
+      "async": false
+    },
+    {
+      "name": "finishPersistentStorageInitialization",
+      "startLine": 6109,
+      "endLine": 6116,
+      "async": false
+    },
+    {
+      "name": "normalizeTasks",
+      "startLine": 6118,
+      "endLine": 6158,
+      "async": false
+    },
+    {
+      "name": "hasSubtasks",
+      "startLine": 6160,
+      "endLine": 6162,
+      "async": false
+    },
+    {
+      "name": "isLeafParent",
+      "startLine": 6164,
+      "endLine": 6166,
+      "async": false
+    },
+    {
+      "name": "isRunnableParent",
+      "startLine": 6168,
+      "endLine": 6170,
+      "async": false
+    },
+    {
+      "name": "syncParentStatus",
+      "startLine": 6172,
+      "endLine": 6176,
+      "async": false
+    },
+    {
+      "name": "syncAllParents",
+      "startLine": 6178,
+      "endLine": 6180,
+      "async": false
+    },
+    {
+      "name": "getTask",
+      "startLine": 6182,
+      "endLine": 6184,
+      "async": false
+    },
+    {
+      "name": "getSubtask",
+      "startLine": 6186,
+      "endLine": 6188,
+      "async": false
+    },
+    {
+      "name": "getTarget",
+      "startLine": 6190,
+      "endLine": 6194,
+      "async": false
+    },
+    {
+      "name": "getMessages",
+      "startLine": 6196,
+      "endLine": 6198,
+      "async": false
+    },
+    {
+      "name": "getElapsedMs",
+      "startLine": 6200,
+      "endLine": 6206,
+      "async": false
+    },
+    {
+      "name": "formatElapsed",
+      "startLine": 6208,
+      "endLine": 6214,
+      "async": false
+    },
+    {
+      "name": "formatAchievementElapsed",
+      "startLine": 6216,
+      "endLine": 6222,
+      "async": false
+    },
+    {
+      "name": "getProgressStats",
+      "startLine": 6224,
+      "endLine": 6241,
+      "async": false
+    },
+    {
+      "name": "getTaskStructureCounts",
+      "startLine": 6243,
+      "endLine": 6251,
+      "async": false
+    },
+    {
+      "name": "shouldClearCompletedItem",
+      "startLine": 6253,
+      "endLine": 6255,
+      "async": false
+    },
+    {
+      "name": "getClearCompletedDeleteCounts",
+      "startLine": 6257,
+      "endLine": 6273,
+      "async": false
+    },
+    {
+      "name": "formatBulkDeleteCountText",
+      "startLine": 6275,
+      "endLine": 6285,
+      "async": false
+    },
+    {
+      "name": "matchesTaskFilter",
+      "startLine": 6287,
+      "endLine": 6291,
+      "async": false
+    },
+    {
+      "name": "normalizeTaskSearchText",
+      "startLine": 6293,
+      "endLine": 6295,
+      "async": false
+    },
+    {
+      "name": "matchesTaskSearch",
+      "startLine": 6297,
+      "endLine": 6300,
+      "async": false
+    },
+    {
+      "name": "isTaskSearchActive",
+      "startLine": 6302,
+      "endLine": 6304,
+      "async": false
+    },
+    {
+      "name": "resetTaskSearch",
+      "startLine": 6306,
+      "endLine": 6309,
+      "async": false
+    },
+    {
+      "name": "handleTaskSearchInput",
+      "startLine": 6311,
+      "endLine": 6317,
+      "async": false
+    },
+    {
+      "name": "getFilteredSubtasks",
+      "startLine": 6319,
+      "endLine": 6326,
+      "async": false
+    },
+    {
+      "name": "isTaskVisible",
+      "startLine": 6328,
+      "endLine": 6332,
+      "async": false
+    },
+    {
+      "name": "getVisibleParentTaskIds",
+      "startLine": 6334,
+      "endLine": 6338,
+      "async": false
+    },
+    {
+      "name": "getVisibleSubtaskIds",
+      "startLine": 6340,
+      "endLine": 6342,
+      "async": false
+    },
+    {
+      "name": "getVisibleMoveTargetId",
+      "startLine": 6344,
+      "endLine": 6351,
+      "async": false
+    },
+    {
+      "name": "syncTaskFilterButtons",
+      "startLine": 6353,
+      "endLine": 6360,
+      "async": false
+    },
+    {
+      "name": "setTaskFilter",
+      "startLine": 6362,
+      "endLine": 6370,
+      "async": true
+    },
+    {
+      "name": "getPendingTaskCount",
+      "startLine": 6372,
+      "endLine": 6375,
+      "async": false
+    },
+    {
+      "name": "updateDocumentTaskIndicators",
+      "startLine": 6377,
+      "endLine": 6381,
+      "async": false
+    },
+    {
+      "name": "isAllDone",
+      "startLine": 6383,
+      "endLine": 6386,
+      "async": false
+    },
+    {
+      "name": "applyColorMode",
+      "startLine": 6388,
+      "endLine": 6394,
+      "async": false
+    },
+    {
+      "name": "applyThemeColor",
+      "startLine": 6396,
+      "endLine": 6402,
+      "async": false
+    },
+    {
+      "name": "isCompactSidebarViewport",
+      "startLine": 6404,
+      "endLine": 6406,
+      "async": false
+    },
+    {
+      "name": "applySidebarState",
+      "startLine": 6408,
+      "endLine": 6415,
+      "async": false
+    },
+    {
+      "name": "getRouteFromHash",
+      "startLine": 6422,
+      "endLine": 6425,
+      "async": false
+    },
+    {
+      "name": "navigate",
+      "startLine": 6427,
+      "endLine": 6434,
+      "async": false
+    },
+    {
+      "name": "renderRoute",
+      "startLine": 6436,
+      "endLine": 6465,
+      "async": false
+    },
+    {
+      "name": "getAudioCtx",
+      "startLine": 6481,
+      "endLine": 6488,
+      "async": false
+    },
+    {
+      "name": "_getAudioOutputNode",
+      "startLine": 6490,
+      "endLine": 6499,
+      "async": false
+    },
+    {
+      "name": "_withRunningAudio",
+      "startLine": 6501,
+      "endLine": 6519,
+      "async": false
+    },
+    {
+      "name": "_primeAudioContext",
+      "startLine": 6521,
+      "endLine": 6537,
+      "async": false
+    },
+    {
+      "name": "_clampAudioPan",
+      "startLine": 6539,
+      "endLine": 6542,
+      "async": false
+    },
+    {
+      "name": "_connectToOutputWithPan",
+      "startLine": 6544,
+      "endLine": 6559,
+      "async": false
+    },
+    {
+      "name": "playTone",
+      "startLine": 6561,
+      "endLine": 6612,
+      "async": false
+    },
+    {
+      "name": "playSubtaskCompleteSound",
+      "startLine": 6614,
+      "endLine": 6616,
+      "async": false
+    },
+    {
+      "name": "playParentCompleteSound",
+      "startLine": 6618,
+      "endLine": 6697,
+      "async": false
+    },
+    {
+      "name": "playAllClearSound",
+      "startLine": 6699,
+      "endLine": 6701,
+      "async": false
+    },
+    {
+      "name": "playFocusStartSound",
+      "startLine": 6703,
+      "endLine": 6728,
+      "async": false
+    },
+    {
+      "name": "playFocusShiftSound",
+      "startLine": 6730,
+      "endLine": 6776,
+      "async": false
+    },
+    {
+      "name": "playFocusAbortSound",
+      "startLine": 6778,
+      "endLine": 6802,
+      "async": false
+    },
+    {
+      "name": "playAddSound",
+      "startLine": 6804,
+      "endLine": 6829,
+      "async": false
+    },
+    {
+      "name": "playDeleteSound",
+      "startLine": 6831,
+      "endLine": 6856,
+      "async": false
+    },
+    {
+      "name": "resizeCanvas",
+      "startLine": 6866,
+      "endLine": 6870,
+      "async": false
+    },
+    {
+      "name": "launchConfetti",
+      "startLine": 6878,
+      "endLine": 6906,
+      "async": false
+    },
+    {
+      "name": "animateConfetti",
+      "startLine": 6908,
+      "endLine": 6952,
+      "async": false
+    },
+    {
+      "name": "showCelebration",
+      "startLine": 6954,
+      "endLine": 6971,
+      "async": false
+    },
+    {
+      "name": "celebrateElement",
+      "startLine": 6973,
+      "endLine": 7007,
+      "async": false
+    },
+    {
+      "name": "buildDeleteParentConfirmMessage",
+      "startLine": 7009,
+      "endLine": 7016,
+      "async": false
+    },
+    {
+      "name": "buildDeleteSubtaskConfirmMessage",
+      "startLine": 7018,
+      "endLine": 7022,
+      "async": false
+    },
+    {
+      "name": "getClearCompletedScopeText",
+      "startLine": 7024,
+      "endLine": 7026,
+      "async": false
+    },
+    {
+      "name": "buildClearCompletedConfirmMessage",
+      "startLine": 7028,
+      "endLine": 7031,
+      "async": false
+    },
+    {
+      "name": "buildClearAllConfirmMessage",
+      "startLine": 7033,
+      "endLine": 7036,
+      "async": false
+    },
+    {
+      "name": "buildAbortFocusConfirmMessage",
+      "startLine": 7038,
+      "endLine": 7041,
+      "async": false
+    },
+    {
+      "name": "openConfirmModal",
+      "startLine": 7046,
+      "endLine": 7078,
+      "async": false
+    },
+    {
+      "name": "closeConfirmModal",
+      "startLine": 7080,
+      "endLine": 7086,
+      "async": false
+    },
+    {
+      "name": "executeConfirmedAction",
+      "startLine": 7088,
+      "endLine": 7131,
+      "async": true
+    },
+    {
+      "name": "renderMessages",
+      "startLine": 7136,
+      "endLine": 7217,
+      "async": false
+    },
+    {
+      "name": "saveMessage",
+      "startLine": 7219,
+      "endLine": 7255,
+      "async": true
+    },
+    {
+      "name": "editMessage",
+      "startLine": 7257,
+      "endLine": 7269,
+      "async": false
+    },
+    {
+      "name": "saveEditedMessage",
+      "startLine": 7271,
+      "endLine": 7316,
+      "async": true
+    },
+    {
+      "name": "deleteMessage",
+      "startLine": 7318,
+      "endLine": 7353,
+      "async": true
+    },
+    {
+      "name": "openParentModal",
+      "startLine": 7358,
+      "endLine": 7374,
+      "async": false
+    },
+    {
+      "name": "closeParentModal",
+      "startLine": 7376,
+      "endLine": 7388,
+      "async": false
+    },
+    {
+      "name": "renderParentModalSubtasks",
+      "startLine": 7390,
+      "endLine": 7456,
+      "async": false
+    },
+    {
+      "name": "saveParentEdit",
+      "startLine": 7458,
+      "endLine": 7491,
+      "async": true
+    },
+    {
+      "name": "addSubtaskFromModal",
+      "startLine": 7493,
+      "endLine": 7544,
+      "async": true
+    },
+    {
+      "name": "openSubtaskModal",
+      "startLine": 7546,
+      "endLine": 7559,
+      "async": false
+    },
+    {
+      "name": "closeSubtaskModal",
+      "startLine": 7561,
+      "endLine": 7573,
+      "async": false
+    },
+    {
+      "name": "saveSubtaskEdit",
+      "startLine": 7575,
+      "endLine": 7608,
+      "async": true
+    },
+    {
+      "name": "clearRunningAcrossAllTargets",
+      "startLine": 7613,
+      "endLine": 7628,
+      "async": false
+    },
+    {
+      "name": "resetFocusPomodoroState",
+      "startLine": 7630,
+      "endLine": 7637,
+      "async": false
+    },
+    {
+      "name": "isPomodoroEnabledForSession",
+      "startLine": 7639,
+      "endLine": 7641,
+      "async": false
+    },
+    {
+      "name": "getPomodoroPhaseDurationMs",
+      "startLine": 7643,
+      "endLine": 7646,
+      "async": false
+    },
+    {
+      "name": "getPomodoroPhaseRemainingMs",
+      "startLine": 7648,
+      "endLine": 7654,
+      "async": false
+    },
+    {
+      "name": "startFocusPomodoroSession",
+      "startLine": 7656,
+      "endLine": 7677,
+      "async": false
+    },
+    {
+      "name": "syncPomodoroPhaseProgress",
+      "startLine": 7679,
+      "endLine": 7722,
+      "async": false
+    },
+    {
+      "name": "syncActivePomodoroPhaseProgress",
+      "startLine": 7724,
+      "endLine": 7726,
+      "async": false
+    },
+    {
+      "name": "notifyPomodoroPhaseTransition",
+      "startLine": 7728,
+      "endLine": 7747,
+      "async": false
+    },
+    {
+      "name": "syncFocusPhaseVisualState",
+      "startLine": 7749,
+      "endLine": 7755,
+      "async": false
+    },
+    {
+      "name": "canOpenFocusForParent",
+      "startLine": 7757,
+      "endLine": 7759,
+      "async": false
+    },
+    {
+      "name": "canOpenFocusForSubtask",
+      "startLine": 7761,
+      "endLine": 7763,
+      "async": false
+    },
+    {
+      "name": "openFocusModal",
+      "startLine": 7765,
+      "endLine": 7831,
+      "async": true
+    },
+    {
+      "name": "closeFocusModal",
+      "startLine": 7833,
+      "endLine": 7850,
+      "async": false
+    },
+    {
+      "name": "getActiveFocusTarget",
+      "startLine": 7852,
+      "endLine": 7855,
+      "async": false
+    },
+    {
+      "name": "updateFocusTimer",
+      "startLine": 7857,
+      "endLine": 7882,
+      "async": false
+    },
+    {
+      "name": "syncFocusStatusChip",
+      "startLine": 7884,
+      "endLine": 7895,
+      "async": false
+    },
+    {
+      "name": "syncFocusPauseButton",
+      "startLine": 7897,
+      "endLine": 7914,
+      "async": false
+    },
+    {
+      "name": "pauseOrResumeFocus",
+      "startLine": 7916,
+      "endLine": 7963,
+      "async": true
+    },
+    {
+      "name": "performAbortFocus",
+      "startLine": 7965,
+      "endLine": 8000,
+      "async": true
+    },
+    {
+      "name": "abortFocus",
+      "startLine": 8002,
+      "endLine": 8011,
+      "async": false
+    },
+    {
+      "name": "completeFocus",
+      "startLine": 8013,
+      "endLine": 8069,
+      "async": true
+    },
+    {
+      "name": "undoCompleted",
+      "startLine": 8071,
+      "endLine": 8098,
+      "async": true
+    },
+    {
+      "name": "showDragInsertionPreview",
+      "startLine": 8100,
+      "endLine": 8114,
+      "async": false
+    },
+    {
+      "name": "clearDragDropIndicators",
+      "startLine": 8116,
+      "endLine": 8118,
+      "async": false
+    },
+    {
+      "name": "resetDragState",
+      "startLine": 8120,
+      "endLine": 8130,
+      "async": false
+    },
+    {
+      "name": "moveArrayItem",
+      "startLine": 8132,
+      "endLine": 8142,
+      "async": false
+    },
+    {
+      "name": "reorderParentTasks",
+      "startLine": 8144,
+      "endLine": 8162,
+      "async": true
+    },
+    {
+      "name": "reorderSubtasks",
+      "startLine": 8164,
+      "endLine": 8185,
+      "async": true
+    },
+    {
+      "name": "getEditorReorderContext",
+      "startLine": 8187,
+      "endLine": 8192,
+      "async": false
+    },
+    {
+      "name": "syncEditorReorderControls",
+      "startLine": 8194,
+      "endLine": 8203,
+      "async": false
+    },
+    {
+      "name": "moveEditorTask",
+      "startLine": 8205,
+      "endLine": 8223,
+      "async": true
+    },
+    {
+      "name": "_restoreFocusToTaskRow",
+      "startLine": 8225,
+      "endLine": 8241,
+      "async": false
+    },
+    {
+      "name": "_moveFocusedTaskRowByOffset",
+      "startLine": 8243,
+      "endLine": 8282,
+      "async": true
+    },
+    {
+      "name": "isPointNearRect",
+      "startLine": 8284,
+      "endLine": 8292,
+      "async": false
+    },
+    {
+      "name": "resolveDropIntentByClientY",
+      "startLine": 8294,
+      "endLine": 8332,
+      "async": false
+    },
+    {
+      "name": "startDragFromHandle",
+      "startLine": 8334,
+      "endLine": 8388,
+      "async": false
+    },
+    {
+      "name": "clearModalSubtaskDragIndicators",
+      "startLine": 8390,
+      "endLine": 8392,
+      "async": false
+    },
+    {
+      "name": "resetModalSubtaskDragState",
+      "startLine": 8394,
+      "endLine": 8403,
+      "async": false
+    },
+    {
+      "name": "startModalSubtaskDrag",
+      "startLine": 8405,
+      "endLine": 8425,
+      "async": false
+    },
+    {
+      "name": "render",
+      "startLine": 8430,
+      "endLine": 8477,
+      "async": false
+    },
+    {
+      "name": "getFocusIconForMeta",
+      "startLine": 8479,
+      "endLine": 8483,
+      "async": false
+    },
+    {
+      "name": "getTaskRowRenderKey",
+      "startLine": 8485,
+      "endLine": 8489,
+      "async": false
+    },
+    {
+      "name": "createSubtaskRowMarkup",
+      "startLine": 8491,
+      "endLine": 8560,
+      "async": false
+    },
+    {
+      "name": "reconcileTaskRows",
+      "startLine": 8562,
+      "endLine": 8574,
+      "async": false
+    },
+    {
+      "name": "renderTasks",
+      "startLine": 8576,
+      "endLine": 8749,
+      "async": false
+    },
+    {
+      "name": "setThemeColor",
+      "startLine": 8751,
+      "endLine": 8761,
+      "async": true
+    },
+    {
+      "name": "renderThemeOptions",
+      "startLine": 8763,
+      "endLine": 8790,
+      "async": false
+    },
+    {
+      "name": "renderPomodoroSettings",
+      "startLine": 8792,
+      "endLine": 8797,
+      "async": false
+    },
+    {
+      "name": "syncPomodoroSettingsControls",
+      "startLine": 8799,
+      "endLine": 8813,
+      "async": false
+    },
+    {
+      "name": "commitPomodoroSettingsFromControls",
+      "startLine": 8815,
+      "endLine": 8858,
+      "async": true
+    },
+    {
+      "name": "commitPomodoroMinutesFromInput",
+      "startLine": 8860,
+      "endLine": 8863,
+      "async": true
+    },
+    {
+      "name": "renderSettings",
+      "startLine": 8865,
+      "endLine": 8872,
+      "async": false
+    },
+    {
+      "name": "_createParentDeleteUndoPayload",
+      "startLine": 8877,
+      "endLine": 8887,
+      "async": false
+    },
+    {
+      "name": "_createSubtaskDeleteUndoPayload",
+      "startLine": 8889,
+      "endLine": 8902,
+      "async": false
+    },
+    {
+      "name": "_createClearCompletedUndoPayload",
+      "startLine": 8904,
+      "endLine": 8941,
+      "async": false
+    },
+    {
+      "name": "_createClearAllUndoPayload",
+      "startLine": 8943,
+      "endLine": 8952,
+      "async": false
+    },
+    {
+      "name": "performDeleteParent",
+      "startLine": 8954,
+      "endLine": 8966,
+      "async": true
+    },
+    {
+      "name": "performDeleteSubtask",
+      "startLine": 8968,
+      "endLine": 8992,
+      "async": true
+    },
+    {
+      "name": "performClearCompleted",
+      "startLine": 8994,
+      "endLine": 9027,
+      "async": true
+    },
+    {
+      "name": "performClearAll",
+      "startLine": 9029,
+      "endLine": 9044,
+      "async": true
+    },
+    {
+      "name": "addTask",
+      "startLine": 9049,
+      "endLine": 9092,
+      "async": true
+    },
+    {
+      "name": "isTypingTarget",
+      "startLine": 9099,
+      "endLine": 9112,
+      "async": false
+    },
+    {
+      "name": "toggleSidebar",
+      "startLine": 9114,
+      "endLine": 9122,
+      "async": true
+    },
+    {
+      "name": "openClearCompletedConfirm",
+      "startLine": 9124,
+      "endLine": 9136,
+      "async": false
+    },
+    {
+      "name": "openClearAllConfirm",
+      "startLine": 9138,
+      "endLine": 9149,
+      "async": false
+    },
+    {
+      "name": "handleTaskFilterClick",
+      "startLine": 9151,
+      "endLine": 9156,
+      "async": false
+    },
+    {
+      "name": "focusTaskInputWithRoute",
+      "startLine": 9158,
+      "endLine": 9166,
+      "async": false
+    },
+    {
+      "name": "focusMemoInputWithRoute",
+      "startLine": 9168,
+      "endLine": 9175,
+      "async": false
+    },
+    {
+      "name": "focusMessageInputWithRoute",
+      "startLine": 9177,
+      "endLine": 9185,
+      "async": false
+    },
+    {
+      "name": "toggleColorModeWithShortcut",
+      "startLine": 9187,
+      "endLine": 9193,
+      "async": true
+    },
+    {
+      "name": "applyAriaKeyShortcuts",
+      "startLine": 9195,
+      "endLine": 9221,
+      "async": false
+    },
+    {
+      "name": "handleDocumentShortcuts",
+      "startLine": 9223,
+      "endLine": 9385,
+      "async": false
+    },
+    {
+      "name": "closeBulkActions",
+      "startLine": 9427,
+      "endLine": 9432,
+      "async": false
+    },
+    {
+      "name": "bindPomodoroMinutesInput",
+      "startLine": 10008,
+      "endLine": 10017,
+      "async": false
+    },
+    {
+      "name": "bindTextLengthHint",
+      "startLine": 10052,
+      "endLine": 10070,
+      "async": false
+    }
+  ],
+  "review": [
+    {
+      "area": "storage",
+      "functions": "_safeStorage*, _requestIndexedDbOpen, _readManyFromIndexedDb, _writeManyToIndexedDb, _saveStoredState, _enqueueStoredStateSave",
+      "disposition": "transaction/generation/timeout/rollback contract retained; no API obsolescence identified by configured rules"
+    },
+    {
+      "area": "normalization and backup",
+      "functions": "normalize*, createBackupPayload, exportBackup, importBackupFile, performImportBackup",
+      "disposition": "limits/IDs/escaping/URL release preserved; browser QA and existing regression tests"
+    },
+    {
+      "area": "tasks and rendering",
+      "functions": "render*, getFilteredSubtasks, createSubtaskRowMarkup, reconcileChildren",
+      "disposition": "markup responsibility extracted; atomic DOM move with fallback; partial-child patch rejected"
+    },
+    {
+      "area": "drag and reordering",
+      "functions": "resolveDropIntentByClientY, reorderParentTasks, reorderSubtasks",
+      "disposition": "binary coordinate lookup adopted; latest geometry every event; variable-height and preview contract tested"
+    },
+    {
+      "area": "modal, focus and keyboard",
+      "functions": "_openModalOverlay, _closeModalOverlay, _trapFocusInOverlay, handleDocumentShortcuts",
+      "disposition": "nested modal/return focus/inert retained; seven IME exceptions documented"
+    },
+    {
+      "area": "memo, focus timer, sound and celebration",
+      "functions": "flushOrganizeMemoSave, updateFocusTimer, syncPomodoroPhaseProgress, play*, launchConfetti",
+      "disposition": "pointer/IME deferral, save order and cleanup retained; real-IME and long-running operations incomplete"
+    },
+    {
+      "area": "messages and toast",
+      "functions": "renderMessages, saveEditedMessage, showToast",
+      "disposition": "silent input truncation removed; finally exception suppression removed"
+    },
+    {
+      "area": "HTML/CSS",
+      "functions": "whole inline markup/style including generated templates",
+      "disposition": "parsed, obsolete elements/transition checked; existing CSS layers/nesting kept, three prefix exceptions; full conformance and browser matrix incomplete"
+    },
+    {
+      "area": "tests and operations",
+      "functions": "all maintained .mjs",
+      "disposition": "whole-module lint/format; AST test extraction; lockfile/CI; generated and historical HTML inventoried separately"
+    }
+  ],
+  "caveat": "AST enumeration/static scans/regression tests are evidence of scope, not proof of full manual audit or absence of every obsolete pattern."
+}
