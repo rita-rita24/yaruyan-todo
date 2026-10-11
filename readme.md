@@ -56,6 +56,8 @@ CSSのネスト、`light-dark()`、`structuredClone()`、Canvasの`roundRect()`�
 
 ## 開発・品質確認
 
+GitHub Actionsのワークフローは使用しません。
+
 Node.js 22を使用します。追加パッケージのインストールやビルドは不要です。
 
 ```sh
